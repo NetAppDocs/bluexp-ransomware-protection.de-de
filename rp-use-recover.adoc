@@ -1,0 +1,240 @@
+---
+sidebar: sidebar 
+permalink: rp-use-recover.html 
+keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
+summary: 'Nach einem Angriff überprüft der Ransomware-Schutz von BlueXP, ob die Backup-Daten auf dem sekundären Storage sauber sind. Außerdem wird ein tatsächlicher Recovery Point (RPA) empfohlen und der Workflow für eine ausfallsichere Recovery orchestriert.' 
+---
+= Wiederherstellung nach einem Ransomware-Angriff (nach dem Neutralisieren von Vorfällen)
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+Nachdem die Workloads als „bereit für die Recovery“ markiert wurden, empfiehlt der BlueXP Ransomware-Schutz einen tatsächlichen Recovery-Zeitpunkt (Recovery Point Actual, RPA) und orchestriert den Workflow für eine ausfallsichere Recovery.
+
+
+
+== Zeigen Sie Workloads an, die wiederhergestellt werden können
+
+Überprüfen Sie die Workloads im Recovery-Status „Restore needed“.
+
+.Schritte
+. Führen Sie einen der folgenden Schritte aus:
++
+** Überprüfen Sie im Dashboard die Gesamtwerte für „benötigte Wiederherstellung“ im Bereich „Warnungen“, und wählen Sie *Alle anzeigen*.
+** Wählen Sie im Menü *Recovery*.
+
+
+. Überprüfen Sie die Workload-Informationen auf der Seite *Recovery*.
++
+image:screen-recovery.png["Wiederherstellungsseite"]
+
+
+
+
+
+== Wiederherstellung eines Workloads
+
+Durch den Ransomware-Schutz von BlueXP kann der Storage-Administrator bestimmen, wie sich Workloads am besten entweder am empfohlenen Restore-Punkt oder am bevorzugten Restore-Punkt wiederherstellen lassen.
+
+Der Sicherheits-Storage-Administrator kann Daten auf verschiedenen Ebenen wiederherstellen:
+
+* Alle Volumes werden wiederhergestellt
+* Stellen Sie eine Anwendung auf Volume- oder Datei- und Ordnerebene wieder her.
+* Stellen Sie eine Dateifreigabe auf Volume-, Verzeichnis- oder Datei-/Ordnerebene wieder her.
+* Wiederherstellung von einem Datenspeicher auf VM-Ebene
+
+
+Der Prozess unterscheidet sich je nach Workload-Typ geringfügig.
+
+.Schritte
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Recovery* aus.
+. Überprüfen Sie die Workload-Informationen auf der Seite *Recovery*.
+. Wählen Sie einen Workload im Status „Restore needed“ aus.
+. Wählen Sie zum Wiederherstellen *Wiederherstellen*.
+. *Umfang wiederherstellen*: Wählen Sie die Art der Wiederherstellung, die Sie abschließen möchten:
++
+** Alle Volumes
+** Nach Volumen
+** Nach Datei: Sie können einen Ordner oder einzelne Dateien zur Wiederherstellung angeben.
++
+
+TIP: Sie können bis zu 100 Dateien oder einen einzelnen Ordner auswählen.
+
+
+
+. Fahren Sie mit einem der folgenden Verfahren fort, je nachdem, ob Sie die Anwendung, das Volume oder die Datei ausgewählt haben.
+
+
+
+
+=== Alle Volumes wiederherstellen
+
+. Wählen Sie auf der Seite Wiederherstellen im Bereich Wiederherstellen die Option *Alle Volumes* aus.
++
+image:screen-recovery-all-volumes.png["Seite für alle Volumes wiederherstellen"]
+
+. *Quelle*: Wählen Sie den Pfeil nach unten neben Quelle, um Details zu sehen.
++
+.. Wählen Sie den Wiederherstellungspunkt aus, den Sie zum Wiederherstellen der Daten verwenden möchten.
++
+
+TIP: Der Ransomware-Schutz von BlueXP identifiziert den besten Restore-Punkt als das neueste Backup direkt vor dem Vorfall und zeigt eine „sicherste für alle Volumes“-Anzeige. Dies bedeutet, dass alle Volumes vor dem ersten Angriff auf das erste erkannte Volume auf eine Kopie wiederhergestellt werden.
+
+
+
+. *Ziel*: Wählen Sie den Abwärtspfeil neben Ziel, um Details anzuzeigen.
++
+.. Wählen Sie die Arbeitsumgebung aus.
+.. Wählen Sie Storage VM aus.
+.. Wählen Sie das Aggregat aus.
+.. Ändern Sie das Volume-Präfix, das allen neuen Volumes vorangestellt wird.
++
+
+TIP: Der neue Volume-Name wird als Präfix + ursprünglicher Volume-Name + Backup-Name + Backup-Datum angezeigt.
+
+
+
+. Wählen Sie *Speichern*.
+. Wählen Sie *Weiter*.
+. Überprüfen Sie Ihre Auswahl.
+. Wählen Sie *Wiederherstellen*.
+. Wählen Sie im oberen Menü *Recovery* aus, um den Workload auf der Seite Recovery zu überprüfen, auf der sich der Status des Vorgangs durch die Zustände bewegt.
+
+
+
+
+=== Stellen Sie einen Applikations-Workload auf Volume-Ebene wieder her
+
+. Wählen Sie auf der Seite Wiederherstellen im Bereich Wiederherstellen die Option *nach Volume* aus.
++
+image:screen-recovery-byvolume.png["Nach Volume-Seite wiederherstellen"]
+
+. Wählen Sie in der Liste der Volumes das Volume aus, das Sie wiederherstellen möchten.
+. *Quelle*: Wählen Sie den Pfeil nach unten neben Quelle, um Details zu sehen.
++
+.. Wählen Sie den Wiederherstellungspunkt aus, den Sie zum Wiederherstellen der Daten verwenden möchten.
++
+
+TIP: Durch den Ransomware-Schutz von BlueXP wird der beste Restore-Punkt als das neueste Backup direkt vor dem Vorfall identifiziert und eine „empfohlene“ Angabe angezeigt.
+
+
+
+. *Ziel*: Wählen Sie den Abwärtspfeil neben Ziel, um Details anzuzeigen.
++
+.. Wählen Sie die Arbeitsumgebung aus.
+.. Wählen Sie Storage VM aus.
+.. Wählen Sie das Aggregat aus.
+.. Überprüfen Sie den neuen Volume-Namen.
++
+
+TIP: Der neue Volume-Name wird als ursprünglicher Volume-Name + Backup-Name + Backup-Datum angezeigt.
+
+
+
+. Wählen Sie *Speichern*.
+. Wählen Sie *Weiter*.
+. Überprüfen Sie Ihre Auswahl.
+. Wählen Sie *Wiederherstellen*.
+. Wählen Sie im oberen Menü *Recovery* aus, um den Workload auf der Seite Recovery zu überprüfen, auf der sich der Status des Vorgangs durch die Zustände bewegt.
+
+
+
+
+=== Stellen Sie einen Applikations-Workload auf Dateiebene wieder her
+
+. Wählen Sie auf der Seite Wiederherstellen im Bereich Wiederherstellen die Option *nach Datei* aus.
+. Wählen Sie in der Liste der Volumes das Volume aus, das Sie wiederherstellen möchten.
+. *Quelle*: Wählen Sie den Pfeil nach unten neben Quelle, um Details zu sehen.
++
+.. Wählen Sie den Wiederherstellungspunkt aus, den Sie zum Wiederherstellen der Daten verwenden möchten.
++
+
+TIP: Durch den Ransomware-Schutz von BlueXP wird der beste Restore-Punkt als das neueste Backup direkt vor dem Vorfall identifiziert und eine „empfohlene“ Angabe angezeigt.
+
+.. Wählen Sie bis zu 100 Dateien oder einen einzelnen Ordner für die Wiederherstellung aus.
+
+
+. *Ziel*: Wählen Sie den Abwärtspfeil neben Ziel, um Details anzuzeigen.
++
+.. Legen Sie fest, wo die Daten wiederhergestellt werden sollen: Ursprünglicher Quellspeicherort oder alternativer Speicherort, den Sie angeben können.
++
+
+TIP: Während die ursprünglichen Dateien oder das ursprüngliche Verzeichnis durch die wiederhergestellten Daten überschrieben werden, bleiben die ursprünglichen Datei- und Ordnernamen unverändert, es sei denn, Sie geben neue Namen an.
+
+.. Wählen Sie die Arbeitsumgebung aus.
+.. Wählen Sie Storage VM aus.
+.. Geben Sie optional den Pfad ein.
++
+
+TIP: Wenn Sie keinen Pfad für die Wiederherstellung angeben, werden die Dateien auf einem neuen Volume im Verzeichnis der obersten Ebene wiederhergestellt.
+
+.. Wählen Sie aus, ob die Namen der wiederhergestellten Dateien oder des Verzeichnisses den Namen des aktuellen Speicherorts oder anderer Namen haben sollen.
+
+
+. Wählen Sie *Speichern*.
+. Wählen Sie *Weiter*.
+. Überprüfen Sie Ihre Auswahl.
+. Wählen Sie *Wiederherstellen*.
+. Wählen Sie im oberen Menü *Recovery* aus, um den Workload auf der Seite Recovery zu überprüfen, auf der sich der Status des Vorgangs durch die Zustände bewegt.
+
+
+
+
+=== Stellen Sie eine Dateifreigabe oder einen Datastore auf Volume- oder Dateiebene wieder her
+
+. Wählen Sie auf der Seite Wiederherstellen im Bereich Wiederherstellen die Option *nach Volume* oder *nach Datei* aus, nachdem Sie eine Dateifreigabe oder einen Datastore ausgewählt haben, die wiederhergestellt werden sollen.
++
+image:screen-recovery-fileshare.png["Wiederherstellungsseite mit Dateifreigabe-Wiederherstellung"]
+
+. Wählen Sie in der Liste der Volumes das Volume aus, das Sie wiederherstellen möchten.
+. *Quelle*: Wählen Sie den Pfeil nach unten neben Quelle, um Details zu sehen.
++
+.. Wählen Sie den Wiederherstellungspunkt aus, den Sie zum Wiederherstellen der Daten verwenden möchten.
++
+
+TIP: Durch den Ransomware-Schutz von BlueXP wird der beste Restore-Punkt als das neueste Backup direkt vor dem Vorfall identifiziert und eine „empfohlene“ Angabe angezeigt.
+
+
+
+. *Ziel*: Wählen Sie den Abwärtspfeil neben Ziel, um Details anzuzeigen.
++
+.. Legen Sie fest, wo die Daten wiederhergestellt werden sollen: Ursprünglicher Quellspeicherort oder alternativer Speicherort, den Sie angeben können.
++
+
+TIP: Während die ursprünglichen Dateien oder das ursprüngliche Verzeichnis durch die wiederhergestellten Daten überschrieben werden, bleiben die ursprünglichen Datei- und Ordnernamen unverändert, es sei denn, Sie geben neue Namen an.
+
+.. Wählen Sie die Arbeitsumgebung aus.
+.. Wählen Sie Storage VM aus.
+.. Geben Sie optional den Pfad ein.
++
+
+TIP: Wenn Sie keinen Pfad für die Wiederherstellung angeben, werden die Dateien auf einem neuen Volume im Verzeichnis der obersten Ebene wiederhergestellt.
+
+
+
+. Wählen Sie *Speichern*.
+. Überprüfen Sie Ihre Auswahl.
+. Wählen Sie *Wiederherstellen*.
+. Wählen Sie im Menü * Recovery* aus, um die Arbeitslast auf der Seite Recovery zu überprüfen, auf der sich der Status des Vorgangs durch die Zustände bewegt.
+
+
+
+
+=== Stellen Sie eine VM-Dateifreigabe auf VM-Ebene wieder her
+
+Fahren Sie auf der Seite Wiederherstellung mit den folgenden Schritten fort, nachdem Sie eine wiederherzustellende VM ausgewählt haben.
+
+. *Quelle*: Wählen Sie den Pfeil nach unten neben Quelle, um Details zu sehen.
++
+image:screen-recovery-vm.png["Wiederherstellungsseite, die eine wiederherzustellende VM anzeigt"]
+
+. Wählen Sie den Wiederherstellungspunkt aus, den Sie zum Wiederherstellen der Daten verwenden möchten.
+. *Ziel*: Zum ursprünglichen Standort.
+. Wählen Sie *Weiter*.
+. Überprüfen Sie Ihre Auswahl.
+. Wählen Sie *Wiederherstellen*.
+. Wählen Sie im Menü * Recovery* aus, um die Arbeitslast auf der Seite Recovery zu überprüfen, auf der sich der Status des Vorgangs durch die Zustände bewegt.
+

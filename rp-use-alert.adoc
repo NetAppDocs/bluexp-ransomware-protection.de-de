@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: rp-use-alert.html 
+keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
+summary: Wenn der Ransomware Protection von BlueXP einen möglichen Angriff erkennt, wird im BlueXP Ransomware Protection Dashboard eine Warnmeldung angezeigt, die auf einen potenziellen Ransomware-Angriff hinweist. Der Service initiiert zudem unverzüglich die Erstellung einer Snapshot-Kopie. An dieser Stelle sollten Sie sich über die Registerkarte „BlueXP Ransomware Protection Alerts“ das potenzielle Risiko ansehen. 
+---
+= Reagieren Sie auf einen erkannten Ransomware-Alarm
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn der Ransomware-Schutz von BlueXP einen möglichen Angriff erkennt, wird im BlueXP Ransomware Protection Dashboard und in den BlueXP Benachrichtigungen oben rechts eine Warnmeldung angezeigt, die auf einen potenziellen Ransomware-Angriff hinweist. Der Service initiiert zudem unverzüglich die Erstellung einer Snapshot-Kopie. An dieser Stelle sollten Sie sich das potenzielle Risiko im BlueXP Ransomware-Schutz anschauen *Alerts* Tab.
+
+Um Ihre Daten wiederherzustellen, markieren Sie die Warnmeldung als bereit für die Recovery, damit Ihr Storage-Administrator mit dem Recovery-Prozess beginnen kann.
+
+Jede Warnung kann mehrere Vorfälle auf verschiedenen Volumes mit unterschiedlichen Status haben, achten Sie also darauf, alle Vorfälle zu betrachten.
+
+Der Dienst bietet Informationen, die als _Evidence_ bezeichnet werden, über den Grund, aus dem die Warnung ausgegeben wurde, wie z. B.:
+
+* Dateierweiterungen wurden erstellt oder geändert
+* Die Dateierstellung ist erfolgt und wird um einen aufgelisteten Prozentsatz erhöht
+* Die Dateilöschung ist aufgetreten und wird um einen aufgelisteten Prozentsatz erhöht
+
+
+Eine Warnung basiert auf den folgenden Verhaltensarten:
+
+* *Potenzieller Angriff*: Ein Alarm tritt auf, wenn Autonomous Ransomware Protection eine neue Erweiterung erkennt und das Auftreten in den letzten 24 Stunden mehr als 20 Mal wiederholt wird (Standardverhalten).
+* *Warnung*: Eine Warnung erfolgt auf der Grundlage der folgenden Verhaltensweisen:
++
+** Die Erkennung einer neuen Erweiterung wurde zuvor nicht identifiziert und dasselbe Verhalten wiederholt nicht genug Male, um sie als Angriff zu deklarieren.
+** Es wird eine hohe Entropie beobachtet.
+** Bei Lese-/Schreib-/Umbenennungs-/Löschvorgängen in Dateien wurde eine Aktivität von 100 % über die Baseline hinaus angestiegt.
+
+
+
+
+Der Nachweis basiert auf Informationen aus dem Autonomen Ransomware-Schutz in ONTAP. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Autonome Ransomware-Schutz – Übersicht"^].
+
+
+
+== Anzeigen von Meldungen
+
+Sie können über das BlueXP Ransomware Protection Dashboard oder über die Registerkarte *Alerts* auf Benachrichtigungen zugreifen.
+
+.Schritte
+. Sehen Sie sich im BlueXP Dashboard für Ransomware-Schutz den Bereich „Alerts“ an.
+. Wählen Sie unter einer der Statuen *Alle anzeigen*.
+. Klicken Sie auf eine Warnmeldung, um alle Vorfälle auf jedem Volume für jede Warnmeldung zu überprüfen.
+. Um weitere Warnmeldungen anzuzeigen, klicken Sie in den Paniermehl oben links auf *Alert*.
+. Überprüfen Sie die Warnmeldungen auf der Seite Warnungen.
++
+image:screen-alerts.png["Warnmeldeseite"]
+
+. Weiter mit <<Markieren Sie Ransomware-Vorfälle als bereit für die Wiederherstellung (nach der Neutralisierung von Vorfällen).>>.
+
+
+
+
+== Markieren Sie Ransomware-Vorfälle als bereit für die Wiederherstellung (nach der Neutralisierung von Vorfällen).
+
+Nachdem der Angriff gemildert und Workloads wiederhergestellt werden können, sollten Sie mit dem Storage-Admin-Team kommunizieren, dass die Daten bereit sind für die Recovery, damit der Recovery-Prozess gestartet werden kann.
+
+.Schritte
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Alerts* aus.
++
+image:screen-alerts.png["Warnmeldeseite"]
+
+. Wählen Sie auf der Seite Warnungen die Warnmeldung aus.
+. Überprüfen Sie die Vorfälle in der Meldung.
++
+image:screen-alerts-incidents.png["Seite „Warnungsvorfälle“"]
+
+. Wenn Sie feststellen, dass die Vorfälle für die Wiederherstellung bereit sind, wählen Sie *Wiederherstellung erforderlich markieren*.
+. Bestätigen Sie die Aktion und wählen Sie *Wiederherstellung erforderlich markieren*.
+. Um die Workload-Wiederherstellung zu starten, wählen Sie * Recover * Workload in der Meldung aus oder wählen Sie die Registerkarte * Recovery* aus.
+
+
+.Ergebnis
+Nachdem die Warnmeldung für die Wiederherstellung markiert wurde, wechselt die Warnmeldung von der Registerkarte Warnungen zur Registerkarte Wiederherstellung.

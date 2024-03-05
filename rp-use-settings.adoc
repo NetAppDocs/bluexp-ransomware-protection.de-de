@@ -1,0 +1,147 @@
+---
+sidebar: sidebar 
+permalink: rp-use-settings.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination 
+summary: Sie können verschiedene Optionen, darunter ein Backup-Ziel, im BlueXP Ransomware-Schutzservice konfigurieren. 
+---
+= Konfigurieren Sie BlueXP Ransomware-Schutzeinstellungen
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+Sie können ein Backup-Ziel konfigurieren, indem Sie die Empfehlungen im Dashboard prüfen.
+
+
+
+== Hinzufügen eines Sicherungsziels
+
+Durch den Ransomware-Schutz von BlueXP können Workloads erkannt werden, für die noch keine Backups vorhanden sind, sowie Workloads, denen noch keine Backup-Ziele zugewiesen sind.
+
+Um diese Workloads zu schützen, müssen Sie ein Backup-Ziel hinzufügen. Sie können eines der folgenden Sicherungsziele auswählen:
+
+* NetApp StorageGRID
+* Amazon Web Services (AWS)
+
+
+Sie können ein Backup-Ziel basierend auf einer empfohlenen Aktion über das Dashboard hinzufügen.
+
+
+
+=== Greifen Sie über die empfohlenen Aktionen des Dashboards auf die Optionen für das Sicherungsziel zu
+
+Das Dashboard enthält zahlreiche Empfehlungen. Möglicherweise empfiehlt sich die Konfiguration eines Backup-Ziels.
+
+.Schritte
+. Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
+. Überprüfen Sie den Fensterbereich Empfohlene Aktionen im Dashboard.
++
+image:screen-dashboard-recommended-actions-configure-backup-destinations.png["Dashboard-Seite"]
+
+. Wählen Sie im Dashboard *Überprüfen und beheben* für die Empfehlung „Backup-Ziele konfigurieren“ aus.
+. Fahren Sie mit den Anweisungen je nach Backup-Anbieter fort.
+
+
+
+
+== Fügen Sie StorageGRID als Backup-Ziel hinzu
+
+Geben Sie die folgenden Informationen ein, um NetApp StorageGRID als Backup-Ziel einzurichten.
+
+. Wählen Sie auf der Seite *Einstellungen > Sicherungsziele* *Hinzufügen* aus.
+. Geben Sie einen Namen für das Sicherungsziel ein.
++
+image:screen-settings-backup-destination-storagegrid.png["Seite „Backup-Ziele“"]
+
+. Wählen Sie *StorageGRID*.
+. Wählen Sie den Abwärtspfeil neben jeder Einstellung aus, und geben Sie Werte ein oder wählen Sie diese aus:
++
+** *Provider-Einstellungen*:
++
+*** Erstellen eines neuen Buckets oder Bring-Your-Own-Bucket, mit dem die Backups gespeichert werden sollen.
+*** StorageGRID Gateway Node Vollqualifizierter Domain Name, Port, StorageGRID-Zugriffsschlüssel und geheime Schlüssel-Anmeldeinformationen.
+
+
+** *Netzwerk*: Wählen Sie den IPspace.
++
+*** Der IPspace ist das Cluster, in dem sich die Volumes, die Sie sichern möchten, befinden. Die Intercluster-LIFs für diesen IPspace müssen über Outbound-Internetzugang verfügen.
+
+
+** *Backup Lock*: Wählen Sie aus, ob der Dienst Backups vor Änderung oder Löschung schützen soll. Diese Option verwendet die NetApp DataLock-Technologie. Jedes Backup wird während der Aufbewahrungsfrist oder für mindestens 30 Tage gesperrt, zuzüglich einer Pufferzeit von bis zu 14 Tagen.
++
+
+CAUTION: Wenn Sie die Einstellung für die Sicherungssperre jetzt konfigurieren, können Sie die Einstellung später nach der Konfiguration des Sicherungsziels nicht mehr ändern.
+
++
+*** *Compliance-Modus*: Benutzer können geschützte Backup-Dateien während der Aufbewahrungsfrist nicht überschreiben oder löschen.
+
+
+
+
+. Wählen Sie *Hinzufügen*.
+
+
+.Ergebnis
+Das neue Sicherungsziel wird der Liste der Sicherungsziele hinzugefügt.
+
+image:screen-settings-backup-destinations-list-storagegrid.png["Seite „Backup-Ziele“ die Option „Einstellungen“"]
+
+
+
+== Fügen Sie Amazon Web Services als Backup-Ziel hinzu
+
+Um AWS als Backup-Ziel einzurichten, geben Sie die folgenden Informationen ein.
+
+Weitere Informationen zum Management Ihres AWS Storage in BlueXP finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["Amazon S3 Buckets managen"^].
+
+. Wählen Sie auf der Seite *Einstellungen > Sicherungsziele* *Hinzufügen* aus.
+. Geben Sie einen Namen für das Sicherungsziel ein.
++
+image:screen-settings-backup-destination-storagegrid.png["Seite „Backup-Ziele“"]
+
+. Wählen Sie *Amazon Web Services*.
+. Wählen Sie den Abwärtspfeil neben jeder Einstellung aus, und geben Sie Werte ein oder wählen Sie diese aus:
++
+** *Provider-Einstellungen*:
++
+*** Erstellen Sie einen neuen Bucket, wählen Sie einen vorhandenen Bucket aus, wenn dieser bereits in BlueXP vorhanden ist, oder verwenden Sie einen eigenen Bucket, mit dem die Backups gespeichert werden sollen.
+*** AWS-Konto, Region, Zugriffsschlüssel und geheimer Schlüssel für AWS Zugangsdaten
++
+https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Wenn Sie Ihren eigenen Bucket verwenden möchten, finden Sie weitere Informationen unter S3-Buckets hinzufügen"^].
+
+
+
+** *Verschlüsselung*: Wenn Sie einen neuen S3-Bucket erstellen, geben Sie die Ihnen vom Provider bereitgestellten Verschlüsselungsschlüsselinformationen ein. Wenn Sie einen vorhandenen Bucket auswählen, sind Verschlüsselungsinformationen bereits verfügbar.
++
+Daten im Bucket werden standardmäßig mit von AWS gemanagten Schlüsseln verschlüsselt. Sie können entweder die von AWS gemanagten Schlüssel weiterhin verwenden oder die Verschlüsselung Ihrer Daten mit Ihren eigenen Schlüsseln managen.
+
+** *Netzwerk*: Wählen Sie den IPspace und ob Sie einen privaten Endpunkt verwenden werden.
++
+*** Der IPspace ist das Cluster, in dem sich die Volumes, die Sie sichern möchten, befinden. Die Intercluster-LIFs für diesen IPspace müssen über Outbound-Internetzugang verfügen.
+*** Wählen Sie optional aus, ob Sie einen zuvor konfigurierten privaten AWS-Endpunkt (PrivateLink) verwenden möchten.
++
+Informationen zur Verwendung von AWS PrivateLink finden Sie unter https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html["AWS PrivateLink für Amazon S3"^].
+
+
+
+** *Backup Lock*: Wählen Sie aus, ob der Dienst Backups vor Änderung oder Löschung schützen soll. Diese Option verwendet die NetApp DataLock-Technologie. Jedes Backup wird während der Aufbewahrungsfrist oder für mindestens 30 Tage gesperrt, zuzüglich einer Pufferzeit von bis zu 14 Tagen.
++
+
+CAUTION: Wenn Sie die Einstellung für die Sicherungssperre jetzt konfigurieren, können Sie die Einstellung später nach der Konfiguration des Sicherungsziels nicht mehr ändern.
+
++
+*** *Governance-Modus*: Bestimmte Benutzer (mit s3:BypassGovernanceRetention-Berechtigung) können geschützte Dateien während der Aufbewahrungsfrist überschreiben oder löschen.
+*** *Compliance-Modus*: Benutzer können geschützte Backup-Dateien während der Aufbewahrungsfrist nicht überschreiben oder löschen.
+
+
+
+
+. Wählen Sie *Hinzufügen*.
+
+
+.Ergebnis
+Das neue Sicherungsziel wird der Liste der Sicherungsziele hinzugefügt.
+
+image:screen-settings-backup-destinations-list-aws.png["Seite „Backup-Ziele“ die Option „Einstellungen“"]

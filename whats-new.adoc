@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack' 
+summary: Erfahren Sie mehr über die Neuerungen beim BlueXP Ransomware-Schutz. 
+---
+= Versionshinweise zu den Neuerungen bei BlueXP im Hinblick auf den Ransomware-Schutz
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Informieren Sie sich über die Neuerungen bei BlueXP im Hinblick auf den Ransomware-Schutz.
+
+
+
+== 5 März 2024
+
+Diese Vorschauversion des Ransomware-Schutzes von BlueXP enthält die folgenden Updates:
+
+* *Schutz-Policy-Management*: Zusätzlich zur Verwendung von vordefinierten Richtlinien können Sie jetzt Richtlinien erstellen, ändern und löschen. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Erfahren Sie mehr über das Verwalten von Richtlinien"].
+* *Unveränderlichkeit bei sekundärem Storage (DataLock)*: Mit der NetApp DataLock Technologie im Objektspeicher können Sie das Backup jetzt unveränderlich im sekundären Storage gestalten. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Erfahren Sie mehr über das Erstellen von Sicherungsrichtlinien"].
+
+
+* *Automatisches Backup auf NetApp StorageGRID*: Neben der Nutzung von AWS können Sie nun auch StorageGRID als Backup-Ziel wählen. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Erfahren Sie mehr über das Konfigurieren von Backup-Zielen"].
+* *Zusätzliche Funktionen zur Untersuchung potenzieller Angriffe*: Sie können jetzt weitere forensische Details anzeigen, um den erkannten potenziellen Angriff zu untersuchen. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Erfahren Sie mehr über die Reaktion auf einen erkannten Ransomware-Alarm"].
+* *Wiederherstellungsprozess*. Der Wiederherstellungsprozess wurde verbessert. Jetzt können Sie Volumes für Volumes, alle Volumes für einen Workload oder sogar einige Dateien vom Volume in einem einzigen Workflow wiederherstellen. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Erfahren Sie mehr über die Wiederherstellung nach einem Ransomware-Angriff (nach der Neutralisierung von Vorfällen)"].
+
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Mehr zu BlueXP Ransomware-Schutz"].
+
+
+
+== 6 Oktober 2023
+
+Der BlueXP Ransomware-Schutzservice ist eine SaaS-Lösung für den Schutz von Daten, die Erkennung potenzieller Angriffe und die Wiederherstellung von Daten nach einem Ransomware-Angriff.
+
+In der Vorschau werden die applikationsbasierten Workloads von Oracle, MySQL, VM-Datastores und File Shares auf lokalem NAS-Storage sowie Cloud Volumes ONTAP auf AWS (über das NFS-Protokoll) über BlueXP Konten hinweg einzeln geschützt und Daten einzeln in Amazon Web Services Cloud-Storage gesichert.
+
+Der BlueXP Ransomware-Schutz-Service bietet eine vollständige Nutzung mehrerer NetApp Technologien, sodass Ihr Datensicherheitsadministrator oder Security Operations Engineer die folgenden Ziele erreichen kann:
+
+* Ransomware-Schutz bei allen Ihren Workloads auf einen Blick
+* Einblicke in Empfehlungen zum Schutz vor Ransomware
+* Verbessern Sie den Schutz basierend auf BlueXP Empfehlungen für den Ransomware-Schutz.
+* Weisen Sie Ransomware-Schutzrichtlinien zu, um Ihre wichtigsten Workloads und hochriskante Daten gegen Ransomware-Angriffe zu schützen.
+* Der Zustand Ihrer Workloads gegen Ransomware-Angriffe, die auf Datenanomalien Wert suchen, überwachen.
+* Ermitteln Sie schnell die Auswirkungen von Ransomware-Vorfällen auf Ihren Workload.
+* Intelligentes Recovery nach Ransomware-Vorfällen durch Wiederherstellung der Daten und Sicherstellung, dass keine erneuten Infektionen der gespeicherten Daten auftreten.
+
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Mehr zu BlueXP Ransomware-Schutz"].

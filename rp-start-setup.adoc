@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: rp-start-setup.html 
+keywords: bluexp, ransomware protection, 
+summary: Um den Ransomware-Schutz von BlueXP zu nutzen, führen Sie ein paar Schritte aus, um ihn einzurichten. 
+---
+= BlueXP Ransomware-Schutz einrichten
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: /media/
+
+
+[role="lead"]
+Um den Ransomware-Schutz von BlueXP zu nutzen, führen Sie ein paar Schritte aus, um ihn einzurichten.
+
+Bevor Sie beginnen, überprüfen Sie link:rp-start-prerequisites.html["Voraussetzungen"] Und stellen Sie sicher, dass Ihre Umgebung bereit ist.
+
+
+
+== Bereiten Sie das Sicherungsziel vor
+
+Bereiten Sie eines der folgenden Sicherungsziele vor:
+
+* NetApp StorageGRID
+* Amazon Web Services
+
+
+Nachdem Sie Optionen im Backup-Ziel selbst konfiguriert haben, werden Sie sie später im BlueXP Ransomware-Schutzservice als Backup-Ziel konfigurieren.
+
+
+
+=== StorageGRID als Backup-Ziel vorbereiten
+
+Wenn Sie StorageGRID als Sicherungsziel verwenden möchten, finden Sie weitere Informationen unter https://docs.netapp.com/us-en/storagegrid-117/index.html["StorageGRID-Dokumentation"^] Weitere Informationen zu StorageGRID.
+
+
+
+=== AWS als Backup-Ziel vorbereiten
+
+* Richten Sie ein Konto in AWS ein.
+* Konfigurieren https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["AWS Berechtigungen"^] In AWS migriert.
+
+
+Weitere Informationen zum Management Ihres AWS Storage in BlueXP finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["Amazon S3 Buckets managen"^].
+
+
+
+== BlueXP einrichten
+
+Der nächste Schritt besteht darin, BlueXP und den BlueXP Ransomware-Schutzservice einzurichten.
+
+Prüfen https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["Standard-BlueXP Anforderungen erfüllt"^].
+
+
+
+=== Connector in BlueXP erstellen
+
+Wenden Sie sich an Ihren NetApp Vertriebsmitarbeiter, um diesen Service auszuprobieren. Wenn Sie dann den BlueXP Connector verwenden, erhalten Sie auch die entsprechenden Funktionen für den Ransomware-Schutzservice.
+
+Informationen zum Erstellen eines Connectors in BlueXP vor der Nutzung des Service finden Sie in der BlueXP Dokumentation, die sich in der Beschreibung befindet https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["So erstellen Sie einen BlueXP Connector"^].
+
+
+NOTE: Wenn Sie mehrere BlueXP Connectors verwenden, scannt der Service Daten über alle Connectors hinaus, die derzeit in der BlueXP UI angezeigt werden. Dieser Service erkennt alle Arbeitsbereiche und alle Connectors, die mit diesem Konto verknüpft sind.
+
+
+
+=== Nutzen Sie den Ransomware-Schutz von BlueXP
+
+Sie verwenden NetApp BlueXP, um sich beim BlueXP Ransomware-Schutzservice anzumelden. Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
+
+Weitere Informationen finden Sie unter link:rp-start-login.html["Nutzen Sie den Ransomware-Schutz von BlueXP"].
+
+
+
+=== Backup-Ziele mit BlueXP Ransomware-Schutz konfigurieren
+
+Mit der BlueXP Option für Ransomware-Schutz-Backup-Ziele können Backup-Ziele konfiguriert werden. Weitere Informationen finden Sie unter link:rp-use-settings.html["Konfigurieren von Einstellungsoptionen"].

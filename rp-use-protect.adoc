@@ -1,0 +1,273 @@
+---
+sidebar: sidebar 
+permalink: rp-use-protect.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies 
+summary: Sie können Workloads gegen Ransomware-Angriffe schützen, indem Sie einem Workload in BlueXP Ransomware-Schutz Richtlinien zuweisen. 
+---
+= Schutz von Workloads vor Ransomware-Angriffen
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+Sie können Ihre Workloads gegen Ransomware-Angriffe schützen, indem Sie die folgenden Aktionen durchführen, die BlueXP Ransomware-Schutz nutzen.
+
+* Zeigen Sie den Schutz vorhandener Workloads an.
+* Zuweisung einer Richtlinie zu einem Workload
++
+** Erhöhen Sie den Anwendungsschutz, um zukünftige RW-Angriffe zu verhindern.
+** Ändern Sie den Schutz für eine Arbeitslast, die zuvor im RW-Dienst geschützt war.
+
+
+* Verwalten von Richtlinien (nur die von Ihnen erstellten).
+
+
+BlueXP vor Ransomware-Schutz weist jedem Workload während der Erkennung eine Priorität zu. Die Workload-Priorität wird durch die folgenden Snapshot-Häufigkeit festgelegt:
+
+* *Kritisch*: Snapshot Kopien wurden weniger als 1 pro Stunde erstellt (äußerst ambitionierter Schutzplan)
+* *Wichtig*: Snapshot-Kopien wurden weniger als 1 pro Tag, aber mehr als 1 pro Stunde erstellt
+* *Standard*: Snapshot Kopien wurden pro Tag erstellt
+
+
+*Schutzstatus*: Ein Workload kann einen der folgenden Schutzstatus anzeigen, um anzugeben, ob eine Richtlinie angewendet wird oder nicht:
+
+* *Geschützt*: Es wird eine Richtlinie angewendet.
+* *In Gefahr*: Es werden keine Richtlinien angewendet.
+* *In Bearbeitung*: Eine Richtlinie wird angewendet, aber noch nicht abgeschlossen.
+* *Failed*: Eine Richtlinie wird angewendet, funktioniert aber nicht.
+
+
+*Schutzgesundheit*: Ein Arbeitsvolumen kann einen der folgenden Schutzgesundheitsstatus haben:
+
+* *Funktionstüchtiger*: Der Workload hat Schutz aktiviert und Backups und Snapshot Kopien wurden abgeschlossen.
+* *In Bearbeitung*: Backups oder Snapshot Kopien werden ausgeführt.
+* *Failed*: Backups oder Snapshot Kopien wurden nicht erfolgreich abgeschlossen.
+* *N/A*: Der Schutz ist für den Workload nicht aktiviert oder ausreichend.
+
+
+
+
+== Schutz vor Workload-Ransomware ansehen
+
+Einer der ersten Schritte zum Schutz von Workloads besteht darin, dass Sie Ihre aktuellen Workloads und ihren Sicherungsstatus anzeigen. Es werden die folgenden Workload-Typen angezeigt:
+
+* VM-Workloads
+* Workloads für Dateifreigabe
+
+
+.Schritte
+. Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
+. Führen Sie einen der folgenden Schritte aus:
++
+** Wählen Sie im Dashboard Data Protection die Option *Alle anzeigen* aus.
+** Wählen Sie im Menü *Schutz*.
++
+image:screen-protection.png["Schutzseite"]
+
+
+
+. Auf dieser Seite können Sie einem Workload eine Richtlinie zuweisen.
+
+
+
+
+== Weisen Sie Workloads eine vordefinierte Schutzrichtlinie zu
+
+Zum Schutz Ihrer Daten können Sie einer oder mehreren Workloads eine bestehende Richtlinie zum Schutz vor Ransomware zuweisen. Sie können auch einem Workload, der bereits über eine Richtlinie verfügt, eine andere Richtlinie zuweisen.
+
+Der Ransomware-Schutz von BlueXP umfasst die folgenden vordefinierten Richtlinien, die auf die Workload-Priorität ausgerichtet sind:
+
+[cols="10,15a,20,15,15,15"]
+|===
+| Richtlinienebene | Snapshot | Frequenz | Aufbewahrung (Tage) | # An Snapshot Kopien | Max. # Snapshot Kopien insgesamt 
+
+
+.4+| *Richtlinie für kritische Workloads*  a| 
+Quartal stündlich
+| Alle 15 Min | 3 | 288 | 309 
+
+
+| Täglich  a| 
+Alle 1 Tag
+| 14 | 14 | 309 
+
+
+| Wöchentlich  a| 
+Alle 1 Woche
+| 35 | 5 | 309 
+
+
+| Monatlich  a| 
+Alle 30 Tage
+| 60 | 2 | 309 
+
+
+.4+| *Wichtige Workload Policy*  a| 
+Quartal stündlich
+| Alle 30 Minuten | 3 | 144 | 165 
+
+
+| Täglich  a| 
+Alle 1 Tag
+| 14 | 14 | 165 
+
+
+| Wöchentlich  a| 
+Alle 1 Woche
+| 35 | 5 | 165 
+
+
+| Monatlich  a| 
+Alle 30 Tage
+| 60 | 2 | 165 
+
+
+.4+| *Richtlinie für Standard-Workloads*  a| 
+Quartal stündlich
+| Alle 60 Min | 3 | 72 | 93 
+
+
+| Täglich  a| 
+Alle 1 Tag
+| 14 | 14 | 93 
+
+
+| Wöchentlich  a| 
+Alle 1 Woche
+| 35 | 5 | 93 
+
+
+| Monatlich  a| 
+Alle 30 Tage
+| 60 | 2 | 93 
+|===
+.Schritte
+. Von BlueXP vor dem Ransomware-Schutz haben Sie einen der folgenden Möglichkeiten:
++
+** Wählen Sie im Dashboard Data Protection die Option *Alle anzeigen* aus.
+** Wählen Sie im Dashboard-Empfehlungsfenster eine Empfehlung zum Zuweisen einer Richtlinie aus und wählen Sie *Überprüfen und beheben* aus.
+** Wählen Sie im Menü *Schutz*.
+
+
+. Überprüfen Sie auf der Seite Schutz die Workloads, und wählen Sie neben dem Workload *protect* aus.
++
+Eine Liste der Richtlinien wird angezeigt.
+
++
+image:screen-protect-policy-list.png["Liste der Schutzrichtlinien"]
+
+. Um Details anzuzeigen, klicken Sie auf den Abwärtspfeil einer Richtlinie.
+. Wählen Sie eine Richtlinie aus, die dem Workload zugewiesen werden soll.
+. Wählen Sie *Schutz*.
+. Überprüfen Sie den Fensterbereich Empfohlene Maßnahmen im Dashboard, in dem die Aktion als abgeschlossen angezeigt wird.
+
+
+
+
+== Erstellen Sie eine Schutzrichtlinie
+
+Wenn die vorhandenen Richtlinien Ihren geschäftlichen Anforderungen nicht entsprechen, können Sie eine neue Sicherungsrichtlinie erstellen. Sie können Ihre eigene Richtlinie von Grund auf neu erstellen oder eine vorhandene Richtlinie verwenden und deren Einstellungen ändern.
+
+Sie können Richtlinien erstellen, die für primären und sekundären Storage gelten und primären und sekundären Storage auf dieselbe oder unterschiedliche Weise behandeln.
+
+Sie können eine Richtlinie sowohl beim Management als auch beim Zuweisen einer Richtlinie zu einem Workload erstellen.
+
+.Schritte zum Erstellen einer Richtlinie während der Richtlinienverwaltung
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
++
+image:screen-protection2.png["Schutzseite"]
+
+. Wählen Sie auf der Seite Schutz die Option *Richtlinien verwalten* aus.
++
+image:screen-protection-policy-manage2.png["Seite „Richtlinien verwalten“"]
+
+. Wählen Sie auf der Seite Manage Policies die Option *Add* aus.
++
+image:screen-protection-policy-add2.png["Seite „Richtlinie hinzufügen“"]
+
+. Geben Sie einen neuen Richtliniennamen ein, oder geben Sie einen vorhandenen Richtliniennamen ein, um ihn zu kopieren. Wenn Sie einen vorhandenen Richtliniennamen eingeben, wählen Sie die zu kopierende Richtlinie aus.
++
+
+NOTE: Wenn Sie eine vorhandene Richtlinie kopieren und ändern möchten, müssen Sie mindestens eine Einstellung ändern, um sie eindeutig zu machen.
+
+. Wählen Sie für jedes Element den Abwärtspfeil aus.
++
+** *Primärspeichersysteme*:
++
+*** *Zeitpläne für Snapshot Kopien*: Wählen Sie Zeitplanoptionen, die Anzahl der zu bewahrenden Snapshot Kopien und wählen Sie aus, um den Zeitplan zu aktivieren.
+*** *Primärerkennung*: Aktivieren Sie den Service, um Ransomware-Vorfälle auf dem primären Speicher zu erkennen.
+*** *Dateierweiterungen blockieren*: Aktivieren Sie diese, damit der Service-Block verdächtige Dateierweiterungen kennt. Der Service erstellt automatisierte Snapshot-Kopien, wenn die primäre Erkennung aktiviert ist.
+
+
+** *Sekundärer Speicher*:
++
+*** *Backup-Zeitpläne*: Wählen Sie Zeitplanoptionen für sekundären Speicher und aktivieren Sie den Zeitplan.
+*** *Secondary Detection*: Aktivieren Sie den Service, um Ransomware-Vorfälle auf sekundärem Speicher zu erkennen.
+*** *Backups sperren*: Wählen Sie diese Option, um zu verhindern, dass Backups auf dem sekundären Speicher für einen bestimmten Zeitraum geändert oder gelöscht werden. Dies wird auch _unveränderlicher Storage_ genannt.
++
+Diese Option verwendet die NetApp DataLock-Technologie, mit der Backups auf sekundärem Speicher gesperrt werden. Der Zeitraum, in dem die Sicherungsdatei gesperrt (und aufbewahrt) ist, wird als Aufbewahrungszeitraum für DataLock bezeichnet. Er basiert auf dem von Ihnen definierten Zeitplan für die Backup-Richtlinie und der Aufbewahrungseinstellung sowie auf einem Puffer von 14 Tagen. Jede DataLock-Aufbewahrungsrichtlinie, die weniger als 30 Tage beträgt, wird auf mindestens 30 Tage aufgerundet.
+
+
+
+
+
+. Wählen Sie *Hinzufügen*.
+
+
+.Schritte zum Erstellen einer Richtlinie während der Zuweisung von Schutzrichtlinien
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
++
+image:screen-protection2.png["Schutzseite"]
+
+. Wählen Sie auf der Seite Schutz die Option *Schutz* aus.
+. Wählen Sie auf der Seite Schutz die Option *Hinzufügen*.
++
+image:screen-protection-policy-add2.png["Seite „Richtlinie hinzufügen“"]
+
+. Schließen Sie den Prozess ab. Dies entspricht dem Erstellen einer Richtlinie auf der Seite „Richtlinien managen“.
+
+
+
+
+== Weisen Sie eine andere Schutzrichtlinie zu
+
+Sie können eine andere Sicherungsrichtlinie für einen Workload auswählen.
+Vielleicht möchten Sie den Schutz erhöhen, um zukünftige Ransomware-Angriffe durch eine Änderung der Sicherungsrichtlinie zu verhindern.
+
+.Schritte
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
+. Wählen Sie auf der Seite Schutz einen Workload aus, und wählen Sie *Schutz* aus.
+. Wählen Sie auf der Seite Schutz eine andere Richtlinie für den Workload aus.
+. Um Details für die Richtlinie zu ändern, wählen Sie den Abwärtspfeil auf der rechten Seite aus, und ändern Sie die Details.
+. Wählen Sie *Speichern*, um die Änderung abzuschließen.
+
+
+
+
+== Bearbeiten Sie eine vorhandene Richtlinie
+
+Sie können die Details einer Richtlinie nur dann ändern, wenn die Richtlinie nicht mit einem Workload verknüpft ist.
+
+.Schritte
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
+. Wählen Sie auf der Seite Schutz die Option *Richtlinien verwalten* aus.
+. Wählen Sie auf der Seite Manage Policies die Option *actions* für die Richtlinie aus, die Sie ändern möchten.
+. Wählen Sie im Menü Aktionen die Option *Richtlinie bearbeiten*.
+. Ändern Sie die Details.
+. Wählen Sie *Speichern*, um die Änderung abzuschließen.
+
+
+
+
+== Löschen Sie eine Richtlinie
+
+Sie können eine Sicherungsrichtlinie löschen, die derzeit keiner Workload zugeordnet ist.
+
+.Schritte
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
+. Wählen Sie auf der Seite Schutz die Option *Richtlinien verwalten* aus.
+. Wählen Sie auf der Seite Manage Policies die Option *actions* für die Richtlinie aus, die Sie löschen möchten.
+. Wählen Sie im Menü Aktionen die Option *Richtlinie löschen*.
+

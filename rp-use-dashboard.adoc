@@ -1,0 +1,112 @@
+---
+sidebar: sidebar 
+permalink: rp-use-dashboard.html 
+keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
+summary: Das BlueXP Dashboard für Ransomware-Schutz bietet Informationen zum Schutz der Integrität Ihrer Workloads. Sie können schnell ermitteln, welche Workloads gefährdet oder geschützt sind, welche Workloads von einem Vorfall oder einer Recovery betroffen sind, und den Umfang der Sicherung abschätzen, indem Sie ermitteln, wie viel Storage gesichert oder gefährdet ist. Darüber hinaus können Sie mithilfe des Dashboards Schutzempfehlungen prüfen und umsetzen. 
+---
+= Über das Dashboard können Sie den Workload-Zustand auf einen Blick anzeigen
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Das BlueXP Dashboard zum Schutz vor Ransomware bietet auf einen Blick Informationen zum Schutz der Integrität Ihrer Workloads. Sie können schnell ermitteln, welche Workloads gefährdet oder geschützt sind, Workloads identifizieren, die von einem Vorfall oder einer Recovery betroffen sind, und den Umfang der Sicherung abschätzen, indem Sie die Menge des geschützten oder gefährdeten Storage ermitteln.
+
+Darüber hinaus können Sie mithilfe des Dashboards Schutzempfehlungen prüfen und umsetzen.
+
+
+
+== Überprüfen Sie mithilfe des Dashboards den Workload-Systemzustand
+
+.Schritte
+. Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
++
+Nach der Erkennung wird über das Dashboard der Systemzustand der Workload-Datensicherung angezeigt.
+
++
+image:screen-dashboard-recommended-actions-configure-backup-destinations.png["Dashboard-Seite"]
+
+. Im Dashboard können Sie in jedem der Teilfenster eine der folgenden Aktionen anzeigen und ausführen:
++
+** *Workload Data Protection*: Klicken Sie auf *View all*, um alle Workloads anzuzeigen, die gefährdet oder geschützt sind. Workloads sind gefährdet, wenn Sicherungsstufen mit einer Sicherungsrichtlinie nicht übereinstimmen. Siehe link:rp-use-protect.html["Schutz von Workloads"].
+** *Warnungen und Workload-Daten-Recovery*: Klicken Sie auf *Alle anzeigen*, um aktive Vorfälle zu sehen, die sich auf Ihre Arbeitslast ausgewirkt haben, nach Neutralisierung der Vorfälle zur Wiederherstellung bereit sind oder sich in der Wiederherstellung befinden. Siehe link:rp-use-alert.html["Reagieren Sie auf eine erkannte Warnung"].
++
+Ein Vorfall wird in einen der folgenden Status kategorisiert:
+
++
+*** Betroffen (wird auf der Seite „Warnungen“ angezeigt)
+*** Bereit für die Wiederherstellung (wird auf der Wiederherstellungsseite angezeigt)
+*** Wiederherstellen (wird auf der Wiederherstellungsseite angezeigt)
+*** Wiederherstellung fehlgeschlagen (wird auf der Wiederherstellungsseite angezeigt)
+*** Wiederhergestellt (wird auf der Wiederherstellungsseite angezeigt)
+
+
+** *Empfohlene Maßnahmen*: Um den Schutz zu erhöhen, überprüfen Sie jede Empfehlung und klicken Sie auf *Überprüfen und beheben*.
++
+Siehe link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Prüfen Sie die Schutzempfehlungen auf dem Dashboard"] Oder link:rp-use-protect.html["Schutz von Workloads"].
+
++
+Alle Empfehlungen, die seit dem letzten Besuch des Dashboards hinzugefügt wurden, werden mindestens 24 Stunden lang mit „Neu“ gekennzeichnet. Die Aktionen werden in der Reihenfolge der Priorität aufgelistet, wobei die wichtigsten oben stehen. Sie können jede einzelne Person überprüfen und bearbeiten oder sie ablehnen.
+
++
+Die Gesamtzahl der Aktionen umfasst keine abgewiesen Aktionen.
+
+** *Workload-Daten*: Überwachen Sie Änderungen der Schutzabdeckung in den letzten 7 Tagen.
+** *Workload Backups*: Überwachen Sie Änderungen in Workload Backups, die vom Service erstellt wurden und die in den letzten 7 Tagen erfolgreich abgeschlossen wurden.
+
+
+
+
+
+
+== Prüfen Sie die Schutzempfehlungen auf dem Dashboard
+
+Der Ransomware-Schutz von BlueXP bewertet den Schutz Ihrer Workloads und empfiehlt Maßnahmen, um diesen Schutz zu verbessern.
+
+Sie können eine Empfehlung prüfen und darauf reagieren, wodurch der Empfehlungsstatus auf „Abschließen“ geändert wird. Oder, wenn Sie darauf später reagieren wollen, können Sie es abtun. Wenn Sie eine Aktion abwählen, wird die Empfehlung in eine Liste abgewiesen, die Sie später noch einmal überprüfen können.
+
+Hier eine Auswahl der Empfehlungen, die der Service anbietet.
+
+[cols="30,30,30"]
+|===
+| Empfehlung | Beschreibung | Wie wird das Problem behoben 
+
+
+| Fügen Sie eine Schutzrichtlinie für Ransomware hinzu | Der Workload ist derzeit nicht geschützt. | Weisen Sie dem Workload eine Richtlinie zu.
+Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"]. 
+
+
+| Konfigurieren Sie Sicherungsziele | Der Workload verfügt derzeit über keine Sicherungsziele. | Fügen Sie diesem Workload Sicherungsziele hinzu, um ihn zu schützen.
+Siehe link:rp-use-settings.html["Konfigurieren Sie die Schutzeinstellungen"]. 
+
+
+| Machen Sie eine Politik stärker. | Einige Workloads verfügen möglicherweise nicht über ausreichend Sicherung. Höherer Schutz von Workloads mit einer Richtlinie | Erhöhen Sie die Aufbewahrung, fügen Sie Backups hinzu, erzwingen Sie unveränderliche Backups, blockieren Sie verdächtige Dateierweiterungen, ermöglichen Sie die Erkennung auf sekundärem Storage und vieles mehr.
+Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"]. 
+
+
+| Schützen Sie kritische oder wichtige Applikations-Workloads vor Ransomware. | Auf der Seite Schutz werden kritische oder wichtige (auf der Grundlage der Prioritätsstufe zugewiesene) Anwendungs-Workloads angezeigt, die nicht geschützt sind. | Weisen Sie diesen Workloads eine Richtlinie zu.
+Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"]. 
+
+
+| Schützen Sie kritische oder wichtige File-Share-Workloads vor Ransomware. | Auf der Seite Schutz werden kritische oder wichtige Workloads des Typs Dateifreigabe oder Datenspeicher angezeigt, die nicht geschützt sind. | Weisen Sie jedem Workload eine Richtlinie zu.
+Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"]. 
+
+
+| Überprüfen Sie neue Warnmeldungen | Es sind neue Warnmeldungen vorhanden. | Überprüfen Sie die neuen Warnmeldungen.
+Siehe link:rp-use-alert.html["Reagieren Sie auf einen erkannten Ransomware-Alarm"]. 
+|===
+.Schritte
+. Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
+. Wählen Sie im Bereich Empfohlene Maßnahmen eine Empfehlung aus und wählen Sie *Überprüfen und beheben*.
+. Um die Aktion bis zu einem späteren Zeitpunkt zu beenden, wählen Sie *Verwerfen*.
++
+Die Empfehlung wird aus der To-Do-Liste gelöscht und in der Ablehnte-Liste angezeigt.
+
++
+
+TIP: Sie können ein verworfener Artikel später in ein To-Do-Element ändern. Wenn Sie ein Element als abgeschlossen markieren oder ein verlassener Eintrag in eine Aktion zum Erledigten ändern, erhöht sich die Gesamtzahl der Aktionen um 1.
+
+. Um Informationen zur Vorgehensweise bei den Empfehlungen zu lesen, wählen Sie das Symbol *information*.
+

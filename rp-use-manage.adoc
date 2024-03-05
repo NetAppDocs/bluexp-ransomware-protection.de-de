@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: rp-use-manage.html 
+keywords: ransomware protection workload name, ransomware protection 
+summary: Sie können Workloads managen, indem Sie den Workload-Namen ändern statt einen Standardnamen zu verwenden, der riskanter ist. 
+---
+= Management von Workloads
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können Workloads managen, indem Sie den Workload-Namen ändern. Die Verwendung eines Standardnamens ist ein Risiko für Ransomware-Angriffe.
+
+.Schritte
+. Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
+. Wählen Sie im Menü *Schutz*.
+. Wählen Sie einen Workload aus, wählen Sie die Option *actions* ... Auf der rechten Seite und wählen Sie *Workload-Name bearbeiten*.
+. Geben Sie den neuen Workload-Namen ein und wählen Sie *Speichern*.
+

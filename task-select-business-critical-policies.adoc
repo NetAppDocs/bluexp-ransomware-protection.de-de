@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: task-select-business-critical-policies.html 
+keywords: ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity, business critical data, policies 
+summary: Richtlinien für geschäftskritische Daten identifizieren die Daten, die Sie als geschäftskritisch für Ihr Unternehmen betrachten. Nachdem Sie diese Richtlinien definiert und im BlueXP Ransomware-Schutz aktiviert haben, spiegeln das Dashboard und andere Ransomware-Bereiche anhand Ihrer wichtigsten Daten potenzielle Probleme wider. 
+---
+= Management Ihrer Richtlinien für geschäftskritische Daten
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Richtlinien für geschäftskritische Daten identifizieren die Daten, die Sie als geschäftskritisch für Ihr Unternehmen betrachten. Nachdem Sie diese Richtlinien definiert und im BlueXP Ransomware-Schutz aktiviert haben, spiegeln das Dashboard und andere Ransomware-Bereiche anhand Ihrer wichtigsten Daten potenzielle Probleme wider.
+
+Zu den anderen Bereichen, die die als kritisch definierten Richtlinien verwenden, gehören:
+
+* Empfohlene Maßnahmen
+* Panel zur Unveränderlichkeit geschäftskritischer Daten
+* Fenster „Business Critical Data Permission Analysis“
+
+
+Sie können die Seite _geschäftskritische Datenrichtlinien_ anzeigen, indem Sie auf die Registerkarte *geschäftskritische Daten* klicken. Sie können diese Seite auch über einen Link auf den anderen oben aufgeführten Feldern anzeigen.
+
+image:screenshot_critical_data_policies.png["Ein Screenshot zeigt die Seite „geschäftskritische Daten“ mit einer als geschäftskritisch ausgewählten Richtlinie."]
+
+Auf der Seite geschäftskritische Daten werden alle Richtlinien angezeigt, die in der BlueXP Klassifizierung definiert wurden. Dies umfasst alle vordefinierten Richtlinien und alle benutzerdefinierten Richtlinien, die Ihr Unternehmen erstellt hat. https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html["Erfahren Sie mehr über BlueXP Klassifizierungsrichtlinien"^].
+
+
+
+== Wählen Sie Richtlinien aus, anhand derer Ihre geschäftskritischen Daten identifiziert werden
+
+Wenn Sie wissen, dass eine der vorhandenen Richtlinien Ergebnisse liefert, in denen Daten identifiziert werden, die für Ihr Unternehmen wichtig sind, können Sie diese Richtlinie auswählen. Bewegen Sie den Schieberegler in der Spalte „ist kritisch“ nach rechts, wie für die letzte Richtlinie in der Abbildung oben gezeigt. Durch diese Aktion wird der BlueXP Ransomware-Schutzdienst dazu verangeleitet, die von dieser Richtlinie zurückgegebenen Daten in bestimmten Ransomware-Bereichen zu verwenden.
+
+Sie können Richtlinien durch Verschieben des Schiebereglers in die Position „aus“ als „geschäftskritisch“ weglassen. Dadurch wird die Richtlinie nicht gelöscht, sie wird einfach vom BlueXP Ransomware-Schutzservice nicht mehr verwendet.
+
+Wenn Sie sich nicht sicher sind, ob eine bestehende BlueXP-Klassifizierungsrichtlinie Ergebnisse liefert, die kritische Daten für Ihr Unternehmen identifizieren, können Sie auf die Schaltfläche *Investigate* klicken, um die Filter anzuzeigen, die zur Abfrage Ihrer Daten verwendet werden, und die Ergebnisse der Richtlinie auf der Seite BlueXP-Klassifizierungsuntersuchung anzeigen.
+
+Wenn Sie nach einer bestimmten Richtlinie oder nach bestimmten Richtlinientypen suchen, können Sie auf dieser Seite sortieren, filtern und suchen.
+
+
+
+== Management von Richtlinien
+
+Klicken Sie auf *Create Policy*, um neue Richtlinien zu erstellen, die geschäftskritische Daten identifizieren. Dadurch gelangen Sie zur Seite zur Untersuchung der BlueXP Klassifizierung, auf der Sie die Richtlinie erstellen können. https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html#creating-custom-policies["Weitere Informationen zum Erstellen von Richtlinien"^].
+
+Klicken Sie Auf image:screenshot_horizontal_more_button.gif["Schaltfläche mit drei Punkten"]> *Abfrage bearbeiten* für eine vorhandene Richtlinie, wenn Sie die Richtlinie bearbeiten möchten. Die Seite zur Untersuchung der BlueXP Klassifizierung wird geöffnet. Sie können die Ergebnisse mit zusätzlichen Filtern für die Richtlinie anpassen. https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html#editing-policies["Weitere Informationen zum Bearbeiten von Richtlinien"^].
+
+image:screenshot_add_edit_critical_data_policies.png["Ein Screenshot mit der Schaltfläche „Policy erstellen“ und der Schaltfläche „Policy bearbeiten“, in dem Sie Richtlinien erstellen und bearbeiten können."]
+
+Beachten Sie, dass Sie nur benutzerdefinierte Richtlinien ändern können – die vordefinierten Richtlinien, die durch die BlueXP Klassifizierung bereitgestellt werden, können nicht bearbeitet werden.

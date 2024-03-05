@@ -1,0 +1,58 @@
+---
+settings:
+  name: BlueXP ransomware protection
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: de-de,us-en,ja-jp,ko-kr,zh-cn,zh-tw,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: BlueXP Dokumente zum Ransomware-Schutz
+    url: "/index.html"
+  - title: Versionshinweise
+    url: "/whats-new.html"
+  - title: Los geht's
+    entries:
+    - title: Mehr zu BlueXP Ransomware-Schutz
+      url: "/concept-ransomware-protection.html"
+    - title: Voraussetzungen
+      url: "/rp-start-prerequisites.html"
+    - title: Schnellstart
+      url: "/rp-start-quick-start.html"
+    - title: BlueXP Ransomware-Schutz einrichten
+      url: "/rp-start-setup.html"
+    - title: Nutzen Sie den Ransomware-Schutz von BlueXP
+      url: "/rp-start-login.html"
+    - title: Workloads erkennen
+      url: "/rp-start-discover.html"
+    - title: Konfigurieren Sie Sicherungsziele
+      url: "/rp-use-settings.html"
+    - title: Häufig gestellte Fragen
+      url: "/rp-start-faq.html"
+  - title: Nutzen Sie BlueXP Ransomware-Schutz
+    entries:
+    - title: Nutzen Sie die Übersicht zum BlueXP Ransomware-Schutz
+      url: "/rp-use-overview.html"
+    - title: Über das Dashboard können Sie den Workload-Zustand anzeigen
+      url: "/rp-use-dashboard.html"
+    - title: Schutz von Workloads
+      url: "/rp-use-protect.html"
+    - title: Reagieren Sie auf eine erkannte Warnung
+      url: "/rp-use-alert.html"
+    - title: Wiederherstellung nach einem Ransomware-Angriff
+      url: "/rp-use-recover.html"
+  - title: Wissen und Support
+    entries:
+    - title: Für den Support anmelden
+      url: "/task-support-registration.html"
+    - title: Holen Sie sich Hilfe
+      url: "/task-get-help.html"
+  - title: Rechtliche Hinweise
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP
+  repo: bluexp-family

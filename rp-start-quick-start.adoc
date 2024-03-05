@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: rp-start-quick-start.html 
+keywords: how to get started with bluexp ransomware protection, ransomware protection quick start 
+summary: Einstieg in den NetApp BlueXP Ransomware-Schutzservice in nur wenigen Schritten 
+---
+= Schneller Einstieg in BlueXP Ransomware-Schutz
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+Hier finden Sie einen Überblick über die Schritte, die für den Einstieg in den BlueXP Ransomware-Schutz erforderlich sind. Die Links in den einzelnen Schritten führen zu einer Seite, die weitere Details enthält.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Voraussetzungen prüfen
+[role="quick-margin-para"]
+link:rp-start-prerequisites.html["Stellen Sie sicher, dass Ihre Umgebung diese Anforderungen erfüllt"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Ransomware-Schutzservice einrichten
+[role="quick-margin-list"]
+* link:rp-start-setup.html["Bereiten Sie NetApp StorageGRID oder Amazon Web Services als Backup-Ziel vor"].
+* link:rp-start-setup.html["Konfigurieren Sie einen Connector in BlueXP"].
+* link:rp-start-setup.html["Konfigurieren Sie Sicherungsziele"].
+* link:rp-start-discover.html["Workloads in BlueXP erkennen"].
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Was kommt als Nächstes?
+[role="quick-margin-para"]
+Nachdem Sie den Service eingerichtet haben, gehen Sie wie folgt vor.
+
+[role="quick-margin-list"]
+* link:rp-use-dashboard.html["Zeigen Sie den Systemzustand für den Workload-Schutz auf dem Dashboard an"].
+* link:rp-use-protect.html["Schutz von Workloads"].
+* link:rp-use-alert.html["Reagieren Sie auf die Erkennung potenzieller Ransomware-Angriffe"].
+* link:rp-use-recover.html["Wiederherstellung nach einem Angriff (nach der Neutralisierung von Vorfällen)"].
+

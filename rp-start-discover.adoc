@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: rp-start-discover.html 
+keywords: bluexp, ransomware protection, 
+summary: Während der Erkennung analysiert der Ransomware-Schutz von BlueXP alle Volumes und Dateien in Arbeitsumgebungen über alle BlueXP Connectors und Konten hinweg. 
+---
+= Workloads in BlueXP Ransomware-Schutz entdecken
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Um BlueXP vor Ransomware zu schützen, muss der Service zunächst Daten erkennen. Während der Erkennung analysiert der Ransomware-Schutz von BlueXP alle Volumes und Dateien in Arbeitsumgebungen über alle BlueXP Connectors und Workspaces innerhalb eines Kontos hinweg.
+
+
+NOTE: Zur Vorschau-Version bewertet der Ransomware-Schutz von BlueXP MySQL-Applikationen, Oracle-Applikationen, VMware-Datastores und Dateifreigaben.
+
+Der Service bewertet das vorhandene Sicherheitsniveau, einschließlich der aktuellen Backup-Sicherung, Snapshot-Kopien und NetApp Optionen zum autonomen Schutz vor Ransomware. Auf der Grundlage des Assessments empfiehlt der Service dann, wie Sie Ihren Ransomware-Schutz verbessern können.
+
+.Schritte
+. Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
+. Wählen Sie auf der ersten Landing-Page *Discover Workloads* aus.
++
+Der Service erkennt Workload-Daten und zeigt den Zustand der Datensicherung im Dashboard an.
+
++
+image:screen-dashboard.png["BlueXP Dashboard für Ransomware-Schutz"]
+
+

@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: rp-start-prerequisites.html 
+keywords: what are bluexp ransomware protection requirements, bluexp ransomware protection, ransomware protection prerequisites 
+summary: 'Erste Schritte mit BlueXP zum Ransomware-Schutz: Verifizieren Sie den Support für Ihre Umgebung, Ihren Netzwerkzugriff, Ihre Anmeldung und Ihren Webbrowser.' 
+---
+= Voraussetzungen für den BlueXP Ransomware-Schutz
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/get-started/
+
+
+[role="lead"]
+Erste Schritte mit BlueXP zum Ransomware-Schutz: Überprüfen Sie Ihre Betriebsumgebung, Ihre Anmeldung, Ihren Netzwerkzugriff und Ihren Webbrowser.
+
+Um BlueXP vor Ransomware zu schützen, benötigen Sie folgende Voraussetzungen:
+
+* Für die Vorschauversion benötigen Sie ein Konto in NetApp StorageGRID oder AWS S3 für Backup-Ziele und die AWS-Berechtigungen.
++
+Siehe https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["AWS-Berechtigungsliste"^] Entsprechende Details.
+
+* ONTAP 9.11.1 und höher
++
+** ONTAP-Berechtigungen für Cluster-Admin
+** Eine Lizenz für den autonomen NetApp Ransomware-Schutz, die von BlueXP Ransomware-Schutz auf der ONTAP Instanz verwendet wird, je nach der von Ihnen verwendeten Version von ONTAP. Siehe https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Autonome Ransomware-Schutz – Übersicht"^].
+
+
+* In BlueXP:
++
+** In NetApp BlueXP muss je Region in der Cloud oder einer On-Premises-Region ein BlueXP Connector eingerichtet werden. Alle Quell- und Arbeitsumgebungen müssen sich auf demselben BlueXP Konto befinden. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["BlueXP Dokumentation zur Konfiguration des Connectors"^].
++
+
+NOTE: Wenn Sie mehrere BlueXP Connectors verwenden, scannt der Service Daten über alle Connectors hinaus, die derzeit in der BlueXP UI angezeigt werden.
+
+** Der BlueXP Backup- und Recovery-Service mit Aktivierung von Backups in der Betriebsumgebung
+** Es sollte die BlueXP Arbeitsumgebung mit NetApp NAS On-Premises-Storage eingerichtet werden.
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["Standard-BlueXP Anforderungen erfüllt"^]
+
+
+
