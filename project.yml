@@ -45,12 +45,7 @@ sidebar:
       url: "/rp-use-alert.html"
     - title: Wiederherstellung nach einem Ransomware-Angriff
       url: "/rp-use-recover.html"
-  - title: Wissen und Support
-    entries:
-    - title: Für den Support anmelden
-      url: "/task-support-registration.html"
-    - title: Holen Sie sich Hilfe
-      url: "/task-get-help.html"
+  - section: support
   - title: Rechtliche Hinweise
     url: "/legal-notices.html"
 product-family:

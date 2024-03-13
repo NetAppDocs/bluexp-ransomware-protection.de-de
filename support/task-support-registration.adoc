@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: task-support-registration.html 
-keywords: support registration, register for support, support, nss account, add nss account, 
+permalink: support/task-support-registration.html 
+keywords: support registration, register for support, support, nss account, add nss account 
 summary: Bevor Sie einen Support-Fall beim technischen Support von NetApp eröffnen können, müssen Sie BlueXP ein NetApp Support Site Konto hinzufügen und sich dann für den Support registrieren. 
 ---
 = Für den Support anmelden
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
