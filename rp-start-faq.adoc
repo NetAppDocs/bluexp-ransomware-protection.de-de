@@ -56,7 +56,7 @@ Jeder moderne Browser funktioniert.
 Ja, der Ransomware-Schutz von BlueXP erkennt Snapshot Zeitpläne, die in ONTAP festgelegt sind.
 
 *Wenn Sie eine Richtlinie mit BlueXP Ransomware-Schutz festlegen, müssen Sie nur an diesem Service zukünftige Änderungen vornehmen?*
-Nein, Sie können Richtlinienänderungen von jedem Dienst aus vornehmen.
+Wir empfehlen Ihnen, Richtlinienänderungen am BlueXP Ransomware-Schutzservice vorzunehmen.
 
 
 
