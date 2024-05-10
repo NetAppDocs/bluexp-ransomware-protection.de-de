@@ -26,8 +26,8 @@ Sie können Ihre Workloads gegen Ransomware-Angriffe schützen, indem Sie die fo
 
 BlueXP vor Ransomware-Schutz weist jedem Workload während der Erkennung eine Priorität zu. Die Workload-Priorität wird durch die folgenden Snapshot-Häufigkeit festgelegt:
 
-* *Kritisch*: Snapshot Kopien wurden weniger als 1 pro Stunde erstellt (äußerst ambitionierter Schutzplan)
-* *Wichtig*: Snapshot-Kopien wurden weniger als 1 pro Tag, aber mehr als 1 pro Stunde erstellt
+* *Kritisch*: Snapshot-Kopien wurden pro Stunde erstellt (sehr ambitionierter Schutzplan)
+* *Wichtig*: Snapshot-Kopien wurden weniger als 1 pro Stunde erstellt, jedoch mehr als 1 pro Tag
 * *Standard*: Snapshot Kopien wurden pro Tag erstellt
 
 

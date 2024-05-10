@@ -808,4 +808,6 @@ Wir empfehlen Ihnen, Richtlinienänderungen am BlueXP Ransomware-Schutzservice v
   <block id="9583d75cd4c629fc5e8bc18b167335c7" category="list-text">Eine BlueXP Arbeitsumgebung mit NetApp NAS vor Ort</block>
   <block id="8bea151378448834f662f674981096f7" category="list-text">Ein BlueXP Konto mit mindestens einem aktiven Connector, der mit On-Premises-ONTAP-Clustern verbunden ist. Alle Quell- und Arbeitsumgebungen müssen sich auf demselben BlueXP Konto befinden.</block>
   <block id="baea1fd040c528a3cf05517592d54383" category="list-text">Ein BlueXP Benutzerkonto mit Administratorrechten für das Erkennen von Ressourcen</block>
+  <block id="1ad5d2b1df5750779a9e10432b0d7a7b" category="list-text">*Kritisch*: Snapshot-Kopien wurden pro Stunde erstellt (sehr ambitionierter Schutzplan)</block>
+  <block id="1adc4b459e7f50d96280424fb7e06709" category="list-text">*Wichtig*: Snapshot-Kopien wurden weniger als 1 pro Stunde erstellt, jedoch mehr als 1 pro Tag</block>
 </blocks>
