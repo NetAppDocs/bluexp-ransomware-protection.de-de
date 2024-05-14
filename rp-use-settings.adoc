@@ -12,7 +12,9 @@ summary: Sie können verschiedene Optionen, darunter ein Backup-Ziel, im BlueXP 
 
 
 [role="lead"]
-Sie können ein Backup-Ziel konfigurieren, indem Sie die Empfehlungen im Dashboard prüfen.
+Sie können ein Backup-Ziel konfigurieren oder die Bedrohungserkennung aktivieren, indem Sie die Empfehlungen auf dem Dashboard prüfen.
+
+Durch die Aktivierung der Bedrohungserkennung werden Daten zur Bedrohungsanalyse und -Erkennung automatisch an ein Sicherheits- und Ereignismanagementsystem (SIEM) gesendet.
 
 
 
@@ -38,7 +40,7 @@ Das Dashboard enthält zahlreiche Empfehlungen. Möglicherweise empfiehlt sich d
 . Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
 . Überprüfen Sie den Fensterbereich Empfohlene Aktionen im Dashboard.
 +
-image:screen-dashboard-recommended-actions-configure-backup-destinations.png["Dashboard-Seite"]
+image:screen-dashboard.png["Dashboard-Seite"]
 
 . Wählen Sie im Dashboard *Überprüfen und beheben* für die Empfehlung „Backup-Ziele konfigurieren“ aus.
 . Fahren Sie mit den Anweisungen je nach Backup-Anbieter fort.
@@ -46,7 +48,7 @@ image:screen-dashboard-recommended-actions-configure-backup-destinations.png["Da
 
 
 
-== Fügen Sie StorageGRID als Backup-Ziel hinzu
+=== Fügen Sie StorageGRID als Backup-Ziel hinzu
 
 Geben Sie die folgenden Informationen ein, um NetApp StorageGRID als Backup-Ziel einzurichten.
 
@@ -90,7 +92,7 @@ image:screen-settings-backup-destinations-list-storagegrid.png["Seite „Backup-
 
 
 
-== Fügen Sie Amazon Web Services als Backup-Ziel hinzu
+=== Fügen Sie Amazon Web Services als Backup-Ziel hinzu
 
 Um AWS als Backup-Ziel einzurichten, geben Sie die folgenden Informationen ein.
 
@@ -145,3 +147,29 @@ CAUTION: Wenn Sie die Einstellung für die Sicherungssperre jetzt konfigurieren,
 Das neue Sicherungsziel wird der Liste der Sicherungsziele hinzugefügt.
 
 image:screen-settings-backup-destinations-list-aws.png["Seite „Backup-Ziele“ die Option „Einstellungen“"]
+
+
+
+== Bedrohungserkennung aktivieren
+
+Sie können Daten zur Bedrohungsanalyse und -Erkennung automatisch an ein Sicherheits- und Ereignismanagementsystem (SIEM) senden.
+
+. Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
+. Überprüfen Sie den Fensterbereich Empfohlene Aktionen im Dashboard.
+. Wählen Sie im Dashboard *Überprüfen und beheben* für die Empfehlung „Bedrohungserkennung aktivieren“ aus.
++
+Die Seite Einstellungen wird angezeigt.
+
++
+image:screen-settings-threat-detection2.png["Einstellungsseite"]
+
+. Wählen Sie auf der Seite Einstellungen im Bereich Bedrohungserkennung *Connect* aus.
++
+image:screen-settings-threat-detection-details.png["Seite mit Details zur Bedrohungserkennung aktivieren"]
+
+. Geben Sie SIEM-Serverdetails ein, um die Bedrohungserkennung zu aktivieren.
+. Wählen Sie *Enable*.
++
+Im Bereich Bedrohungserkennung auf der Seite Einstellungen wird „Verbunden“ angezeigt.
+
+

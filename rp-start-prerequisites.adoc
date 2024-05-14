@@ -14,7 +14,7 @@ summary: 'Erste Schritte mit BlueXP zum Ransomware-Schutz: Verifizieren Sie den 
 [role="lead"]
 Erste Schritte mit BlueXP zum Ransomware-Schutz: Überprüfen Sie Ihre Betriebsumgebung, Ihre Anmeldung, Ihren Netzwerkzugriff und Ihren Webbrowser.
 
-Voraussetzung für den Einsatz der Vorschauversion zum Ransomware-Schutz von BlueXP ist:
+Um BlueXP vor Ransomware zu schützen, benötigen Sie folgende Voraussetzungen:
 
 * Ein Konto in NetApp StorageGRID oder AWS S3 für Backup-Ziele und die festgelegten Zugriffsberechtigungen
 +
@@ -24,6 +24,10 @@ Siehe https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.htm
 +
 ** ONTAP-Berechtigungen für Cluster-Admin
 ** Eine Lizenz für den autonomen Schutz vor NetApp Ransomware, die durch BlueXP Ransomware-Schutz verwendet wird und je nach verwendeter ONTAP-Version auf der lokalen ONTAP-Instanz aktiviert wird. Siehe https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Autonome Ransomware-Schutz – Übersicht"^].
++
+
+NOTE: Die allgemeine Version des BlueXP Ransomware-Schutzes im Gegensatz zu der Preview-Version umfasst eine Lizenz für die NetApp Technologie zum autonomen Ransomware-Schutz. Siehe https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Autonome Ransomware-Schutz – Übersicht"^] Entsprechende Details.
+
 +
 Weitere Informationen zur Lizenzierung finden Sie unter link:concept-ransomware-protection.html["Mehr zu BlueXP Ransomware-Schutz"].
 
@@ -37,7 +41,7 @@ Weitere Informationen zur Lizenzierung finden Sie unter link:concept-ransomware-
 NOTE: Wenn Sie mehrere BlueXP Connectors verwenden, scannt der Service Daten über alle Connectors hinaus, die derzeit in der BlueXP UI angezeigt werden.
 
 ** Der BlueXP Backup- und Recovery-Service mit Aktivierung von Backups in der Betriebsumgebung
-** Eine BlueXP Arbeitsumgebung mit NetApp NAS vor Ort
+** Eine BlueXP Arbeitsumgebung mit lokalem NetApp Storage (über NAS- oder CIFS-Protokolle)
 ** Ein BlueXP Konto mit mindestens einem aktiven Connector, der mit On-Premises-ONTAP-Clustern verbunden ist. Alle Quell- und Arbeitsumgebungen müssen sich auf demselben BlueXP Konto befinden.
 ** Ein BlueXP Benutzerkonto mit Administratorrechten für das Erkennen von Ressourcen
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["Standard-BlueXP Anforderungen erfüllt"^]

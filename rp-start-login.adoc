@@ -34,10 +34,13 @@ image:screen-dashboard.png["BlueXP Dashboard für Ransomware-Schutz"]
 
 . Beginnen Sie mit der Nutzung des Dienstes.
 +
-** Wenn Sie keinen BlueXP Connector haben oder dies nicht der für diese Vorschau ist, wenden Sie sich an den NetApp Support oder folgen Sie den Nachrichten, um sich für diese Vorschau zu registrieren.
+** Wenn Sie keinen BlueXP Connector haben oder diesen Service nicht anbieten, müssen Sie sich möglicherweise an den NetApp Support wenden oder den Nachrichten folgen, um sich zu registrieren.
 ** Wenn Sie neu bei BlueXP sind und noch keinen Connector verwendet haben, wird bei der Auswahl von „*Ransomware-Schutz*“ eine Meldung über die Anmeldung angezeigt. Senden Sie das Formular ab. NetApp wird sich bezüglich Ihrer Evaluierungsanfrage mit Ihnen in Verbindung setzen.
 ** Wenn Sie ein BlueXP-Benutzer mit einem vorhandenen Connector sind, wird bei der Auswahl von „*Ransomware-Schutz*“ eine Meldung über die Anmeldung angezeigt.
-** Wenn Sie bereits an der Vorschau teilnehmen, wenn Sie "*Ransomware-Schutz*" auswählen, können Sie mit dem Dienst fortfahren. Wenn Sie dies noch nicht getan haben, sollten Sie die Option *Workloads ermitteln* auswählen.
 
+
+. Wenn Sie dies noch nicht getan haben, wählen Sie die Option *Workloads ermitteln* aus.
++
+Siehe link:rp-start-discover.html["Workloads erkennen"].
 
 

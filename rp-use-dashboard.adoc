@@ -14,7 +14,7 @@ summary: Das BlueXP Dashboard für Ransomware-Schutz bietet Informationen zum Sc
 [role="lead"]
 Das BlueXP Dashboard zum Schutz vor Ransomware bietet auf einen Blick Informationen zum Schutz der Integrität Ihrer Workloads. Sie können schnell ermitteln, welche Workloads gefährdet oder geschützt sind, Workloads identifizieren, die von einem Vorfall oder einer Recovery betroffen sind, und den Umfang der Sicherung abschätzen, indem Sie die Menge des geschützten oder gefährdeten Storage ermitteln.
 
-Darüber hinaus können Sie mithilfe des Dashboards Schutzempfehlungen prüfen und umsetzen.
+Darüber hinaus können Sie über das Dashboard Sicherungsempfehlungen prüfen und umsetzen, auf globale Einstellungen zugreifen, Berichte herunterladen und auf diese technische Dokumentation zugreifen.
 
 
 
@@ -26,7 +26,7 @@ Darüber hinaus können Sie mithilfe des Dashboards Schutzempfehlungen prüfen u
 Nach der Erkennung wird über das Dashboard der Systemzustand der Workload-Datensicherung angezeigt.
 
 +
-image:screen-dashboard-recommended-actions-configure-backup-destinations.png["Dashboard-Seite"]
+image:screen-dashboard.png["Dashboard-Seite"]
 
 . Im Dashboard können Sie in jedem der Teilfenster eine der folgenden Aktionen anzeigen und ausführen:
 +
@@ -82,15 +82,28 @@ Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"].
 Siehe link:rp-use-settings.html["Konfigurieren Sie die Schutzeinstellungen"]. 
 
 
+| Bearbeiten Sie den Workload-Namen | Für Ihre Workloads werden Standardnamen verwendet. | Geben Sie Ihrem Workload einen beschreibenden Namen.
+Siehe link:rp-use-manage.html["Management von Workloads"]. 
+
+
+| Bedrohungserkennung aktivieren | Senden von Daten an ein Sicherheits- und Event-Management-System (SIEM) zur Bedrohungsanalyse und -Erkennung. | Geben Sie SIEM/XDR-Serverdetails ein, um die Bedrohungserkennung zu aktivieren.
+Siehe link:rp-use-settings.html["Konfigurieren Sie die Schutzeinstellungen"].
+Siehe link:rp-use-settings.html["Konfigurieren Sie die Schutzeinstellungen"]. 
+
+
+| Workload-konsistenter Schutz für Applikationen oder VMware | Diese Workloads werden nicht von SnapCenter Software oder dem SnapCenter Plug-in für VMware vSphere gemanagt. | Das Management durch SnapCenter ermöglicht Workload-konsistenten Schutz.
+Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"]. 
+
+
 | Machen Sie eine Politik stärker. | Einige Workloads verfügen möglicherweise nicht über ausreichend Sicherung. Höherer Schutz von Workloads mit einer Richtlinie | Erhöhen Sie die Aufbewahrung, fügen Sie Backups hinzu, erzwingen Sie unveränderliche Backups, blockieren Sie verdächtige Dateierweiterungen, ermöglichen Sie die Erkennung auf sekundärem Storage und vieles mehr.
 Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"]. 
 
 
-| Schützen Sie kritische oder wichtige Applikations-Workloads vor Ransomware. | Auf der Seite Schutz werden kritische oder wichtige (auf der Grundlage der Prioritätsstufe zugewiesene) Anwendungs-Workloads angezeigt, die nicht geschützt sind. | Weisen Sie diesen Workloads eine Richtlinie zu.
+| Schützen Sie kritische oder sehr wichtige Applikations-Workloads vor Ransomware. | Auf der Seite Schutz werden kritische oder sehr wichtige (auf der Grundlage der Prioritätsstufe zugewiesene) Anwendungs-Workloads angezeigt, die nicht geschützt sind. | Weisen Sie diesen Workloads eine Richtlinie zu.
 Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"]. 
 
 
-| Schützen Sie kritische oder wichtige File-Share-Workloads vor Ransomware. | Auf der Seite Schutz werden kritische oder wichtige Workloads des Typs Dateifreigabe oder Datenspeicher angezeigt, die nicht geschützt sind. | Weisen Sie jedem Workload eine Richtlinie zu.
+| Schutz kritischer oder sehr wichtiger File Share-Workloads vor Ransomware. | Auf der Seite Schutz werden kritische oder sehr wichtige Workloads des Typs Dateifreigabe oder Datenspeicher angezeigt, die nicht geschützt sind. | Weisen Sie jedem Workload eine Richtlinie zu.
 Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"]. 
 
 
@@ -109,4 +122,49 @@ Die Empfehlung wird aus der To-Do-Liste gelöscht und in der Ablehnte-Liste ange
 TIP: Sie können ein verworfener Artikel später in ein To-Do-Element ändern. Wenn Sie ein Element als abgeschlossen markieren oder ein verlassener Eintrag in eine Aktion zum Erledigten ändern, erhöht sich die Gesamtzahl der Aktionen um 1.
 
 . Um Informationen zur Vorgehensweise bei den Empfehlungen zu lesen, wählen Sie das Symbol *information*.
+
+
+
+
+== Laden Sie CSV-Dateien herunter
+
+Sie können CSV-Dateien herunterladen, die Details zu Schutz, Warnmeldungen und Recovery anzeigen.
+
+Sie können CSV-Dateien von einer der Optionen des Hauptmenüs herunterladen:
+
+* *Dashboard:* enthält alle zusammenfassenden Informationen für alle Workloads.
+* *Schutz*: Enthält den Status und Details aller Workloads, einschließlich der Gesamtzahl der geschützten und gefährdeten Arbeitslasten.
+* *Alerts*: Enthält den Status und die Details aller Alerts, einschließlich der Gesamtzahl der Alerts und automatisierten Snapshots.
+* *Recovery*: Enthält den Status und Details aller Workloads, die wiederhergestellt werden müssen, einschließlich der Gesamtzahl der Workloads, die als „Restore needed“, „in progress“, „Restore failed“ und „successfully restored“ markiert sind.
+
+
+Wenn Sie CSV-Dateien von der Seite Schutz, Warnungen oder Wiederherstellung herunterladen, werden nur die Daten auf dieser Seite in die CSV-Datei aufgenommen.
+
+CSV-Dateien enthalten Daten aller Workloads in allen BlueXP Arbeitsumgebungen.
+
+.Schritte
+. Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
++
+image:screen-dashboard.png["Dashboard-Seite"]
+
+. Wählen Sie im Dashboard oder auf einer anderen Seite die Option *Aktualisieren* aus image:button-refresh.png["Aktualisierungsoption"] Option oben rechts, um die Daten zu aktualisieren, die in den Dateien angezeigt werden.
+. Führen Sie einen der folgenden Schritte aus:
++
+** Wählen Sie im Dashboard oder auf einer anderen Seite die Option *Download* aus image:button-download.png["Download-Option"] Option.
+** Wählen Sie im Menü zum Ransomware-Schutz von BlueXP *Berichte* aus.
+
+
+. Wenn Sie die Option *Reports* ausgewählt haben, wählen Sie eine der vorkonfigurierten benannten Dateien aus und wählen *Download (CSV)*.
+
+
+
+
+== Zugriff auf technische Dokumentation
+
+Die technische Dokumentation finden Sie unter docs.netapp.com oder in dem BlueXP Ransomware-Schutzservice.
+
+.Schritte
+. Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
+. Wählen Sie im Dashboard die vertikale Option *actions* aus image:button-actions-vertical.png["Option „vertikale Aktionen“"] Option.
+. Wählen Sie *Was ist neu*, um Details in den Release Notes oder *Documentation* anzuzeigen, um die BlueXP Ransomware-Schutz-Dokumentation Homepage anzuzeigen.
 

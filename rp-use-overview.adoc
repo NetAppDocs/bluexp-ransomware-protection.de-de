@@ -22,9 +22,9 @@ Durch den Ransomware-Schutz von BlueXP können Sie den Workload-Zustand anzeigen
 
 * link:rp-use-protect.html["Schutz von Workloads"]:
 +
-** Weisen Sie Workloads eine Ransomware-Schutzrichtlinie zu.
+** Zuweisung einer Datensicherungsstrategie nach Ransomware zu Workloads
 ** Verbessern Sie den Applikationsschutz, um künftige Ransomware-Angriffe zu verhindern.
-** Erstellen, ändern oder löschen Sie eine Schutzrichtlinie.
+** Erstellen, ändern oder löschen Sie eine Schutzstrategie.
 
 
 * link:rp-use-alert.html["Reagieren Sie auf die Erkennung potenzieller Ransomware-Angriffe"].

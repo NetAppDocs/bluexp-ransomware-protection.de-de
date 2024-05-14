@@ -23,6 +23,7 @@ link:rp-start-prerequisites.html["Stellen Sie sicher, dass Ihre Umgebung diese A
 * link:rp-start-setup.html["Bereiten Sie NetApp StorageGRID oder Amazon Web Services als Backup-Ziel vor"].
 * link:rp-start-setup.html["Konfigurieren Sie einen Connector in BlueXP"].
 * link:rp-start-setup.html["Konfigurieren Sie Sicherungsziele"].
+* link:rp-start-setup.html["Aktivieren Sie optional die Bedrohungserkennung"].
 * link:rp-start-discover.html["Workloads in BlueXP erkennen"].
 
 

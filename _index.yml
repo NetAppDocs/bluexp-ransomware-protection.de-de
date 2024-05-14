@@ -2,18 +2,18 @@
 indexpage:
   title: BlueXP – Dokumentation zum Ransomware-Schutz
   summary: BlueXP zum Schutz vor Ransomware ist ein Orchestrierungsservice für Ransomware-Schutz,
-    Erkennung und Recovery. Für die Vorschauversion schützt der Service applikationsbasierte
-    Workloads von Oracle, MySQL, VM-Datastores, und File Shares auf lokalem NAS-Storage
-    sowie Cloud Volumes ONTAP in Amazon Web Services (über das NFS-Protokoll) über
-    alle BlueXP Konten hinweg gesichert und Daten auf Amazon Web Services (AWS) Cloud-Storage
+    Erkennung und Recovery. Der Service sichert applikationsbasierte Workloads von
+    Oracle, MySQL, VM-Datastores, und File Shares auf lokalem NAS Storage sowie Cloud
+    Volumes ONTAP in Amazon Web Services (über NFS- und CIFS-Protokolle) über alle
+    BlueXP Konten hinweg gesichert und Daten auf Amazon Web Services (AWS) Cloud-Storage
     oder NetApp StorageGRID gesichert.
   keywords: bluexp, ransomware, anti-ransomware, cyber attack, netapp, ontap, amazon
     web services, aws, storagegrid
   lead: BlueXP zum Schutz vor Ransomware ist ein Orchestrierungsservice für Ransomware-Schutz,
-    Erkennung und Recovery. Für die Vorschauversion schützt der Service applikationsbasierte
-    Workloads von Oracle, MySQL, VM-Datastores, und File Shares auf lokalem NAS-Storage
-    sowie Cloud Volumes ONTAP in Amazon Web Services (über das NFS-Protokoll) über
-    alle BlueXP Konten hinweg gesichert und Daten auf Amazon Web Services (AWS) Cloud-Storage
+    Erkennung und Recovery. Der Service sichert applikationsbasierte Workloads von
+    Oracle, MySQL, VM-Datastores, und File Shares auf lokalem NAS Storage sowie Cloud
+    Volumes ONTAP in Amazon Web Services (über NFS- und CIFS-Protokolle) über alle
+    BlueXP Konten hinweg gesichert und Daten auf Amazon Web Services (AWS) Cloud-Storage
     oder NetApp StorageGRID gesichert.
   tiles:
   - title: Los geht's
@@ -30,6 +30,8 @@ indexpage:
       url: "/rp-start-setup.html"
     - title: Nutzen Sie den Ransomware-Schutz von BlueXP
       url: "/rp-start-login.html"
+    - title: Konfigurieren Sie Sicherungsziele und aktivieren Sie die Bedrohungserkennung
+      url: "/rp-use-settings.html"
     - title: Häufig gestellte Fragen
       url: "/rp-start-faq.html"
   - title: Nutzen Sie BlueXP Ransomware-Schutz

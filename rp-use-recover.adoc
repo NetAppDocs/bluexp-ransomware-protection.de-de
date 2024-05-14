@@ -14,6 +14,13 @@ summary: 'Nach einem Angriff überprüft der Ransomware-Schutz von BlueXP, ob di
 [role="lead"]
 Nachdem die Workloads als „bereit für die Recovery“ markiert wurden, empfiehlt der BlueXP Ransomware-Schutz einen tatsächlichen Recovery-Zeitpunkt (Recovery Point Actual, RPA) und orchestriert den Workflow für eine ausfallsichere Recovery.
 
+* Wenn die Applikation oder VM von SnapCenter gemanagt wird, stellt der Ransomware-Schutz von BlueXP die Applikation oder VM wieder in ihren vorherigen Zustand und die letzte Transaktion mithilfe des applikationskonsistenten oder VM-konsistenten Prozesses wieder her.
+* Wenn die Applikation oder VM von SnapCenter nicht gemanagt wird, stellt der BlueXP Ransomware-Schutz die Applikation oder VM wieder her, stellen Sie die Workload wieder her, indem Sie alle Volumes, Volumes oder Dateien auswählen.
+
+
+
+TIP: Die Workload-Recovery kann sich auf laufende Workloads auswirken. Sie sollten die Wiederherstellungsprozesse mit den entsprechenden Beteiligten koordinieren.
+
 
 
 == Zeigen Sie Workloads an, die wiederhergestellt werden können
@@ -29,15 +36,49 @@ Nachdem die Workloads als „bereit für die Recovery“ markiert wurden, empfie
 
 . Überprüfen Sie die Workload-Informationen auf der Seite *Recovery*.
 +
-image:screen-recovery.png["Wiederherstellungsseite"]
+image:screen-recovery2.png["Wiederherstellungsseite"]
 
 
 
 
 
-== Wiederherstellung eines Workloads
+== Stellen Sie einen von SnapCenter gemanagten Workload wieder her
 
-Durch den Ransomware-Schutz von BlueXP kann der Storage-Administrator bestimmen, wie sich Workloads am besten entweder am empfohlenen Restore-Punkt oder am bevorzugten Restore-Punkt wiederherstellen lassen.
+Durch den Ransomware-Schutz von BlueXP kann der Storage-Administrator bestimmen, wie Workloads am besten wiederhergestellt werden – entweder aus dem empfohlenen Restore-Punkt oder dem bevorzugten Restore-Punkt.
+
+Der Anwendungsstatus ändert sich, wenn für die Wiederherstellung erforderlich. Die Anwendung wird in ihren vorherigen Zustand von Steuerdateien wiederhergestellt, wenn sie in das Backup eingeschlossen sind. Nach Abschluss der Wiederherstellung wird die Anwendung im LESE-/SCHREIBMODUS geöffnet.
+
+.Schritte
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Recovery* aus.
+. Überprüfen Sie die Workload-Informationen auf der Seite *Recovery*.
+. Wählen Sie einen Workload im Status „Restore needed“ aus.
+. Wählen Sie zum Wiederherstellen *Wiederherstellen*.
+. *Umfang der Wiederherstellung*: Applikationskonsistent (oder für SnapCenter für VMs ist der Umfang der Wiederherstellung „durch VM“)
+. *Quelle*: Wählen Sie den Pfeil nach unten neben Quelle, um Details zu sehen. Wählen Sie den Wiederherstellungspunkt aus, den Sie zum Wiederherstellen der Daten verwenden möchten.
++
+
+TIP: Durch den Ransomware-Schutz von BlueXP wird der beste Restore-Punkt als das neueste Backup direkt vor dem Vorfall identifiziert und eine „empfohlene“ Angabe angezeigt.
+
+. *Ziel*: Wählen Sie den Abwärtspfeil neben Ziel, um Details anzuzeigen.
++
+.. Wählen Sie den ursprünglichen oder alternativen Speicherort aus.
+.. Wählen Sie die Arbeitsumgebung aus.
+.. Wählen Sie Storage VM aus.
+
+
+. Wenn das ursprüngliche Ziel nicht über genügend Speicherplatz verfügt, um den Workload wiederherzustellen, wird eine Zeile „temporärer Speicher“ angezeigt. Sie können den temporären Speicher auswählen, um die Workload-Daten wiederherzustellen. Die wiederhergestellten Daten werden aus dem temporären Speicher in den ursprünglichen Speicherort kopiert. Klicken Sie in der Zeile Temporary Storage auf den Pfeil *Down* und legen Sie den Zielcluster, die Speicher-VM und den lokalen Tier fest.
+. Wählen Sie *Speichern*.
+. Wählen Sie *Weiter*.
+. Überprüfen Sie Ihre Auswahl.
+. Wählen Sie *Wiederherstellen*.
+. Wählen Sie im oberen Menü *Recovery* aus, um den Workload auf der Seite Recovery zu überprüfen, auf der sich der Status des Vorgangs durch die Zustände bewegt.
+
+
+
+
+== Stellen Sie einen nicht von SnapCenter gemanagten Workload wieder her
+
+Durch den Ransomware-Schutz von BlueXP kann der Storage-Administrator bestimmen, wie Workloads am besten wiederhergestellt werden – entweder aus dem empfohlenen Restore-Punkt oder dem bevorzugten Restore-Punkt.
 
 Der Sicherheits-Storage-Administrator kann Daten auf verschiedenen Ebenen wiederherstellen:
 
@@ -145,6 +186,9 @@ TIP: Der neue Volume-Name wird als ursprünglicher Volume-Name + Backup-Name + B
 
 === Stellen Sie einen Applikations-Workload auf Dateiebene wieder her
 
+Laden Sie eine Liste der betroffenen Dateien* herunter, bevor Sie einen Anwendungs-Workload auf Dateiebene wiederherstellen. Sie können nun auf die Seite Warnungen zugreifen, um eine Liste der betroffenen Dateien herunterzuladen und dann die Seite Wiederherstellung verwenden, um die Liste hochzuladen und auszuwählen, welche Dateien wiederhergestellt werden sollen.
+
+.Schritte
 . Wählen Sie auf der Seite Wiederherstellen im Bereich Wiederherstellen die Option *nach Datei* aus.
 . Wählen Sie in der Liste der Volumes das Volume aus, das Sie wiederherstellen möchten.
 . *Quelle*: Wählen Sie den Pfeil nach unten neben Quelle, um Details zu sehen.

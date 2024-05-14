@@ -22,17 +22,18 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 Geben Sie für die URL in einem Browser Folgendes ein: https://console.bluexp.netapp.com/["https://console.bluexp.netapp.com/"^] Um auf die BlueXP Konsole zuzugreifen.
 
 *Benötigen Sie eine Lizenz für den Einsatz von BlueXP Ransomware-Schutz?*
-Eine NetApp Lizenzdatei (NetApp License File, NLF) ist nicht erforderlich. Für die Vorschau zum BlueXP Ransomware-Schutz selbst ist keine spezielle Lizenzierung erforderlich.  Alle Vorschaulizenzen sind Evaluierungslizenzen.
 
-Für die Vorschauversion dieses Service ist eine BlueXP Backup- und Recovery-Servicelizenz erforderlich.
+Sie können die folgenden Lizenztypen verwenden:
 
+* Melden Sie sich für eine kostenlose 90-Tage-Testversion an.
+* Mit Amazon Web Services (AWS) Marketplace besteht ein Pay-as-you-go-Abonnement (PAYGO).
+* Bring-Your-Own-License (BYOL) bei einer NetApp Lizenzdatei (NLF), die Sie von Ihrem NetApp Vertriebsmitarbeiter erhalten. Sie können die Seriennummer der Lizenz verwenden, um das BYOL in der Digital Wallet von BlueXP zu aktivieren.
 
-TIP: Für die Vorschau-Version hilft NetApp bei der Einrichtung der Evaluierung und der erforderlichen Lizenzen.
 
 *Wie aktivieren Sie den BlueXP Ransomware-Schutz?*
 BlueXP für den Ransomware-Schutz ist keine Unterstützung erforderlich. Die Option zum Schutz vor Ransomware wird in der linken Navigation von BlueXP automatisch aktiviert.
 
-Zur Vorschau-Version müssen Sie sich anmelden oder sich mit Ihrem NetApp Vertriebsmitarbeiter in Verbindung setzen, um diesen Service auszuprobieren. Wenn Sie dann den BlueXP Connector verwenden, werden Ihnen die entsprechenden Funktionen für den Service bereitgestellt.
+Um den Service zu testen, müssen Sie sich anmelden oder sich mit Ihrem Vertriebsmitarbeiter von NetApp in Verbindung setzen. Wenn Sie dann den BlueXP Connector verwenden, werden Ihnen die entsprechenden Funktionen für den Service bereitgestellt.
 
 **Ist BlueXP Ransomware-Schutz im standardmäßigen, eingeschränkten und privaten Modus verfügbar?**
 Derzeit ist BlueXP Ransomware-Schutz nur im Standardmodus verfügbar. Bleiben Sie dran für mehr.
@@ -66,20 +67,17 @@ Wir empfehlen Ihnen, Richtlinienänderungen am BlueXP Ransomware-Schutzservice v
 Ein Workload umfasst alle Volumes, die von einer einzelnen Applikationsinstanz verwendet werden. Eine auf ora3.host.com bereitgestellte Oracle DB-Instanz kann beispielsweise vol1 und vol2 für ihre Daten und Protokolle verwenden. Diese Volumes bilden zusammen den Workload für diese spezifische Instanz der Oracle DB-Instanz.
 
 *Wie priorisiert der Ransomware-Schutz von BlueXP Workload-Daten?*
-Die Datenpriorität für die Vorschauversion wird durch die erstellten Snapshot Kopien und geplante Backups bestimmt.
+Die Datenpriorität wird durch die erstellten Snapshot-Kopien und geplanten Backups bestimmt.
 
-Die Workload-Priorität wird durch die folgenden Snapshot-Häufigkeit festgelegt:
+Die Workload-Priorität wird durch die Snapshot-Häufigkeit bestimmt.
 
-* *Kritisch*: Snapshot Kopien wurden weniger als 1 pro Stunde erstellt (äußerst ambitionierter Schutzplan)
-* *Wichtig*: Snapshot-Kopien wurden weniger als 1 pro Tag, aber mehr als 1 pro Stunde erstellt
-* *Standard*: Snapshot Kopien wurden pro Tag erstellt
-
+link:rp-use-protect.html["Informieren Sie sich über Priorität oder Wichtigkeit von Workloads"].
 
 **Neues Volumen hinzugefügt, erscheint aber noch nicht**
 Wenn Sie der Umgebung ein neues Volume hinzugefügt haben, initiieren Sie die Erkennung erneut und wenden Sicherungsrichtlinien an, um das neue Volume zu schützen.
 
 **Das Dashboard zeigt nicht alle meine Workloads an. Was könnte falsch sein?**
-Derzeit werden nur NFS-Volumes unterstützt. ISCSI-Volumes, CIFS-Volumes und andere nicht unterstützte Konfigurationen werden herausgefiltert und werden nicht im Dashboard angezeigt.
+Derzeit werden nur NFS- und CIFS-Volumes unterstützt. ISCSI-Volumes und andere nicht unterstützte Konfigurationen werden herausgefiltert und werden nicht im Dashboard angezeigt.
 
 
 
