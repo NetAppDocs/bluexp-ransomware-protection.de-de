@@ -29,7 +29,6 @@
   <block id="7fc964519860ed011389afb142e2370e" category="list-text">In BlueXP:</block>
   <block id="617601bf744d089a872f17b09e5451b5" category="inline-link">BlueXP Dokumentation zur Konfiguration des Connectors</block>
   <block id="00c15e6000f2ee7d33421ec117c11c12" category="admonition">Wenn Sie mehrere BlueXP Connectors verwenden, scannt der Service Daten über alle Connectors hinaus, die derzeit in der BlueXP UI angezeigt werden.</block>
-  <block id="c5c84330043d2e887d72c591baa2b9c1" category="list-text">Der BlueXP Backup- und Recovery-Service mit Aktivierung von Backups in der Betriebsumgebung</block>
   <block id="801e5ac526198ee67b36c61b75c65eab" category="inline-link">Standard-BlueXP Anforderungen erfüllt</block>
   <block id="5b4e347dbf978618d47c067b87ad3fe2" category="list-text"><block ref="5b4e347dbf978618d47c067b87ad3fe2" category="inline-link-rx"></block></block>
   <block id="4d6682b21a77873fe9ae34d7fc255020" category="summary">Einstieg in den NetApp BlueXP Ransomware-Schutzservice in nur wenigen Schritten</block>
@@ -1041,4 +1040,7 @@ Derzeit werden nur NFS- und CIFS-Volumes unterstützt. ISCSI-Volumes und andere 
   <block id="7c332d8c3498456553e971642a5142fc" category="paragraph">Wenden Sie sich an Ihren NetApp Vertriebsmitarbeiter, um diesen Service auszuprobieren oder zu nutzen. Wenn Sie dann den BlueXP Connector verwenden, erhalten Sie auch die entsprechenden Funktionen für den Ransomware-Schutzservice.</block>
   <block id="077eb8dcf08a34370634fa284781fbf5" category="sidebar">BlueXP zum Schutz vor Ransomware ist ein Orchestrierungsservice für Ransomware-Schutz, Erkennung und Recovery. Der Service sichert applikationsbasierte Workloads von Oracle, MySQL, VM-Datastores, und File Shares auf lokalem NAS Storage sowie Cloud Volumes ONTAP in Amazon Web Services (über NFS- und CIFS-Protokolle) über alle BlueXP Konten hinweg gesichert und Daten auf Amazon Web Services (AWS) Cloud-Storage oder NetApp StorageGRID gesichert.</block>
   <block id="03a0606ea5e305ef55dd39ee839003fd" category="sidebar">Konfigurieren Sie Sicherungsziele und aktivieren Sie die Bedrohungserkennung</block>
+  <block id="fb197ee87a0f850dc3b7bb98fe408518" category="inline-link-macro">Einstellungen konfigurieren</block>
+  <block id="56ff02f12c9bfc12762be5191b6a6ce5" category="admonition">Der BlueXP Backup- und Recovery-Service muss in der Arbeitsumgebung nicht mehr bereits aktiviert sein. Der BlueXP Ransomware-Schutzservice unterstützt Sie bei der Konfiguration eines Backup-Ziels über die Einstellungsoption. Siehe <block ref="522f9942d2238ef69c22ece6b9af5205" category="inline-link-macro-rx"></block>.</block>
+  <block id="8b003b58b4532bbf9f07c58827819319" category="list-text">*BlueXP Backup und Recovery*: Der BlueXP Backup- und Recovery-Service muss in der Betriebsumgebung nicht mehr aktiviert sein. Siehe <block ref="7cc100a4e35b42109d34b0d1c6d432c9" category="inline-link-macro-rx"></block>. Der BlueXP Ransomware-Schutzservice unterstützt Sie bei der Konfiguration eines Backup-Ziels über die Einstellungsoption. Siehe <block ref="522f9942d2238ef69c22ece6b9af5205" category="inline-link-macro-rx"></block>.</block>
 </blocks>
