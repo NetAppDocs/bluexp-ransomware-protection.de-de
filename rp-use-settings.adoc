@@ -26,6 +26,7 @@ Um diese Workloads zu schützen, müssen Sie ein Backup-Ziel hinzufügen. Sie k�
 
 * NetApp StorageGRID
 * Amazon Web Services (AWS)
+* Microsoft Azure
 
 
 Sie können ein Backup-Ziel basierend auf einer empfohlenen Aktion über das Dashboard hinzufügen.
@@ -42,8 +43,19 @@ Das Dashboard enthält zahlreiche Empfehlungen. Möglicherweise empfiehlt sich d
 +
 image:screen-dashboard.png["Dashboard-Seite"]
 
-. Wählen Sie im Dashboard *Überprüfen und beheben* für die Empfehlung „Backup-Ziele konfigurieren“ aus.
+. Wählen Sie im Dashboard *Überprüfen und beheben* für die Empfehlung „<backup provider> als Sicherungsziel vorbereiten“.
 . Fahren Sie mit den Anweisungen je nach Backup-Anbieter fort.
+
+
+
+
+=== Rufen Sie die Seite Einstellungen über das Menü auf
+
+Über das Menü können Sie ganz einfach auf die Seite Einstellungen zugreifen.
+
+. Wählen Sie im Menü BlueXP Ransomware-Schutz die vertikalen Märkte aus image:button-actions-vertical.png["Vertikale Aktionen"]... Option oben rechts.
+. Wählen Sie im Menü *Einstellungen*.
+. Um ein Sicherungsziel hinzuzufügen, wählen Sie *Hinzufügen*.
 
 
 
@@ -55,7 +67,7 @@ Geben Sie die folgenden Informationen ein, um NetApp StorageGRID als Backup-Ziel
 . Wählen Sie auf der Seite *Einstellungen > Sicherungsziele* *Hinzufügen* aus.
 . Geben Sie einen Namen für das Sicherungsziel ein.
 +
-image:screen-settings-backup-destination-storagegrid.png["Seite „Backup-Ziele“"]
+image:screen-settings-backup-destination-azure.png["Seite „Backup-Ziele“"]
 
 . Wählen Sie *StorageGRID*.
 . Wählen Sie den Abwärtspfeil neben jeder Einstellung aus, und geben Sie Werte ein oder wählen Sie diese aus:
@@ -88,7 +100,7 @@ CAUTION: Wenn Sie die Einstellung für die Sicherungssperre jetzt konfigurieren,
 .Ergebnis
 Das neue Sicherungsziel wird der Liste der Sicherungsziele hinzugefügt.
 
-image:screen-settings-backup-destinations-list-storagegrid.png["Seite „Backup-Ziele“ die Option „Einstellungen“"]
+image:screen-settings-backup-destinations-list-azure.png["Seite „Backup-Ziele“ die Option „Einstellungen“"]
 
 
 
@@ -101,7 +113,7 @@ Weitere Informationen zum Management Ihres AWS Storage in BlueXP finden Sie unte
 . Wählen Sie auf der Seite *Einstellungen > Sicherungsziele* *Hinzufügen* aus.
 . Geben Sie einen Namen für das Sicherungsziel ein.
 +
-image:screen-settings-backup-destination-storagegrid.png["Seite „Backup-Ziele“"]
+image:screen-settings-backup-destination-azure.png["Seite „Backup-Ziele“"]
 
 . Wählen Sie *Amazon Web Services*.
 . Wählen Sie den Abwärtspfeil neben jeder Einstellung aus, und geben Sie Werte ein oder wählen Sie diese aus:
@@ -146,7 +158,65 @@ CAUTION: Wenn Sie die Einstellung für die Sicherungssperre jetzt konfigurieren,
 .Ergebnis
 Das neue Sicherungsziel wird der Liste der Sicherungsziele hinzugefügt.
 
-image:screen-settings-backup-destinations-list-aws.png["Seite „Backup-Ziele“ die Option „Einstellungen“"]
+image:screen-settings-backup-destinations-list-azure.png["Seite „Backup-Ziele“ die Option „Einstellungen“"]
+
+
+
+=== Hinzufügen von Microsoft Azure als Backup-Ziel
+
+Um Azure als Backup-Ziel einzurichten, geben Sie die folgenden Informationen ein.
+
+Weitere Informationen zum Management Ihrer Azure Zugangsdaten und Marketplace-Abonnements in BlueXP finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Management Ihrer Azure Zugangsdaten und Marketplace-Abonnements"^].
+
+. Wählen Sie auf der Seite *Einstellungen > Sicherungsziele* *Hinzufügen* aus.
+. Geben Sie einen Namen für das Sicherungsziel ein.
++
+image:screen-settings-backup-destination-azure.png["Seite „Backup-Ziele“"]
+
+. Wählen Sie *Azure*.
+. Wählen Sie den Abwärtspfeil neben jeder Einstellung aus, und geben Sie Werte ein oder wählen Sie diese aus:
++
+** *Provider-Einstellungen*:
++
+*** Erstellen Sie ein neues Storage-Konto, wählen Sie ein vorhandenes Konto aus, falls es bereits in BlueXP vorhanden ist, oder verwenden Sie ein eigenes Storage-Konto zum Speichern der Backups.
+*** Azure-Abonnement, Region und Ressourcengruppe für Azure-Anmeldeinformationen
++
+https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Wenn Sie ein eigenes Storage-Konto einrichten möchten, finden Sie unter Azure Blob Storage-Konten hinzufügen"^].
+
+
+
+** *Verschlüsselung*: Wenn Sie ein neues Speicherkonto anlegen, geben Sie die Verschlüsselungsschlüsseldaten ein, die Sie vom Anbieter erhalten. Wenn Sie ein vorhandenes Konto ausgewählt haben, sind Verschlüsselungsinformationen bereits verfügbar.
++
+Die Daten im Konto werden standardmäßig mit von Microsoft verwalteten Schlüsseln verschlüsselt. Sie können entweder weiterhin von Microsoft gemanagte Schlüssel oder die Verschlüsselung Ihrer Daten mit eigenen Schlüsseln managen.
+
+** *Netzwerk*: Wählen Sie den IPspace und ob Sie einen privaten Endpunkt verwenden werden.
++
+*** Der IPspace ist das Cluster, in dem sich die Volumes, die Sie sichern möchten, befinden. Die Intercluster-LIFs für diesen IPspace müssen über Outbound-Internetzugang verfügen.
+*** Wählen Sie optional aus, ob Sie einen zuvor konfigurierten privaten Azure-Endpunkt verwenden möchten.
++
+Informationen zur Verwendung von Azure PrivateLink finden Sie unter https://azure.microsoft.com/en-us/products/private-link/["Azure PrivateLink"^].
+
+
+
+** *Backup Lock*: Wählen Sie aus, ob der Dienst Backups vor Änderung oder Löschung schützen soll. Diese Option verwendet die NetApp DataLock-Technologie. Jedes Backup wird während der Aufbewahrungsfrist oder für mindestens 30 Tage gesperrt, zuzüglich einer Pufferzeit von bis zu 14 Tagen.
++
+
+CAUTION: Wenn Sie die Einstellung für die Sicherungssperre jetzt konfigurieren, können Sie die Einstellung später nach der Konfiguration des Sicherungsziels nicht mehr ändern.
+
++
+*** *Unlocked*: Bestimmte Benutzer können geschützte Dateien während der Aufbewahrungsfrist überschreiben oder löschen.
+*** *Locked*: Benutzer können geschützte Backup-Dateien während der Aufbewahrungsfrist nicht überschreiben oder löschen. Diese Option erfüllt die Einhaltung gesetzlicher Vorschriften.
+
+
+
+
+. Wählen Sie *Hinzufügen*.
+
+
+.Ergebnis
+Das neue Sicherungsziel wird der Liste der Sicherungsziele hinzugefügt.
+
+image:screen-settings-backup-destinations-list-azure.png["Seite „Backup-Ziele“ die Option „Einstellungen“"]
 
 
 
@@ -155,21 +225,18 @@ image:screen-settings-backup-destinations-list-aws.png["Seite „Backup-Ziele“
 Sie können Daten zur Bedrohungsanalyse und -Erkennung automatisch an ein Sicherheits- und Ereignismanagementsystem (SIEM) senden.
 
 . Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
-. Überprüfen Sie den Fensterbereich Empfohlene Aktionen im Dashboard.
-. Wählen Sie im Dashboard *Überprüfen und beheben* für die Empfehlung „Bedrohungserkennung aktivieren“ aus.
+. Wählen Sie im Menü BlueXP Ransomware-Schutz die vertikalen Märkte aus image:button-actions-vertical.png["Vertikale Aktionen"]... Option oben rechts.
+. Wählen Sie *Einstellungen*.
 +
 Die Seite Einstellungen wird angezeigt.
 
 +
-image:screen-settings-threat-detection2.png["Einstellungsseite"]
+image:screen-settings-threat-detection3.png["Einstellungsseite"]
 
-. Wählen Sie auf der Seite Einstellungen im Bereich Bedrohungserkennung *Connect* aus.
-+
-image:screen-settings-threat-detection-details.png["Seite mit Details zur Bedrohungserkennung aktivieren"]
-
+. Wählen Sie auf der Seite Einstellungen im SIEM-Verbindungsfenster *Connect* aus.
 . Geben Sie SIEM-Serverdetails ein, um die Bedrohungserkennung zu aktivieren.
 . Wählen Sie *Enable*.
 +
-Im Bereich Bedrohungserkennung auf der Seite Einstellungen wird „Verbunden“ angezeigt.
+Auf der Seite „Einstellungen“ wird „Verbunden“ angezeigt.
 
 

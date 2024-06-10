@@ -18,20 +18,45 @@ Erfahren Sie mehr über die Neuerungen beim BlueXP Ransomware-Schutz.
 
 
 
+== 10 Juni 2024
+
+Diese Version des Ransomware-Schutzes von BlueXP umfasst folgende Updates:
+
+* *Sperrung der Snapshot-Kopie auf dem Primärspeicher*: Aktivieren Sie diese Funktion, um die Snapshot-Kopien im Primärspeicher zu sperren, damit sie für einen bestimmten Zeitraum nicht geändert oder gelöscht werden können, selbst wenn ein Ransomware-Angriff den Weg zum Backup-Storage-Ziel findet.
++
+link:rp-use-protect.html["Erfahren Sie mehr über den Schutz von Workloads und die Aktivierung von Backup-Sperrung in einer Strategie für den Schutz vor Ransomware"].
+
+* *Diese Version unterstützt Cloud Volumes ONTAP für Microsoft Azure* als Arbeitsumgebung zusätzlich zu Cloud Volumes ONTAP für AWS und On-Premises ONTAP NAS.
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-azure.html["Schnellstart für Cloud Volumes ONTAP in Azure"^]
+
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Mehr zu BlueXP Ransomware-Schutz"].
+
+
+
+* *Microsoft Azure wurde als Sicherungsziel hinzugefügt*. Sie können nun Microsoft Azure zusammen mit AWS und NetApp StorageGRID als Backup-Ziel hinzufügen.
++
+link:rp-use-settings.html["Weitere Informationen finden Sie unter Konfigurieren von Schutzeinstellungen"].
+
+
+
+
+
 == 14 Mai 2024
 
 Diese Version ist die allgemein verfügbare Version des BlueXP Ransomware-Schutzes. Es enthält die folgenden Updates:
 
-* *Lizenzierungs-Updates*: Sie können sich für eine kostenlose 90-Tage-Testversion anmelden, ein Pay-as-you-go-Abonnement für 1, 2 oder 3 Jahre mit Amazon Web Services Marketplace erwerben oder Ihre eigene NetApp-Lizenz mitbringen.
+* *Lizenzierungs-Updates*: Sie können sich für eine 90-tägige kostenlose Testversion anmelden. Bald können Sie ein Pay-as-you-go-Abonnement mit Amazon Web Services Marketplace erwerben oder Ihre eigene NetApp Lizenz mitbringen.
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["Erfahren Sie mehr über die Einrichtung der Lizenzierung"].
 
 * *CIFS-Protokoll*: Der Service unterstützt jetzt On-Premises ONTAP und Cloud Volumes ONTAP in AWS-Arbeitsumgebungen, die sowohl NFS- als auch CIFS-Protokolle verwenden. In der vorherigen Version wurde nur das NFS-Protokoll unterstützt.
-* *Workload-Details*: Diese Version bietet jetzt mehr Details in den Workload-Informationen von den Schutz-Seiten für eine verbesserte Workload-Schutz-Bewertung. In den Workload-Details können Sie den Workload-Namen ändern, die Workload-Wichtigkeit ändern, die derzeit zugewiesene Richtlinie überprüfen und die konfigurierten Backup-Ziele überprüfen.
+* *Workload-Details*: Diese Version bietet jetzt mehr Details in den Workload-Informationen aus dem Schutz und anderen Seiten für eine verbesserte Workload-Schutz-Bewertung. Anhand der Workload-Details können Sie die derzeit zugewiesene Richtlinie überprüfen und die konfigurierten Backup-Ziele überprüfen.
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Weitere Informationen zum Anzeigen von Workload-Details finden Sie auf den Schutzseiten"].
 
-* *Anwendungskonsistenter und VM-konsistenter Schutz und Recovery*: Sie können jetzt mit der NetApp SnapCenter-Software und VM-konsistentem Schutz mit dem SnapCenter-Plug-in für VMware vSphere einen ruhigen und konsistenten Zustand erreichen, um einen potenziellen Datenverlust später zu vermeiden, wenn eine Recovery erforderlich ist. Falls ein Recovery erforderlich ist, können Sie die Applikation oder VM in den vorherigen Zustand und die letzte Transaktion wiederherstellen.
+* *Anwendungskonsistenter und VM-konsistenter Schutz und Recovery*: Sie können jetzt mit der NetApp SnapCenter-Software und VM-konsistentem Schutz mit dem SnapCenter-Plug-in für VMware vSphere einen ruhigen und konsistenten Zustand erreichen, um einen potenziellen Datenverlust später zu vermeiden, wenn eine Recovery erforderlich ist. Wenn ein Recovery erforderlich ist, können Sie die Applikation oder die VM wieder in einen der zuvor verfügbaren Status zurücksetzen.
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Weitere Informationen zum Schutz von Workloads"].
 
@@ -53,7 +78,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Erfahren Sie mehr über den Schutz von Workloads und das Anzeigen von Schutzstatus"].
 
-* *Laden Sie CSV-Dateien* von den Dashboard-, Schutz-, Warn- und Wiederherstellungsseiten herunter.
+* *Laden Sie CSV-Dateien* von den Seiten Schutz, Warnungen und Wiederherstellung herunter.
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html["Erfahren Sie mehr über das Herunterladen von CSV-Dateien vom Dashboard und anderen Seiten"].
 

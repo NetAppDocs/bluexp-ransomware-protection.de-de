@@ -74,19 +74,19 @@ Hier eine Auswahl der Empfehlungen, die der Service anbietet.
 | Empfehlung | Beschreibung | Wie wird das Problem behoben 
 
 
-| Fügen Sie eine Schutzrichtlinie für Ransomware hinzu | Der Workload ist derzeit nicht geschützt. | Weisen Sie dem Workload eine Richtlinie zu.
+| Fügen Sie eine Schutzrichtlinie für Ransomware hinzu. | Der Workload ist derzeit nicht geschützt. | Weisen Sie dem Workload eine Richtlinie zu.
 Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"]. 
 
 
-| Konfigurieren Sie Sicherungsziele | Der Workload verfügt derzeit über keine Sicherungsziele. | Fügen Sie diesem Workload Sicherungsziele hinzu, um ihn zu schützen.
+| Bereiten Sie <backup provider> als Backup-Ziel vor, um Ihre Workload-Daten zu sichern. | Der Workload verfügt derzeit über keine Sicherungsziele. | Fügen Sie diesem Workload Sicherungsziele hinzu, um ihn zu schützen.
 Siehe link:rp-use-settings.html["Konfigurieren Sie die Schutzeinstellungen"]. 
 
 
-| Bearbeiten Sie den Workload-Namen | Für Ihre Workloads werden Standardnamen verwendet. | Geben Sie Ihrem Workload einen beschreibenden Namen.
+| Bearbeiten Sie den Workload-Namen. | Für Ihre Workloads werden Standardnamen verwendet. | Geben Sie Ihrem Workload einen beschreibenden Namen.
 Siehe link:rp-use-manage.html["Management von Workloads"]. 
 
 
-| Bedrohungserkennung aktivieren | Senden von Daten an ein Sicherheits- und Event-Management-System (SIEM) zur Bedrohungsanalyse und -Erkennung. | Geben Sie SIEM/XDR-Serverdetails ein, um die Bedrohungserkennung zu aktivieren.
+| Bedrohungserkennung aktivieren. | Senden von Daten an ein Sicherheits- und Event-Management-System (SIEM) zur Bedrohungsanalyse und -Erkennung. | Geben Sie SIEM/XDR-Serverdetails ein, um die Bedrohungserkennung zu aktivieren.
 Siehe link:rp-use-settings.html["Konfigurieren Sie die Schutzeinstellungen"].
 Siehe link:rp-use-settings.html["Konfigurieren Sie die Schutzeinstellungen"]. 
 
@@ -107,7 +107,7 @@ Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"].
 Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"]. 
 
 
-| Überprüfen Sie neue Warnmeldungen | Es sind neue Warnmeldungen vorhanden. | Überprüfen Sie die neuen Warnmeldungen.
+| Überprüfen Sie neue Warnmeldungen. | Es sind neue Warnmeldungen vorhanden. | Überprüfen Sie die neuen Warnmeldungen.
 Siehe link:rp-use-alert.html["Reagieren Sie auf einen erkannten Ransomware-Alarm"]. 
 |===
 .Schritte

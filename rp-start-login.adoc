@@ -27,17 +27,17 @@ Die Anmeldeseite für NetApp BlueXP wird angezeigt.
 Wenn Sie sich zum ersten Mal bei diesem Dienst anmelden, wird die Landing Page angezeigt.
 
 +
+image:screen-landing.png["Landing Page-Screenshot zu BlueXP Ransomware-Schutz"]
+
++
 Andernfalls erscheint das BlueXP Dashboard für Ransomware-Schutz.
 
 +
 image:screen-dashboard.png["BlueXP Dashboard für Ransomware-Schutz"]
 
-. Beginnen Sie mit der Nutzung des Dienstes.
 +
-** Wenn Sie keinen BlueXP Connector haben oder diesen Service nicht anbieten, müssen Sie sich möglicherweise an den NetApp Support wenden oder den Nachrichten folgen, um sich zu registrieren.
-** Wenn Sie neu bei BlueXP sind und noch keinen Connector verwendet haben, wird bei der Auswahl von „*Ransomware-Schutz*“ eine Meldung über die Anmeldung angezeigt. Senden Sie das Formular ab. NetApp wird sich bezüglich Ihrer Evaluierungsanfrage mit Ihnen in Verbindung setzen.
-** Wenn Sie ein BlueXP-Benutzer mit einem vorhandenen Connector sind, wird bei der Auswahl von „*Ransomware-Schutz*“ eine Meldung über die Anmeldung angezeigt.
 
+NOTE: Wenn Sie keinen BlueXP Connector haben oder diesen Service nicht anbieten, wenden Sie sich möglicherweise an den NetApp Support.
 
 . Wenn Sie dies noch nicht getan haben, wählen Sie die Option *Workloads ermitteln* aus.
 +

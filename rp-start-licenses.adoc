@@ -12,13 +12,13 @@ summary: Starten Sie mit BlueXP zum Ransomware-Schutz durch Einrichten der Lizen
 
 
 [role="lead"]
-Mit BlueXP Ransomware-Schutz haben Sie die Möglichkeit, verschiedene Lizenzierungsmodelle zu verwenden, darunter eine kostenlose Testversion, ein Pay-as-you-go-Abonnement oder eine eigene Lizenz.
+Mit BlueXP vor Ransomware-Schutz können Sie unterschiedliche Lizenzierungspläne verwenden.
 
 Sie können die folgenden Lizenztypen verwenden:
 
 * Melden Sie sich für eine kostenlose 90-Tage-Testversion an.
-* Mit Amazon Web Services (AWS) Marketplace besteht ein Pay-as-you-go-Abonnement (PAYGO).
-* Bring-Your-Own-License (BYOL) bei einer NetApp Lizenzdatei (NLF), die Sie von Ihrem NetApp Vertriebsmitarbeiter erhalten. Sie können die Seriennummer der Lizenz verwenden, um das BYOL in der Digital Wallet von BlueXP zu aktivieren.
+* Mit Amazon Web Services (AWS) Marketplace besteht ein Pay-as-you-go-Abonnement (PAYGO).  Dies wird in Kürze verfügbar sein.
+* Bring-Your-Own-License (BYOL) bei einer NetApp Lizenzdatei (NLF), die Sie von Ihrem NetApp Vertriebsmitarbeiter erhalten. Sie können die Seriennummer der Lizenz verwenden, um das BYOL in der Digital Wallet von BlueXP zu aktivieren. Dies wird in Kürze verfügbar sein.
 
 
 Nachdem Sie Ihr BYOL eingerichtet oder ein PAYGO-Abonnement in AWS erworben haben, können Sie die Lizenz im BlueXP Digital Wallet *Data Service Licenses* oder im aktiven AWS-Abonnement auf der Registerkarte BlueXP Digital Wallet *Subscriptions* sehen.
@@ -57,8 +57,8 @@ image:screen-rp-landing.png["Landing Page-Screenshot zu BlueXP Ransomware-Schutz
 +
 Informationen zum Hinzufügen eines Connectors finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Erfahren Sie mehr über Steckverbinder"^].
 
-. Nachdem Sie einen Connector eingerichtet haben, können Sie auf der Landing Page für BlueXP zum Ransomware-Schutz mit der Schaltfläche einen Connector hinzufügen und so eine kostenlose Testversion starten. Wählen Sie *Kostenlose Testversion starten*.
-. Überprüfen Sie die kostenlosen Testinformationen und wählen Sie *Los geht's*.
+. Nachdem Sie einen Connector eingerichtet haben, können Sie auf der Startseite des BlueXP Ransomware-Schutzes mit der Schaltfläche zum Erkennen von Workloads einen Connector mit Änderungen hinzufügen. Wählen Sie *Start by Discovering Workloads* aus.
+. Um die kostenlosen Testinformationen anzuzeigen, wählen Sie oben rechts die Dropdown-Option aus.
 
 
 *Nach Ablauf der Testversion erhalten Sie ein Abonnement oder eine Lizenz*
@@ -80,7 +80,7 @@ Dieses Verfahren bietet einen allgemeinen Überblick über das direkte Abonniere
 ** Sie sehen eine Nachricht, dass die kostenlose Testversion abläuft. Wählen Sie in der Nachricht *Zahlungsmethoden anzeigen*.
 ** Klicken Sie oben rechts auf den Hinweis *Kostenlose Testversion* und wählen Sie *Zahlungsmethoden anzeigen*.
 +
-image:screen-license-payment-methods.png["Die BlueXP Seite mit den Zahlungsmethoden für Ransomware-Schutz"]
+image:screen-license-payment-methods2.png["Die BlueXP Seite mit den Zahlungsmethoden für Ransomware-Schutz"]
 
 
 
@@ -102,9 +102,61 @@ image:screen-license-dw-add-license.png["Die BlueXP Digital Wallet Add License S
 
 . Wählen Sie auf der Seite Add License in der Digital Wallet von BlueXP *Enter Serial Number* aus, geben Sie die Seriennummer ein, die in der an Sie gesendeten E-Mail enthalten war, und wählen Sie *Add License* aus.
 . Um Lizenzdetails in der Digital Wallet von BlueXP anzuzeigen, wählen Sie in der linken Navigationsleiste von BlueXP *Governance* > *Digital Wallet* aus.
-. Um Abonnementinformationen anzuzeigen, wählen Sie *Abonnements*. Um BYOL-Lizenzen anzuzeigen, wählen Sie *Data Services Licenses* aus.
++
+** Um Abonnementinformationen anzuzeigen, wählen Sie *Abonnements*.
+** Um BYOL-Lizenzen anzuzeigen, wählen Sie *Data Services Licenses* aus.
 +
 image:screen-dw-data-services-license.png["BlueXP Digital Wallet Data Services – Lizenzseite"]
+
+
+
+. Zurück zum Ransomware-Schutz von BlueXP Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
++
+Es wird eine Meldung angezeigt, die darauf hinweist, dass eine Lizenz hinzugefügt wurde.
+
+
+
+
+
+== Abonnieren Sie ihn über Microsoft Azure Marketplace
+
+Dieses Verfahren bietet einen allgemeinen Überblick über das direkte Abonnieren im Azure Marketplace.
+
+.Schritte
+. Führen Sie beim Ransomware-Schutz von BlueXP einen der folgenden Schritte aus:
++
+** Sie sehen eine Nachricht, dass die kostenlose Testversion abläuft. Wählen Sie in der Nachricht *Zahlungsmethoden anzeigen*.
+** Klicken Sie oben rechts auf den Hinweis *Kostenlose Testversion* und wählen Sie *Zahlungsmethoden anzeigen*.
++
+image:screen-license-payment-methods2.png["Die BlueXP Seite mit den Zahlungsmethoden für Ransomware-Schutz"]
+
+
+
+. Wählen Sie auf der Seite Zahlungsmethoden die Option *in Azure Marketplace abonnieren* aus.
+. Wählen Sie im Azure Marketplace *Kaufoptionen anzeigen*.
+. Verwenden Sie Azure Marketplace, um den Ransomware-Schutz von BlueXP zu abonnieren.
+. Wenn Sie zum BlueXP Ransomware-Schutz zurückkehren, wird in einer Meldung angezeigt, dass Sie abonniert sind.
++
+
+NOTE: Es wird eine E-Mail gesendet, die die Seriennummer des BlueXP Ransomware-Schutzes enthält und anzeigt, dass der BlueXP Ransomware-Schutz im Azure Marketplace abonniert ist.
+
+. Zurück zur Seite mit den Zahlungsmethoden für BlueXP Ransomware-Schutz.
+. Fügen Sie die Lizenz zu BlueXP hinzu, indem Sie *Lizenz zu BlueXP hinzufügen* auswählen.
++
+Der BlueXP Digital Wallet Service zeigt die Seite Add License.
+
++
+image:screen-license-dw-add-license.png["Die BlueXP Digital Wallet Add License Seite"]
+
+. Wählen Sie auf der Seite Add License in der Digital Wallet von BlueXP *Enter Serial Number* aus, geben Sie die Seriennummer ein, die in der an Sie gesendeten E-Mail enthalten war, und wählen Sie *Add License* aus.
+. Um Lizenzdetails in der Digital Wallet von BlueXP anzuzeigen, wählen Sie in der linken Navigationsleiste von BlueXP *Governance* > *Digital Wallet* aus.
++
+** Um Abonnementinformationen anzuzeigen, wählen Sie *Abonnements*.
+** Um BYOL-Lizenzen anzuzeigen, wählen Sie *Data Services Licenses* aus.
++
+image:screen-dw-data-services-license.png["BlueXP Digital Wallet Data Services – Lizenzseite"]
+
+
 
 . Zurück zum Ransomware-Schutz von BlueXP Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
 +
@@ -181,28 +233,4 @@ Nachdem Sie für die Lizenz bezahlt und sie auf der NetApp Support-Website regis
 .. Wählen Sie die Registerkarte *Data Services Licenses* aus, wählen Sie das Symbol *actions ...* für die Seriennummer des Dienstes, die Sie aktualisieren, und wählen Sie *Update License* aus.
 
 
-
-
-
-
-== Beenden Sie die kostenlose Testversion
-
-Sie können die kostenlose Testversion jederzeit beenden oder warten, bis sie abläuft.
-
-.Schritte
-. Wählen Sie in BlueXP Ransomware-Schutz oben rechts *Kostenlose Testversion – Details anzeigen*.
-. Wählen Sie in den Dropdown-Details *kostenlose Testversion beenden* aus.
-+
-image:screen-license-trial-end.png["Kostenlose Testseite beenden"]
-
-. Wenn Sie alle Daten löschen möchten, aktivieren Sie die Option *Daten löschen* nach Ablauf der kostenlosen Testversion.
-+
-Dadurch werden alle Zeitpläne, Replikationspläne, Ressourcengruppen, vCenter und Standorte gelöscht. Audit-Daten, Betriebsprotokolle und Jobverlauf werden bis zum Ende der Lebensdauer des Produkts aufbewahrt.
-
-+
-
-NOTE: Wenn Sie die kostenlose Testversion beenden und Daten nicht löschen möchten und keine Lizenz oder ein Abonnement erwerben, löscht BlueXP 60 Tage nach Ende der kostenlosen Testversion sämtliche Daten.
-
-. Geben Sie „Test beenden“ in das Textfeld ein.
-. Wählen Sie *Ende*.
 
