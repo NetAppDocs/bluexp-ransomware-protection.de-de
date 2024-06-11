@@ -67,7 +67,7 @@ Geben Sie die folgenden Informationen ein, um NetApp StorageGRID als Backup-Ziel
 . Wählen Sie auf der Seite *Einstellungen > Sicherungsziele* *Hinzufügen* aus.
 . Geben Sie einen Namen für das Sicherungsziel ein.
 +
-image:screen-settings-backup-destination-azure.png["Seite „Backup-Ziele“"]
+image:screen-settings-backup-destination.png["Seite „Backup-Ziele“"]
 
 . Wählen Sie *StorageGRID*.
 . Wählen Sie den Abwärtspfeil neben jeder Einstellung aus, und geben Sie Werte ein oder wählen Sie diese aus:
@@ -113,7 +113,7 @@ Weitere Informationen zum Management Ihres AWS Storage in BlueXP finden Sie unte
 . Wählen Sie auf der Seite *Einstellungen > Sicherungsziele* *Hinzufügen* aus.
 . Geben Sie einen Namen für das Sicherungsziel ein.
 +
-image:screen-settings-backup-destination-azure.png["Seite „Backup-Ziele“"]
+image:screen-settings-backup-destination.png["Seite „Backup-Ziele“"]
 
 . Wählen Sie *Amazon Web Services*.
 . Wählen Sie den Abwärtspfeil neben jeder Einstellung aus, und geben Sie Werte ein oder wählen Sie diese aus:
@@ -171,7 +171,7 @@ Weitere Informationen zum Management Ihrer Azure Zugangsdaten und Marketplace-Ab
 . Wählen Sie auf der Seite *Einstellungen > Sicherungsziele* *Hinzufügen* aus.
 . Geben Sie einen Namen für das Sicherungsziel ein.
 +
-image:screen-settings-backup-destination-azure.png["Seite „Backup-Ziele“"]
+image:screen-settings-backup-destination.png["Seite „Backup-Ziele“"]
 
 . Wählen Sie *Azure*.
 . Wählen Sie den Abwärtspfeil neben jeder Einstellung aus, und geben Sie Werte ein oder wählen Sie diese aus:

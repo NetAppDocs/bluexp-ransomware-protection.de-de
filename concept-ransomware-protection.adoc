@@ -14,7 +14,7 @@ summary: Ransomware-Angriffe können das Unternehmen Zeit, Ressourcen und Image-
 
 
 [role="lead"]
-Ransomware-Angriffe können den Zugriff auf Ihre Systeme und Daten blockieren. Angreifer können gegen die Freigabe von Daten oder die Entschlüsselung nach Lösegeld verlangen. Laut IDC ist es nicht selten, dass Opfer von Ransomware mehrere Ransomware-Angriffe erleiden. Durch den Angriff wird der Zugriff auf Daten möglicherweise zwischen einem Tag und mehreren Wochen unterbrochen.
+Ransomware-Angriffe können den Zugriff auf Ihre Daten blockieren und Angreifer können gegen die Freigabe von Daten oder die Entschlüsselung nach Lösegeld verlangen. Laut IDC ist es nicht selten, dass Opfer von Ransomware mehrere Ransomware-Angriffe erleiden. Durch den Angriff wird der Zugriff auf Daten möglicherweise zwischen einem Tag und mehreren Wochen unterbrochen.
 
 BlueXP Ransomware-Schutz ist ein Service zum Schutz Ihrer Daten vor Ransomware. Der Service schützt applikationsbasierte Workloads von Oracle, MySQL, VM-Datastores und File Shares auf lokalem NAS-Storage (unter Verwendung der NFS- und CIFS-Protokolle) sowie Cloud Volumes ONTAP für Amazon Web Services und Cloud Volumes ONTAP für Microsoft Azure über BlueXP Konten hinweg. Der Service ermöglicht Daten-Backups in Amazon Web Services, Microsoft Azure Cloud-Storage und NetApp StorageGRID.
 
@@ -25,10 +25,10 @@ BlueXP Ransomware-Schutz ist ein Service zum Schutz Ihrer Daten vor Ransomware. 
 Der BlueXP Ransomware-Sicherungsservice bietet vollständige Nutzung mehrerer NetApp Technologien, sodass Ihr Storage-Administrator, Datensicherheitsadministrator oder Security Operations Engineer folgende Ziele erreichen kann:
 
 * *Identifizierung* aller Applikations-, File-Share- oder VMware-verwalteten Workloads in NetApp On-Premises NAS mit NFS- oder CIFS-Arbeitsumgebungen in BlueXP, über BlueXP Konten, Workspaces und BlueXP Connectors hinweg. Der Service kategorisiert anschließend die Datenpriorität und gibt Ihnen Empfehlungen für eine Verbesserung des Ransomware-Schutzes.
-* *Schutz* Ihrer Workloads durch Aktivierung von Backup und Snapshot Kopien für Ihre Daten.
+* *Schützen* Ihrer Workloads durch Backup, Snapshot-Kopien und Ransomware-Schutzstrategien für Ihre Daten.
 * *Erkennen* Anomalien, die Ransomware-Angriffe sein könnten.
 * *Reagieren* auf potenzielle Ransomware-Angriffe durch automatisches Initiieren eines manipulationssicheren NetApp ONTAP Snapshots, der gesperrt ist, so dass die Kopie nicht versehentlich oder böswillig gelöscht werden kann. Ihre Backup-Daten bleiben unveränderlich und End-to-End-Schutz vor Ransomware-Angriffen an der Quelle und am Ziel.
-* *Wiederherstellen* Ihrer Workloads, die durch die Orchestrierung mehrerer NetApp-Technologien zur Beschleunigung der Workload-Uptime beitragen. Sie können Volumes, Ordner oder bestimmte Dateien wiederherstellen. Der Service gibt Empfehlungen für die besten Optionen.
+* *Wiederherstellen* Ihrer Workloads, die durch die Orchestrierung mehrerer NetApp-Technologien zur Beschleunigung der Workload-Uptime beitragen. Sie können spezifische Volumes wiederherstellen. Der Service gibt Empfehlungen für die besten Optionen.
 * *Regieren*: Implementieren Sie Ihre Ransomware-Schutzstrategie und überwachen Sie die Ergebnisse.
 
 
@@ -85,7 +85,6 @@ image:diagram-rp-architecture-preview3.png["Diagramm einer BlueXP Architektur f�
 * Ermittelt den aktuellen Sicherheitslevel eines jeden Volumes für NetApp Snapshots und Backup-Richtlinien sowie integrierte Erkennungsfunktionen. Der Service ordnet diesen Sicherungsstatus dann mithilfe von BlueXP Backup und Recovery, ONTAP Services und NetApp Technologien wie Autonomer Ransomware-Schutz, FPolicy, Backup-Richtlinien und Snapshot-Richtlinien den Workloads zu.
 Weitere Informationen zu https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Autonomer Schutz Durch Ransomware"^] Und https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["BlueXP Backup und Recovery"^], und https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^].
 * Weist jedem Workload eine geschäftliche Priorität zu, basierend auf automatisch ermittelten Schutzstufen, und empfiehlt Schutzrichtlinien für Workloads basierend auf ihrer Geschäftspriorität.
-* Ransomware-Schutz lernt auch die Richtlinienzuordnungen kennen und empfiehlt Ihre individuellen Richtlinien für ähnliche Workloads.
 
 
 

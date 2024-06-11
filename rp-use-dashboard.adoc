@@ -79,10 +79,7 @@ Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"].
 
 
 | Bereiten Sie <backup provider> als Backup-Ziel vor, um Ihre Workload-Daten zu sichern. | Der Workload verfügt derzeit über keine Sicherungsziele. | Fügen Sie diesem Workload Sicherungsziele hinzu, um ihn zu schützen.
-Siehe link:rp-use-settings.html["Konfigurieren Sie die Schutzeinstellungen"]. 
-
-
-| Bearbeiten Sie den Workload-Namen. | Für Ihre Workloads werden Standardnamen verwendet. | Geben Sie Ihrem Workload einen beschreibenden Namen.
+Siehe link:rp-use-settings.html["Konfigurieren Sie die Schutzeinstellungen"].
 Siehe link:rp-use-manage.html["Management von Workloads"]. 
 
 

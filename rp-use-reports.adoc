@@ -18,7 +18,6 @@ Bevor Sie die CSV-Dateien herunterladen, sollten Sie die Daten aktualisieren. Da
 
 Sie können CSV-Dateien von einer der Optionen des Hauptmenüs herunterladen:
 
-* *Dashboard:* enthält alle zusammenfassenden Informationen für alle Workloads.
 * *Schutz*: Enthält den Status und Details aller Workloads, einschließlich der Gesamtzahl der geschützten und gefährdeten Arbeitslasten.
 * *Alerts*: Enthält den Status und die Details aller Alerts, einschließlich der Gesamtzahl der Alerts und automatisierten Snapshots.
 * *Recovery*: Enthält den Status und Details aller Workloads, die wiederhergestellt werden müssen, einschließlich der Gesamtzahl der Workloads, die als „Restore needed“, „in progress“, „Restore failed“ und „successfully restored“ markiert sind.

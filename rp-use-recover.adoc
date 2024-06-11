@@ -182,54 +182,14 @@ TIP: Der neue Volume-Name wird als ursprünglicher Volume-Name + Backup-Name + B
 . Wählen Sie im oberen Menü *Recovery* aus, um den Workload auf der Seite Recovery zu überprüfen, auf der sich der Status des Vorgangs durch die Zustände bewegt.
 
 
-
-
-=== Stellen Sie einen Applikations-Workload auf Dateiebene wieder her
-
-Laden Sie eine Liste der betroffenen Dateien* herunter, bevor Sie einen Anwendungs-Workload auf Dateiebene wiederherstellen. Sie können nun auf die Seite Warnungen zugreifen, um eine Liste der betroffenen Dateien herunterzuladen und dann die Seite Wiederherstellung verwenden, um die Liste hochzuladen und auszuwählen, welche Dateien wiederhergestellt werden sollen.
-
-.Schritte
-. Wählen Sie auf der Seite Wiederherstellen im Bereich Wiederherstellen die Option *nach Datei* aus.
-. Wählen Sie in der Liste der Volumes das Volume aus, das Sie wiederherstellen möchten.
-. *Quelle*: Wählen Sie den Pfeil nach unten neben Quelle, um Details zu sehen.
-+
-.. Wählen Sie den Wiederherstellungspunkt aus, den Sie zum Wiederherstellen der Daten verwenden möchten.
-+
-
-TIP: Durch den Ransomware-Schutz von BlueXP wird der beste Restore-Punkt als das neueste Backup direkt vor dem Vorfall identifiziert und eine „empfohlene“ Angabe angezeigt.
-
-.. Wählen Sie bis zu 100 Dateien oder einen einzelnen Ordner für die Wiederherstellung aus.
-
-
-. *Ziel*: Wählen Sie den Abwärtspfeil neben Ziel, um Details anzuzeigen.
-+
-.. Legen Sie fest, wo die Daten wiederhergestellt werden sollen: Ursprünglicher Quellspeicherort oder alternativer Speicherort, den Sie angeben können.
-+
-
-TIP: Während die ursprünglichen Dateien oder das ursprüngliche Verzeichnis durch die wiederhergestellten Daten überschrieben werden, bleiben die ursprünglichen Datei- und Ordnernamen unverändert, es sei denn, Sie geben neue Namen an.
-
-.. Wählen Sie die Arbeitsumgebung aus.
-.. Wählen Sie Storage VM aus.
-.. Geben Sie optional den Pfad ein.
-+
-
-TIP: Wenn Sie keinen Pfad für die Wiederherstellung angeben, werden die Dateien auf einem neuen Volume im Verzeichnis der obersten Ebene wiederhergestellt.
-
-.. Wählen Sie aus, ob die Namen der wiederhergestellten Dateien oder des Verzeichnisses den Namen des aktuellen Speicherorts oder anderer Namen haben sollen.
-
-
-. Wählen Sie *Speichern*.
-. Wählen Sie *Weiter*.
-. Überprüfen Sie Ihre Auswahl.
-. Wählen Sie *Wiederherstellen*.
-. Wählen Sie im oberen Menü *Recovery* aus, um den Workload auf der Seite Recovery zu überprüfen, auf der sich der Status des Vorgangs durch die Zustände bewegt.
+. Wählen Sie aus, ob die Namen der wiederhergestellten Dateien oder des Verzeichnisses den Namen des aktuellen Speicherorts oder anderer Namen haben sollen.
 
 
 
 
-=== Stellen Sie eine Dateifreigabe oder einen Datastore auf Volume- oder Dateiebene wieder her
+=== Wiederherstellung einer Dateifreigabe oder eines Datastore
 
-. Wählen Sie auf der Seite Wiederherstellen im Bereich Wiederherstellen die Option *nach Volume* oder *nach Datei* aus, nachdem Sie eine Dateifreigabe oder einen Datastore ausgewählt haben, die wiederhergestellt werden sollen.
+. Wählen Sie nach Auswahl einer wiederherzustellenden Dateifreigabe oder eines Datastore auf der Seite Wiederherstellen im Bereich Wiederherstellen die Option *nach Volume* aus.
 +
 image:screen-recovery-fileshare.png["Wiederherstellungsseite mit Dateifreigabe-Wiederherstellung"]
 

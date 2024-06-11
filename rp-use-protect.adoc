@@ -17,10 +17,7 @@ Sie können Ihre Workloads gegen Ransomware-Angriffe schützen, indem Sie die fo
 * Ändern Sie bestehende Details zur Workload-Sicherung.
 * Workload-konsistente Sicherung in Verbindung mit SnapCenter Software oder dem SnapCenter Plug-in für VMware vSphere
 * Erstellen oder managen Sie Strategien zum Schutz vor Ransomware. Dazu gehören Richtlinien, die Sie für Snapshots, Backups und das Erkennen von Ransomware erstellen.
-+
-** Importieren Sie eine Strategie, und passen Sie sie an.
-
-
+* Importieren Sie eine Strategie, und passen Sie sie an.
 
 
 
@@ -348,9 +345,3 @@ Sie können eine andere Schutzrichtlinie zuweisen, die die aktuelle ersetzt.
 . Wählen Sie die Richtlinie aus, die Sie zuweisen möchten.
 . Wählen Sie *protect*, um die Änderung abzuschließen.
 
-
-
-
-== Management von Strategien für den Ransomware-Schutz
-
-Sie können eine Ransomware-Strategie bearbeiten oder löschen.
