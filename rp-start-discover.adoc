@@ -23,11 +23,20 @@ Der Service bewertet das vorhandene Sicherheitsniveau, einschließlich der aktue
 
 .Schritte
 . Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
-. Wählen Sie auf der ersten Landing-Page *Discover Workloads* aus.
++
+Wenn Sie sich zum ersten Mal bei diesem Dienst anmelden, wird die Landing Page angezeigt.
+
++
+image:screen-landing.png["Landing Page-Screenshot zu BlueXP Ransomware-Schutz"]
+
+. Wählen Sie auf der ersten Landing Page *Start by Discovering Workloads* aus.
 +
 Der Service erkennt Workload-Daten und zeigt den Zustand der Datensicherung im Dashboard an.
 
 +
 image:screen-dashboard.png["BlueXP Dashboard für Ransomware-Schutz"]
+
++
+link:rp-use-dashboard.html["Erfahren Sie, was Ihnen das Dashboard zeigt."]
 
 

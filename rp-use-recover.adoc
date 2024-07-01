@@ -12,14 +12,25 @@ summary: 'Nach einem Angriff überprüft der Ransomware-Schutz von BlueXP, ob di
 
 
 [role="lead"]
-Nachdem die Workloads als „bereit für die Recovery“ markiert wurden, empfiehlt der BlueXP Ransomware-Schutz einen tatsächlichen Recovery-Zeitpunkt (Recovery Point Actual, RPA) und orchestriert den Workflow für eine ausfallsichere Recovery.
+Nachdem Workloads als „Restore needed“ markiert wurden, empfiehlt der BlueXP Ransomware-Schutz einen tatsächlichen Recovery-Zeitpunkt (Recovery Point Actual, RPA) und orchestriert den Workflow für eine ausfallsichere Recovery.
 
-* Wenn die Applikation oder VM von SnapCenter gemanagt wird, stellt der Ransomware-Schutz von BlueXP die Applikation oder VM wieder in ihren vorherigen Zustand und die letzte Transaktion mithilfe des applikationskonsistenten oder VM-konsistenten Prozesses wieder her.
-* Wenn die Applikation oder VM von SnapCenter nicht gemanagt wird, stellt der BlueXP Ransomware-Schutz die Applikation oder VM wieder her, stellen Sie die Workload wieder her, indem Sie alle Volumes, Volumes oder Dateien auswählen.
+* Wenn die Applikation oder VM von SnapCenter gemanagt wird, stellt der Ransomware-Schutz von BlueXP die Applikation oder VM wieder in ihren vorherigen Zustand und die letzte Transaktion mithilfe des applikationskonsistenten oder VM-konsistenten Prozesses wieder her. Bei der Applikations- oder VM-konsistenten Wiederherstellung werden alle Daten, die nicht im Storage waren, beispielsweise Daten im Cache oder in einem I/O-Vorgang, zu den Daten des Volume hinzugefügt.
+* Wenn die Applikation oder VM von SnapCenter gemanagt wird und durch BlueXP Backup und Recovery oder BlueXP Ransomware-Schutz gemanagt wird, führt der BlueXP Ransomware-Schutz eine absturzkonsistente Wiederherstellung durch, bei der beispielsweise alle Daten, die sich im Volume zum selben Zeitpunkt befinden, wiederhergestellt werden, wenn das System abgestürzt ist.
++
+Sie können den Workload wiederherstellen, indem Sie alle Volumes, spezifische Volumes oder bestimmte Dateien auswählen.
+
 
 
 
 TIP: Die Workload-Recovery kann sich auf laufende Workloads auswirken. Sie sollten die Wiederherstellungsprozesse mit den entsprechenden Beteiligten koordinieren.
+
+Ein Workload kann einen der folgenden Wiederherstellungsstatus haben:
+
+* *Wiederherstellung erforderlich*: Der Workload muss wiederhergestellt werden.
+* *In Bearbeitung*: Der Wiederherstellungsvorgang läuft derzeit.
+* *Restauriert*: Die Arbeitslast wurde wiederhergestellt.
+* *Failed*: Die Workload-Wiederherstellung konnte nicht abgeschlossen werden.
+
 
 
 
@@ -113,6 +124,9 @@ TIP: Sie können bis zu 100 Dateien oder einen einzelnen Ordner auswählen.
 
 === Alle Volumes wiederherstellen
 
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Recovery* aus.
+. Wählen Sie einen Workload im Status „Restore needed“ aus.
+. Wählen Sie zum Wiederherstellen *Wiederherstellen*.
 . Wählen Sie auf der Seite Wiederherstellen im Bereich Wiederherstellen die Option *Alle Volumes* aus.
 +
 image:screen-recovery-all-volumes.png["Seite für alle Volumes wiederherstellen"]
@@ -149,6 +163,9 @@ TIP: Der neue Volume-Name wird als Präfix + ursprünglicher Volume-Name + Backu
 
 === Stellen Sie einen Applikations-Workload auf Volume-Ebene wieder her
 
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Recovery* aus.
+. Wählen Sie einen Applikations-Workload im Status „Restore needed“ aus.
+. Wählen Sie zum Wiederherstellen *Wiederherstellen*.
 . Wählen Sie auf der Seite Wiederherstellen im Bereich Wiederherstellen die Option *nach Volume* aus.
 +
 image:screen-recovery-byvolume.png["Nach Volume-Seite wiederherstellen"]
@@ -182,7 +199,80 @@ TIP: Der neue Volume-Name wird als ursprünglicher Volume-Name + Backup-Name + B
 . Wählen Sie im oberen Menü *Recovery* aus, um den Workload auf der Seite Recovery zu überprüfen, auf der sich der Status des Vorgangs durch die Zustände bewegt.
 
 
-. Wählen Sie aus, ob die Namen der wiederhergestellten Dateien oder des Verzeichnisses den Namen des aktuellen Speicherorts oder anderer Namen haben sollen.
+
+
+=== Stellen Sie einen Applikations-Workload auf Dateiebene wieder her
+
+Bevor Sie einen Anwendungs-Workload auf Dateiebene wiederherstellen, können Sie eine Liste der betroffenen Dateien anzeigen. Sie können auf die Seite Warnungen zugreifen, um eine Liste der betroffenen Dateien herunterzuladen. Verwenden Sie dann die Wiederherstellungsseite, um die Liste hochzuladen und auszuwählen, welche Dateien wiederhergestellt werden sollen.
+
+Sie können einen Anwendungs-Workload auf Dateiebene in derselben oder einer anderen Arbeitsumgebung wiederherstellen.
+
+.Schritte, um die Liste der betroffenen Dateien zu erhalten
+Auf der Seite Warnungen können Sie die Liste der betroffenen Dateien abrufen.
+
+
+TIP: Wenn ein Volume mehrere Warnmeldungen enthält, müssen Sie für jede Warnmeldung die CSV-Liste der betroffenen Dateien herunterladen.
+
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Alerts* aus.
+. Sortieren Sie auf der Seite Warnungen die Ergebnisse nach Workload, um die Warnungen für den Anwendungs-Workload anzuzeigen, den Sie wiederherstellen möchten.
+. Wählen Sie aus der Liste der Warnmeldungen für diesen Workload eine Warnmeldung aus.
+. Wählen Sie für diese Warnung einen einzelnen Vorfall aus.
++
+image:screen-alerts-incidents-impacted-files.png["Liste der betroffenen Dateien für eine bestimmte Warnung"]
+
+. Um die vollständige Liste der Dateien zu sehen, wählen Sie *Klicken Sie hier* oben im Bereich betroffene Dateien.
+. Wählen Sie für diesen Vorfall das Download-Symbol aus, und laden Sie die Liste der betroffenen Dateien im CSV-Format herunter.
+
+
+.Schritte zum Wiederherstellen dieser Dateien
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Recovery* aus.
+. Wählen Sie einen Applikations-Workload im Status „Restore needed“ aus.
+. Wählen Sie zum Wiederherstellen *Wiederherstellen*.
+. Wählen Sie auf der Seite Wiederherstellen im Bereich Wiederherstellen die Option *nach Datei* aus.
+. Wählen Sie in der Liste der Volumes das Volume aus, das die Dateien enthält, die Sie wiederherstellen möchten.
+. *Wiederherstellungspunkt*: Wählen Sie den Abwärtspfeil neben *Wiederherstellungspunkt*, um Details anzuzeigen. Wählen Sie den Wiederherstellungspunkt aus, den Sie zum Wiederherstellen der Daten verwenden möchten.
++
+
+NOTE: In der Spalte „Grund“ im Teilfenster „Wiederherstellungspunkte“ wird der Grund für den Snapshot oder das Backup als „geplante“ oder „automatisierte Antwort auf Ransomware-Vorfälle“ angezeigt.
+
+. *Dateien*:
++
+** *Dateien automatisch auswählen*: Lassen Sie den Ransomware-Schutz von BlueXP die Dateien auswählen, die wiederhergestellt werden sollen.
+** *Liste der Dateien hochladen*: Laden Sie eine CSV-Datei hoch, die die Liste der betroffenen Dateien enthält, die Sie von der Alerts-Seite erhalten haben oder die Sie haben. Sie können bis zu 10,000 Dateien gleichzeitig wiederherstellen.
++
+image:screen-recovery-app-by-file-upload-csv.png["Laden Sie eine CSV-Datei hoch, in der die betroffenen Dateien für die Warnmeldung aufgeführt sind"]
+
+** *Dateien manuell auswählen*: Wählen Sie bis zu 10,000 Dateien oder einen einzelnen Ordner für die Wiederherstellung aus.
++
+image:screen-recovery-app-by-file-select-files.png["Wählen Sie die Dateien manuell aus, um sie wiederherzustellen"]
+
++
+
+NOTE: Wenn Dateien mit dem ausgewählten Wiederherstellungspunkt nicht wiederhergestellt werden können, wird eine Meldung angezeigt, die die Anzahl der Dateien angibt, die nicht wiederhergestellt werden können, und Sie können die Liste dieser Dateien herunterladen, indem Sie *Liste der betroffenen Dateien herunterladen* auswählen.
+
+
+
+. *Ziel*: Wählen Sie den Abwärtspfeil neben Ziel, um Details anzuzeigen.
++
+.. Legen Sie fest, wo die Daten wiederhergestellt werden sollen: Ursprünglicher Quellspeicherort oder alternativer Speicherort, den Sie angeben können.
++
+
+TIP: Während die ursprünglichen Dateien oder das ursprüngliche Verzeichnis durch die wiederhergestellten Daten überschrieben werden, bleiben die ursprünglichen Datei- und Ordnernamen unverändert, es sei denn, Sie geben neue Namen an.
+
+.. Wählen Sie die Arbeitsumgebung aus.
+.. Wählen Sie Storage VM aus.
+.. Geben Sie optional den Pfad ein.
++
+
+TIP: Wenn Sie keinen Pfad für die Wiederherstellung angeben, werden die Dateien auf einem neuen Volume im Verzeichnis der obersten Ebene wiederhergestellt.
+
+.. Wählen Sie aus, ob die Namen der wiederhergestellten Dateien oder des Verzeichnisses den Namen des aktuellen Speicherorts oder anderer Namen haben sollen.
+
+
+. Wählen Sie *Weiter*.
+. Überprüfen Sie Ihre Auswahl.
+. Wählen Sie *Wiederherstellen*.
+. Wählen Sie im oberen Menü *Recovery* aus, um den Workload auf der Seite Recovery zu überprüfen, auf der sich der Status des Vorgangs durch die Zustände bewegt.
 
 
 

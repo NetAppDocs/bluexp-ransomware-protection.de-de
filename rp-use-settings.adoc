@@ -83,15 +83,6 @@ image:screen-settings-backup-destination.png["Seite „Backup-Ziele“"]
 *** Der IPspace ist das Cluster, in dem sich die Volumes, die Sie sichern möchten, befinden. Die Intercluster-LIFs für diesen IPspace müssen über Outbound-Internetzugang verfügen.
 
 
-** *Backup Lock*: Wählen Sie aus, ob der Dienst Backups vor Änderung oder Löschung schützen soll. Diese Option verwendet die NetApp DataLock-Technologie. Jedes Backup wird während der Aufbewahrungsfrist oder für mindestens 30 Tage gesperrt, zuzüglich einer Pufferzeit von bis zu 14 Tagen.
-+
-
-CAUTION: Wenn Sie die Einstellung für die Sicherungssperre jetzt konfigurieren, können Sie die Einstellung später nach der Konfiguration des Sicherungsziels nicht mehr ändern.
-
-+
-*** *Compliance-Modus*: Benutzer können geschützte Backup-Dateien während der Aufbewahrungsfrist nicht überschreiben oder löschen.
-
-
 
 
 . Wählen Sie *Hinzufügen*.
@@ -196,16 +187,6 @@ Die Daten im Konto werden standardmäßig mit von Microsoft verwalteten Schlüss
 +
 Informationen zur Verwendung von Azure PrivateLink finden Sie unter https://azure.microsoft.com/en-us/products/private-link/["Azure PrivateLink"^].
 
-
-
-** *Backup Lock*: Wählen Sie aus, ob der Dienst Backups vor Änderung oder Löschung schützen soll. Diese Option verwendet die NetApp DataLock-Technologie. Jedes Backup wird während der Aufbewahrungsfrist oder für mindestens 30 Tage gesperrt, zuzüglich einer Pufferzeit von bis zu 14 Tagen.
-+
-
-CAUTION: Wenn Sie die Einstellung für die Sicherungssperre jetzt konfigurieren, können Sie die Einstellung später nach der Konfiguration des Sicherungsziels nicht mehr ändern.
-
-+
-*** *Unlocked*: Bestimmte Benutzer können geschützte Dateien während der Aufbewahrungsfrist überschreiben oder löschen.
-*** *Locked*: Benutzer können geschützte Backup-Dateien während der Aufbewahrungsfrist nicht überschreiben oder löschen. Diese Option erfüllt die Einhaltung gesetzlicher Vorschriften.
 
 
 

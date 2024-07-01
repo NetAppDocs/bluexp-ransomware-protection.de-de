@@ -14,6 +14,11 @@ summary: Wenn der Ransomware Protection von BlueXP einen möglichen Angriff erke
 [role="lead"]
 Wenn der Ransomware-Schutz von BlueXP einen möglichen Angriff erkennt, wird im BlueXP Ransomware Protection Dashboard und in den BlueXP Benachrichtigungen oben rechts eine Warnmeldung angezeigt, die auf einen potenziellen Ransomware-Angriff hinweist. Der Service initiiert zudem unverzüglich die Erstellung einer Snapshot-Kopie. An dieser Stelle sollten Sie sich das potenzielle Risiko im BlueXP Ransomware-Schutz anschauen *Alerts* Tab.
 
+Sie können false-positive Ergebnisse verwerfen oder beschließen, Ihre Daten sofort wiederherzustellen.
+
+
+TIP: Wenn Sie die Warnmeldung schließen möchten, lernt der Service dieses Verhalten und verknüpft sie mit dem normalen Betrieb und initiiert keine weitere Warnung zu einem solchen Verhalten.
+
 Um Ihre Daten wiederherzustellen, markieren Sie die Warnmeldung als bereit für die Recovery, damit Ihr Storage-Administrator mit dem Recovery-Prozess beginnen kann.
 
 Jede Warnung kann mehrere Vorfälle auf verschiedenen Volumes mit unterschiedlichen Status haben, achten Sie also darauf, alle Vorfälle zu betrachten.
@@ -39,6 +44,24 @@ Eine Warnung basiert auf den folgenden Verhaltensarten:
 
 Der Nachweis basiert auf Informationen aus dem Autonomen Ransomware-Schutz in ONTAP. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Autonome Ransomware-Schutz – Übersicht"^].
 
+Eine Meldung kann einen der folgenden Status aufweisen:
+
+* * Neu*
+* *Inaktiv*
+
+
+Ein Warnungsvorfall wird in einen der folgenden Status kategorisiert:
+
+* *Neu*: Alle Vorfälle werden bei der ersten Identifizierung mit "neu" markiert.
+* *Abgewiesen*: Wenn Sie vermuten, dass die Aktivität kein Ransomware-Angriff ist, können Sie den Status in "Abgewiesen" ändern.
++
+
+CAUTION: Nachdem du einen Angriff abgetan hast, kannst du ihn nicht mehr zurückändern. Wenn Sie einen Workload verwerfen, werden alle Snapshot Kopien, die automatisch als Reaktion auf einen potenziellen Ransomware-Angriff erstellt wurden, dauerhaft gelöscht.
+
+* *Entlassung*: Der Vorfall ist im Prozess der Entlassung.
+* *Gelöst*: Der Vorfall wurde behoben.
+
+
 
 
 == Anzeigen von Meldungen
@@ -54,7 +77,12 @@ Sie können über das BlueXP Ransomware Protection Dashboard oder über die Regi
 +
 image:screen-alerts.png["Warnmeldeseite"]
 
-. Weiter mit <<Markieren Sie Ransomware-Vorfälle als bereit für die Wiederherstellung (nach der Neutralisierung von Vorfällen).>>.
+. Weiter:
++
+** <<Markieren Sie Ransomware-Vorfälle als bereit für die Wiederherstellung (nach der Neutralisierung von Vorfällen).>>.
+** <<Schließen Sie Vorfälle ab, die keine potenziellen Angriffe sind>>.
+
+
 
 
 
@@ -71,7 +99,7 @@ image:screen-alerts.png["Warnmeldeseite"]
 . Wählen Sie auf der Seite Warnungen die Warnmeldung aus.
 . Überprüfen Sie die Vorfälle in der Meldung.
 +
-image:screen-alerts-incidents.png["Seite „Warnungsvorfälle“"]
+image:screen-alerts-incidents2.png["Seite „Warnungsvorfälle“"]
 
 . Wenn Sie feststellen, dass die Vorfälle für die Wiederherstellung bereit sind, wählen Sie *Wiederherstellung erforderlich markieren*.
 . Bestätigen Sie die Aktion und wählen Sie *Wiederherstellung erforderlich markieren*.
@@ -80,3 +108,67 @@ image:screen-alerts-incidents.png["Seite „Warnungsvorfälle“"]
 
 .Ergebnis
 Nachdem die Warnmeldung für die Wiederherstellung markiert wurde, wechselt die Warnmeldung von der Registerkarte Warnungen zur Registerkarte Wiederherstellung.
+
+
+
+== Schließen Sie Vorfälle ab, die keine potenziellen Angriffe sind
+
+Nachdem Sie Vorfälle überprüft haben, müssen Sie feststellen, ob es sich bei den Vorfällen um potenzielle Angriffe handelt. Wenn nicht, können sie entlassen werden.
+
+Sie können false-positive Ergebnisse verwerfen oder beschließen, Ihre Daten sofort wiederherzustellen. Wenn Sie die Warnmeldung schließen möchten, lernt der Service dieses Verhalten und verknüpft sie mit dem normalen Betrieb und initiiert keine weitere Warnung zu einem solchen Verhalten.
+
+Wenn Sie einen Workload verwerfen, werden alle Snapshot Kopien, die automatisch als Reaktion auf einen potenziellen Ransomware-Angriff erstellt wurden, dauerhaft gelöscht.
+
+
+CAUTION: Wenn Sie eine Warnmeldung schließen, können Sie diesen Status nicht wieder in einen anderen Status ändern, und Sie können diese Änderung nicht rückgängig machen.
+
+.Schritte
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Alerts* aus.
++
+image:screen-alerts.png["Warnmeldeseite"]
+
+. Wählen Sie auf der Seite Warnungen die Warnmeldung aus.
++
+image:screen-alerts-incidents2.png["Seite „Warnungsvorfälle“"]
+
+. Wählen Sie einen oder mehrere Vorfälle aus. Oder wählen Sie alle Vorfälle aus, indem Sie das Feld Incident ID oben links in der Tabelle auswählen.
+. Wenn Sie feststellen, dass es sich bei dem Vorfall nicht um eine Bedrohung handelt, weisen Sie ihn als falsch positiv zu:
++
+** Wenn Sie einen Vorfall ausgewählt haben, wählen Sie die Option *actions* … Auf der rechten Seite wählen Sie *Status bearbeiten*.
+** Wenn Sie mehrere Vorfälle ausgewählt haben, wählen Sie die Schaltfläche *Status bearbeiten* über der Tabelle aus.
++
+image:screen-alerts-status-edit.png["Warnungsbearbeitung Statusseite"]
+
+
+
+. Wählen Sie im Feld Status bearbeiten den Status * „Abgewiesen“* aus.
++
+Weitere Informationen zum Workload und die zu löschenden Snapshot Kopien werden angezeigt.
+
+. Wählen Sie *Speichern*.
++
+Der Status des Vorfalls oder der Vorfälle ändert sich in „Abgewiesen“.
+
+
+
+
+
+== Zeigen Sie eine Liste der betroffenen Dateien an
+
+Bevor Sie einen Anwendungs-Workload auf Dateiebene wiederherstellen, können Sie eine Liste der betroffenen Dateien anzeigen. Sie können auf die Seite Warnungen zugreifen, um eine Liste der betroffenen Dateien herunterzuladen. Verwenden Sie dann die Wiederherstellungsseite, um die Liste hochzuladen und auszuwählen, welche Dateien wiederhergestellt werden sollen.
+
+.Schritte
+Auf der Seite Warnungen können Sie die Liste der betroffenen Dateien abrufen.
+
+
+TIP: Wenn ein Volume mehrere Warnmeldungen enthält, müssen Sie möglicherweise die CSV-Liste der betroffenen Dateien für jede Warnmeldung herunterladen.
+
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Alerts* aus.
+. Sortieren Sie auf der Seite Warnungen die Ergebnisse nach Workload, um die Warnungen für den Anwendungs-Workload anzuzeigen, den Sie wiederherstellen möchten.
+. Wählen Sie aus der Liste der Warnmeldungen für diesen Workload eine Warnmeldung aus.
+. Wählen Sie für diese Warnung einen einzelnen Vorfall aus.
++
+image:screen-alerts-incidents-impacted-files.png["Liste der betroffenen Dateien für eine bestimmte Warnung"]
+
+. Wählen Sie für diesen Vorfall das Download-Symbol aus, und laden Sie die Liste der betroffenen Dateien im CSV-Format herunter.
+
