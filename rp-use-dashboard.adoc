@@ -28,9 +28,13 @@ Nach der Erkennung wird über das Dashboard der Systemzustand der Workload-Daten
 +
 image:screen-dashboard.png["Dashboard-Seite"]
 
-. Im Dashboard können Sie in jedem der Teilfenster eine der folgenden Aktionen anzeigen und ausführen:
+. Im Dashboard können Sie in jedem der Teilfenster die folgenden Aktionen ausführen:
 +
 ** *Workload Data Protection*: Klicken Sie auf *View all*, um alle Workloads anzuzeigen, die gefährdet oder geschützt sind. Workloads sind gefährdet, wenn Sicherungsstufen mit einer Sicherungsrichtlinie nicht übereinstimmen. Siehe link:rp-use-protect.html["Schutz von Workloads"].
++
+
+TIP: Klicken Sie auf i Note, um Tipps zu diesen Daten zu erhalten. Um das Workload-Limit zu erhöhen, klicken Sie in diesem Hinweis auf *Workload-Limit erhöhen*. Wenn Sie auf diese Schaltfläche klicken, gelangen Sie zur Seite „BlueXP -Support“, auf der Sie ein Ticket erstellen können.
+
 ** *Warnungen und Workload-Daten-Recovery*: Klicken Sie auf *Alle anzeigen*, um aktive Vorfälle zu sehen, die sich auf Ihre Arbeitslast ausgewirkt haben, nach Neutralisierung der Vorfälle zur Wiederherstellung bereit sind oder sich in der Wiederherstellung befinden. Siehe link:rp-use-alert.html["Reagieren Sie auf eine erkannte Warnung"].
 +
 *** Ein Vorfall wird in einen der folgenden Status kategorisiert:
@@ -92,9 +96,7 @@ Hier eine Auswahl der Empfehlungen, die der Service anbietet.
 Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"]. 
 
 
-| Bedrohungserkennung aktivieren. | Senden von Daten an ein Sicherheits- und Event-Management-System (SIEM) zur Bedrohungsanalyse und -Erkennung. | Geben Sie SIEM/XDR-Serverdetails ein, um die Bedrohungserkennung zu aktivieren.
-Siehe link:rp-use-settings.html["Konfigurieren Sie die Schutzeinstellungen"].
-Siehe link:rp-use-settings.html["Konfigurieren Sie die Schutzeinstellungen"]. 
+| Mit SEIM verbinden, um Bedrohungsberichte zu erstellen. | Senden von Daten an ein Sicherheits- und Event-Management-System (SIEM) zur Bedrohungsanalyse und -Erkennung. | Geben Sie SIEM/XDR-Serverdetails ein, um die Bedrohungserkennung zu aktivieren. Siehe link:rp-use-settings.html["Konfigurieren Sie die Schutzeinstellungen"]. 
 
 
 | Workload-konsistenter Schutz für Applikationen oder VMware | Diese Workloads werden nicht von SnapCenter Software oder dem SnapCenter Plug-in für VMware vSphere gemanagt. | Das Management durch SnapCenter ermöglicht Workload-konsistenten Schutz.

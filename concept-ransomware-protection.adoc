@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-ransomware-protection.html 
-keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity 
+keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity, protection, bluexp, netapp 
 summary: Ransomware-Angriffe können das Unternehmen Zeit, Ressourcen und Image-Schäden kosten. Der BlueXP Ransomware-Schutzservice ermöglicht Ihnen, relevante Informationen zur Cybersicherheit anzuzeigen und zu bewerten, wie ausfallsicher Ihr Unternehmen zu einem Cyberangriff ist. Außerdem erhalten Sie eine Liste mit Alarmen und Lösungen, um Ihre Daten sicherer zu machen. 
 ---
 = Mehr zu BlueXP Ransomware-Schutz
@@ -56,6 +56,12 @@ Der Ransomware-Schutz von BlueXP bietet folgende Vorteile:
 
 NetApp berechnet Ihnen keine Kosten für die Nutzung der Testversion von BlueXP Ransomware-Schutz.
 
+Wenn Sie sowohl über BlueXP -Backup und -Recovery als auch über BlueXP -Ransomware-Schutz verfügen, werden alle gemeinsamen, durch beide Produkte geschützten Daten ausschließlich durch BlueXP  Ransomware-Schutz in Rechnung gestellt.
+
+Nach dem Kauf einer Lizenz oder eines PAYGO-Abonnements können alle Workloads mit aktivierter Richtlinie zur Erkennung von Ransomware (Autonomer Ransomware-Schutz) (erkannt oder eingerichtet durch BlueXP -Ransomware-Schutz), mindestens eine Snapshot- oder Backup-Richtlinie klassifiziert der BlueXP  in Ransomware-Schutz die Daten als „geschützt“. dies wird auf die erworbene Kapazität oder das PAYGO-Abonnement angerrechnet. Wird ein Workload ohne Erkennungsrichtlinie (ARP) erkannt, selbst wenn er über Backup- oder Snapshot-Richtlinien verfügt, wird er als „gefährdet“ klassifiziert und es wird nicht auf die erworbene Kapazität angerechnet.
+
+Geschützte Workloads werden mit der erworbenen Kapazität oder dem Abonnement verglichen, nachdem der 90-Tage-Testzeitraum endet. Der BlueXP  Ransomware-Schutz wird auf GB-Basis für die Daten in Verbindung mit geschützten Workloads berechnet, bevor die Effizienz gesteigert wird.
+
 
 
 == Lizenzierung
@@ -64,6 +70,8 @@ Mit BlueXP Ransomware-Schutz haben Sie die Möglichkeit, verschiedene Lizenzieru
 
 Für den BlueXP Ransomware-Schutzservice ist eine NetApp ONTAP Lizenz erforderlich.
 
+Die BlueXP  Lizenz zum Schutz vor Ransomware enthält keine zusätzlichen NetApp Produkte. BlueXP  Ransomware-Schutz kann Backup und Recovery mit BlueXP  nutzen, auch wenn Sie keine Lizenz dafür haben.
+
 Weitere Informationen finden Sie unter link:rp-start-licenses.html["Lizenzierung einrichten"].
 
 
@@ -71,6 +79,8 @@ Weitere Informationen finden Sie unter link:rp-start-licenses.html["Lizenzierung
 == Funktionsweise des BlueXP Ransomware-Schutzes
 
 BlueXP Ransomware-Schutz funktioniert ganz einfach so.
+
+Beim Ransomware-Schutz von BlueXP  kommen BlueXP  Backup und Recovery zum Einsatz, um Snapshot- und Backup-Richtlinien für File Share-Workloads zu erkennen und festzulegen. Außerdem eignen sich SnapCenter oder SnapCenter für VMware zur Erkennung und Festlegung von Snapshot- und Backup-Richtlinien für Applikations- und VM-Workloads. Darüber hinaus verwendet der BlueXP  Ransomware-Schutz BlueXP  Backup und Recovery und SnapCenter/SnapCenter für VMware, um eine Datei- und Workload-konsistente Recovery durchzuführen.
 
 image:diagram-rp-architecture-preview3.png["Diagramm einer BlueXP Architektur für den Schutz vor Ransomware"]
 
@@ -84,7 +94,7 @@ image:diagram-rp-architecture-preview3.png["Diagramm einer BlueXP Architektur f�
 * Identifiziert Kundendaten von ONTAP und SnapCenter Service-APIs und ordnet sie Workloads zu. Weitere Informationen zu https://docs.netapp.com/us-en/ontap-family/["ONTAP"^] Und https://docs.netapp.com/us-en/snapcenter/index.html["SnapCenter Software"^].
 * Ermittelt den aktuellen Sicherheitslevel eines jeden Volumes für NetApp Snapshots und Backup-Richtlinien sowie integrierte Erkennungsfunktionen. Der Service ordnet diesen Sicherungsstatus dann mithilfe von BlueXP Backup und Recovery, ONTAP Services und NetApp Technologien wie Autonomer Ransomware-Schutz, FPolicy, Backup-Richtlinien und Snapshot-Richtlinien den Workloads zu.
 Weitere Informationen zu https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Autonomer Schutz Durch Ransomware"^] Und https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["BlueXP Backup und Recovery"^], und https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^].
-* Weist jedem Workload eine geschäftliche Priorität zu, basierend auf automatisch ermittelten Schutzstufen, und empfiehlt Schutzrichtlinien für Workloads basierend auf ihrer Geschäftspriorität.
+* Weist jedem Workload eine geschäftliche Priorität zu, basierend auf automatisch ermittelten Schutzstufen, und empfiehlt Schutzrichtlinien für Workloads basierend auf ihrer Geschäftspriorität. Die Workload-Priorität basiert auf Snapshot-Frequenzen, die bereits auf jedes Volume angewendet wurden, das mit dem Workload verknüpft ist.
 
 
 
@@ -125,9 +135,9 @@ Weitere Informationen zu https://docs.netapp.com/us-en/ontap/anti-ransomware/ind
 |===
 
 
-== Unterstützte Backup-Ziele, Arbeitsumgebungen und Datenquellen
+== Unterstützte Backup-Ziele, Arbeitsumgebungen und Workload-Datenquellen
 
-Mit BlueXP vor Ransomware-Schutz erfahren Sie, wie stabil Ihre Daten bei einem Cyberangriff auf die folgenden Arten von Backup-Zielen, Arbeitsumgebungen und Datenquellen sind:
+Mit BlueXP  Ransomware-Schutz erfahren Sie, wie stabil Ihre Daten bei einem Cyberangriff auf die folgenden Arten von Backup-Zielen, Arbeitsumgebungen und Workload-Datenquellen sind:
 
 *Backup-Ziele unterstützt*
 
@@ -144,9 +154,9 @@ Mit BlueXP vor Ransomware-Schutz erfahren Sie, wie stabil Ihre Daten bei einem C
 
 
 
-NOTE: Die folgenden Laufwerke werden nicht unterstützt: FlexGroup-Volumes, ONTAP-Versionen älter als 9.11.1, iSCSI-Volumes und DP-Volumes (Data Protection).
+NOTE: Die folgenden Laufwerke werden nicht unterstützt: FlexGroup-Volumes, ONTAP-Versionen älter als 9.11.1, iSCSI-Volumes, Mount-Point-Volumes, Mount-Path-Volumes, Offline-Volumes, und Datensicherungs-Volumes (DP) unterstützt.
 
-*Unterstützte Datenquellen*
+*Workload-Datenquellen unterstützt*
 
 Der Service sichert die folgenden applikationsbasierten Workloads auf primären Daten-Volumes:
 
@@ -155,6 +165,8 @@ Der Service sichert die folgenden applikationsbasierten Workloads auf primären 
 * Datenbanken (MySQL und Oracle)
 * Weitere demnächst verfügbar
 
+
+Wenn Sie SnapCenter oder SnapCenter für VMware verwenden, werden außerdem alle von diesen Produkten unterstützten Workloads im BlueXP  Ransomware-Schutz identifiziert. Der BlueXP  Ransomware-Schutz kann diese auf Workload-konsistente Weise schützen und wiederherstellen.
 
 
 

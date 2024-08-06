@@ -17,13 +17,18 @@ Mit BlueXP vor Ransomware-Schutz können Sie unterschiedliche Lizenzierungsplän
 Sie können die folgenden Lizenztypen verwenden:
 
 * Melden Sie sich für eine kostenlose 90-Tage-Testversion an.
-* Mit Amazon Web Services (AWS) Marketplace besteht ein Pay-as-you-go-Abonnement (PAYGO).  Dies wird in Kürze verfügbar sein.
+* Erwerben Sie ein PAYGO-Abonnement (Pay-as-you-go) für Amazon Web Services (AWS) Marketplace oder Azure Marketplace (in Kürze verfügbar).
 * Bring-Your-Own-License (BYOL) bei einer NetApp Lizenzdatei (NLF), die Sie von Ihrem NetApp Vertriebsmitarbeiter erhalten. Sie können die Seriennummer der Lizenz verwenden, um das BYOL in der Digital Wallet von BlueXP zu aktivieren.
 
 
-Nachdem Sie Ihr BYOL eingerichtet oder ein PAYGO-Abonnement in AWS erworben haben, können Sie die Lizenz im BlueXP Digital Wallet *Data Service Licenses* oder im aktiven AWS-Abonnement auf der Registerkarte BlueXP Digital Wallet *Subscriptions* sehen.
+Die BlueXP  Lizenz zum Schutz vor Ransomware enthält keine zusätzlichen NetApp Produkte. BlueXP  Ransomware-Schutz kann Backup und Recovery mit BlueXP  nutzen, auch wenn Sie keine Lizenz dafür haben.
 
-Nach Ablauf der kostenlosen Testversion oder Ablauf der Lizenz oder des AWS-Abonnements können Sie im Service weiterhin wie folgt vorgehen:
+
+NOTE: Wenn Sie sowohl über BlueXP -Backup und -Recovery als auch über BlueXP -Ransomware-Schutz verfügen, werden alle gemeinsamen, durch beide Produkte geschützten Daten ausschließlich durch BlueXP  Ransomware-Schutz in Rechnung gestellt.
+
+Nachdem Sie Ihr BYOL eingerichtet oder ein PAYGO-Abonnement erworben haben, können Sie die Lizenz im BlueXP  Digital Wallet *Data Service Licenses*-Reiter oder im BlueXP  Digital Wallet *Subscriptions*-Tab sehen.
+
+Nach Ablauf der kostenlosen Testversion oder Ablauf der Lizenz oder des Abonnements können Sie im Service weiterhin Folgendes tun:
 
 * Workloads und Workload-Zustand anzeigen
 * Löschen Sie alle Ressourcen, z. B. Workloads oder Richtlinien.
@@ -39,7 +44,7 @@ Sie können BlueXP Ransomware-Schutz durch eine kostenlose 90-Tage-Testversion a
 
 NOTE: Während der Testphase werden keine Kapazitätsgrenzen durchgesetzt.
 
-Sie können jederzeit eine Lizenz erhalten oder abonnieren und Sie werden erst nach Ablauf der 90-tägigen Testversion belastet. Um nach der 90-Tage-Testsoftware fortzufahren, müssen Sie eine BYOL-Lizenz oder ein PAYGO AWS-Abonnement erwerben.
+Sie können jederzeit eine Lizenz erhalten oder abonnieren und Sie werden erst nach Ablauf der 90-tägigen Testversion belastet. Um nach der 90-Tage-Testsoftware fortzufahren, müssen Sie eine BYOL-Lizenz oder ein PAYGO-Abonnement erwerben.
 
 Während der Testphase haben Sie volle Funktionalität.
 
@@ -65,8 +70,7 @@ Informationen zum Hinzufügen eines Connectors finden Sie unter https://docs.net
 
 Nach Ablauf der kostenlosen Testversion können Sie sich entweder über AWS Marketplace abonnieren oder eine Lizenz bei NetApp erwerben.
 
-<<Abonnieren Sie ihn über AWS Marketplace>>
-<<Bring-Your-Own-License (BYOL)>>
+<<Abonnieren Sie ihn über AWS Marketplace>> <<Abonnieren Sie ihn über Microsoft Azure Marketplace>> <<Bring-Your-Own-License (BYOL)>>
 
 
 

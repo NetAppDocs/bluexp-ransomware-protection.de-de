@@ -16,10 +16,7 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 
 
 
-== Datenzugriff
-
-*Wie sieht die BlueXP URL zum Ransomware-Schutz aus?*
-Geben Sie für die URL in einem Browser Folgendes ein: https://console.bluexp.netapp.com/["https://console.bluexp.netapp.com/"^] Um auf die BlueXP Konsole zuzugreifen.
+== Einsatz
 
 *Benötigen Sie eine Lizenz für den Einsatz von BlueXP Ransomware-Schutz?*
 
@@ -35,19 +32,24 @@ BlueXP für den Ransomware-Schutz ist keine Unterstützung erforderlich. Die Opt
 
 Um den Service zu testen, müssen Sie sich anmelden oder sich mit Ihrem Vertriebsmitarbeiter von NetApp in Verbindung setzen. Wenn Sie dann den BlueXP Connector verwenden, werden Ihnen die entsprechenden Funktionen für den Service bereitgestellt.
 
-**Ist BlueXP Ransomware-Schutz im standardmäßigen, eingeschränkten und privaten Modus verfügbar?**
-Derzeit ist BlueXP Ransomware-Schutz nur im Standardmodus verfügbar. Bleiben Sie dran für mehr.
+Um den BlueXP  Ransomware-Schutz zu nutzen, klicken Sie auf der ersten Landing Page auf „Start mit der Erkennung von Workloads“.
+
+*Ist BlueXP  Ransomware-Schutz im Standard-, eingeschränkten und privaten Modus verfügbar?* Derzeit ist BlueXP Ransomware-Schutz nur im Standardmodus verfügbar. Bleiben Sie dran für mehr.
 
 Eine Erläuterung zu diesen Modi in allen BlueXP Services finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["BlueXP Implementierungsmodi"^].
 
-**Wie werden Zugriffsberechtigungen behandelt?**
-Nur Account-Administratoren können den Service initiieren und Workloads erkennen (da dies die Verpflichtung zur Nutzung einer Ressource beinhaltet). Nachfolgende Interaktionen können von jeder Rolle durchgeführt werden.
 
-**Welche Geräteauflösung ist am besten?**
-Die empfohlene Geräteauflösung für den BlueXP Ransomware-Schutz ist 1.920 x 1.080 oder höher.
 
-**Welcher Browser sollte ich verwenden?**
-Jeder moderne Browser funktioniert.
+== Datenzugriff
+
+*Wie sieht die BlueXP URL zum Ransomware-Schutz aus?*
+Geben Sie für die URL in einem Browser Folgendes ein: https://console.bluexp.netapp.com/["https://console.bluexp.netapp.com/"^] Um auf die BlueXP Konsole zuzugreifen.
+
+*Wie werden Zugriffsberechtigungen gehandhabt?* Nur Account-Administratoren können den Service initiieren und Workloads erkennen (da dies die Verpflichtung zur Nutzung einer Ressource beinhaltet). Nachfolgende Interaktionen können von jeder Rolle durchgeführt werden.
+
+*Welche Geräteauflösung ist am besten?* Die empfohlene Geräteauflösung für den BlueXP Ransomware-Schutz ist 1.920 x 1.080 oder höher.
+
+*Welcher Browser sollte ich verwenden?* Jeder moderne Browser funktioniert.
 
 
 
@@ -59,25 +61,50 @@ Ja, der Ransomware-Schutz von BlueXP erkennt Snapshot Zeitpläne, die in ONTAP f
 *Wenn Sie eine Richtlinie mit BlueXP Ransomware-Schutz festlegen, müssen Sie nur an diesem Service zukünftige Änderungen vornehmen?*
 Wir empfehlen Ihnen, Richtlinienänderungen am BlueXP Ransomware-Schutzservice vorzunehmen.
 
+*Wie funktioniert BlueXP  Ransomware-Schutz mit BlueXP  Backup und Recovery und SnapCenter interagieren?*
+
+Zum BlueXP  Ransomware-Schutz kommen folgende Produkte und Services zum Einsatz:
+
+* BlueXP  Backup und Recovery, um Snapshot- und Backup-Richtlinien für File-Share-Workloads zu erkennen und festzulegen
+* SnapCenter oder SnapCenter für VMware zur Erkennung und Festlegung von Snapshot- und Backup-Richtlinien für Applikations- und VM-Workloads.
+
+
+Darüber hinaus verwendet der BlueXP  Ransomware-Schutz BlueXP  Backup und Recovery und SnapCenter/SnapCenter für VMware, um eine Datei- und Workload-konsistente Recovery durchzuführen.
+
 
 
 == Workloads
 
-**Was macht eine Arbeitsbelastung aus?**
-Ein Workload umfasst alle Volumes, die von einer einzelnen Applikationsinstanz verwendet werden. Eine auf ora3.host.com bereitgestellte Oracle DB-Instanz kann beispielsweise vol1 und vol2 für ihre Daten und Protokolle verwenden. Diese Volumes bilden zusammen den Workload für diese spezifische Instanz der Oracle DB-Instanz.
+*Was macht eine Arbeitsbelastung aus?* Ein Workload ist eine Applikation, eine VM oder Dateifreigabe. Ein Workload umfasst alle Volumes, die von einer einzelnen Applikationsinstanz verwendet werden. Eine auf ora3.host.com bereitgestellte Oracle DB-Instanz kann beispielsweise vol1 und vol2 für ihre Daten und Protokolle verwenden. Diese Volumes bilden zusammen den Workload für diese spezifische Instanz der Oracle DB-Instanz.
 
 *Wie priorisiert der Ransomware-Schutz von BlueXP Workload-Daten?*
 Die Datenpriorität wird durch die erstellten Snapshot-Kopien und geplanten Backups bestimmt.
 
-Die Workload-Priorität wird durch die Snapshot-Häufigkeit bestimmt.
+Die Workload-Priorität (kritisch, Standard, wichtig) wird durch Snapshot Frequenzen festgelegt, die bereits auf jedes Volume mit dem Workload angewendet werden.
 
 link:rp-use-protect.html["Informieren Sie sich über Priorität oder Wichtigkeit von Workloads"].
 
-**Neues Volumen hinzugefügt, erscheint aber noch nicht**
-Wenn Sie der Umgebung ein neues Volume hinzugefügt haben, initiieren Sie die Erkennung erneut und wenden Sicherungsrichtlinien an, um das neue Volume zu schützen.
+*Welche Workloads unterstützt BlueXP  Ransomware-Schutz?*
 
-**Das Dashboard zeigt nicht alle meine Workloads an. Was könnte falsch sein?**
-Derzeit werden nur NFS- und CIFS-Volumes unterstützt. ISCSI-Volumes und andere nicht unterstützte Konfigurationen werden herausgefiltert und werden nicht im Dashboard angezeigt.
+Durch BlueXP  Ransomware-Schutz können folgende Workloads identifiziert werden: Oracle, MySQL, File Shares, VMs und VM-Datastores.
+
+Wenn der Kunde SnapCenter oder SnapCenter für VMware nutzt, werden außerdem alle von diesen Produkten unterstützten Workloads im BlueXP  Ransomware-Schutz erkannt, und der BlueXP  Ransomware-Schutz kann diese auf Workload-konsistente Weise schützen und wiederherstellen.
+
+*Wie verknüpfen Sie Daten mit einem Workload?*
+
+Beim Ransomware-Schutz von BlueXP  werden Daten auf folgende Weise mit einem Workload verknüpft:
+
+* BlueXP  Ransomware-Schutz erkennt die Volumes und Dateierweiterungen und ordnet sie dem entsprechenden Workload zu.
+* Wenn Sie darüber hinaus SnapCenter oder SnapCenter für VMware haben und Workloads in BlueXP  Backup und Recovery konfiguriert haben, erkennt der BlueXP  Ransomware-Schutz die Workloads, die von SnapCenter und SnapCenter für VMware und ihren zugehörigen Volumes gemanagt werden.
+
+
+*Was ist ein "geschützter" Workload?* Beim BlueXP  Ransomware-Schutz zeigt ein Workload den „geschützten“ Status, wenn eine Richtlinie zur primären Erkennung aktiviert ist. Für jetzt bedeutet dies, dass ARP auf allen Volumen in Bezug auf den Workload aktiviert ist.
+
+*Was ist ein „gefährdeter“ Workload?* Wenn bei einem Workload keine Richtlinie für die primäre Erkennung aktiviert ist, ist dies „gefährdet“, selbst wenn für einen Workload eine Backup- und Snapshot-Richtlinie aktiviert ist.
+
+*Neues Volume hinzugefügt, erscheint aber noch nicht* Wenn Sie ein neues Volume zu Ihrer Umgebung hinzugefügt haben, starten Sie die Erkennung erneut und wenden Sie Schutzrichtlinien an, um das neue Volume zu schützen.
+
+*Das Dashboard zeigt nicht alle meine Arbeitslasten an. Was könnte falsch sein?* Derzeit werden nur NFS- und CIFS-Volumes unterstützt. ISCSI-Volumes und andere nicht unterstützte Konfigurationen werden herausgefiltert und werden nicht im Dashboard angezeigt.
 
 
 
@@ -87,3 +114,43 @@ Derzeit werden nur NFS- und CIFS-Volumes unterstützt. ISCSI-Volumes und andere 
 Derzeit unterstützt BlueXP Backup und Recovery (Cloud Backup) eine Backup-Richtlinie pro Volume. Nun, BlueXP Backup und Recovery sowie BlueXP Ransomware-Schutz nutzen gemeinsam Backup-Richtlinien.
 
 Snapshot-Kopien sind nicht beschränkt und können separat von jedem Service hinzugefügt werden.
+
+*Welche Richtlinien sind in einer Ransomware-Schutzstrategie erforderlich?*
+
+Die folgenden Richtlinien sind für die Strategie zum Schutz vor Ransomware erforderlich:
+
+* Richtlinie zur Erkennung von Ransomware
+* Snapshot-Richtlinie
+
+
+Eine Backup-Richtlinie ist in der BlueXP  Strategie für den Schutz vor Ransomware nicht erforderlich.
+
+*Kennt der BlueXP Ransomware-Schutz die in NetApp ONTAP vorgenommenen Schutzeinstellungen?*
+
+Ja, der Ransomware-Schutz von BlueXP  erkennt in ONTAP festgelegte Snapshot Zeitpläne und zeigt, ob ARP und FPolicy über alle Volumes eines erkannten Workloads hinweg aktiviert sind. Die Informationen, die Sie zu Beginn im Dashboard sehen, werden von anderen NetApp Lösungen und Produkten aggregiert.
+
+*Kennt der BlueXP  Ransomware-Schutz die bereits in BlueXP  Backup und Recovery sowie SnapCenter erstellten Richtlinien?*
+
+Ja, wenn Sie Workloads in BlueXP  Backup und Recovery oder SnapCenter gemanagt haben, werden die von diesen Produkten gemanagten Richtlinien in den BlueXP  Ransomware-Schutz integriert.
+
+*Können Sie Richtlinien ändern, die von BlueXP  Backup und Recovery und/oder SnapCenter übernommen werden?*
+
+Nein, Richtlinien, die von BlueXP  Backup und Recovery oder SnapCenter innerhalb des BlueXP  Ransomware-Schutzes gemanagt werden, können nicht geändert werden. Sie managen alle Änderungen dieser Richtlinien in BlueXP  Backup und Recovery oder SnapCenter.
+
+*Wenn Richtlinien von ONTAP existieren (im System Manager bereits aktiviert, wie z.B. ARP, FPolicy und Snapshots), werden diese beim BlueXP  Ransomware-Schutz geändert?*
+
+Nein Zum Schutz vor Ransomware von BlueXP  werden keine bestehenden Erkennungsrichtlinien (ARP, FPolicy-Einstellungen) von ONTAP geändert.
+
+*Was passiert, wenn Sie nach der Anmeldung zum BlueXP  Ransomware-Schutz neue Richtlinien in BlueXP  Backup und Recovery oder SnapCenter hinzufügen?*
+
+Der Schutz vor Ransomware von BlueXP  erkennt alle neuen Richtlinien, die in BlueXP  Backup und Recovery oder SnapCenter erstellt wurden.
+
+*Können Sie die Richtlinien von ONTAP ändern?*
+
+Ja, Sie können Richtlinien beim BlueXP  Ransomware-Schutz von ONTAP ändern. Außerdem können Sie neue Richtlinien in BlueXP  Ransomware-Schutz erstellen und auf Workloads anwenden. Dies ersetzt vorhandene ONTAP-Richtlinien durch die Richtlinien, die beim BlueXP  Ransomware-Schutz erstellt wurden.
+
+*Können Sie Richtlinien deaktivieren?*
+
+Sie können ARP in Erkennungsrichtlinien über die System Manager UI, APIs oder CLI deaktivieren.
+
+Sie können FPolicy- und Backup-Richtlinien deaktivieren, indem Sie eine andere Richtlinie anwenden, die diese nicht enthält.

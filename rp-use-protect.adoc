@@ -14,7 +14,6 @@ summary: Sie können Workloads gegen Ransomware-Angriffe schützen, indem Sie ei
 [role="lead"]
 Sie können Ihre Workloads gegen Ransomware-Angriffe schützen, indem Sie die folgenden Aktionen durchführen, die BlueXP Ransomware-Schutz nutzen.
 
-* Ändern Sie bestehende Details zur Workload-Sicherung.
 * Workload-konsistente Sicherung in Verbindung mit SnapCenter Software oder dem SnapCenter Plug-in für VMware vSphere
 * Erstellen oder managen Sie Strategien zum Schutz vor Ransomware. Dazu gehören Richtlinien, die Sie für Snapshots, Backups und das Erkennen von Ransomware erstellen.
 * Importieren Sie eine Strategie, und passen Sie sie an.
@@ -23,14 +22,41 @@ Sie können Ihre Workloads gegen Ransomware-Angriffe schützen, indem Sie die fo
 
 
 
-== Informationen zum Schutz
+== Sicherungsrichtlinien, die Sie je nach vorhandener Abdeckung ändern können
+
+Sie können Sicherungsrichtlinien basierend auf Ihrem Workload-Schutz ändern:
+
+* *Workloads, die nicht durch NetApp-Anwendungen geschützt sind*: Diese Workloads werden nicht durch SnapCenter, das SnapCenter-Plug-in für VMware vSphere oder das BlueXP -Backup und -Recovery gemanagt. Diese Workloads wurden möglicherweise als Teil von ONTAP oder anderen Produkten erstellt. Wenn ONTAP FPolicy geschützt ist, können Sie die FPolicy-Sicherung über ONTAP ändern.
+* *Workloads mit vorhandenem Schutz durch NetApp-Anwendungen*: Diese Workloads verfügen über Backup- oder Snapshot-Richtlinien, die von SnapCenter, SnapCenter für VMware vSphere oder BlueXP  Backup und Recovery gemanagt werden.
++
+** Wenn Snapshot- oder Backup-Richtlinien von SnapCenter, SnapCenter für VMware oder BlueXP  Backup und Recovery gemanagt werden, werden sie weiterhin von diesen Applikationen gemanagt. Mit dem BlueXP  Schutz vor Ransomware können Sie auf diese Workloads auch eine Richtlinie zur Erkennung von Ransomware anwenden.
+** Wenn eine Richtlinie zur Erkennung von Ransomware durch Autonomous Ransomware Protection (ARP) und FPolicy in ONTAP gemanagt wird, sind diese Workloads geschützt und werden weiterhin von ARP und FPolicy gemanagt.
+
+
+
+
+
+
+== Welche Richtlinien sind für eine Strategie zum Schutz vor Ransomware erforderlich?
+
+Die folgenden Richtlinien sind für die Strategie zum Schutz vor Ransomware erforderlich:
+
+* Richtlinie zur Erkennung von Ransomware
+* Snapshot-Richtlinie
+
+
+Eine Backup-Richtlinie ist in der BlueXP  Strategie für den Schutz vor Ransomware nicht erforderlich.
+
+
+
+== Schutzdetails auf der Seite Schutz
 
 Auf der Seite Schutz werden die folgenden Informationen zum Workload-Schutz angezeigt:
 
 *Schutzstatus*: Ein Workload kann einen der folgenden Schutzstatus anzeigen, um anzugeben, ob eine Richtlinie angewendet wird oder nicht:
 
-* *Geschützt*: Es wird eine Richtlinie angewendet.
-* *In Gefahr*: Es werden keine Richtlinien angewendet.
+* *Geschützt*: Es wird eine Richtlinie angewendet. ARP ist auf allen Volumen aktiviert, die mit dem Workload in Verbindung stehen.
+* *In Gefahr*: Es werden keine Richtlinien angewendet. Wenn für einen Workload keine primäre Erkennungsrichtlinie aktiviert ist, ist dies „gefährdet“, selbst wenn eine Snapshot- und Backup-Richtlinie aktiviert ist.
 * *In Bearbeitung*: Eine Richtlinie wird angewendet, aber noch nicht abgeschlossen.
 * *Failed*: Eine Richtlinie wird angewendet, funktioniert aber nicht.
 
@@ -41,6 +67,10 @@ Auf der Seite Schutz werden die folgenden Informationen zum Workload-Schutz ange
 * *Aktiv*: Es wird eine Schutzrichtlinie für die Ransomware-Erkennung zugewiesen.
 * *Not set*: Eine Schutzrichtlinie für die Ransomware-Erkennung wird nicht zugewiesen.
 * *Fehler*: Es wurde eine Ransomware-Erkennungsrichtlinie zugewiesen, aber der Dienst hat einen Fehler festgestellt.
++
+
+TIP: Wenn der Schutz im BlueXP  Ransomware-Schutz aktiviert ist, beginnt die Erkennung von Warnmeldungen und die Berichterstellung, nachdem der Richtlinienstatus für die Ransomware-Erkennung vom Lernmodus in den aktiven Modus geändert wurde.
+
 
 
 *Erkennungs-Policy*: Der Name der Ransomware-Erkennungs-Policy erscheint, wenn einer zugewiesen wurde. Wenn die Erkennungsrichtlinie nicht zugewiesen wurde, wird „N/A“ angezeigt.
@@ -165,19 +195,27 @@ NOTE: Bei Workloads, die bereits über eine Sicherungsrichtlinie mit SnapCenter 
 
 
 
-== Details zur Workload-Sicherung prüfen
+== Workload-Details prüfen und aktualisieren
 
-Sie können Sicherungsdetails, wie die Workload-Priorität, Sicherungsrichtlinien und Storage-Informationen, überprüfen.
+Sie können Workload-Details, z. B. den Namen des Workloads, Sicherungsrichtlinien und Storage-Informationen, überprüfen.
 
-.Schritte
+Sie können den Namen des Workloads ändern, wenn dieser Workload nicht von SnapCenter oder BlueXP  Backup und Recovery gemanagt wird.
+
+.Schritte von der Seite Schutz
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
+. Wählen Sie auf der Seite Schutz die Option *actions* image:screenshot_horizontal_more_button.gif["Schaltfläche „Aktionen“"] für den Workload aus, den Sie aktualisieren möchten.
+. Wählen Sie im Menü Aktionen die Option *Workload-Name bearbeiten*.
+. Geben Sie den neuen Workload-Namen ein.
+. Wählen Sie *Speichern*.
+
+
+.Schritte auf der Seite Workload-Details
 . Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
 . Wählen Sie auf der Seite Schutz einen Workload aus.
 +
 image:screen-protection-details3.png["Workload-Details auf der Seite Schutz"]
 
-+
-Auf der Seite „Workload Details“ können Sie einer Workload eine Richtlinie zuweisen, Warnmeldungen anzeigen, Backup-Ziele anzeigen und Wiederherstellungsinformationen anzeigen.
-
+. Um den Namen eines Workloads zu ändern, klicken Sie neben dem Workload-Namen auf das Symbol *Bleistift* image:button_pencil.png["Bleistift"] und ändern den Namen.
 . Um die Richtlinie anzuzeigen, die mit dem Workload verknüpft ist, klicken Sie im Bereich Schutz auf der Seite Workload-Details auf *Richtlinie anzeigen*.
 . Um die Ziele für die Workload-Sicherung anzuzeigen, klicken Sie im Bereich Schutz der Seite Workload-Details auf *Backupziel anzeigen*.
 +
@@ -339,13 +377,13 @@ Sie können eine andere Schutzrichtlinie zuweisen, die die aktuelle ersetzt.
 
 
 
-=== Löschen Sie eine Strategie für den Schutz vor Ransomware
+== Löschen Sie eine Strategie für den Schutz vor Ransomware
 
 Sie können eine Sicherungsstrategie löschen, die derzeit keiner Workload zugeordnet ist.
 
 .Schritte
 . Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
-. Wählen Sie auf der Seite Schutz die Option *Ransomware-Strategien verwalten*.
+. Wählen Sie auf der Seite Schutz die Option *Ransomware-Schutzstrategien verwalten* aus.
 . Wählen Sie auf der Seite Strategien verwalten die Option *Aktionen* image:screenshot_horizontal_more_button.gif["Schaltfläche „Aktionen“"] für die Strategie aus, die Sie löschen möchten.
 . Wählen Sie im Menü Aktionen die Option *Strategie löschen*.
 

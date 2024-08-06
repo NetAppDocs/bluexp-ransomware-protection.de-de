@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: rp-start-disable.html 
+keywords: bluexp, ransomware protection, netapp, disable protection 
+summary: Wenn Sie den BlueXP  Ransomware-Schutzservice nicht mehr nutzen möchten, können Sie die Lizenz ablaufen lassen. 
+---
+= Deaktivieren Sie den BlueXP  Ransomware-Schutz
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+Wenn Sie den BlueXP  Ransomware-Schutzservice nicht mehr nutzen möchten, können Sie die Lizenz ablaufen lassen. Sie können auch Richtlinien deaktivieren, die Sie nicht mehr verwenden möchten.
+
+
+
+== Deaktivieren Sie den BlueXP  Ransomware-Schutzdienst
+
+Nach Ablauf des Abonnements oder der Lizenz deaktiviert der Dienst automatisch Funktionen, für die ein Abonnement oder eine Lizenz erforderlich ist.
+
+Weitere Informationen zu Aktionen, die Sie nach Ablauf der Lizenz noch ausführen können, finden Sie unter link:rp-start-licenses.html["Richten Sie die Lizenzierung für den Ransomware-Schutz von BlueXP  ein"].
+
+
+
+== Schutzrichtlinien deaktivieren
+
+Wenn Sie die Verwendung von Sicherungsrichtlinien, die auf Workloads angewendet werden, beenden möchten, können Sie diese mit System Manager, API-Aufrufen oder CLI deaktivieren.
+
+Sie können FPolicy- und Backup-Richtlinien in BlueXP  Ransomware-Schutz deaktivieren, indem Sie eine andere Richtlinie anwenden, die diese nicht beinhaltet. Anweisungen zum Festlegen von Schutzrichtlinien finden Sie unter link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"].
+
+
+TIP: Wir empfehlen, Snapshot-Richtlinien nicht zu deaktivieren.
