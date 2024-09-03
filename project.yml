@@ -50,6 +50,10 @@ sidebar:
     - title: Berichte herunterladen
       url: "/rp-use-reports.html"
   - section: support
+  - title: Referenz
+    entries:
+    - title: 'Rollenbasierte Zugriffssteuerung: Privileges'
+      url: "/rp-reference-roles.html"
   - title: Rechtliche Hinweise
     url: "/legal-notices.html"
 product-family:

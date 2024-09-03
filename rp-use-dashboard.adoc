@@ -103,6 +103,9 @@ Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"].
 Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"]. 
 
 
+| Verbesserung der Sicherheit der Arbeitsumgebung | NetApp Digital Advisor hat mindestens ein hohes oder kritisches Sicherheitsrisiko identifiziert. | Lesen Sie alle Sicherheitsrisiken in NetApp Digital Advisor durch. Siehe https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor Dokumentation"^]. 
+
+
 | Machen Sie eine Politik stärker. | Einige Workloads verfügen möglicherweise nicht über ausreichend Sicherung. Höherer Schutz von Workloads mit einer Richtlinie | Erhöhen Sie die Aufbewahrung, fügen Sie Backups hinzu, erzwingen Sie unveränderliche Backups, blockieren Sie verdächtige Dateierweiterungen, ermöglichen Sie die Erkennung auf sekundärem Storage und vieles mehr.
 Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"]. 
 

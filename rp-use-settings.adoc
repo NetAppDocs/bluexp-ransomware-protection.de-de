@@ -42,6 +42,7 @@ Um diese Workloads zu schützen, müssen Sie ein Backup-Ziel hinzufügen. Sie k�
 
 * NetApp StorageGRID
 * Amazon Web Services (AWS)
+* Google Cloud Platform
 * Microsoft Azure
 
 
@@ -107,7 +108,7 @@ image:screen-settings-backup-destination.png["Seite „Backup-Ziele“"]
 .Ergebnis
 Das neue Sicherungsziel wird der Liste der Sicherungsziele hinzugefügt.
 
-image:screen-settings-backup-destinations-list-azure.png["Seite „Backup-Ziele“ die Option „Einstellungen“"]
+image:screen-settings-backup-destinations-list2.png["Seite „Backup-Ziele“ die Option „Einstellungen“"]
 
 
 
@@ -165,7 +166,47 @@ CAUTION: Wenn Sie die Einstellung für die Sicherungssperre jetzt konfigurieren,
 .Ergebnis
 Das neue Sicherungsziel wird der Liste der Sicherungsziele hinzugefügt.
 
-image:screen-settings-backup-destinations-list-azure.png["Seite „Backup-Ziele“ die Option „Einstellungen“"]
+image:screen-settings-backup-destinations-list2.png["Seite „Backup-Ziele“ die Option „Einstellungen“"]
+
+
+
+=== Hinzufügen von Google Cloud Platform als Backup-Ziel
+
+Um die Google Cloud Platform (GCP) als Backup-Ziel einzurichten, geben Sie die folgenden Informationen ein.
+
+Weitere Informationen zum Management von GCP-Storage in BlueXP  finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html["Connector-Installationsoptionen in Google Cloud"^].
+
+. Wählen Sie auf der Seite *Einstellungen > Sicherungsziele* *Hinzufügen* aus.
+. Geben Sie einen Namen für das Sicherungsziel ein.
++
+image:screen-settings-backup-destination-gcp.png["Seite „Backup-Ziele“"]
+
+. Wählen Sie *Google Cloud Platform*.
+. Wählen Sie den Abwärtspfeil neben jeder Einstellung aus, und geben Sie Werte ein oder wählen Sie diese aus:
++
+** *Provider-Einstellungen*:
++
+*** Erstellen Sie einen neuen Bucket. Geben Sie den Zugriffsschlüssel und den geheimen Schlüssel ein.
+*** Geben Sie Ihr Projekt und Ihre Region für die Google Cloud Platform ein oder wählen Sie es aus.
+
+
+** *Verschlüsselung*: Wenn Sie einen neuen Bucket erstellen, geben Sie die Verschlüsselungsschlüsselinformationen ein, die Sie vom Provider erhalten. Wenn Sie einen vorhandenen Bucket auswählen, sind Verschlüsselungsinformationen bereits verfügbar.
++
+Die Daten im Bucket werden standardmäßig mit von Google gemanagten Schlüsseln verschlüsselt. Sie können weiterhin von Google verwaltete Schlüssel verwenden.
+
+** *Netzwerk*: Wählen Sie den IPspace und ob Sie einen privaten Endpunkt verwenden werden.
++
+*** Der IPspace ist das Cluster, in dem sich die Volumes, die Sie sichern möchten, befinden. Die Intercluster-LIFs für diesen IPspace müssen über Outbound-Internetzugang verfügen.
+*** Wählen Sie optional aus, ob Sie einen zuvor konfigurierten privaten GCP-Endpunkt (PrivateLink) verwenden möchten.
+
+
+
+
+. Wählen Sie *Hinzufügen*.
+
+
+.Ergebnis
+Das neue Sicherungsziel wird der Liste der Sicherungsziele hinzugefügt.
 
 
 
@@ -213,7 +254,7 @@ Informationen zur Verwendung von Azure PrivateLink finden Sie unter https://azur
 .Ergebnis
 Das neue Sicherungsziel wird der Liste der Sicherungsziele hinzugefügt.
 
-image:screen-settings-backup-destinations-list-azure.png["Seite „Backup-Ziele“ die Option „Einstellungen“"]
+image:screen-settings-backup-destinations-list2.png["Seite „Backup-Ziele“ die Option „Einstellungen“"]
 
 
 
