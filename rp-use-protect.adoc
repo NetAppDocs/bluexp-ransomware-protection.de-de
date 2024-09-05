@@ -17,8 +17,8 @@ Sie können Ihre Workloads gegen Ransomware-Angriffe schützen, indem Sie die fo
 * Workload-konsistente Sicherung in Verbindung mit SnapCenter Software oder dem SnapCenter Plug-in für VMware vSphere
 * Erstellen oder managen Sie Strategien zum Schutz vor Ransomware. Dazu gehören Richtlinien, die Sie für Snapshots, Backups und das Erkennen von Ransomware erstellen.
 * Importieren Sie eine Strategie, und passen Sie sie an.
-* Bearbeiten Sie eine Schutzstrategie.
-* Löschen Sie eine Schutzstrategie.
+* Bearbeiten Sie eine Strategie für den Schutz vor Ransomware.
+* Löschen Sie eine Strategie für den Schutz vor Ransomware.
 
 
 
@@ -253,77 +253,6 @@ Weitere Informationen zur Registrierung von SnapCenter oder SnapCenter Plug-in f
 . Wählen Sie bei BlueXP vor Ransomware-Schutz *Schutz* aus, um die Seite Schutz anzuzeigen.
 . Überprüfen Sie die Details in der Spalte Snapshot- und Backup-Richtlinien auf der Seite Schutz, um zu sehen, dass die Richtlinien an anderer Stelle gemanagt werden.
 
-
-
-
-== Verwenden Sie die BlueXP -Klassifizierung, um nach personenbezogenen Informationen zu suchen
-
-Im Rahmen des BlueXP  Ransomware-Schutzdienstes können Sie die BlueXP -Klassifizierung verwenden, eine Kernkomponente der BlueXP  Familie, um Ihre Daten auf einem Fileshare-Workload zu scannen und zu klassifizieren. Durch die Klassifizierung von Daten können Sie ermitteln, ob Ihre Daten personenbezogene oder private Informationen umfassen, was zu höheren Sicherheitsrisiken führen kann.
-
-
-
-=== Aktivieren Sie die BlueXP -Klassifizierung
-
-Bevor Sie die BlueXP -Klassifizierung im BlueXP  Ransomware-Schutzservice verwenden, müssen Sie für den Scan Ihrer Daten die BlueXP -Klassifizierung aktivieren.
-
-.Schritte
-. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
-. Suchen Sie auf der Seite Schutz in der Spalte Workload nach einem Workload mit Dateifreigabe.
-+
-image:screen-protection-exposure-link.png["Schutzbildschirm mit der Spalte „Privatsphäre-Belichtung“"]
-
-. Wählen Sie in der Spalte „Privatsphäre-Exposition“ die Option *Belichtung identifizieren* aus.
-+
-image:screen-protection-sensitive-data.png["Bildschirm „sensible Daten identifizieren“"]
-
-. Überprüfen Sie die Informationen zur BlueXP -Klassifizierung.
-. Wählen Sie * Identifizieren*.
-
-
-.Ergebnis
-Die BlueXP -Klassifizierung stellt die Verbindung zu Ihren Workload-Daten Remote her und scannt sie in der NetApp Cloud. Nur die ermittelten Erkenntnisse und Kennzahlen verbleiben in der NetApp Cloud – die Daten nicht.
-
-Die Seite Schutz zeigt an, dass die BlueXP -Klassifizierung Dateien identifiziert und gibt Ihnen einen Hinweis auf die Anzahl der Dateien, die gescannt werden.
-
-
-
-=== Überprüfen Sie die Privatsphäre
-
-Nach dem Scannen der BlueXP -Klassifizierung nach personenbezogenen Daten (PII) können Sie sich das Risiko für personenbezogene Daten ansehen.
-
-PII-Daten können einen der folgenden Risikostatus aufweisen:
-
-* *Hoch*: Xnumber oder mehr Dateien mit PII
-* *Niedrig*:
-
-
-.Schritte
-. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
-. Suchen Sie auf der Seite Schutz in der Spalte Workload, die einen Status in der Spalte Datenschutz anzeigt, den Workload für die Dateifreigabe.
-+
-image:screen-protection-exposure-link.png["Schutzbildschirm mit der Spalte „Privatsphäre-Belichtung“"]
-
-. Wählen Sie den Workload-Link in der Spalte Workload aus, um Workload-Details anzuzeigen.
-+
-image:screen-protection-workload-details-privacy-exposure.png["Workload-Details-Bildschirm, der das Fenster „Datenschutz“ anzeigt"]
-
-. Überprüfen Sie auf der Seite Workload-Details die Informationen im Bereich Datenschutz.
-. Um die Belichtung in der BlueXP -Klassifizierung zu untersuchen, wählen Sie *Investigate*.
-. WAS GESCHIEHT? Gehen Sie jetzt zur Klassifizierung? Wofür wird die Getriebeoption verwendet?
-
-
-Details zur Klassifizierung von BlueXP  finden Sie in den folgenden BlueXP -Themen:
-
-* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Mehr zur BlueXP Klassifizierung"^]
-* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Kategorien von privaten Daten"^]
-* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["Untersuchen Sie die in Ihrem Unternehmen gespeicherten Daten"^]
-
-
-
-
-=== Anzeige von Änderungen der Workload-Priorität basierend auf sensiblen Daten
-
-NOCH AUSSTEHEND
 
 
 
