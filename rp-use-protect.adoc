@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: rp-use-protect.html 
-keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, protect, malware, attack 
 summary: Sie können Workloads gegen Ransomware-Angriffe schützen, indem Sie einem Workload in BlueXP Ransomware-Schutz Richtlinien zuweisen. 
 ---
-= Schutz von Workloads vor Ransomware-Angriffen
+= Ransomware-Strategien schützen Workloads
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -15,10 +15,17 @@ summary: Sie können Workloads gegen Ransomware-Angriffe schützen, indem Sie ei
 Sie können Ihre Workloads gegen Ransomware-Angriffe schützen, indem Sie die folgenden Aktionen durchführen, die BlueXP Ransomware-Schutz nutzen.
 
 * Workload-konsistente Sicherung in Verbindung mit SnapCenter Software oder dem SnapCenter Plug-in für VMware vSphere
-* Erstellen oder managen Sie Strategien zum Schutz vor Ransomware. Dazu gehören Richtlinien, die Sie für Snapshots, Backups und das Erkennen von Ransomware erstellen.
+* Erstellen oder managen Sie Strategien zum Schutz vor Ransomware. Dazu gehören Richtlinien, die Sie für Snapshots, Backups und Ransomware-Schutz (auch als _Detection Policies_ bekannt) erstellen.
 * Importieren Sie eine Strategie, und passen Sie sie an.
-* Bearbeiten Sie eine Strategie für den Schutz vor Ransomware.
+* Gruppieren Sie Dateifreigaben, um den Schutz von Workloads zu erleichtern, statt sie einzeln zu schützen.
 * Löschen Sie eine Strategie für den Schutz vor Ransomware.
+
+
+*Welche Dienste werden zum Schutz genutzt?* Das Management von Sicherungsrichtlinien kann mit den folgenden Services durchgeführt werden. Schutzinformationen aus diesen Services erscheinen im BlueXP  Ransomware-Schutz:
+
+* BlueXP  Backup und Recovery für Dateifreigaben, VM-Dateifreigaben
+* SnapCenter für VMware für VM Datastores
+* SnapCenter für Oracle und MySQL
 
 
 
@@ -52,7 +59,35 @@ Eine Backup-Richtlinie ist in der BlueXP  Strategie für den Schutz vor Ransomw
 
 
 
-== Schutzdetails auf der Seite Schutz
+== Ransomware-Schutz bei einem Workload ansehen
+
+Einer der ersten Schritte zum Schutz von Workloads besteht darin, dass Sie Ihre aktuellen Workloads und ihren Sicherungsstatus anzeigen. Es werden die folgenden Workload-Typen angezeigt:
+
+* Applikations-Workloads
+* VM-Workloads
+* Workloads für Dateifreigabe
+
+
+.Schritte
+. Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
+. Führen Sie einen der folgenden Schritte aus:
++
+** Wählen Sie im Fensterbereich Datenschutz im Dashboard die Option *Alle anzeigen* aus.
+** Wählen Sie im Menü *Schutz*.
++
+image:screen-protection3.png["Schutzseite"]
+
+
+
+. Auf dieser Seite können Sie die Schutzdetails für den Workload anzeigen und ändern.
+
+
+
+NOTE: Bei Workloads, die bereits über eine Sicherungsrichtlinie mit SnapCenter oder BlueXP Backup- und Recovery-Service verfügen, können Sie die Sicherung nicht bearbeiten. Für diese Workloads ermöglicht BlueXP Ransomware den autonomen Ransomware-Schutz und/oder FPolicy-Schutz, sofern sie in anderen Services bereits aktiviert sind. Erfahren Sie mehr über https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Autonomer Schutz Durch Ransomware"^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["BlueXP Backup und Recovery"^]und https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^].
+
+
+
+=== Schutzdetails auf der Seite Schutz
 
 Auf der Seite Schutz werden die folgenden Informationen zum Workload-Schutz angezeigt:
 
@@ -166,65 +201,6 @@ Alle 30 Tage
 |===
 
 
-== Ransomware-Schutz bei einem Workload ansehen
-
-Einer der ersten Schritte zum Schutz von Workloads besteht darin, dass Sie Ihre aktuellen Workloads und ihren Sicherungsstatus anzeigen. Es werden die folgenden Workload-Typen angezeigt:
-
-* Applikations-Workloads
-* VM-Workloads
-* Workloads für Dateifreigabe
-
-
-.Schritte
-. Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
-. Führen Sie einen der folgenden Schritte aus:
-+
-** Wählen Sie im Fensterbereich Datenschutz im Dashboard die Option *Alle anzeigen* aus.
-** Wählen Sie im Menü *Schutz*.
-+
-image:screen-protection-sc-columns2.png["Schutzseite"]
-
-
-
-. Auf dieser Seite können Sie die Schutzdetails für den Workload anzeigen und ändern.
-
-
-
-NOTE: Bei Workloads, die bereits über eine Sicherungsrichtlinie mit SnapCenter oder BlueXP Backup- und Recovery-Service verfügen, können Sie die Sicherung nicht bearbeiten. Für diese Workloads ermöglicht BlueXP Ransomware den autonomen Ransomware-Schutz und/oder FPolicy-Schutz, sofern sie in anderen Services bereits aktiviert sind. Erfahren Sie mehr über https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Autonomer Schutz Durch Ransomware"^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["BlueXP Backup und Recovery"^]und https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^].
-
-
-
-== Ändern Sie Workload-Details
-
-Sie können Workload-Details, z. B. den Namen des Workloads, Sicherungsrichtlinien und Storage-Informationen, überprüfen.
-
-Sie können den Namen des Workloads ändern, wenn dieser Workload nicht von SnapCenter oder BlueXP  Backup und Recovery gemanagt wird.
-
-.Schritte von der Seite Schutz
-. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
-. Wählen Sie auf der Seite Schutz die Option *actions* image:screenshot_horizontal_more_button.gif["Schaltfläche „Aktionen“"] für den Workload aus, den Sie aktualisieren möchten.
-. Wählen Sie im Menü Aktionen die Option *Workload-Name bearbeiten*.
-. Geben Sie den neuen Workload-Namen ein.
-. Wählen Sie *Speichern*.
-
-
-.Schritte auf der Seite Workload-Details
-. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
-. Wählen Sie auf der Seite Schutz einen Workload aus.
-+
-image:screen-protection-details3.png["Workload-Details auf der Seite Schutz"]
-
-. Um den Namen eines Workloads zu ändern, klicken Sie neben dem Workload-Namen auf das Symbol *Bleistift* image:button_pencil.png["Bleistift"] und ändern den Namen.
-. Um die Richtlinie anzuzeigen, die mit dem Workload verknüpft ist, klicken Sie im Bereich Schutz auf der Seite Workload-Details auf *Richtlinie anzeigen*.
-. Um die Ziele für die Workload-Sicherung anzuzeigen, klicken Sie im Bereich Schutz der Seite Workload-Details auf *Backupziel anzeigen*.
-+
-Eine Liste der konfigurierten Backup-Ziele wird angezeigt.
-Weitere Informationen finden Sie unter link:rp-use-settings.html["Konfigurieren Sie die Schutzeinstellungen"].
-
-
-
-
-
 == Applikations- oder VM-konsistenter Schutz mit SnapCenter
 
 Durch die Aktivierung des Applikations- oder VM-konsistenten Schutzes können Sie Ihre Applikations- oder VM-Workloads konsistent schützen. So wird ein ruhender und konsistenter Zustand erreicht, um zu einem späteren Zeitpunkt bei Bedarf einen potenziellen Datenverlust zu vermeiden.
@@ -283,9 +259,12 @@ Wenn Snapshot- oder Backup-Richtlinien für den Workload nicht vorhanden sind, k
 
 .Schritte, um eine Strategie für den Schutz vor Ransomware zu entwickeln
 . Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
++
+image:screen-protection3.png["Seite „Strategie verwalten“"]
+
 . Wählen Sie auf der Seite Schutz die Option *Schutzstrategien verwalten* aus.
 +
-image:screen-protection-strategy-manage3.png["Seite „Strategie verwalten“"]
+image:screen-protection-strategy.png["Strategien managen"]
 
 . Wählen Sie auf der Seite Ransomware-Schutzstrategien *Hinzufügen* aus.
 +
@@ -352,7 +331,7 @@ Andere Services, wie BlueXP Backup und Recovery sowie SnapCenter, nutzen zur Ste
 .Schritte
 . Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
 +
-image:screen-protection-strategy-manage3.png["Seite „Strategie verwalten“"]
+image:screen-protection3.png["Seite „Strategie verwalten“"]
 
 . Wählen Sie auf der Seite Schutz einen Workload aus, und wählen Sie *Schutz* aus.
 +
@@ -378,7 +357,7 @@ image:screen-protect-br-policies.png["Seite schützen, die BlueXP Backup- und Re
 
 
 
-== Weisen Sie eine andere Richtlinie zu
+=== Weisen Sie eine andere Richtlinie zu
 
 Sie können eine andere Schutzrichtlinie zuweisen, die die aktuelle ersetzt.
 
@@ -392,70 +371,160 @@ Sie können eine andere Schutzrichtlinie zuweisen, die die aktuelle ersetzt.
 
 
 
+== Gruppieren von Dateifreigaben für einen einfacheren Schutz
+
+Das Gruppieren von Dateifreigaben erleichtert den Schutz Ihres Datenbestands. Der Service kann alle Volumes einer Gruppe gleichzeitig schützen, anstatt jedes Volume separat zu schützen.
+
+.Schritte
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
++
+image:screen-protection3.png["Seite „Strategie verwalten“"]
+
+. Wählen Sie auf der Seite Schutz die Registerkarte Schutzgruppen aus.
++
+image:screen-protection-groups.png["Seite Schutzgruppen"]
+
+. Wählen Sie *Hinzufügen*.
++
+image:screen-protection-groups-add.png["Schutzgruppenseite hinzufügen"]
+
+. Geben Sie einen Namen für die Schutzgruppe ein.
+. Führen Sie einen der folgenden Schritte aus:
++
+.. Wenn Sie bereits über Sicherungsrichtlinien verfügen, wählen Sie aus, ob Sie Workloads je nach Management durch eine der folgenden Optionen gruppieren möchten:
++
+*** BlueXP vor Ransomware-Schutz
+*** SnapCenter oder BlueXP  Backup und Recovery
+
+
+.. Wenn Sie noch keine Sicherungsrichtlinien festgelegt haben, werden auf der Seite die vorkonfigurierten Strategien zum Schutz vor Ransomware angezeigt.
++
+... Wählen Sie eine, um Ihre Gruppe zu schützen und wählen Sie *Weiter*.
+... Wenn der ausgewählte Workload Volumes in mehreren Arbeitsumgebungen enthält, wählen Sie das Backup-Ziel für die verschiedenen Arbeitsumgebungen aus, damit diese in der Cloud gesichert werden können.
+
+
+
+
+. Wählen Sie die Workloads aus, die der Gruppe hinzugefügt werden sollen.
++
+
+TIP: Um weitere Details zu den Workloads anzuzeigen, blättern Sie nach rechts.
+
+. Wählen Sie *Weiter*.
++
+image:screen-protection-groups-policy.png["Schutzgruppe hinzufügen – Seite „Richtlinie“"]
+
+. Wählen Sie die Richtlinie aus, die den Schutz für diese Gruppe regelt.
+. Wählen Sie *Weiter*.
+. Überprüfen Sie die Auswahl für die Schutzgruppe.
+. Wählen Sie *Hinzufügen*.
+
+
+
+
+=== Fügen Sie einer Gruppe weitere Workloads hinzu
+
+Später müssen Sie einer vorhandenen Gruppe möglicherweise weitere Workloads hinzufügen.
+
+Wenn die Gruppe Workloads umfasst, die nur durch BlueXP  Ransomware-Schutz (und nicht durch SnapCenter oder BlueXP  Backup und Recovery) gemanagt werden, sollten Sie separate Gruppen für Workloads verwenden, die nur von BlueXP  Ransomware-Schutz und einer anderen Gruppe für Workloads gemanagt werden.
+
+.Schritte
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
+. Wählen Sie auf der Seite Schutz die Registerkarte Schutzgruppen aus.
++
+image:screen-protection-groups.png["Seite Schutzgruppen"]
+
+. Wählen Sie die Gruppe aus, der Sie weitere Workloads hinzufügen möchten.
++
+image:screen-protection-groups-more-workloads.png["Seite „Details zu Schutzgruppen“"]
+
+. Wählen Sie auf der ausgewählten Schutzgruppenseite *Hinzufügen* aus.
++
+Der BlueXP  Ransomware-Schutz zeigt nur die Workloads, die nicht bereits in der Gruppe sind und dieselben Snapshot- und Backup-Richtlinien wie die Gruppe verwenden.
+
++
+
+TIP: Oben auf der Seite wird angezeigt, welcher Service die Snapshot-, Backup- und Erkennungsrichtlinien verwaltet.
+
+. Wählen Sie die zusätzlichen Workloads aus, die der Gruppe hinzugefügt werden sollen.
+. Wählen Sie *Speichern*.
+
+
+
+
+=== Gruppenschutz bearbeiten
+
+Sie können die Erkennungsrichtlinie für eine vorhandene Gruppe ändern. Wenn die Erkennungsrichtlinie nicht bereits zu dieser Gruppe hinzugefügt wurde, können Sie sie jetzt hinzufügen.
+
+.Schritte
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
+. Wählen Sie auf der Seite Schutz die Registerkarte Schutzgruppen aus.
++
+image:screen-protection-groups-edit.png["Seite Schutzgruppen mit der Option Bearbeiten"]
+
+. Wählen Sie im Bereich Schutz die Option *Schutz bearbeiten*.
+. Wählen Sie eine Erkennungsrichtlinie aus, oder fügen Sie dieser Gruppe eine Erkennungsrichtlinie hinzu.
+
+
+
+
+=== Entfernen von Workloads aus einer Gruppe
+
+Möglicherweise müssen Sie später Workloads aus einer vorhandenen Gruppe entfernen.
+
+.Schritte
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
+. Wählen Sie auf der Seite Schutz die Registerkarte Schutzgruppen aus.
+. Wählen Sie die Gruppe aus, aus der Sie einen oder mehrere Workloads entfernen möchten.
++
+image:screen-protection-groups-more-workloads.png["Seite „Details zu Schutzgruppen“"]
+
+. Wählen Sie auf der Seite Ausgewählte Schutzgruppe den Workload aus, den Sie aus der Gruppe entfernen möchten, und wählen Sie die Option *actions* ausimage:screenshot_horizontal_more_button.gif["Schaltfläche „Aktionen“"].
+. Wählen Sie im Menü Aktionen die Option *Workload entfernen*.
+. Bestätigen Sie, dass Sie den Workload entfernen möchten, und wählen Sie *Entfernen*.
+
+
+
+
+=== Löschen Sie die Schutzgruppe
+
+Durch Löschen der Schutzgruppe werden die Gruppe und ihr Schutz entfernt, die einzelnen Workloads werden jedoch nicht entfernt.
+
+.Schritte
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
+. Wählen Sie auf der Seite Schutz die Registerkarte Schutzgruppen aus.
+. Wählen Sie die Gruppe aus, aus der Sie einen oder mehrere Workloads entfernen möchten.
++
+image:screen-protection-groups-more-workloads.png["Seite „Details zu Schutzgruppen“"]
+
+. Wählen Sie auf der ausgewählten Schutzgruppenseite oben rechts *Schutzgruppe löschen* aus.
+. Bestätigen Sie, dass Sie die Gruppe löschen möchten, und wählen Sie *Löschen*.
+
+
+
+
 == Management von Strategien für den Ransomware-Schutz
 
-Sie können eine Ransomware-Strategie bearbeiten oder löschen.
+Sie können eine Ransomware-Strategie löschen.
 
 
 
 === Sehen Sie sich Workloads an, die durch eine Strategie zum Schutz vor Ransomware geschützt sind
 
-Bevor Sie eine Strategie zur Ransomware-Sicherung bearbeiten oder löschen, sollten Sie sichergehen, welche Workloads durch diese Strategie geschützt sind.
+Bevor Sie eine Strategie für den Schutz vor Ransomware löschen, sollten Sie sich zeigen lassen, welche Workloads von dieser Strategie geschützt sind.
 
 Sie können die Workloads in der Liste der Strategien anzeigen oder wenn Sie eine bestimmte Strategie bearbeiten.
 
 .Schritte beim Anzeigen der Strategieliste
 . Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
-. Wählen Sie auf der Seite Schutz die Option *Ransomware-Schutzstrategien verwalten* aus.
+. Wählen Sie auf der Seite Schutz die Option *Schutzstrategien verwalten* aus.
 +
 Die Ransomware-Schutz Strategien Seite zeigt eine Liste von Strategien.
 
 +
 image:screen-protection-strategy-list.png["Ransomware Schutz Strategien Bildschirm mit einer Liste von Strategien"]
 
-. Klicken Sie auf der Seite Ransomware-Schutzstrategien in der Spalte geschützte Workloads neben der Anzahl der geschützten Workloads auf *Ansicht*.
-
-
-.Schritte beim Bearbeiten einer Strategie
-. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
-. Wählen Sie auf der Seite Schutz die Option *Ransomware-Schutzstrategien verwalten* aus.
-+
-image:screen-protection-strategy-list-edit.png["Ransomware Schutz Strategien Bildschirm, der das Aktionen Menü zeigt"]
-
-. Wählen Sie auf der Seite Strategien managen die image:screenshot_horizontal_more_button.gif["Schaltfläche „Aktionen“"]Option *Aktionen* für die Strategie aus, die Sie ändern möchten.
-. Wählen Sie im Menü Aktionen die Option *Bearbeiten*.
-+
-image:screen-protection-strategy-edit.png["Bearbeiten Sie die Strategieseite für den Ransomware-Schutz"]
-
-. Zeigen Sie die durch diese Strategie geschützten Workloads an, indem Sie neben der Anzahl der Workloads oben auf der Seite *Ansicht* auswählen.
-
-
-
-
-=== Bearbeiten Sie eine Strategie für den Schutz vor Ransomware
-
-Sie können eine Schutzstrategie bearbeiten, indem Sie eine andere vorkonfigurierte Erkennungsrichtlinie auswählen, eine andere Richtlinie auswählen oder eine neue Sicherungsrichtlinie hinzufügen.
-
-.Schritte
-. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
-. Wählen Sie auf der Seite Schutz die Option *Ransomware-Schutzstrategien verwalten* aus.
-+
-image:screen-protection-strategy-list-edit.png["Ransomware Schutz Strategien Bildschirm, der das Aktionen Menü zeigt"]
-
-. Wählen Sie auf der Seite Strategien managen die image:screenshot_horizontal_more_button.gif["Schaltfläche „Aktionen“"]Option *Aktionen* für die Strategie aus, die Sie ändern möchten.
-. Wählen Sie im Menü Aktionen die Option *Bearbeiten*.
-+
-image:screen-protection-strategy-edit.png["Bearbeiten Sie die Strategieseite für den Ransomware-Schutz"]
-
-. Führen Sie einen der folgenden Schritte aus:
-+
-** Aus einer vorhandenen Strategie kopieren.
-** Wählen Sie eine andere Snapshot- oder Sicherungsrichtlinie aus.
-** Fügen Sie eine neue Snapshot- oder Backup-Richtlinie hinzu.
-
-
-. Ändern Sie die Details.
-. Wählen Sie *Speichern*, um die Änderung abzuschließen.
+. Klicken Sie auf der Seite Ransomware-Schutzstrategien in der Spalte geschützte Workloads auf den Pfeil nach unten am Ende der Zeile.
 
 
 
@@ -466,7 +535,7 @@ Sie können eine Sicherungsstrategie löschen, die derzeit keiner Workload zugeo
 
 .Schritte
 . Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
-. Wählen Sie auf der Seite Schutz die Option *Ransomware-Schutzstrategien verwalten* aus.
+. Wählen Sie auf der Seite Schutz die Option *Schutzstrategien verwalten* aus.
 . Wählen Sie auf der Seite Strategien verwalten die Option *Aktionen* image:screenshot_horizontal_more_button.gif["Schaltfläche „Aktionen“"] für die Strategie aus, die Sie löschen möchten.
-. Wählen Sie im Menü Aktionen die Option *Strategie löschen*.
+. Wählen Sie im Menü Aktionen die Option *Richtlinie löschen*.
 

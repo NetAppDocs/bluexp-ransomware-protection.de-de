@@ -42,7 +42,9 @@ sidebar:
     - title: Über das Dashboard können Sie den Workload-Zustand anzeigen
       url: "/rp-use-dashboard.html"
     - title: Schutz von Workloads
-      url: "/rp-use-protect.html"
+      entries:
+      - title: Schützen Sie Workloads mit Strategien zum Schutz vor Ransomware
+        url: "/rp-use-protect.html"
     - title: Reagieren Sie auf eine erkannte Warnung
       url: "/rp-use-alert.html"
     - title: Wiederherstellung nach einem Ransomware-Angriff

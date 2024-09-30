@@ -192,6 +192,6 @@ Wenn Sie SnapCenter oder SnapCenter für VMware verwenden, werden außerdem alle
 
 Wenn Sie sich über einige Begriffe zum Ransomware-Schutz auskennen, könnte dies für Sie von Vorteil sein.
 
-* *Schutz*: Schutz in BlueXP Ransomware-Schutz bedeutet, dass Snapshots und unveränderliche Backups regelmäßig in einer anderen Sicherheitsdomain mithilfe von Schutzrichtlinien erfolgen.
+* *Schutz*: Schutz im BlueXP  Ransomware-Schutz bedeutet, dass Snapshots und unveränderliche Backups regelmäßig in einer anderen Sicherheitsdomain mithilfe von Schutzrichtlinien erfolgen.
 * *Workload*: Ein Workload in BlueXP Ransomware-Schutz kann MySQL- oder Oracle-Datenbanken, VMware-Datastores oder Dateifreigaben umfassen.
 
