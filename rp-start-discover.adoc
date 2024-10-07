@@ -12,7 +12,7 @@ summary: Während der Erkennung analysiert der Ransomware-Schutz von BlueXP alle
 
 
 [role="lead"]
-Um BlueXP vor Ransomware zu schützen, muss der Service zunächst Daten erkennen. Während der Erkennung analysiert der Ransomware-Schutz von BlueXP alle Volumes und Dateien in Arbeitsumgebungen über alle BlueXP Connectors und Workspaces innerhalb eines Kontos hinweg.
+Um BlueXP vor Ransomware zu schützen, muss der Service zunächst Daten erkennen. Während der Erkennung analysiert der Ransomware-Schutz von BlueXP  alle Volumes und Dateien in Arbeitsumgebungen über alle BlueXP  Connectors und Projekte innerhalb eines Unternehmens hinweg.
 
 Der Ransomware-Schutz von BlueXP bewertet MySQL-Applikationen, Oracle-Applikationen, VMware-Datastores und File Shares.
 

@@ -45,7 +45,7 @@ Eine Erläuterung zu diesen Modi in allen BlueXP Services finden Sie unter https
 *Wie sieht die BlueXP URL zum Ransomware-Schutz aus?*
 Geben Sie für die URL in einem Browser Folgendes ein: https://console.bluexp.netapp.com/["https://console.bluexp.netapp.com/"^] Um auf die BlueXP Konsole zuzugreifen.
 
-*Wie werden Zugriffsberechtigungen gehandhabt?* Nur Account-Administratoren können den Service initiieren und Workloads erkennen (da dies die Verpflichtung zur Nutzung einer Ressource beinhaltet). Nachfolgende Interaktionen können von jeder Rolle durchgeführt werden.
+*Wie werden Zugriffsberechtigungen gehandhabt?* Nur Organisationsadministratoren können den Service starten und Workloads erkennen (da die Verpflichtung zur Nutzung einer Ressource besteht). Nachfolgende Interaktionen können von jeder Rolle durchgeführt werden.
 
 *Welche Geräteauflösung ist am besten?* Die empfohlene Geräteauflösung für den BlueXP Ransomware-Schutz ist 1.920 x 1.080 oder höher.
 

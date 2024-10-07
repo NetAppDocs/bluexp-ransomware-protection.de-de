@@ -39,7 +39,7 @@ Nach Ablauf der kostenlosen Testversion oder Ablauf der Lizenz oder des Abonneme
 
 == Testen Sie es mit einer kostenlosen 90-Tage-Testversion
 
-Sie können BlueXP Ransomware-Schutz durch eine kostenlose 90-Tage-Testversion ausprobieren. Sie müssen ein Account-Administrator sein, um die kostenlose Testversion zu starten.
+Sie können BlueXP Ransomware-Schutz durch eine kostenlose 90-Tage-Testversion ausprobieren. Sie müssen ein BlueXP  Organisation Administrator sein, um die kostenlose Testversion zu starten.
 
 
 NOTE: Während der Testphase werden keine Kapazitätsgrenzen durchgesetzt.
@@ -179,17 +179,7 @@ Wenn Sie Ihre eigene Lizenz (BYOL, Bring Your Own License) erwerben möchten, m�
 Nachdem Sie Ihre BlueXP Ransomware-Schutzlizenz bei Ihrem NetApp Vertriebsmitarbeiter erworben haben, aktivieren Sie die Lizenz, indem Sie die BlueXP Seriennummer für Ransomware-Schutz und Kontoinformationen zur NetApp Support-Website (NSS) eingeben.
 
 .Bevor Sie beginnen
-Sie müssen die folgenden Informationen haben, bevor Sie beginnen:
-
-* BlueXP Seriennummer für den Ransomware-Schutz
-+
-Suchen Sie diese Nummer in Ihrem Auftrag, oder wenden Sie sich an das Account Team, um diese Informationen zu erhalten.
-
-* BlueXP Konto-ID
-+
-Sie finden Ihre BlueXP Konto-ID, indem Sie oben in BlueXP das Dropdown-Menü *Account* auswählen und dann neben Ihrem Konto *Konto verwalten* auswählen. Ihre Account-ID wird auf der Registerkarte „Übersicht“ angezeigt.
-
-
+Sie benötigen dazu die Seriennummer des BlueXP  Ransomware-Schutzes. Suchen Sie diese Nummer in Ihrem Auftrag, oder wenden Sie sich an das Account Team, um diese Informationen zu erhalten.
 
 .Schritte
 . Sobald Sie die Lizenz erhalten haben, kehren Sie zum BlueXP Ransomware-Schutz zurück. Wählen Sie oben rechts die Option *Zahlungsmethoden anzeigen*. Oder wählen Sie in der Nachricht, dass die kostenlose Testversion abläuft *Abonnieren oder eine Lizenz erwerben*.
