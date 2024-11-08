@@ -8,7 +8,7 @@ summary: Einstieg in den NetApp BlueXP Ransomware-Schutzservice in nur wenigen S
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]

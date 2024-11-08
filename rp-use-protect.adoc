@@ -8,7 +8,7 @@ summary: Sie können Workloads gegen Ransomware-Angriffe schützen, indem Sie ei
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -75,7 +75,7 @@ Einer der ersten Schritte zum Schutz von Workloads besteht darin, dass Sie Ihre 
 ** Wählen Sie im Fensterbereich Datenschutz im Dashboard die Option *Alle anzeigen* aus.
 ** Wählen Sie im Menü *Schutz*.
 +
-image:screen-protection3.png["Schutzseite"]
+image:screen-protection.png["Schutzseite"]
 
 
 
@@ -260,7 +260,7 @@ Wenn Snapshot- oder Backup-Richtlinien für den Workload nicht vorhanden sind, k
 .Schritte, um eine Strategie für den Schutz vor Ransomware zu entwickeln
 . Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
 +
-image:screen-protection3.png["Seite „Strategie verwalten“"]
+image:screen-protection.png["Seite „Strategie verwalten“"]
 
 . Wählen Sie auf der Seite Schutz die Option *Schutzstrategien verwalten* aus.
 +
@@ -331,7 +331,7 @@ Andere Services, wie BlueXP Backup und Recovery sowie SnapCenter, nutzen zur Ste
 .Schritte
 . Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
 +
-image:screen-protection3.png["Seite „Strategie verwalten“"]
+image:screen-protection.png["Seite „Strategie verwalten“"]
 
 . Wählen Sie auf der Seite Schutz einen Workload aus, und wählen Sie *Schutz* aus.
 +
@@ -378,7 +378,7 @@ Das Gruppieren von Dateifreigaben erleichtert den Schutz Ihres Datenbestands. De
 .Schritte
 . Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
 +
-image:screen-protection3.png["Seite „Strategie verwalten“"]
+image:screen-protection.png["Seite „Strategie verwalten“"]
 
 . Wählen Sie auf der Seite Schutz die Registerkarte Schutzgruppen aus.
 +
@@ -418,52 +418,6 @@ image:screen-protection-groups-policy.png["Schutzgruppe hinzufügen – Seite �
 . Wählen Sie *Weiter*.
 . Überprüfen Sie die Auswahl für die Schutzgruppe.
 . Wählen Sie *Hinzufügen*.
-
-
-
-
-=== Fügen Sie einer Gruppe weitere Workloads hinzu
-
-Später müssen Sie einer vorhandenen Gruppe möglicherweise weitere Workloads hinzufügen.
-
-Wenn die Gruppe Workloads umfasst, die nur durch BlueXP  Ransomware-Schutz (und nicht durch SnapCenter oder BlueXP  Backup und Recovery) gemanagt werden, sollten Sie separate Gruppen für Workloads verwenden, die nur von BlueXP  Ransomware-Schutz und einer anderen Gruppe für Workloads gemanagt werden.
-
-.Schritte
-. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
-. Wählen Sie auf der Seite Schutz die Registerkarte Schutzgruppen aus.
-+
-image:screen-protection-groups.png["Seite Schutzgruppen"]
-
-. Wählen Sie die Gruppe aus, der Sie weitere Workloads hinzufügen möchten.
-+
-image:screen-protection-groups-more-workloads.png["Seite „Details zu Schutzgruppen“"]
-
-. Wählen Sie auf der ausgewählten Schutzgruppenseite *Hinzufügen* aus.
-+
-Der BlueXP  Ransomware-Schutz zeigt nur die Workloads, die nicht bereits in der Gruppe sind und dieselben Snapshot- und Backup-Richtlinien wie die Gruppe verwenden.
-
-+
-
-TIP: Oben auf der Seite wird angezeigt, welcher Service die Snapshot-, Backup- und Erkennungsrichtlinien verwaltet.
-
-. Wählen Sie die zusätzlichen Workloads aus, die der Gruppe hinzugefügt werden sollen.
-. Wählen Sie *Speichern*.
-
-
-
-
-=== Gruppenschutz bearbeiten
-
-Sie können die Erkennungsrichtlinie für eine vorhandene Gruppe ändern. Wenn die Erkennungsrichtlinie nicht bereits zu dieser Gruppe hinzugefügt wurde, können Sie sie jetzt hinzufügen.
-
-.Schritte
-. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
-. Wählen Sie auf der Seite Schutz die Registerkarte Schutzgruppen aus.
-+
-image:screen-protection-groups-edit.png["Seite Schutzgruppen mit der Option Bearbeiten"]
-
-. Wählen Sie im Bereich Schutz die Option *Schutz bearbeiten*.
-. Wählen Sie eine Erkennungsrichtlinie aus, oder fügen Sie dieser Gruppe eine Erkennungsrichtlinie hinzu.
 
 
 

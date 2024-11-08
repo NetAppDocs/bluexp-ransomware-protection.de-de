@@ -8,7 +8,7 @@ summary: Um den Ransomware-Schutz von BlueXP zu nutzen, führen Sie ein paar Sch
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: /media/
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -24,10 +24,11 @@ Bereiten Sie eines der folgenden Sicherungsziele vor:
 
 * NetApp StorageGRID
 * Amazon Web Services
+* Google Cloud Platform
 * Microsoft Azure
 
 
-Nachdem Sie Optionen im Backup-Ziel selbst konfiguriert haben, werden Sie sie später im BlueXP Ransomware-Schutzservice als Backup-Ziel konfigurieren.
+Nachdem Sie Optionen im Backup-Ziel selbst konfiguriert haben, werden Sie sie später im BlueXP Ransomware-Schutzservice als Backup-Ziel konfigurieren. Informationen zum Konfigurieren des Backup-Ziels für BlueXP -Ransomware-Schutz finden Sie unter link:rp-use-settings.html["Konfigurieren Sie Sicherungsziele"].
 
 
 

@@ -72,6 +72,9 @@ Der Ransomware-Schutz von BlueXP bietet folgende Vorteile:
 
 NetApp berechnet Ihnen keine Kosten für die Nutzung der Testversion von BlueXP Ransomware-Schutz.
 
+
+NOTE: Mit der Veröffentlichung im Oktober 2024 haben neue Implementierungen von BlueXP  Ransomware-Schutz 30 Tage Zeit für eine kostenlose Testversion. Zuvor hatte BlueXP  Ransomware-Schutz 90 Tage als kostenlose Testversion zur Verfügung gestellt. Wenn Sie bereits in der 90-Tage-Testversion sind, wird dieses Angebot für die 90 Tage fortgesetzt.
+
 Wenn Sie sowohl über BlueXP -Backup und -Recovery als auch über BlueXP -Ransomware-Schutz verfügen, werden alle gemeinsamen, durch beide Produkte geschützten Daten ausschließlich durch BlueXP  Ransomware-Schutz in Rechnung gestellt.
 
 Nach dem Kauf einer Lizenz oder eines PAYGO-Abonnements können alle Workloads mit aktivierter Richtlinie zur Erkennung von Ransomware (Autonomer Ransomware-Schutz) (erkannt oder eingerichtet durch BlueXP -Ransomware-Schutz), mindestens eine Snapshot- oder Backup-Richtlinie klassifiziert der BlueXP  in Ransomware-Schutz die Daten als „geschützt“. dies wird auf die erworbene Kapazität oder das PAYGO-Abonnement angerrechnet. Wird ein Workload ohne Erkennungsrichtlinie (ARP) erkannt, selbst wenn er über Backup- oder Snapshot-Richtlinien verfügt, wird er als „gefährdet“ klassifiziert und es wird nicht auf die erworbene Kapazität angerechnet.
@@ -84,7 +87,7 @@ Geschützte Workloads werden mit der erworbenen Kapazität oder dem Abonnement v
 
 Mit BlueXP Ransomware-Schutz haben Sie die Möglichkeit, verschiedene Lizenzierungsmodelle zu verwenden. Dazu gehören eine kostenlose Testversion, ein Pay-as-you-go-Abonnement oder eine eigene Lizenz.
 
-Für den BlueXP Ransomware-Schutzservice ist eine NetApp ONTAP Lizenz erforderlich.
+Für den BlueXP  Ransomware-Schutz ist eine NetApp ONTAP One Lizenz erforderlich.
 
 Die BlueXP  Lizenz zum Schutz vor Ransomware enthält keine zusätzlichen NetApp Produkte. BlueXP  Ransomware-Schutz kann Backup und Recovery mit BlueXP  nutzen, auch wenn Sie keine Lizenz dafür haben.
 
@@ -168,7 +171,7 @@ Mit BlueXP  Ransomware-Schutz erfahren Sie, wie stabil Ihre Daten bei einem Cyb
 * Lokaler ONTAP-NAS (mit NFS- und CIFS-Protokollen) mit ONTAP Version 9.11.1 und höher
 * Cloud Volumes ONTAP 9.11.1 oder höher für AWS (mit NFS- und CIFS-Protokollen)
 * Cloud Volumes ONTAP 9.11.1 oder höher für die Google Cloud Platform (mit NFS- und CIFS-Protokollen)
-* Cloud Volumes ONTAP 9.11.1 oder höher für Microsoft Azure (mit NFS- und CIFS-Protokollen)
+* Cloud Volumes ONTAP 9.12.1 oder höher für Microsoft Azure (mit NFS- und CIFS-Protokollen)
 
 
 

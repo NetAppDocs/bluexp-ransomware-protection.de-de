@@ -8,7 +8,7 @@ summary: Wenn Sie den BlueXP  Ransomware-Schutzservice nicht mehr nutzen möcht
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]

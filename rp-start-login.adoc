@@ -8,7 +8,7 @@ summary: Einstieg in den Ransomware-Schutz von BlueXP durch Zugriff auf den Serv
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]

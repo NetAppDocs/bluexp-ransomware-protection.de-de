@@ -22,9 +22,9 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 
 Sie können die folgenden Lizenztypen verwenden:
 
-* Melden Sie sich für eine kostenlose 90-Tage-Testversion an.
-* In Kürze können Sie ein PAYGO-Abonnement (Pay-as-you-go) für Amazon Web Services (AWS) Marketplace erwerben.
-* Bald können Sie Ihre eigene Lizenz (BYOL) verwenden. Hierbei handelt es sich um eine NetApp-Lizenzdatei (NLF), die Sie von Ihrem NetApp Vertriebsmitarbeiter erhalten. Sie können die Seriennummer der Lizenz verwenden, um das BYOL in der Digital Wallet von BlueXP zu aktivieren.
+* Melden Sie sich für eine kostenlose 30-Tage-Testversion an.
+* Der Kauf eines PAYGO-Abonnements (Pay-as-you-go) für Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace und Microsoft Azure Marketplace (in Kürze verfügbar)
+* Bring-Your-Own-License (BYOL) bei einer NetApp Lizenzdatei (NLF), die Sie von Ihrem NetApp Vertriebsmitarbeiter erhalten. Sie können die Seriennummer der Lizenz verwenden, um das BYOL in der Digital Wallet von BlueXP zu aktivieren.
 
 
 *Wie aktivieren Sie den BlueXP Ransomware-Schutz?*
@@ -42,8 +42,7 @@ Eine Erläuterung zu diesen Modi in allen BlueXP Services finden Sie unter https
 
 == Datenzugriff
 
-*Wie sieht die BlueXP URL zum Ransomware-Schutz aus?*
-Geben Sie für die URL in einem Browser Folgendes ein: https://console.bluexp.netapp.com/["https://console.bluexp.netapp.com/"^] Um auf die BlueXP Konsole zuzugreifen.
+*Wie sieht die BlueXP URL zum Ransomware-Schutz aus?* Geben Sie für die URL in einem Browser Folgendes ein: https://console.bluexp.netapp.com/["https://console.bluexp.netapp.com/ransomware-protection"^] , um auf die BlueXP  Konsole zuzugreifen.
 
 *Wie werden Zugriffsberechtigungen gehandhabt?* Nur Organisationsadministratoren können den Service starten und Workloads erkennen (da die Verpflichtung zur Nutzung einer Ressource besteht). Nachfolgende Interaktionen können von jeder Rolle durchgeführt werden.
 
