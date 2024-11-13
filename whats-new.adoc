@@ -20,202 +20,313 @@ Erfahren Sie mehr über die Neuerungen beim BlueXP Ransomware-Schutz.
 
 == Bis 7. November 2024
 
-Diese Version des BlueXP  Ransomware-Schutzes umfasst folgende Updates.
 
-* *Datenklassifizierung aktivieren und nach personenbezogenen Informationen scannen*: Mit dieser Version können Sie BlueXP  Classification, eine Kernkomponente der BlueXP -Familie, aktivieren, um Daten in Ihren Dateifreigabearbeitslasten zu scannen und zu klassifizieren. Durch die Klassifizierung von Daten können Sie ermitteln, ob Ihre Daten personenbezogene oder private Informationen umfassen, was zu höheren Sicherheitsrisiken führen kann. Dieser Prozess wirkt sich auch auf die Workload-Bedeutung aus und hilft Ihnen, dafür zu sorgen, dass Sie Ihre Workloads mit dem richtigen Schutzniveau schützen.
-+
+
+=== Datenklassifizierung ermöglichen und nach personenbezogenen Informationen suchen
+
+Mit dieser Version können Sie BlueXP  Classification aktivieren, eine Kernkomponente der BlueXP  Produktfamilie, um Daten in Ihren File Share-Workloads zu scannen und zu klassifizieren. Durch die Klassifizierung von Daten können Sie ermitteln, ob Ihre Daten personenbezogene oder private Informationen umfassen, was zu höheren Sicherheitsrisiken führen kann. Dieser Prozess wirkt sich auch auf die Workload-Bedeutung aus und hilft Ihnen, dafür zu sorgen, dass Sie Ihre Workloads mit dem richtigen Schutzniveau schützen.
+
 Das Scannen nach PII-Daten in BlueXP -Ransomware-Schutz ist für Kunden, die BlueX Klassifizierung implementiert haben, in der Regel verfügbar. Die BlueXP -Klassifizierung ist als Teil der BlueXP  Plattform ohne Zusatzkosten verfügbar und kann vor Ort oder in der Cloud des Kunden bereitgestellt werden.
 
-+
 Die BlueXP -Klassifizierung kann auch als SaaS-Modell im Rahmen einer Technologievorschau implementiert werden. Verwenden Sie zum Aktivieren der Vorschau-Funktionen die Option BlueXP  Ransomware Protection *Settings*. Wenn Sie die Vorschau aktivieren, wird neben der Spalte *Datenschutz* auf der Seite Schutz neben anderen Positionen ein "Vorschau"-Label angezeigt.
 
-+
 Siehe https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Konfigurieren Sie BlueXP Ransomware-Schutzeinstellungen"].
 
-+
 Um den Scanvorgang zu starten, klicken Sie auf der Seite Schutz in der Spalte Datenschutz auf *Belichtung identifizieren*.
 
-+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["Scannen Sie nach personenbezogenen, sensiblen Daten mit BlueXP -Klassifizierung"].
 
-* *Probieren Sie die kommenden Vorschaufunktionen aus, bevor sie veröffentlicht werden*: Sie können jetzt einige Features mit der Bezeichnung "Preview" ausprobieren, bevor sie veröffentlicht werden. Verwenden Sie dazu die Option *Einstellungen*, um diese Funktionen anzuzeigen, die mit einem "Vorschau"-Label gekennzeichnet sind.
-+
+
+
+=== Probieren Sie die kommenden Vorschaufunktionen aus, bevor sie veröffentlicht werden
+
+Sie können jetzt einige Features mit der Bezeichnung "Vorschau" ausprobieren, bevor sie veröffentlicht werden. Verwenden Sie dazu die Option *Einstellungen*, um diese Funktionen anzuzeigen, die mit einem "Vorschau"-Label gekennzeichnet sind.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Erfahren Sie mehr über die Konfiguration der BlueXP  Ransomware-Schutzeinstellungen"].
 
-* *SIEM-Integration mit Microsoft Sentinel*: Sie können jetzt Daten an Ihr Sicherheits- und Ereignismanagementsystem (SIEM) senden, um Bedrohungen mithilfe von Microsoft Sentinel zu analysieren und zu erkennen. Bisher können Sie den AWS Security Hub oder Splunk Cloud als SIEM auswählen.
-+
+
+
+=== Integration von SIEM in Microsoft Sentinel
+
+Mit Microsoft Sentinel können Sie jetzt Daten an Ihr Sicherheits- und Ereignismanagementsystem (SIEM) senden, um Bedrohungen zu analysieren und zu erkennen. Bisher können Sie den AWS Security Hub oder Splunk Cloud als SIEM auswählen.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Erfahren Sie mehr über die Konfiguration der BlueXP  Ransomware-Schutzeinstellungen"].
 
 
 
-* * Kostenlose Testversion jetzt 30 Tage*: Mit dieser Version haben neue Bereitstellungen von BlueXP  Ransomware-Schutz jetzt 30 Tage für eine kostenlose Testversion. Zuvor hatte BlueXP  Ransomware-Schutz 90 Tage als kostenlose Testversion zur Verfügung gestellt. Wenn Sie bereits in der 90-Tage-Testversion sind, wird dieses Angebot für die 90 Tage fortgesetzt.
-* *Wiederherstellung der Anwendungsarbeitslast auf Dateiebene für Podman*: Bevor Sie eine Anwendungsarbeitslast auf Dateiebene wiederherstellen, können Sie nun eine Liste von Dateien anzeigen, die von einem Angriff betroffen sein könnten, und diejenigen identifizieren, die Sie wiederherstellen möchten. Wenn die BlueXP -Konnektoren in einer Organisation (zuvor ein Konto) Podman verwendet haben, wurde diese Funktion zuvor deaktiviert. Es ist jetzt für Podman aktiviert. Sie können über den Ransomware-Schutz von BlueXP die wiederherzustellenden Dateien auswählen, eine CSV-Datei hochladen, in der alle von einer Warnmeldung betroffenen Dateien aufgeführt sind, oder manuell ermitteln, welche Dateien wiederhergestellt werden sollen.
-+
+=== Kostenlose Testversion jetzt 30 Tage
+
+Mit dieser Version haben neue Implementierungen von BlueXP  Ransomware-Schutz jetzt 30 Tage für eine kostenlose Testversion. Zuvor hatte BlueXP  Ransomware-Schutz 90 Tage als kostenlose Testversion zur Verfügung gestellt. Wenn Sie bereits in der 90-Tage-Testversion sind, wird dieses Angebot für die 90 Tage fortgesetzt.
+
+
+
+=== Stellen Sie für Podman Applikations-Workloads auf Dateiebene wieder her
+
+Bevor Sie einen Applikations-Workload auf Dateiebene wiederherstellen, können Sie nun eine Liste der Dateien anzeigen, die möglicherweise von einem Angriff betroffen waren, und diejenigen identifizieren, die wiederhergestellt werden sollen. Wenn die BlueXP -Konnektoren in einer Organisation (zuvor ein Konto) Podman verwendet haben, wurde diese Funktion zuvor deaktiviert. Es ist jetzt für Podman aktiviert. Sie können über den Ransomware-Schutz von BlueXP die wiederherzustellenden Dateien auswählen, eine CSV-Datei hochladen, in der alle von einer Warnmeldung betroffenen Dateien aufgeführt sind, oder manuell ermitteln, welche Dateien wiederhergestellt werden sollen.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Erfahren Sie mehr über die Wiederherstellung nach einem Ransomware-Angriff"].
-
-
 
 
 
 == 30 September 2024
 
-Diese Version des BlueXP  Ransomware-Schutzes beinhaltet das folgende Update.
 
-* *Individuelle Gruppierung von Dateifreigabentlasten*: Mit diesem Release können Sie nun Dateifreigaben in Gruppen gruppieren, um den Schutz Ihres Datenbestands zu erleichtern. Der Service kann alle Volumes einer Gruppe gleichzeitig schützen. Bisher mussten Sie jedes Volume separat schützen. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Erfahren Sie mehr über das Gruppieren von File Share-Workloads in Strategien zum Schutz vor Ransomware"].
 
+=== Individuelle Gruppierung von File Share-Workloads
+
+Mit dieser Version können Sie nun Dateifreigaben in Gruppen gruppieren, um den Schutz Ihres Datenbestands zu erleichtern. Der Service kann alle Volumes einer Gruppe gleichzeitig schützen. Bisher mussten Sie jedes Volume separat schützen.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Erfahren Sie mehr über das Gruppieren von File Share-Workloads in Strategien zum Schutz vor Ransomware"].
 
 
 
 == 2 September 2024
 
-Diese Version des BlueXP  Ransomware-Schutzes umfasst folgende Updates.
 
-* *Sicherheitsrisikobewertung von Digital Advisor*: BlueXP  Ransomware-Schutz sammelt jetzt Informationen über hohe und kritische Sicherheitsrisiken in Verbindung mit einem Cluster von NetApp Digital Advisor. Wenn ein Risiko gefunden wird, bietet der BlueXP  Ransomware-Schutz eine Empfehlung im Dashboard-Bereich *Empfohlene Aktionen*: "Behebt eine bekannte Sicherheitslücke auf dem Cluster-<name>." Klicken Sie in der Empfehlung im Dashboard auf *Überprüfen und beheben*, um Digital Advisor und einen CVE-Artikel (Common Vulnerability & Exposure) zu überprüfen, um das Sicherheitsrisiko zu beheben. Wenn mehrere Sicherheitsrisiken bestehen, lesen Sie die Informationen in Digital Advisor.
-+
+
+=== Sicherheitsrisikobewertung von Digital Advisor
+
+Der Schutz vor Ransomware von BlueXP  sammelt jetzt Informationen über hohe und kritische Sicherheitsrisiken in Verbindung mit einem Cluster aus dem digitalen Berater von NetApp. Wenn ein Risiko gefunden wird, bietet der BlueXP  Ransomware-Schutz eine Empfehlung im Dashboard-Bereich *Empfohlene Aktionen*: "Behebt eine bekannte Sicherheitslücke auf dem Cluster-<name>." Klicken Sie in der Empfehlung im Dashboard auf *Überprüfen und beheben*, um Digital Advisor und einen CVE-Artikel (Common Vulnerability & Exposure) zu überprüfen, um das Sicherheitsrisiko zu beheben. Wenn mehrere Sicherheitsrisiken bestehen, lesen Sie die Informationen in Digital Advisor.
+
 Siehe https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor Dokumentation"^].
 
-* *Backup auf Google Cloud Platform*: Mit diesem Release können Sie ein Backup-Ziel auf einen Google Cloud Platform-Bucket setzen. Bisher konnten Sie Sicherungsziele nur zu NetApp StorageGRID, Amazon Web Services und Microsoft Azure hinzufügen.
-+
+
+
+=== Backup auf der Google Cloud Platform
+
+Mit diesem Release können Sie ein Backup-Ziel auf einen Bucket von Google Cloud Platform festlegen. Bisher konnten Sie Sicherungsziele nur zu NetApp StorageGRID, Amazon Web Services und Microsoft Azure hinzufügen.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Erfahren Sie mehr über die Konfiguration der BlueXP  Ransomware-Schutzeinstellungen"].
 
-* *Unterstützung für Google Cloud Platform*: Der Service unterstützt jetzt Cloud Volumes ONTAP für Google Cloud Platform für Speicherschutz. Bisher wurde für den Service nur Cloud Volumes ONTAP für Amazon Web Services und Microsoft Azure zusammen mit einem lokalen NAS unterstützt.
-+
+
+
+=== Unterstützung für die Google Cloud Platform
+
+Der Service unterstützt jetzt Cloud Volumes ONTAP für die Google Cloud Platform für Storage-Sicherung. Bisher wurde für den Service nur Cloud Volumes ONTAP für Amazon Web Services und Microsoft Azure zusammen mit einem lokalen NAS unterstützt.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Informieren Sie sich über BlueXP  Ransomware-Schutz und unterstützte Datenquellen, Backup-Ziele und Arbeitsumgebungen"].
 
-* *Rollenbasierte Zugriffssteuerung*: Mit rollenbasierter Zugriffssteuerung (Role Based Access Control, RBAC) können Sie nun den Zugriff auf bestimmte Aktivitäten einschränken. BlueXP  Ransomware-Schutz verwendet zwei Rollen aus BlueXP : BlueXP -Konto-Administrator und nicht-Konto-Administrator (Viewer).
-+
+
+
+=== Rollenbasierte Zugriffssteuerung
+
+Mithilfe rollenbasierter Zugriffssteuerung (Role Based Access Control, RBAC) können Sie den Zugriff auf bestimmte Aktivitäten jetzt einschränken. BlueXP  Ransomware-Schutz verwendet zwei Rollen aus BlueXP : BlueXP -Konto-Administrator und nicht-Konto-Administrator (Viewer).
+
 Weitere Informationen zu den Aktionen, die jede Rolle ausführen kann, finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["Rollenbasierte Zugriffssteuerung: Privileges"].
-
-
 
 
 
 == 5 August 2024
 
-Diese Version des BlueXP  Ransomware-Schutzes beinhaltet das folgende Update.
 
-* *Bedrohungserkennung mit Splunk Cloud*: Sie können automatisch Daten zur Bedrohungsanalyse und -Erkennung an Ihr Sicherheits- und Ereignismanagementsystem (SIEM) senden. Bei früheren Versionen konnten Sie nur den AWS Security Hub als SIEM auswählen. In dieser Version können Sie den AWS Security Hub oder Splunk Cloud als SIEM auswählen.
-+
+
+=== Bedrohungserkennung mit Splunk Cloud
+
+Sie können automatisch Daten an Ihr Sicherheits- und Event-Management-System (SIEM) senden, um Bedrohungen zu analysieren und zu erkennen. Bei früheren Versionen konnten Sie nur den AWS Security Hub als SIEM auswählen. In dieser Version können Sie den AWS Security Hub oder Splunk Cloud als SIEM auswählen.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Erfahren Sie mehr über die Konfiguration der BlueXP  Ransomware-Schutzeinstellungen"].
-
-
 
 
 
 == 1 Juli 2024
 
-Diese Version des Ransomware-Schutzes von BlueXP umfasst folgende Updates:
 
-* *Bring Your Own License (BYOL)*: Mit dieser Version können Sie eine BYOL-Lizenz verwenden. Dabei handelt es sich um eine-Lizenzdatei (NetApp License File, NLF), die Sie von Ihrem NetApp Vertriebsmitarbeiter erhalten.
-+
+
+=== Bring-Your-Own-License (BYOL)
+
+Mit dieser Version können Sie eine BYOL-Lizenz verwenden. Dabei handelt es sich um eine-Lizenzdatei (NetApp License File, NLF), die Sie von Ihrem NetApp Vertriebsmitarbeiter erhalten.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["Erfahren Sie mehr über die Einrichtung der Lizenzierung"].
 
-* * Wiederherstellen von Anwendungs-Workloads auf Dateiebene*: Bevor Sie einen Anwendungs-Workload auf Dateiebene wiederherstellen, können Sie nun eine Liste von Dateien anzeigen, die von einem Angriff betroffen sein könnten, und diejenigen identifizieren, die Sie wiederherstellen möchten. Sie können über den Ransomware-Schutz von BlueXP die wiederherzustellenden Dateien auswählen, eine CSV-Datei hochladen, in der alle von einer Warnmeldung betroffenen Dateien aufgeführt sind, oder manuell ermitteln, welche Dateien wiederhergestellt werden sollen.
-+
+
+
+=== Applikations-Workload auf Dateiebene wiederherstellen
+
+Bevor Sie einen Applikations-Workload auf Dateiebene wiederherstellen, können Sie nun eine Liste der Dateien anzeigen, die möglicherweise von einem Angriff betroffen waren, und diejenigen identifizieren, die wiederhergestellt werden sollen. Sie können über den Ransomware-Schutz von BlueXP die wiederherzustellenden Dateien auswählen, eine CSV-Datei hochladen, in der alle von einer Warnmeldung betroffenen Dateien aufgeführt sind, oder manuell ermitteln, welche Dateien wiederhergestellt werden sollen.
+
 
 NOTE: Wenn in dieser Version alle BlueXP Connectors in einem Konto nicht Podman verwenden, ist die Funktion zur Wiederherstellung einzelner Dateien aktiviert. Andernfalls ist es für dieses Konto deaktiviert.
 
-+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Erfahren Sie mehr über die Wiederherstellung nach einem Ransomware-Angriff"].
 
-* *Laden Sie eine Liste der betroffenen Dateien* herunter, bevor Sie einen Anwendungs-Workload auf Dateiebene wiederherstellen. Sie können nun auf die Seite „Warnungen“ zugreifen, um eine Liste der betroffenen Dateien in einer CSV-Datei herunterzuladen und anschließend die CSV-Datei über die Seite „Wiederherstellung“ hochzuladen.
-+
+
+
+=== Laden Sie eine Liste der betroffenen Dateien herunter
+
+Bevor Sie einen Anwendungs-Workload auf Dateiebene wiederherstellen, können Sie nun auf die Seite Warnungen zugreifen, um eine Liste der betroffenen Dateien in einer CSV-Datei herunterzuladen und anschließend die Seite Wiederherstellung verwenden, um die CSV-Datei hochzuladen.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Erfahren Sie mehr über das Herunterladen betroffener Dateien, bevor Sie eine Anwendung wiederherstellen"].
 
-* *Schutzplan löschen*: Mit diesem Release können Sie jetzt eine Ransomware-Schutzstrategie löschen.
-+
+
+
+=== Schutzplan löschen
+
+Mit dieser Version können Sie jetzt eine Strategie für den Schutz vor Ransomware löschen.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Erfahren Sie mehr über den Schutz von Workloads und das Management von Strategien zum Schutz vor Ransomware"].
-
-
 
 
 
 == 10 Juni 2024
 
-Diese Version des Ransomware-Schutzes von BlueXP umfasst folgende Updates:
 
-* *Sperrung der Snapshot-Kopie auf dem Primärspeicher*: Aktivieren Sie diese Funktion, um die Snapshot-Kopien im Primärspeicher zu sperren, damit sie für einen bestimmten Zeitraum nicht geändert oder gelöscht werden können, selbst wenn ein Ransomware-Angriff den Weg zum Backup-Storage-Ziel findet.
-+
+
+=== Sperren von Snapshot-Kopien auf dem primären Storage
+
+Aktivieren Sie diese Funktion, um Snapshot-Kopien im primären Storage zu sperren, damit sie für eine bestimmte Zeit nicht geändert oder gelöscht werden können, selbst wenn ein Ransomware-Angriff seinen Weg zum Backup-Storage-Ziel vorfindet.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Erfahren Sie mehr über den Schutz von Workloads und die Aktivierung von Backup-Sperrung in einer Strategie für den Schutz vor Ransomware"].
 
-* *Diese Version unterstützt Cloud Volumes ONTAP für Microsoft Azure* als Arbeitsumgebung zusätzlich zu Cloud Volumes ONTAP für AWS und On-Premises ONTAP NAS.
-+
+
+
+=== Unterstützung von Cloud Volumes ONTAP für Microsoft Azure
+
+Dieser Release unterstützt neben Cloud Volumes ONTAP für AWS auch Cloud Volumes ONTAP für Microsoft Azure als Arbeitsumgebung und lokalen ONTAP-NAS.
+
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-azure.html["Schnellstart für Cloud Volumes ONTAP in Azure"^]
 
-+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Mehr zu BlueXP Ransomware-Schutz"].
 
-* *Microsoft Azure wurde als Sicherungsziel hinzugefügt*. Sie können nun Microsoft Azure zusammen mit AWS und NetApp StorageGRID als Backup-Ziel hinzufügen.
-+
+
+
+=== Microsoft Azure wurde als Backup-Ziel hinzugefügt
+
+Sie können nun Microsoft Azure zusammen mit AWS und NetApp StorageGRID als Backup-Ziel hinzufügen.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Erfahren Sie mehr über das Konfigurieren von Schutzeinstellungen"].
-
-
 
 
 
 == 14 Mai 2024
 
-Diese Version ist die allgemein verfügbare Version des BlueXP Ransomware-Schutzes. Es enthält die folgenden Updates:
 
-* *Lizenzierungs-Updates*: Sie können sich für eine 90-tägige kostenlose Testversion anmelden. Bald können Sie ein Pay-as-you-go-Abonnement mit Amazon Web Services Marketplace erwerben oder Ihre eigene NetApp Lizenz mitbringen.
-+
+
+=== Lizenzierungs-Updates
+
+Melden Sie sich für eine kostenlose 90-Tage-Testversion an. Bald können Sie ein Pay-as-you-go-Abonnement mit Amazon Web Services Marketplace erwerben oder Ihre eigene NetApp Lizenz mitbringen.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["Erfahren Sie mehr über die Einrichtung der Lizenzierung"].
 
-* *CIFS-Protokoll*: Der Service unterstützt jetzt On-Premises ONTAP und Cloud Volumes ONTAP in AWS-Arbeitsumgebungen, die sowohl NFS- als auch CIFS-Protokolle verwenden. In der vorherigen Version wurde nur das NFS-Protokoll unterstützt.
-* *Workload-Details*: Diese Version bietet jetzt mehr Details in den Workload-Informationen aus dem Schutz und anderen Seiten für eine verbesserte Workload-Schutz-Bewertung. Anhand der Workload-Details können Sie die derzeit zugewiesene Richtlinie überprüfen und die konfigurierten Backup-Ziele überprüfen.
-+
+
+
+=== CIFS-Protokoll
+
+Der Service unterstützt jetzt On-Premises ONTAP und Cloud Volumes ONTAP in AWS Arbeitsumgebungen, die sowohl NFS- als auch CIFS-Protokolle verwenden. In der vorherigen Version wurde nur das NFS-Protokoll unterstützt.
+
+
+
+=== Workload-Details
+
+Diese Version enthält jetzt weitere Details in den Workload-Informationen auf den Seiten Schutz und andere für eine verbesserte Bewertung des Workload-Schutzes. Anhand der Workload-Details können Sie die derzeit zugewiesene Richtlinie überprüfen und die konfigurierten Backup-Ziele überprüfen.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Weitere Informationen zum Anzeigen von Workload-Details finden Sie auf den Schutzseiten"].
 
-* *Anwendungskonsistenter und VM-konsistenter Schutz und Recovery*: Sie können jetzt mit der NetApp SnapCenter-Software und VM-konsistentem Schutz mit dem SnapCenter-Plug-in für VMware vSphere einen ruhigen und konsistenten Zustand erreichen, um einen potenziellen Datenverlust später zu vermeiden, wenn eine Recovery erforderlich ist. Wenn ein Recovery erforderlich ist, können Sie die Applikation oder die VM wieder in einen der zuvor verfügbaren Status zurücksetzen.
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Weitere Informationen zum Schutz von Workloads"].
 
-* *Ransomware-Schutzstrategien*: Wenn Snapshot- oder Backup-Richtlinien auf dem Workload nicht vorhanden sind, können Sie eine Ransomware-Schutzstrategie entwickeln, die die folgenden Richtlinien enthalten kann, die Sie in diesem Service erstellen:
-+
-** Snapshot-Richtlinie
-** Backup-Richtlinie
-** Erkennungsrichtlinie
-+
+
+=== Applikationskonsistenter und VM-konsistenter Schutz und Recovery
+
+Mit der NetApp SnapCenter Software und dem SnapCenter Plug-in für VMware vSphere können Sie jetzt applikationskonsistenten Schutz mit applikationskonsistenter Datensicherung und VM-konsistentem Schutz ausführen. So können Sie im Falle eines erforderlichen Recovery einen ruhenden und konsistenten Zustand erreichen und so potenzielle Datenverluste zu einem späteren Zeitpunkt vermeiden. Wenn ein Recovery erforderlich ist, können Sie die Applikation oder die VM wieder in einen der zuvor verfügbaren Status zurücksetzen.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Weitere Informationen zum Schutz von Workloads"].
 
 
 
-* *Enable Threat Detection* ist jetzt mit einem Drittanbieter-Sicherheits- und Event-Management (SIEM)-System verfügbar. Das Dashboard zeigt jetzt eine neue Empfehlung zum Aktivieren der Bedrohungserkennung, die auf der Seite Einstellungen konfiguriert werden kann.
-+
+=== Schutzstrategien für Ransomware
+
+Wenn Snapshot- oder Backup-Richtlinien für den Workload nicht vorhanden sind, können Sie eine Strategie für den Ransomware-Schutz entwickeln, die die folgenden Richtlinien enthalten kann, die Sie in diesem Service erstellen:
+
+* Snapshot-Richtlinie
+* Backup-Richtlinie
+* Erkennungsrichtlinie
+
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Weitere Informationen zum Schutz von Workloads"].
+
+
+
+=== Bedrohungserkennung
+
+Die Erkennung von Bedrohungen aktivieren ist jetzt über ein SIEM-System (Security and Event Management) eines Drittanbieters verfügbar. Das Dashboard zeigt jetzt eine neue Empfehlung zum Aktivieren der Bedrohungserkennung, die auf der Seite Einstellungen konfiguriert werden kann.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Weitere Informationen zum Konfigurieren von Einstellungsoptionen"].
 
-* *False-positive-Warnungen ignorieren*: Auf der Registerkarte Warnungen können Sie nun False-positive-Meldungen schließen oder sich dazu entscheiden, Ihre Daten sofort wiederherzustellen.
-+
+
+
+=== Falsch positive Warnungen schließen
+
+Auf der Registerkarte „Meldungen“ können Sie False-positive-Meldungen schließen oder Ihre Daten sofort wiederherstellen.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Erfahren Sie mehr über die Reaktion auf einen Ransomware-Alarm"].
 
-* *Neue Erkennungsstatus* werden auf der Seite Schutz angezeigt, die den Status der Ransomware-Erkennung anzeigt, die auf den Workload angewendet wird.
-+
+
+
+=== Erkennungsstatus
+
+Auf der Seite Schutz werden neue Erkennungsstatus angezeigt, die den Status der Ransomware-Erkennung für den Workload anzeigen.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Erfahren Sie mehr über den Schutz von Workloads und das Anzeigen von Schutzstatus"].
 
-* *Laden Sie CSV-Dateien* von den Seiten Schutz, Warnungen und Wiederherstellung herunter.
-+
+
+
+=== Laden Sie CSV-Dateien herunter
+
+Sie können CSV-Dateien* von den Seiten Schutz, Warnungen und Wiederherstellung herunterladen.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html["Erfahren Sie mehr über das Herunterladen von CSV-Dateien vom Dashboard und anderen Seiten"].
 
-* *Dokumentation anzeigen* Link ist jetzt in der Benutzeroberfläche enthalten. Sie können diese Dokumentation über das Dashboard vertikal *actions* aufrufen image:button-actions-vertical.png["Option „vertikale Aktionen“"] Option. Wählen Sie *Was ist neu*, um Details in den Release Notes oder *Documentation* anzuzeigen, um die BlueXP Ransomware-Schutz-Dokumentation Homepage anzuzeigen.
-* *BlueXP Backup und Recovery*: Der BlueXP Backup- und Recovery-Service muss in der Betriebsumgebung nicht mehr aktiviert sein. Siehe link:rp-start-prerequisites.html["Voraussetzungen"]. Der BlueXP Ransomware-Schutzservice unterstützt Sie bei der Konfiguration eines Backup-Ziels über die Einstellungsoption. Siehe link:rp-use-settings.html["Einstellungen konfigurieren"].
-* *Einstellungsoption*: Sie können jetzt Backup-Ziele in den Ransomware-Schutz-Einstellungen von BlueXP einrichten.
-+
+
+
+=== Link zur Dokumentation
+
+Der Link zur Dokumentation anzeigen ist jetzt in der Benutzeroberfläche enthalten. Sie können diese Dokumentation über die Option Dashboard vertikal *actions* aufrufen image:button-actions-vertical.png["Option „vertikale Aktionen“"] . Wählen Sie *Was ist neu*, um Details in den Release Notes oder *Documentation* anzuzeigen, um die BlueXP Ransomware-Schutz-Dokumentation Homepage anzuzeigen.
+
+
+
+=== BlueXP Backup und Recovery
+
+Der BlueXP Backup- und Recovery-Service muss in der Arbeitsumgebung nicht mehr bereits aktiviert sein. Siehe link:rp-start-prerequisites.html["Voraussetzungen"]. Der BlueXP Ransomware-Schutzservice unterstützt Sie bei der Konfiguration eines Backup-Ziels über die Einstellungsoption. Siehe link:rp-use-settings.html["Einstellungen konfigurieren"].
+
+
+
+=== Einstellungsoption
+
+Sie können jetzt in den Einstellungen für den Ransomware-Schutz von BlueXP  Backup-Ziele einrichten.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Weitere Informationen zum Konfigurieren von Einstellungsoptionen"].
-
-
 
 
 
 == 5 März 2024
 
-Diese Vorschauversion des Ransomware-Schutzes von BlueXP enthält die folgenden Updates:
 
-* *Schutz-Policy-Management*: Zusätzlich zur Verwendung von vordefinierten Richtlinien können Sie jetzt Richtlinien erstellen. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Erfahren Sie mehr über das Verwalten von Richtlinien"].
-* *Unveränderlichkeit bei sekundärem Storage (DataLock)*: Mit der NetApp DataLock Technologie im Objektspeicher können Sie das Backup jetzt unveränderlich im sekundären Storage gestalten. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Erfahren Sie mehr über das Erstellen von Sicherungsrichtlinien"].
-* *Automatisches Backup auf NetApp StorageGRID*: Neben der Nutzung von AWS können Sie nun auch StorageGRID als Backup-Ziel wählen. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Erfahren Sie mehr über das Konfigurieren von Backup-Zielen"].
-* *Zusätzliche Funktionen zur Untersuchung potenzieller Angriffe*: Sie können jetzt weitere forensische Details anzeigen, um den erkannten potenziellen Angriff zu untersuchen. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Erfahren Sie mehr über die Reaktion auf einen erkannten Ransomware-Alarm"].
-* *Wiederherstellungsprozess*. Der Wiederherstellungsprozess wurde verbessert. Jetzt können Sie Volumes pro Volume oder alle Volumes für einen Workload wiederherstellen. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Erfahren Sie mehr über die Wiederherstellung nach einem Ransomware-Angriff (nach der Neutralisierung von Vorfällen)"].
 
+=== Management von Datensicherungsrichtlinien
+
+Sie können jetzt nicht nur vordefinierte Richtlinien verwenden, sondern auch Richtlinien erstellen. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Erfahren Sie mehr über das Verwalten von Richtlinien"].
+
+
+
+=== Unveränderlichkeit bei sekundärem Storage (DataLock)
+
+Mit der NetApp DataLock Technologie im Objektspeicher können Sie das Backup nun als unveränderlich im sekundären Storage gestalten. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Erfahren Sie mehr über das Erstellen von Sicherungsrichtlinien"].
+
+
+
+=== Automatisches Backup auf NetApp StorageGRID
+
+Neben AWS können Sie jetzt auch StorageGRID als Backup-Ziel wählen. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Erfahren Sie mehr über das Konfigurieren von Backup-Zielen"].
+
+
+
+=== Zusätzliche Funktionen zur Untersuchung potenzieller Angriffe
+
+Sie können jetzt weitere forensische Details anzeigen, um den erkannten potenziellen Angriff zu untersuchen. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Erfahren Sie mehr über die Reaktion auf einen erkannten Ransomware-Alarm"].
+
+
+
+=== Recovery-Prozess
+
+Der Wiederherstellungsprozess wurde verbessert. Jetzt können Sie Volumes pro Volume oder alle Volumes für einen Workload wiederherstellen. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Erfahren Sie mehr über die Wiederherstellung nach einem Ransomware-Angriff (nach der Neutralisierung von Vorfällen)"].
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Mehr zu BlueXP Ransomware-Schutz"].
 

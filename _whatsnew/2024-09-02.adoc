@@ -1,0 +1,35 @@
+= Sicherheitsrisikobewertung von Digital Advisor
+:allow-uri-read: 
+
+
+
+
+=== Sicherheitsrisikobewertung von Digital Advisor
+
+Der Schutz vor Ransomware von BlueXP  sammelt jetzt Informationen über hohe und kritische Sicherheitsrisiken in Verbindung mit einem Cluster aus dem digitalen Berater von NetApp. Wenn ein Risiko gefunden wird, bietet der BlueXP  Ransomware-Schutz eine Empfehlung im Dashboard-Bereich *Empfohlene Aktionen*: "Behebt eine bekannte Sicherheitslücke auf dem Cluster-<name>." Klicken Sie in der Empfehlung im Dashboard auf *Überprüfen und beheben*, um Digital Advisor und einen CVE-Artikel (Common Vulnerability & Exposure) zu überprüfen, um das Sicherheitsrisiko zu beheben. Wenn mehrere Sicherheitsrisiken bestehen, lesen Sie die Informationen in Digital Advisor.
+
+Siehe https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor Dokumentation"^].
+
+
+
+=== Backup auf der Google Cloud Platform
+
+Mit diesem Release können Sie ein Backup-Ziel auf einen Bucket von Google Cloud Platform festlegen. Bisher konnten Sie Sicherungsziele nur zu NetApp StorageGRID, Amazon Web Services und Microsoft Azure hinzufügen.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Erfahren Sie mehr über die Konfiguration der BlueXP  Ransomware-Schutzeinstellungen"].
+
+
+
+=== Unterstützung für die Google Cloud Platform
+
+Der Service unterstützt jetzt Cloud Volumes ONTAP für die Google Cloud Platform für Storage-Sicherung. Bisher wurde für den Service nur Cloud Volumes ONTAP für Amazon Web Services und Microsoft Azure zusammen mit einem lokalen NAS unterstützt.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Informieren Sie sich über BlueXP  Ransomware-Schutz und unterstützte Datenquellen, Backup-Ziele und Arbeitsumgebungen"].
+
+
+
+=== Rollenbasierte Zugriffssteuerung
+
+Mithilfe rollenbasierter Zugriffssteuerung (Role Based Access Control, RBAC) können Sie den Zugriff auf bestimmte Aktivitäten jetzt einschränken. BlueXP  Ransomware-Schutz verwendet zwei Rollen aus BlueXP : BlueXP -Konto-Administrator und nicht-Konto-Administrator (Viewer).
+
+Weitere Informationen zu den Aktionen, die jede Rolle ausführen kann, finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["Rollenbasierte Zugriffssteuerung: Privileges"].

@@ -1,0 +1,11 @@
+= Individuelle Gruppierung von File Share-Workloads
+:allow-uri-read: 
+
+
+
+
+=== Individuelle Gruppierung von File Share-Workloads
+
+Mit dieser Version können Sie nun Dateifreigaben in Gruppen gruppieren, um den Schutz Ihres Datenbestands zu erleichtern. Der Service kann alle Volumes einer Gruppe gleichzeitig schützen. Bisher mussten Sie jedes Volume separat schützen.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Erfahren Sie mehr über das Gruppieren von File Share-Workloads in Strategien zum Schutz vor Ransomware"].
