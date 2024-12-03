@@ -1083,7 +1083,6 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="ec2732dacf33a5e90fbcf1cf42cb9ef7" category="list-text">Ändern Sie die Rolle für den Benutzer. Geben Sie Ein:</block>
   <block id="2d5422701fe060f1b4df91101404e4ba" category="list-text">Kehren Sie zur BlueXP  Ransomware-Schutz-UI zurück, um sie zu verwenden.</block>
   <block id="bbb730a044e88545c3476ffea030b9f1" category="list-text">Im Dashboard können Sie in jedem der Teilfenster die folgenden Aktionen ausführen:</block>
-  <block id="10111a2393d16789c78a9cdaedd4e858" category="admonition">Klicken Sie auf i Note, um Tipps zu diesen Daten zu erhalten. Um das Workload-Limit zu erhöhen, klicken Sie in diesem Hinweis auf *Workload-Limit erhöhen*. Wenn Sie auf diese Schaltfläche klicken, gelangen Sie zur Seite „BlueXP -Support“, auf der Sie ein Ticket erstellen können.</block>
   <block id="a0d3acda8b40798d6b03c633ead12276" category="cell">Mit SEIM verbinden, um Bedrohungsberichte zu erstellen.</block>
   <block id="c00b830d377d62d0c3d20c11bcd0ce1e" category="cell">Geben Sie SIEM/XDR-Serverdetails ein, um die Bedrohungserkennung zu aktivieren. Siehe <block ref="9f0b279394cf25f00a608a52b5aed0b2" category="inline-link-macro-rx"></block>.</block>
   <block id="31d09a40fac7ed173c873af34fa091e3" category="paragraph">Sie können Sicherungsrichtlinien basierend auf Ihrem Workload-Schutz ändern:</block>
@@ -1252,7 +1251,6 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="e7d05f872780d58e08011a44ce4be77b" category="doc">Scannen Sie nach personenbezogenen, sensiblen Daten mit BlueXP -Klassifizierung</block>
   <block id="076729a2004741ee7d92b63f5cb3fe9a" category="section-title">Aktivieren Sie die BlueXP -Klassifizierung</block>
   <block id="a43036419058d2ad4ca5da0ce6b97873" category="paragraph">Bevor Sie die BlueXP -Klassifizierung im BlueXP  Ransomware-Schutzservice verwenden, müssen Sie für den Scan Ihrer Daten die BlueXP -Klassifizierung aktivieren.</block>
-  <block id="a5d2c33289393df749cbf18c3be271dd" category="paragraph">Details zur BlueXP -Klassifizierung, bevor Sie mit der Nutzung des Services beginnen, können Sie diese Ressourcen hilfreich sein.</block>
   <block id="a686d5fa6b6925450f1b7fa2b4245d28" category="inline-link">Mehr zur BlueXP Klassifizierung</block>
   <block id="799ed37205c29a076a84d3694d53c585" category="list-text"><block ref="799ed37205c29a076a84d3694d53c585" category="inline-link-rx"></block></block>
   <block id="93f515959ce6187b986c42fa6959168b" category="inline-link">Kategorien von privaten Daten</block>
@@ -1260,10 +1258,6 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="499dd7659f4fa7b600ca3796c449e41b" category="inline-link">Untersuchen Sie die in Ihrem Unternehmen gespeicherten Daten</block>
   <block id="08e880effe206106422b9043908d11e9" category="list-text"><block ref="08e880effe206106422b9043908d11e9" category="inline-link-rx"></block></block>
   <block id="22da148f02a4f9df3c95fa55ebe1f0e4" category="list-text">Suchen Sie auf der Seite Schutz in der Spalte Workload nach einem Workload mit Dateifreigabe.</block>
-  <block id="04c2fdcb53dc660f7267061f2996a772" category="inline-image-macro">Bildschirm „sensible Daten identifizieren“</block>
-  <block id="64af7ad3ab046769c51f4f24a86b7cf4" category="paragraph"><block ref="64af7ad3ab046769c51f4f24a86b7cf4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="969f986150648403974cc122eae60ccf" category="list-text">Überprüfen Sie die Informationen zur BlueXP -Klassifizierung.</block>
-  <block id="858cc0364fb5e649249551c7ef4f979a" category="list-text">Wählen Sie * Identifizieren*.</block>
   <block id="9878a7973fa7782f8c21d56eb79d0aad" category="admonition">Der Scanvorgang kann je nach Datenmenge mehrere Minuten dauern. Die Seite Schutz zeigt an, dass die BlueXP -Klassifizierung Dateien identifiziert und gibt Ihnen einen Hinweis auf die Anzahl der Dateien, die gescannt werden.</block>
   <block id="70f91b9311063ebb918671e1632eea94" category="section-title">Überprüfen Sie die Privatsphäre</block>
   <block id="520cb83e421cf68c99eac9eb36fd6b63" category="paragraph">PII-Daten können einen der folgenden Risikostatus für den Datenschutz aufweisen.</block>
@@ -1272,13 +1266,9 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="55d325ae2625ba4269051bf5ac42b2af" category="list-text">*Niedrig*: Mehr als 0 und weniger als 30% der Dateien haben PII</block>
   <block id="743c833ae848226cd938cbcdec4813e8" category="list-text">Suchen Sie auf der Seite Schutz in der Spalte Workload, die einen Status in der Spalte Datenschutz anzeigt, den Workload für die Dateifreigabe.</block>
   <block id="648eb89d24fbd412ac4e5191ba6b3cfc" category="list-text">Wählen Sie den Workload-Link in der Spalte Workload aus, um Workload-Details anzuzeigen.</block>
-  <block id="fbb3a837089f0da9e0cebd46602a970a" category="inline-image-macro">Workload-Details-Bildschirm, der das Fenster „Datenschutz“ anzeigt</block>
-  <block id="49c64cfb6f35d57ce67294767ff57c01" category="paragraph"><block ref="49c64cfb6f35d57ce67294767ff57c01" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dffb203aa27226e3750f92c5c60829df" category="section-title">Auswirkungen der Gefährdung von Datenschutz auf die Workload-Bedeutung</block>
   <block id="61915adac4ce0b36ecdb70a5e446a80b" category="paragraph">Änderungen aufgrund des Datenschutzes können sich auf die Wichtigkeit des Workloads auswirken.</block>
   <block id="a201dfb7539c6083e641a0bc8121201b" category="cell">Bei der Offenlegung von Privatsphäre:</block>
-  <block id="74ddd4c0b88f06f95621270e77b9b74c" category="cell">Von dieser Privatsphäre</block>
-  <block id="155b3b9cdf276603a429bb78f500f4cf" category="cell">Für diese Datenschutzbelichtung</block>
   <block id="9a70ecaf65d678d97afe7382a0197469" category="cell">Die Workload-Bedeutung erreicht dann Folgendes: .</block>
   <block id="e999cd086de455a56c2f7d169210876b" category="cell">*Verringert*</block>
   <block id="a479d5f7790c7e99c1c56e63d46a8d05" category="paragraph">Hoch, Mittel oder Niedrig</block>
@@ -1292,8 +1282,6 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="f8307a8be7170a599a441165be60a2d7" category="cell">Niedrig oder Mittel</block>
   <block id="655d20c1ca69519ca647684edbb2db35" category="paragraph">Hoch</block>
   <block id="f5bfc54a73042ca571add47438fea77e" category="cell">Änderungen von Standard oder wichtig zu kritisch</block>
-  <block id="520b356f51c07225dd16424209ff656e" category="list-text">Wählen Sie den Workload in der Spalte Workload aus, um dessen Details anzuzeigen.</block>
-  <block id="eab784efeec8f5c6a6edd9d398ba81ff" category="list-text">Um die Belichtung in der BlueXP -Klassifizierung zu untersuchen, wählen Sie *Investigate*.</block>
   <block id="15e674d84786450a9efe801faaf91922" category="paragraph">Details zur Klassifizierung von BlueXP  finden Sie in den folgenden BlueXP -Themen:</block>
   <block id="598d2be50cda45e73d61b0277fd8fe5b" category="doc">Ransomware-Strategien schützen Workloads</block>
   <block id="c39a37a7df296279dc521553fc906d98" category="list-text">Erstellen oder managen Sie Strategien zum Schutz vor Ransomware. Dazu gehören Richtlinien, die Sie für Snapshots, Backups und Ransomware-Schutz (auch als _Detection Policies_ bekannt) erstellen.</block>
@@ -1400,34 +1388,20 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="14b35f939fcc508bbbe9bbcc95c9d281" category="paragraph">Nachdem Sie Optionen im Backup-Ziel selbst konfiguriert haben, werden Sie sie später im BlueXP Ransomware-Schutzservice als Backup-Ziel konfigurieren. Informationen zum Konfigurieren des Backup-Ziels für BlueXP -Ransomware-Schutz finden Sie unter <block ref="d7283f05508223892c3d4b2693d5a6af" category="inline-link-macro-rx"></block>.</block>
   <block id="6b0e91bb98e8a9394dda94307f3217d0" category="doc">Suchen Sie mit der BlueXP -Klassifizierung nach personenbezogenen Daten</block>
   <block id="753b6b8856f736c4d2bafca31e68a6ef" category="paragraph">Im Rahmen des BlueXP  Ransomware-Schutzdienstes können Sie die BlueXP -Klassifizierung verwenden, eine Kernkomponente der BlueXP  Familie, um Ihre Daten auf einem Fileshare-Workload zu scannen und zu klassifizieren. Durch die Klassifizierung von Daten können Sie ermitteln, ob Ihre Daten personenbezogene Daten enthalten, was zu erhöhten Sicherheitsrisiken führen kann.</block>
-  <block id="f812376fe75506b0d28c7b58d3b279f0" category="admonition">Die BlueXP -Klassifizierung kann lokal, in der Cloud (nicht-SaaS-Implementierungen) oder als SaaS-Modell in einer Technologievorschau bereitgestellt werden. Bei der Verwendung von nicht-SaaS-Implementierungen oder bestehenden Implementierungen ist das Scannen nach PII-Daten in BlueXP -Ransomware-Schutz in der Regel verfügbar und nicht in der Vorschau. Verwenden Sie zum Aktivieren der Vorschau-Funktionen die Option BlueXP  Ransomware Protection *Settings*. Siehe <block ref="71b7fcd43dad68a28f1c1ae3bbb6f526" category="inline-link-macro-rx"></block>.</block>
   <block id="5526010a5b298ea10d9a56b593ab9bce" category="admonition">Dieser Prozess kann sich auf die Arbeitslast auswirken, um sicherzustellen, dass Sie über einen angemessenen Schutz verfügen.</block>
-  <block id="8b34ad1076790f662c3b4dd16a74cfc2" category="admonition">Dies wird nur einmal durchgeführt. Wenn Sie einen anderen Fileshare-Workload zum ermitteln des Risikos auswählen, müssen Sie die BlueXP -Klassifizierung nicht erneut aktivieren.</block>
   <block id="ae4cd989261438ef1ac70ec8ce13114e" category="paragraph">Durch Verwendung der BlueXP -Klassifizierungs-UI als alternative Methode kann ein Administrator die BlueXP -Klassifizierung in der BlueXP -Ransomware-Sicherung aktivieren.</block>
   <block id="ae026bf5e2ca5066c55b7b1740de800e" category="inline-image-macro">Schutzseite mit der Spalte „Datenschutz“</block>
   <block id="9dedf1958376570fec810d3b47c2d3ec" category="paragraph"><block ref="9dedf1958376570fec810d3b47c2d3ec" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c9a29e458dc19d719bdef7e1781fc91a" category="list-text">Um die BlueXP -Klassifizierung zu aktivieren, um Ihre Daten nach personenbezogenen Daten zu scannen, wählen Sie in der Spalte *Gefährdung durch Datenschutz* *Exposition identifizieren* aus.</block>
   <block id="c2addd6f8ea1a9a6c5d798758a7b188a" category="paragraph">Die BlueXP -Klassifizierung installiert einen BlueXP -Connector, stellt eine Remote-Verbindung zu Ihren Workload-Daten her und scannt diesen in der NetApp-Cloud (Amazon Web Services, US-West-1). Nur identifizierte Erkenntnisse und Kennzahlen bleiben in der NetApp-Cloud erhalten.</block>
   <block id="cb00df8d7d83fc54f38d8f958caeff1f" category="paragraph">Wenn der Scanvorgang abgeschlossen ist, wird in der Spalte „Datenschutz“ die Belichtungsstufe als „Niedrig“, „Mittel“ oder „hoch“ angezeigt.</block>
-  <block id="44c62ea7c0b79fd032ba2255784b788f" category="paragraph">Nach dem Scannen der BlueXP -Klassifizierung nach personenbezogenen Daten (PII) können Sie sich das Risiko für personenbezogene Daten ansehen.</block>
   <block id="f698eb407c336f1d3c594ba3daa8afa2" category="paragraph"><block ref="f698eb407c336f1d3c594ba3daa8afa2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="892409e59d34cf771dbbaf3f9b3f3fa8" category="admonition">Wenn sich der Status ändert, wird in der Spalte „Datenschutz“ ein Pfeil nach oben oder unten angezeigt, um die Änderung der Gefährdung durch den Datenschutz anzuzeigen.</block>
   <block id="0bb4a1497d3056f8b2f0423eff14e160" category="inline-image-macro">Workload-Details-Bildschirm mit der Kachel „Datenschutz“</block>
   <block id="7b0824f1068863bca201f38cc7763786" category="paragraph"><block ref="7b0824f1068863bca201f38cc7763786" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c16da9377e1db1ff8cb28a6b3eb6f462" category="list-text">Überprüfen Sie auf der Seite „Workload-Details“ die Informationen in der Kachel „Datenschutz“.</block>
-  <block id="0628dae6f78a8b7a2f042377f5dfa2f9" category="admonition">Wenn sich die Änderung des Datenschutzes auf die Workload-Wichtigkeit auswirkt, wird neben dem Status der Workload-Wichtigkeit ein Pfeil nach oben oder unten angezeigt.</block>
-  <block id="832d9d8d5372bc4ce84e2841b0cf5035" category="section-title">Untersuchung der Gefährdung der Privatsphäre direkt in der BlueXP -Klassifizierung</block>
-  <block id="967005b88b6b7e8a1d4934a2422fa68b" category="paragraph">Sie können innerhalb des BlueXP  Ransomware-Schutzes einen Workload auswählen, seine Details anzeigen und dann den Angriff in der BlueXP -Klassifizierung untersuchen.</block>
-  <block id="24dbdd027eb164627feaa78ea9845741" category="paragraph">Der BlueXP -Klassifizierungsdienst wird geöffnet, um die Registerkarte Untersuchung anzuzeigen.</block>
-  <block id="b527ec4bbaefe3d1e8074f5ab75d2698" category="inline-image-macro">BlueXP Klassifizierung</block>
-  <block id="8b554765454fbcd031b59e4342f9d5cb" category="paragraph"><block ref="8b554765454fbcd031b59e4342f9d5cb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6736e75fd4558dc613260e8bd3225269" category="list-text">Überprüfen Sie die Informationen auf der Registerkarte Untersuchung.</block>
-  <block id="df2e0d01e3d847f1df1fc2912de1bed7" category="list-text">Um zum Ransomware-Schutz-Service von BlueXP  zurückzukehren, wählen Sie *Zurück zum Ransomware-Schutz von BlueXP *.</block>
   <block id="d13de4a83d7b44c2e65495def8ef1c7b" category="section-title">Finden Sie weitere Informationen</block>
   <block id="b6ed68904b26faac81b9a6914f1b95cd" category="paragraph"><block ref="b6ed68904b26faac81b9a6914f1b95cd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a46946c5eab68e6301fa937c5e483bd2" category="paragraph"><block ref="a46946c5eab68e6301fa937c5e483bd2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d1da278e2b200d15590ed650467d6ca5" category="paragraph">Sie können ein Backup-Ziel konfigurieren oder die Bedrohungserkennung aktivieren, indem Sie Empfehlungen im Dashboard prüfen oder auf die Option *Einstellungen* zugreifen. Sie können auch Funktionen für die zukünftige Vorschau anzeigen.</block>
-  <block id="fe22f8915783035f8b302deb7cd76e3f" category="list-text">Funktionen der Vorschau anzeigen.</block>
   <block id="c442f897ba9f28d5d7d3b1643ea9284a" category="paragraph">Sie können automatisch Daten an Ihr Sicherheits- und Event-Management-System (SIEM) senden, um Bedrohungen zu analysieren und zu erkennen. AWS Security Hub, Microsoft Sentinel oder Splunk Cloud können als SIEM ausgewählt werden.</block>
   <block id="cd4d66bdd803d46b839b94afd734cbcd" category="section-title">Konfigurieren Sie Microsoft Sentinel für die Erkennung von Bedrohungen</block>
   <block id="a788a2126e1d7e43efbc7cabca65b065" category="paragraph">Bevor Sie Microsoft Sentinel in BlueXP  Ransomware-Schutz aktivieren, müssen Sie die folgenden grundlegenden Schritte in Microsoft Sentinel ausführen:</block>
@@ -1482,15 +1456,7 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="466e22ed907b69bcece2ccdfba36fdb4" category="list-text">Wählen Sie auf der Seite Einstellungen im Feld SIEM Connection *Connect* aus.</block>
   <block id="322bdafeaec3f2756e524c7676eec70b" category="inline-image-macro">Seite mit Details zur Bedrohungserkennung aktivieren</block>
   <block id="a79d3cc091ba614079e19b05bd4144d7" category="paragraph"><block ref="a79d3cc091ba614079e19b05bd4144d7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="51b72b90a4718219881b0d84075810c4" category="section-title">Vorschau-Funktionen anzeigen</block>
-  <block id="d908f6613094698e53cc5d8f2a363d84" category="paragraph">Sie können die kommenden Funktionen mit der Bezeichnung „Vorschau“ ausprobieren, bevor sie veröffentlicht werden. Diese Funktionen werden in der Benutzeroberfläche mit der Beschriftung „Vorschau“ angezeigt.</block>
-  <block id="062ede60ed0171c1667d278364784a58" category="paragraph">Sie benötigen einen Schlüssel vom BlueXP  Ransomware-Schutz-Produktteam, um die Preview-Funktionen einblenden zu können. Um den Schlüssel zu erhalten, senden Sie eine E-Mail an mailto:ng-rps-key@NetApp.com.</block>
-  <block id="4c27fcab4d515ee8181a6a9243ba54f3" category="list-text">Wählen Sie in der Kachel *Preview Features* *Show* aus.</block>
-  <block id="1355ef6342e870ff08b7ae39b0126c7c" category="list-text">Geben Sie die Taste ein.</block>
-  <block id="70c1d1656e0180e79913295ab5c3c06a" category="list-text">Wählen Sie *Show*.</block>
   <block id="bf43cf14a72445401d6804bee094443e" category="doc">Neues beim BlueXP  Ransomware-Schutz</block>
-  <block id="f3da95789fee3d76f39c270803b7c7df" category="paragraph">Das Scannen nach PII-Daten in BlueXP -Ransomware-Schutz ist für Kunden, die BlueX Klassifizierung implementiert haben, in der Regel verfügbar. Die BlueXP -Klassifizierung ist als Teil der BlueXP  Plattform ohne Zusatzkosten verfügbar und kann vor Ort oder in der Cloud des Kunden bereitgestellt werden.</block>
-  <block id="c2cb37c5316be80c5de2706c50799610" category="paragraph">Die BlueXP -Klassifizierung kann auch als SaaS-Modell im Rahmen einer Technologievorschau implementiert werden. Verwenden Sie zum Aktivieren der Vorschau-Funktionen die Option BlueXP  Ransomware Protection *Settings*. Wenn Sie die Vorschau aktivieren, wird neben der Spalte *Datenschutz* auf der Seite Schutz neben anderen Positionen ein "Vorschau"-Label angezeigt.</block>
   <block id="14712989ac072dc4b44e9acf1def5f1f" category="paragraph">Siehe<block ref="a5026777e609bf5c1f12922a89f75f5b" category="inline-link-rx"></block>.</block>
   <block id="dc2ee5afb67051a37353df40cc16729a" category="paragraph">Um den Scanvorgang zu starten, klicken Sie auf der Seite Schutz in der Spalte Datenschutz auf *Belichtung identifizieren*.</block>
   <block id="4dc0491313939f9597e6bce367054443" category="paragraph"><block ref="0e7ea879583dcbdf58a2050df8592221" category="inline-link-rx"></block>.</block>
@@ -1509,8 +1475,6 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="9a2ed93898be76fbc237cf9fca13d650" category="paragraph"><block ref="8790005620a6e0339d9d5a6985b6f062" category="inline-link-rx"></block>.</block>
   <block id="86510b95a05ce4c22c6d48d2fd9228a9" category="doc">Datenklassifizierung ermöglichen und nach personenbezogenen Informationen suchen</block>
   <block id="d599e3d1b6a5137e404ea89f314a22e4" category="paragraph">Mit dieser Version können Sie BlueXP  Classification aktivieren, eine Kernkomponente der BlueXP  Produktfamilie, um Daten in Ihren File Share-Workloads zu scannen und zu klassifizieren. Durch die Klassifizierung von Daten können Sie ermitteln, ob Ihre Daten personenbezogene oder private Informationen umfassen, was zu höheren Sicherheitsrisiken führen kann. Dieser Prozess wirkt sich auch auf die Workload-Bedeutung aus und hilft Ihnen, dafür zu sorgen, dass Sie Ihre Workloads mit dem richtigen Schutzniveau schützen.</block>
-  <block id="4d4b17a43409a8c299995a21ddaef39b" category="section-title">Probieren Sie die kommenden Vorschaufunktionen aus, bevor sie veröffentlicht werden</block>
-  <block id="c86f9a52cdb00d7109bfa8ee10b48074" category="paragraph">Sie können jetzt einige Features mit der Bezeichnung "Vorschau" ausprobieren, bevor sie veröffentlicht werden. Verwenden Sie dazu die Option *Einstellungen*, um diese Funktionen anzuzeigen, die mit einem "Vorschau"-Label gekennzeichnet sind.</block>
   <block id="a2c442ceb4053f2fbfe23023529b9acb" category="section-title">Integration von SIEM in Microsoft Sentinel</block>
   <block id="5148a0988dead45b54188f22121bb178" category="paragraph">Mit Microsoft Sentinel können Sie jetzt Daten an Ihr Sicherheits- und Ereignismanagementsystem (SIEM) senden, um Bedrohungen zu analysieren und zu erkennen. Bisher können Sie den AWS Security Hub oder Splunk Cloud als SIEM auswählen.</block>
   <block id="178324624f63d3f322bedd1a0cf9e6fc" category="section-title">Kostenlose Testversion jetzt 30 Tage</block>
@@ -1565,4 +1529,11 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="f6d0e776adfe1ac52ce17e76a4f5e7a4" category="paragraph">Sie können jetzt weitere forensische Details anzeigen, um den erkannten potenziellen Angriff zu untersuchen.<block ref="707fb9c7332f6aa933e8445c28830d7a" category="inline-link-rx"></block>.</block>
   <block id="1308d0f084fdb39839541aaf971b23ff" category="section-title">Recovery-Prozess</block>
   <block id="44d292cf2891eaa1e67cfa3d9504b58b" category="paragraph">Der Wiederherstellungsprozess wurde verbessert. Jetzt können Sie Volumes pro Volume oder alle Volumes für einen Workload wiederherstellen.<block ref="a36a14eacaa464cdf2747d859c29de55" category="inline-link-rx"></block>.</block>
+  <block id="3406306d1e826f71d49547332136491d" category="paragraph">Das Scannen nach PII-Daten in BlueXP -Ransomware-Schutz ist für Kunden, die die BlueXP -Klassifizierung implementiert haben, in der Regel verfügbar. Die BlueXP -Klassifizierung ist als Teil der BlueXP  Plattform ohne Zusatzkosten verfügbar und kann vor Ort oder in der Cloud des Kunden bereitgestellt werden.</block>
+  <block id="7285eda1178a7e67d7c7d057c4e50b4c" category="admonition">Klicken Sie auf den Hinweis „i“, um Tipps zu diesen Daten zu erhalten. Um das Workload-Limit zu erhöhen, klicken Sie in diesem Hinweis auf *Workload-Limit erhöhen*. Wenn Sie auf diese Schaltfläche klicken, gelangen Sie zur Seite „BlueXP -Support“, auf der Sie ein Ticket erstellen können.</block>
+  <block id="6868255e9fc11eab5e761151418b48f9" category="paragraph">Es ist unter Umständen hilfreich, diese BlueXP -Klassifizierungsressourcen vor der Nutzung des Service zu überprüfen:</block>
+  <block id="69fb8dfc3b2247a2a33825a8a26cde0a" category="paragraph">Nach dem Scannen der BlueXP -Klassifizierung nach personenbezogenen Daten (PII) können Sie sich das Risiko für personenbezogene Daten ansehen.</block>
+  <block id="65dc756d3347a26af4774cab05b6f1a6" category="cell">Aus dieser Datenschutzbelichtung heraus:</block>
+  <block id="8dc6cf962cd8b6b9d4c2ec1c25942b36" category="cell">Für diese Privatsphäre:</block>
+  <block id="c3e1bb58158cecbe933786ef28873165" category="paragraph">Sie können ein Backup-Ziel konfigurieren oder die Bedrohungserkennung aktivieren, indem Sie Empfehlungen im Dashboard prüfen oder auf die Option *Einstellungen* zugreifen.</block>
 </blocks>

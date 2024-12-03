@@ -12,7 +12,7 @@ summary: Sie können verschiedene Optionen, darunter ein Backup-Ziel, im BlueXP 
 
 
 [role="lead"]
-Sie können ein Backup-Ziel konfigurieren oder die Bedrohungserkennung aktivieren, indem Sie Empfehlungen im Dashboard prüfen oder auf die Option *Einstellungen* zugreifen. Sie können auch Funktionen für die zukünftige Vorschau anzeigen.
+Sie können ein Backup-Ziel konfigurieren oder die Bedrohungserkennung aktivieren, indem Sie Empfehlungen im Dashboard prüfen oder auf die Option *Einstellungen* zugreifen.
 
 Durch die Aktivierung der Bedrohungserkennung werden Daten automatisch an Ihr Sicherheits- und Ereignismanagementsystem (SIEM) zur Bedrohungsanalyse gesendet.
 
@@ -28,7 +28,6 @@ Durch die Aktivierung der Bedrohungserkennung werden Daten automatisch an Ihr Si
 +
 ** Hinzufügen eines Sicherungsziels.
 ** Schließen Sie Ihr Sicherheits- und Ereignismanagementsystem (SIEM) zur Bedrohungsanalyse und -Erkennung an.
-** Funktionen der Vorschau anzeigen.
 
 
 
@@ -477,24 +476,4 @@ NOTE: Welche Informationen Sie eingeben, hängt vom ausgewählten SIEM ab.
 +
 Auf der Seite „Einstellungen“ wird „Verbunden“ angezeigt.
 
-
-
-
-
-== Vorschau-Funktionen anzeigen
-
-Sie können die kommenden Funktionen mit der Bezeichnung „Vorschau“ ausprobieren, bevor sie veröffentlicht werden. Diese Funktionen werden in der Benutzeroberfläche mit der Beschriftung „Vorschau“ angezeigt.
-
-.Bevor Sie beginnen
-Sie benötigen einen Schlüssel vom BlueXP  Ransomware-Schutz-Produktteam, um die Preview-Funktionen einblenden zu können. Um den Schlüssel zu erhalten, senden Sie eine E-Mail an mailto:ng-rps-key@NetApp.com.
-
-.Schritte
-. Wählen Sie im Menü BlueXP Ransomware-Schutz die vertikalen Märkte aus image:button-actions-vertical.png["Vertikale Aktionen"]... Option oben rechts.
-. Wählen Sie *Einstellungen*.
-+
-image:screen-settings2.png["Einstellungsseite"]
-
-. Wählen Sie in der Kachel *Preview Features* *Show* aus.
-. Geben Sie die Taste ein.
-. Wählen Sie *Show*.
 
