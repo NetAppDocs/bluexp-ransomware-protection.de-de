@@ -42,10 +42,7 @@ image:screen-protection-sensitive-preview-column.png["Schutzseite mit der Spalte
 
 
 .Ergebnis
-Die BlueXP -Klassifizierung installiert einen BlueXP -Connector, stellt eine Remote-Verbindung zu Ihren Workload-Daten her und scannt diesen in der NetApp-Cloud (Amazon Web Services, US-West-1). Nur identifizierte Erkenntnisse und Kennzahlen bleiben in der NetApp-Cloud erhalten.
-
-
-NOTE: Der Scanvorgang kann je nach Datenmenge mehrere Minuten dauern. Die Seite Schutz zeigt an, dass die BlueXP -Klassifizierung Dateien identifiziert und gibt Ihnen einen Hinweis auf die Anzahl der Dateien, die gescannt werden.
+Der Scanvorgang kann je nach Datenmenge mehrere Minuten dauern. Die Seite Schutz zeigt an, dass die BlueXP -Klassifizierung Dateien identifiziert und gibt Ihnen einen Hinweis auf die Anzahl der Dateien, die gescannt werden.
 
 Wenn der Scanvorgang abgeschlossen ist, wird in der Spalte „Datenschutz“ die Belichtungsstufe als „Niedrig“, „Mittel“ oder „hoch“ angezeigt.
 
