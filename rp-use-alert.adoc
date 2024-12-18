@@ -66,11 +66,11 @@ CAUTION: Nachdem du einen Angriff abgetan hast, kannst du ihn nicht mehr zurück
 
 == Anzeigen von Meldungen
 
-Sie können über das BlueXP Ransomware Protection Dashboard oder über die Registerkarte *Alerts* auf Benachrichtigungen zugreifen.
+Sie können über das BlueXP  Ransomware Protection Dashboard oder über die Registerkarte *Alerts* auf Warnungen zugreifen.
 
 .Schritte
 . Sehen Sie sich im BlueXP Dashboard für Ransomware-Schutz den Bereich „Alerts“ an.
-. Wählen Sie unter einer der Statuen *Alle anzeigen*.
+. Wählen Sie unter einem der Status *Alle anzeigen*.
 . Klicken Sie auf eine Warnmeldung, um alle Vorfälle auf jedem Volume für jede Warnmeldung zu überprüfen.
 . Um weitere Warnmeldungen anzuzeigen, klicken Sie in den Paniermehl oben links auf *Alert*.
 . Überprüfen Sie die Warnmeldungen auf der Seite Warnungen.
@@ -79,8 +79,101 @@ image:screen-alerts.png["Warnmeldeseite"]
 
 . Weiter:
 +
+** <<Detect anomalous user behavior>>.
 ** <<Markieren Sie Ransomware-Vorfälle als bereit für die Wiederherstellung (nach der Neutralisierung von Vorfällen).>>.
 ** <<Schließen Sie Vorfälle ab, die keine potenziellen Angriffe sind>>.
+
+
+
+
+
+
+== Erkennen von böswilligen Aktivitäten und ungewöhnlichem Benutzerverhalten
+
+Auf der Registerkarte „Meldungen“ können Sie ermitteln, ob eine bösartige Aktivität besteht. Die angezeigten Details hängen davon ab, wie die Warnmeldung ausgelöst wurde:
+
+* Ausgelöst durch die Funktion für den autonomen Ransomware-Schutz in ONTAP. Auf diese Weise werden schädliche Aktivitäten basierend auf dem Verhalten der Dateien im Volume erkannt.
+* Ausgelöst durch Data Infrastructure Insights Workload Security. Dazu ist eine Lizenz für Einblicke in die Dateninfrastruktur – Workload-Sicherheit und den Schutz vor BlueXP -Ransomware erforderlich. Diese Funktion erkennt ungewöhnliches Benutzerverhalten in Ihren Storage-Workloads und ermöglicht es Ihnen, den weiteren Zugriff des Benutzers zu blockieren.
++
+Um die Workload-Sicherheit in BlueXP  Ransomware-Schutz zu aktivieren, gehen Sie auf die Seite *Einstellungen* und wählen Sie die Option *Workload Security Connection*.
+
++
+Einen Überblick über Data Infrastructure Insights Workload Security finden Sie in https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Allgemeines Zur Workload-Sicherheit"^]
+
+
+
+
+TIP: Wenn Sie keine Lizenz für die Workload-Sicherheit in der Dateninfrastruktur besitzen und sie nicht im BlueXP  Ransomware-Schutz aktivieren, werden Sie die anormalen Informationen zum Benutzerverhalten nicht sehen.
+
+Wenn schädigene Aktivitäten auftreten, wird eine Warnmeldung generiert und ein automatisierter Snapshot erstellt.
+
+
+
+=== Anzeigen schädlicher Aktivitäten nur über Autonomen Ransomware-Schutz
+
+Wenn der autonome Ransomware-Schutz eine Warnung beim BlueXP  Ransomware-Schutz auslöst, können Sie die folgenden Details anzeigen:
+
+* Entropie eingehender Daten
+* Erwartete Erstellungsrate neuer Dateien im Vergleich zur erkannten Rate
+* Erwartete Löschrate der Dateien im Vergleich zur erkannten Rate
+* Erwartete Umbenennungsrate von Dateien im Vergleich zur erkannten Rate
+
+
+.Schritte
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Alerts* aus.
+. Wählen Sie eine Warnmeldung aus.
+. Überprüfen Sie die Vorfälle in der Meldung.
++
+image:screen-alerts-incidents3.png["Seite „Warnungsvorfälle“"]
+
+. Wählen Sie einen Vorfall aus, um die Details des Vorfalls zu überprüfen.
++
+image:screen-alerts-incidents-details-arp.png["Seite „Incident Details“"]
+
+
+
+
+
+=== Anzeigen von ungewöhnlichem Benutzerverhalten bei Einblicke in die Dateninfrastruktur zur Workload-Sicherheit
+
+Wenn Data Infrastructure Insights Workload Security eine Warnmeldung beim BlueXP  Ransomware-Schutz auslöst, können Sie den verdächtigen Benutzer anzeigen, den Benutzer blockieren und die Benutzeraktivität direkt in Data Infrastructure Insights Workload Security untersuchen.
+
+
+TIP: Diese Funktionen ergänzen die Vorteile von Just Autonomous Ransomware Protection.
+
+.Bevor Sie beginnen
+Diese Option erfordert eine Lizenz für Einblicke in die Dateninfrastruktur – Workload-Sicherheit und dass Sie sie in BlueXP  – Ransomware-Schutz aktivieren.
+
+So aktivieren Sie Workload-Sicherheit beim Ransomware-Schutz von BlueXP :
+
+. Gehen Sie zur Seite *Einstellungen*.
+. Wählen Sie die Option *Workload Security Connection* aus.
++
+Weitere Informationen finden Sie unter link:rp-use-settings.html["Konfigurieren Sie BlueXP Ransomware-Schutzeinstellungen"].
+
+
+
+.Schritte
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Alerts* aus.
+. Wählen Sie eine Warnmeldung aus.
+. Überprüfen Sie die Vorfälle in der Meldung.
++
+image:screen-alerts-incidents-diiws.png["Seite mit Warnmeldungen zu Vorfällen, auf der Details zur Workload-Sicherheit angezeigt werden"]
+
+. Um einen vermuteten Benutzer vom weiteren Zugriff in Ihrer Umgebung zu sperren, der von BlueXP  überwacht wird, wählen Sie den Link *Benutzer blockieren*.
+. Untersuchen Sie den Alarm oder einen Vorfall in der Warnmeldung:
++
+.. Um den Alarm in Data Infrastructure Insights Workload Security weiter zu untersuchen, wählen Sie den Link *Investigate in Workload Security*.
+.. Wählen Sie einen Vorfall aus, um die Details des Vorfalls zu überprüfen.
++
+image:screen-alerts-incidents-details-arp-diiws.png["Seite mit den Details zum Vorfall, auf der Details zur Workload-Sicherheit angezeigt werden"]
+
++
+Data Infrastructure Insights Workload Security wird auf einer neuen Registerkarte geöffnet.
+
++
+image:screen-alerts-incidents-diiws-diiwspage.png["Untersuchung im Bereich Workload-Sicherheit"]
+
 
 
 
@@ -99,7 +192,7 @@ image:screen-alerts.png["Warnmeldeseite"]
 . Wählen Sie auf der Seite Warnungen die Warnmeldung aus.
 . Überprüfen Sie die Vorfälle in der Meldung.
 +
-image:screen-alerts-incidents2.png["Seite „Warnungsvorfälle“"]
+image:screen-alerts-incidents3.png["Seite „Warnungsvorfälle“"]
 
 . Wenn Sie feststellen, dass die Vorfälle für die Wiederherstellung bereit sind, wählen Sie *Wiederherstellung erforderlich markieren*.
 . Bestätigen Sie die Aktion und wählen Sie *Wiederherstellung erforderlich markieren*.
@@ -134,8 +227,8 @@ image:screen-alerts-incidents2.png["Seite „Warnungsvorfälle“"]
 . Wählen Sie einen oder mehrere Vorfälle aus. Oder wählen Sie alle Vorfälle aus, indem Sie das Feld Incident ID oben links in der Tabelle auswählen.
 . Wenn Sie feststellen, dass es sich bei dem Vorfall nicht um eine Bedrohung handelt, weisen Sie ihn als falsch positiv zu:
 +
-** Wenn Sie einen Vorfall ausgewählt haben, wählen Sie die Option *actions* … Auf der rechten Seite wählen Sie *Status bearbeiten*.
-** Wenn Sie mehrere Vorfälle ausgewählt haben, wählen Sie die Schaltfläche *Status bearbeiten* über der Tabelle aus.
+** Wählen Sie den Vorfall aus.
+** Wählen Sie über der Tabelle die Schaltfläche *Status bearbeiten*.
 +
 image:screen-alerts-status-edit.png["Warnungsbearbeitung Statusseite"]
 

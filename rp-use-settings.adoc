@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-settings.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination 
-summary: Sie können verschiedene Optionen, darunter ein Backup-Ziel, im BlueXP Ransomware-Schutzservice konfigurieren. 
+summary: Es stehen verschiedene Optionen zur Verfügung, darunter ein Backup-Ziel, die Erkennung von Bedrohungen und die Verbindung zu Dateninfrastruktur Insights Workload-Sicherheit im BlueXP  Ransomware-Schutzservice. 
 ---
 = Konfigurieren Sie BlueXP Ransomware-Schutzeinstellungen
 :hardbreaks:
@@ -12,9 +12,14 @@ summary: Sie können verschiedene Optionen, darunter ein Backup-Ziel, im BlueXP 
 
 
 [role="lead"]
-Sie können ein Backup-Ziel konfigurieren oder die Bedrohungserkennung aktivieren, indem Sie Empfehlungen im Dashboard prüfen oder auf die Option *Einstellungen* zugreifen.
+Sie können ein Backup-Ziel konfigurieren, die Bedrohungserkennung aktivieren oder die Verbindung zu Data Infrastructure Insights Workload Security konfigurieren, indem Sie auf die Option *Settings* zugreifen. Durch die Aktivierung der Bedrohungserkennung werden Daten automatisch an Ihr Sicherheits- und Ereignismanagementsystem (SIEM) zur Bedrohungsanalyse gesendet.
 
-Durch die Aktivierung der Bedrohungserkennung werden Daten automatisch an Ihr Sicherheits- und Ereignismanagementsystem (SIEM) zur Bedrohungsanalyse gesendet.
+Auf der Seite Einstellungen können Sie Folgendes tun:
+
+* Konfigurieren Sie die Verbindung zu Data Infrastructure Insights Workload Security, um vermutete Benutzerinformationen in Ransomware-Warnmeldungen einzusehen.
+* Hinzufügen eines Sicherungsziels.
+* Schließen Sie Ihr Sicherheits- und Ereignismanagementsystem (SIEM) zur Bedrohungsanalyse und -Erkennung an.
+
 
 
 
@@ -24,12 +29,38 @@ Durch die Aktivierung der Bedrohungserkennung werden Daten automatisch an Ihr Si
 
 . Wählen Sie im Menü BlueXP Ransomware-Schutz die vertikalen Märkte aus image:button-actions-vertical.png["Vertikale Aktionen"]... Option oben rechts.
 . Wählen Sie im Dropdown-Menü *Einstellungen*.
-. Auf der Seite Einstellungen können Sie Folgendes tun:
+
+
+
+
+== Stellen Sie eine Verbindung zu Data Infrastructure Insights her Workload-Sicherheit, um vermutetes anomales Benutzerverhalten zu erkennen
+
+Bevor Sie Details zu vermutlich ungewöhnlichem Benutzerverhalten beim BlueXP -Ransomware-Schutz anzeigen können, müssen Sie die Verbindung mit dem Workload-Sicherheitssystem von Data Infrastructure Insights konfigurieren.
+
+
+
+=== Erhalten Sie ein API-Zugriffstoken vom Sicherheitssystem Data Infrastructure Insights Workload
+
+Erhalten Sie ein API-Zugriffstoken vom Sicherheitssystem Data Infrastructure Insights Workload.
+
+. Melden Sie sich beim Sicherheitssystem Data Infrastructure Insights Workload an.
+. Wählen Sie in der linken Navigation *Admin* > *API Access*.
 +
-** Hinzufügen eines Sicherungsziels.
-** Schließen Sie Ihr Sicherheits- und Ereignismanagementsystem (SIEM) zur Bedrohungsanalyse und -Erkennung an.
+image:../media/screen-alerts-ci-api-access-token.png["API-Zugriffsseite in Data Infrastructure Insights Workload-Sicherheit"]
+
+. Erstellen Sie entweder ein API-Zugriffstoken oder verwenden Sie ein vorhandenes.
+. Kopieren Sie das API-Zugriffstoken.
 
 
+
+
+=== Einblicke in die Workload-Sicherheit der Dateninfrastruktur
+
+. Wählen Sie im Menü BlueXP  Ransomware Protection Settings *Workload Security Connection* aus.
+. Wählen Sie *Verbinden*.
+. Geben Sie die URL für die Benutzeroberfläche für die Sicherheit von Dateninfrastruktur-Workloads ein.
+. Geben Sie das API-Zugriffstoken ein, das Zugriff auf die Workload-Sicherheit bietet.
+. Wählen Sie *Verbinden*.
 
 
 
@@ -46,7 +77,7 @@ Um diese Workloads zu schützen, müssen Sie ein Backup-Ziel hinzufügen. Sie k�
 * Microsoft Azure
 
 
-Sie können ein Backup-Ziel basierend auf einer empfohlenen Aktion über das Dashboard hinzufügen.
+Sie können ein Backup-Ziel basierend auf einer empfohlenen Aktion über das Dashboard oder über den Zugriff auf die Option Einstellungen im Menü hinzufügen.
 
 
 
@@ -62,18 +93,6 @@ image:screen-dashboard.png["Dashboard-Seite"]
 
 . Wählen Sie im Dashboard *Überprüfen und beheben* für die Empfehlung „<backup provider> als Sicherungsziel vorbereiten“.
 . Fahren Sie mit den Anweisungen je nach Backup-Anbieter fort.
-
-
-
-
-=== Greifen Sie über das Dropdown-Menü Aktionen auf Optionen für das Sicherungsziel zu
-
-Über die Option Aktionen im oberen Menü können Sie ganz einfach auf die Seite Einstellungen zugreifen.
-
-.Schritte
-. Wählen Sie im Menü BlueXP Ransomware-Schutz die vertikalen Märkte aus image:button-actions-vertical.png["Vertikale Aktionen"]... Option oben rechts.
-. Wählen Sie im Dropdown-Menü *Einstellungen*.
-. Um ein Sicherungsziel hinzuzufügen, wählen Sie *Hinzufügen*.
 
 
 

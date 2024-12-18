@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP' 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP, netapp' 
 summary: Erfahren Sie mehr über die Neuerungen beim BlueXP Ransomware-Schutz. 
 ---
 = Neues beim BlueXP  Ransomware-Schutz
@@ -15,6 +15,35 @@ summary: Erfahren Sie mehr über die Neuerungen beim BlueXP Ransomware-Schutz.
 
 [role="lead"]
 Erfahren Sie mehr über die Neuerungen beim BlueXP Ransomware-Schutz.
+
+
+
+== Bis 16. Dezember 2024
+
+
+
+=== Erkennen von ungewöhnlichem Benutzerverhalten mit Data Infrastructure Insights Storage Workload Security
+
+Mit dieser Version können Sie Storage Workload Security von Data Infrastructure Insights verwenden, um ungewöhnliches Benutzerverhalten in Ihren Storage-Workloads zu erkennen. Diese Funktion hilft Ihnen dabei, potenzielle Sicherheitsbedrohungen zu erkennen und potenziell böswillige Benutzer zu blockieren, um Ihre Daten zu schützen.
+
+Weitere Informationen finden Sie unter link://rp-use-alert.html["Reagieren Sie auf einen erkannten Ransomware-Alarm"].
+
+Bevor Sie Data Infrastructure Insights Storage Workload Security zur Erkennung von ungewöhnlichem Benutzerverhalten verwenden, müssen Sie die Option über die Option BlueXP  Ransomware Protection *Settings* konfigurieren.
+
+Siehe link://rp-use-settings-html["Konfigurieren Sie BlueXP Ransomware-Schutzeinstellungen"].
+
+
+
+=== Wählen Sie die zu erdeckende und zu schützende Workloads aus
+
+Mit dieser Version können Sie nun Folgendes tun:
+
+* Wählen Sie in jedem Connector die Arbeitsumgebungen aus, in denen Sie Workloads erkennen möchten. Diese Funktion könnte für Sie von Vorteil sein, wenn Sie bestimmte Workloads in Ihrer Umgebung schützen möchten und keine anderen.
+* Während der Workload-Erkennung können Sie die automatische Erkennung von Workloads pro Connector aktivieren. Mit dieser Funktion können Sie die Workloads auswählen, die Sie schützen möchten.
+* Ermittlung neu erstellter Workloads für zuvor ausgewählte Arbeitsumgebungen.
+
+
+Siehe link://rp-start-discover-html["Workloads erkennen"].
 
 
 

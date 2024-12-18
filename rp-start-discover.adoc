@@ -21,6 +21,18 @@ NOTE: Workloads mit Volumes, die FlexGroup oder iSCSI verwenden, werden nicht er
 
 Der Service bewertet das vorhandene Sicherheitsniveau, einschließlich der aktuellen Backup-Sicherung, Snapshot-Kopien und NetApp Optionen zum autonomen Schutz vor Ransomware. Auf der Grundlage des Assessments empfiehlt der Service dann, wie Sie Ihren Ransomware-Schutz verbessern können.
 
+Sie haben folgende Möglichkeiten:
+
+* Wählen Sie in jedem Connector die Arbeitsumgebungen aus, in denen Sie Workloads erkennen möchten. Diese Funktion könnte für Sie von Vorteil sein, wenn Sie bestimmte Workloads in Ihrer Umgebung schützen möchten und keine anderen.
+* Ermittlung neu erstellter Workloads für zuvor ausgewählte Arbeitsumgebungen.
+
+
+
+
+== Wählen Sie die zu erdeckende und zu schützende Workloads aus
+
+Wählen Sie in jedem Connector die Arbeitsumgebungen aus, in denen Sie Workloads erkennen möchten.
+
 .Schritte
 . Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
 +
@@ -31,7 +43,32 @@ image:screen-landing.png["Landing Page-Screenshot zu BlueXP Ransomware-Schutz"]
 
 . Wählen Sie auf der ersten Landing Page *Start by Discovering Workloads* aus.
 +
-Der Service erkennt Workload-Daten und zeigt den Zustand der Datensicherung im Dashboard an.
+Der Dienst findet Ihre Arbeitsumgebungen in Ihren BlueXP -Konnektoren.
+
++
+
+TIP: Dieser Vorgang kann einige Minuten dauern.
+
++
+image:screen-discover-workloads.png["Screenshot zur Workload-Erkennung"]
+
+. Wählen Sie aus der Liste der BlueXP -Anschlüsse neben dem Connector, an dem Sie Workloads erkennen möchten, die Option *Neue Arbeitsumgebungen suchen* aus.
+. Wählen Sie die Arbeitsumgebungen aus, in denen Sie Workloads ermitteln möchten, oder wählen Sie das Feld oben in der Tabelle aus, um Workloads in allen erkannten Workload-Umgebungen zu erkennen.
+. Wählen Sie * Entdecken*.
++
+Der Service ermittelt Workload-Daten nur für diese Connectors mit ausgewählten Arbeitsumgebungen.
+
++
+
+TIP: Dieser Vorgang kann einige Minuten dauern.
+
++
+image:screen-discover-workloads-found.png["Screenshot aus Workloads entdeckt"]
+
+. Um die Liste der erkannten Workloads herunterzuladen, wählen Sie *Ergebnisse herunterladen (CSV)*.
+. Um das BlueXP  Ransomware Protection Dashboard anzuzeigen, wählen Sie *Gehe zu Dashboard*.
++
+Im Dashboard wird der Systemzustand der Datensicherung angezeigt. Die Anzahl der gefährdeten oder geschützten Workloads steigt entsprechend den neu erkannten Workloads.
 
 +
 image:screen-dashboard.png["BlueXP Dashboard für Ransomware-Schutz"]
@@ -39,4 +76,32 @@ image:screen-dashboard.png["BlueXP Dashboard für Ransomware-Schutz"]
 +
 link:rp-use-dashboard.html["Erfahren Sie, was Ihnen das Dashboard zeigt."]
 
+
+
+
+
+== Ermittlung neu erstellter Workloads für zuvor ausgewählte Arbeitsumgebungen
+
+Wenn Sie bereits Arbeitsumgebungen für die Erkennung ausgewählt haben, können Sie neu erstellte Workloads für diese Umgebungen erkennen.
+
+.Schritte
+. Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
+. Um das Datum der letzten Erkennung zu identifizieren, wählen Sie im Dashboard das Info-Symbol neben dem Link * Workloads ermitteln* oben rechts aus.
+. Wählen Sie im Dashboard die Option * Workloads ermitteln* aus.
++
+Sie können die zuvor ausgewählten Arbeitsumgebungen für jeden Connector anzeigen und neue Arbeitsumgebungen suchen.
+
+. Wählen Sie für jeden Connector *Neue Arbeitsumgebungen suchen*.
++
+image:screen-discover-workloads-newly-discovered.png["Screenshot der neu entdeckten Arbeitsumgebungen"]
+
++
+
+TIP: Dieser Vorgang kann einige Minuten dauern.
+
++
+image:screen-discover-workloads-select.png["Screenshot zur Workload-Erkennung"]
+
+. Wählen Sie die Arbeitsumgebungen aus, in denen Sie Workloads ermitteln möchten, oder wählen Sie das Feld oben in der Tabelle aus, um Workloads in allen erkannten Workload-Umgebungen zu erkennen.
+. Wählen Sie *Gehe zu Dashboard*.
 

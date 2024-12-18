@@ -21,11 +21,6 @@ Sie können die folgenden Lizenztypen verwenden:
 * Bring-Your-Own-License (BYOL) bei einer NetApp Lizenzdatei (NLF), die Sie von Ihrem NetApp Vertriebsmitarbeiter erhalten. Sie können die Seriennummer der Lizenz verwenden, um das BYOL in der Digital Wallet von BlueXP zu aktivieren.
 
 
-Die BlueXP  Lizenz zum Schutz vor Ransomware enthält keine zusätzlichen NetApp Produkte. BlueXP  Ransomware-Schutz kann Backup und Recovery mit BlueXP  nutzen, auch wenn Sie keine Lizenz dafür haben.
-
-
-NOTE: Wenn Sie sowohl über BlueXP -Backup und -Recovery als auch über BlueXP -Ransomware-Schutz verfügen, werden alle gemeinsamen, durch beide Produkte geschützten Daten ausschließlich durch BlueXP  Ransomware-Schutz in Rechnung gestellt.
-
 Nachdem Sie Ihr BYOL eingerichtet oder ein PAYGO-Abonnement erworben haben, können Sie die Lizenz im BlueXP  Digital Wallet *Data Service Licenses*-Reiter oder im BlueXP  Digital Wallet *Subscriptions*-Tab sehen.
 
 Nach Ablauf der kostenlosen Testversion oder Ablauf der Lizenz oder des Abonnements können Sie im Service weiterhin Folgendes tun:
@@ -34,6 +29,20 @@ Nach Ablauf der kostenlosen Testversion oder Ablauf der Lizenz oder des Abonneme
 * Löschen Sie alle Ressourcen, z. B. eine Richtlinie.
 * Führen Sie alle geplanten Vorgänge aus, die während des Testzeitraums oder unter der Lizenz erstellt wurden.
 
+
+
+
+=== Weitere Lizenzüberlegungen
+
+Die BlueXP  Lizenz zum Schutz vor Ransomware enthält keine zusätzlichen NetApp Produkte. BlueXP  Ransomware-Schutz kann Backup und Recovery mit BlueXP  nutzen, auch wenn Sie keine Lizenz dafür haben.
+
+
+NOTE: Wenn Sie sowohl über BlueXP -Backup und -Recovery als auch über BlueXP -Ransomware-Schutz verfügen, werden alle gemeinsamen, durch beide Produkte geschützten Daten ausschließlich durch BlueXP  Ransomware-Schutz in Rechnung gestellt.
+
+Bei Data Infrastructure Insights Workload Security lassen sich anomale Benutzerverhaltensweisen anzeigen. Dazu ist eine Lizenz für Einblicke in die Dateninfrastruktur – Workload-Sicherheit und den Schutz vor BlueXP -Ransomware erforderlich. Einen Überblick über Data Infrastructure Insights Workload Security finden Sie in https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Allgemeines Zur Workload-Sicherheit"^]
+
+
+TIP: Wenn Sie keine Lizenz für die Workload-Sicherheit in der Dateninfrastruktur besitzen und sie nicht im BlueXP  Ransomware-Schutz aktivieren, werden Sie die anormalen Informationen zum Benutzerverhalten nicht sehen.
 
 
 
@@ -58,7 +67,7 @@ Während der Testphase haben Sie volle Funktionalität.
 Wenn Sie sich zum ersten Mal bei diesem Dienst anmelden, wird die Landing Page angezeigt.
 
 +
-image:screen-rp-landing.png["Landing Page-Screenshot zu BlueXP Ransomware-Schutz"]
+image:screen-landing.png["Landing Page-Screenshot zu BlueXP Ransomware-Schutz"]
 
 . Wenn Sie noch keinen Connector für andere Dienste hinzugefügt haben, fügen Sie einen hinzu.
 +

@@ -41,7 +41,7 @@ Der BlueXP Ransomware-Sicherungsservice bietet vollständige Nutzung mehrerer Ne
 
 * *Identifizieren* aller anwendungsbasierten, von der Dateifreigabe oder von VMware verwalteten Workloads in NetApp On-Premises NAS mit NFS- oder CIFS-Arbeitsumgebungen in BlueXP , über BlueXP -Organisationen, Projekte und BlueXP  Connectors hinweg. Der Service kategorisiert anschließend die Datenpriorität und gibt Ihnen Empfehlungen für eine Verbesserung des Ransomware-Schutzes.
 * *Schützen* Ihrer Workloads durch Backup, Snapshot-Kopien und Ransomware-Schutzstrategien für Ihre Daten.
-* * Auffällige* Anomalien, die Ransomware-Angriffe sein könnten.Fußnote:[kein Ransomware-Erkennungs- oder Präventionssystem kann die Sicherheit vor einem Ransomware-Angriff vollständig garantieren. Es ist möglich, dass ein Angriff nicht erkannt wird, aber die NetApp-Technologie dient als wichtige zusätzliche Verteidigungsebene.]
+* * Auffälligkeiten*, die Ransomware-Angriffe sein könnten.Fußnote:[Obwohl es möglich ist, dass ein Angriff unentdeckt bleiben könnte, zeigen unsere Untersuchungen, dass die NetApp-Technologie zu einem hohen Grad an Erkennung für bestimmte auf Dateiverschlüsselung basierende Ransomware-Angriffe geführt hat.]
 * *Reagieren* auf potenzielle Ransomware-Angriffe durch automatisches Initiieren eines manipulationssicheren NetApp ONTAP Snapshots, der gesperrt ist, so dass die Kopie nicht versehentlich oder böswillig gelöscht werden kann. Ihre Backup-Daten bleiben unveränderlich und End-to-End-Schutz vor Ransomware-Angriffen an der Quelle und am Ziel.
 * *Wiederherstellen* Ihrer Workloads, die durch die Orchestrierung mehrerer NetApp-Technologien zur Beschleunigung der Workload-Uptime beitragen. Sie können spezifische Volumes wiederherstellen. Der Service gibt Empfehlungen für die besten Optionen.
 * *Regieren*: Implementieren Sie Ihre Ransomware-Schutzstrategie und überwachen Sie die Ergebnisse.
@@ -91,6 +91,8 @@ Für den BlueXP  Ransomware-Schutz ist eine NetApp ONTAP One Lizenz erforderlic
 
 Die BlueXP  Lizenz zum Schutz vor Ransomware enthält keine zusätzlichen NetApp Produkte. BlueXP  Ransomware-Schutz kann Backup und Recovery mit BlueXP  nutzen, auch wenn Sie keine Lizenz dafür haben.
 
+Zur Erkennung von ungewöhnlichem Benutzerverhalten verwendet der BlueXP  Ransomware-Schutz den NetApp Autonomous Ransomware Protection, ein ML-Modell (Machine Learning) in ONTAP, das schädliche Dateiaktivitäten erkennt. Dieses Modell ist in der BlueXP  Ransomware-Schutzlizenz enthalten. Außerdem können Sie Data Infrastructure Insights (ehemals Cloud Insights) Workload-Sicherheit (Lizenz erforderlich) verwenden, um das Benutzerverhalten zu untersuchen und bestimmte Benutzer von weiteren Aktivitäten zu blockieren.
+
 Weitere Informationen finden Sie unter link:rp-start-licenses.html["Lizenzierung einrichten"].
 
 
@@ -127,7 +129,7 @@ Weitere Informationen zu https://docs.netapp.com/us-en/ontap/anti-ransomware/ind
 | *ERKENNEN*  a| 
 * Erkennt potenzielle Angriffe mit einem integrierten Machine-Learning-Modell (ML), das eine potenziell anomale Verschlüsselung und Aktivität erkennt.
 * Bietet Dual-Layer-Erkennung, die mit der Erkennung potenzieller Ransomware-Angriffe im primären Storage beginnt und auf ungewöhnliche Aktivitäten reagiert, indem zusätzliche automatisierte Snapshot-Kopien erstellt werden, um die nächstgelegenen Daten-Restore-Punkte zu erstellen. Der Service bietet die Möglichkeit zur genaueren Identifizierung potenzieller Angriffe, ohne die Performance der primären Workloads zu beeinträchtigen.
-* Ermitteln Sie mithilfe von ONTAP, autonomer Ransomware-Sicherung und FPolicy-Technologien die spezifischen verdächtigen Dateien und Zuordnungen zu den zugehörigen Workloads.
+* Ermitteln Sie mithilfe von ONTAP, der autonomen Ransomware-Sicherung, Einblicke in die Dateninfrastruktur (ehemals Cloud Insights) Workload-Sicherheit und FPolicy-Technologien die spezifischen verdächtigen Dateien und Zuordnungen für Angriffe auf die zugehörigen Workloads.
 
 
 
