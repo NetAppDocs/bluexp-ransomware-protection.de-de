@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-alert.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
-summary: Wenn der Ransomware Protection von BlueXP einen möglichen Angriff erkennt, wird im BlueXP Ransomware Protection Dashboard eine Warnmeldung angezeigt, die auf einen potenziellen Ransomware-Angriff hinweist. Der Service initiiert zudem unverzüglich die Erstellung einer Snapshot-Kopie. An dieser Stelle sollten Sie sich über die Registerkarte „BlueXP Ransomware Protection Alerts“ das potenzielle Risiko ansehen. 
+summary: Wenn der BlueXP  Ransomware-Schutz einen möglichen Angriff erkennt, wird im BlueXP  Dashboard für Ransomware-Schutz eine Warnmeldung angezeigt, die auf einen potenziellen Angriff hinweist. Der Service initiiert zudem unverzüglich die Erstellung einer Snapshot-Kopie. An dieser Stelle sollten Sie sich über die Registerkarte „BlueXP Ransomware Protection Alerts“ das potenzielle Risiko ansehen. 
 ---
 = Reagieren Sie auf einen erkannten Ransomware-Alarm
 :hardbreaks:
@@ -79,7 +79,7 @@ image:screen-alerts.png["Warnmeldeseite"]
 
 . Weiter:
 +
-** <<Detect anomalous user behavior>>.
+** <<Erkennen von böswilligen Aktivitäten und ungewöhnlichem Benutzerverhalten>>.
 ** <<Markieren Sie Ransomware-Vorfälle als bereit für die Wiederherstellung (nach der Neutralisierung von Vorfällen).>>.
 ** <<Schließen Sie Vorfälle ab, die keine potenziellen Angriffe sind>>.
 
