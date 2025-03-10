@@ -28,8 +28,8 @@ indexpage:
       url: "/rp-start-quick-start.html"
     - title: Konfigurieren Sie Sicherungsziele und aktivieren Sie die Bedrohungserkennung
       url: "/rp-use-settings.html"
-    - title: Häufig gestellte Fragen
-      url: "/rp-start-faq.html"
+    - title: Simulieren Sie einen Ransomware-Angriff
+      url: "/rp-start-simulate.html"
   - title: Nutzen Sie BlueXP Ransomware-Schutz
     links:
     - title: Nutzen Sie die Übersicht zum BlueXP Ransomware-Schutz

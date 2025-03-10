@@ -33,7 +33,10 @@ sidebar:
       url: "/rp-start-licenses.html"
     - title: Workloads erkennen
       url: "/rp-start-discover.html"
-    - title: Konfigurieren Sie Sicherungsziele und aktivieren Sie die Bedrohungserkennung
+    - title: Simulieren Sie einen Ransomware-Angriff
+      url: "/rp-start-simulate.html"
+    - title: Konfigurieren Sie Backups, Bedrohungserkennung und Angriffssimulationen
+        in den Einstellungen
       url: "/rp-use-settings.html"
     - title: Häufig gestellte Fragen
       url: "/rp-start-faq.html"

@@ -12,13 +12,15 @@ summary: Es stehen verschiedene Optionen zur Verfügung, darunter ein Backup-Zie
 
 
 [role="lead"]
-Sie können ein Backup-Ziel konfigurieren, die Bedrohungserkennung aktivieren oder die Verbindung zu Data Infrastructure Insights Workload Security konfigurieren, indem Sie auf die Option *Settings* zugreifen. Durch die Aktivierung der Bedrohungserkennung werden Daten automatisch an Ihr Sicherheits- und Ereignismanagementsystem (SIEM) zur Bedrohungsanalyse gesendet.
+Sie können Sicherungsziele konfigurieren, die Bedrohungserkennung aktivieren, eine Übung zur Angriffsbereitschaft durchführen, die Workload-Erkennung konfigurieren oder die Verbindung zu Data Infrastructure Insights Workload Security konfigurieren, indem Sie auf die Option *Einstellungen* zugreifen.
 
 Auf der Seite Einstellungen können Sie Folgendes tun:
 
+* Simulieren Sie einen Ransomware-Angriff durch eine Bereitschaftsübung und reagieren Sie auf eine simulierte Ransomware-Warnung. Weitere Informationen finden Sie unter link:rp-start-simulate.html["Machen Sie sich eine Übung zur Vorbereitung auf einen Ransomware-Angriff"].
+* Konfiguration der Workload-Erkennung
 * Konfigurieren Sie die Verbindung zu Data Infrastructure Insights Workload Security, um vermutete Benutzerinformationen in Ransomware-Warnmeldungen einzusehen.
 * Hinzufügen eines Sicherungsziels.
-* Schließen Sie Ihr Sicherheits- und Ereignismanagementsystem (SIEM) zur Bedrohungsanalyse und -Erkennung an.
+* Aktivieren Sie die Bedrohungserkennung und verbinden Sie Ihr Sicherheits- und Ereignismanagementsystem (SIEM) für die Bedrohungsanalyse und -Erkennung. Durch die Aktivierung der Bedrohungserkennung werden automatisch Daten zur Bedrohungsanalyse an Ihr SIEM gesendet.
 
 
 
@@ -33,7 +35,33 @@ Auf der Seite Einstellungen können Sie Folgendes tun:
 
 
 
-== Stellen Sie eine Verbindung zu Data Infrastructure Insights her Workload-Sicherheit, um vermutetes anomales Benutzerverhalten zu erkennen
+== Simulieren Sie einen Ransomware-Angriff
+
+Führen Sie ein Drill-On zur Vorbereitung auf einen Ransomware-Angriff durch, indem Sie einen Ransomware-Angriff auf einen neu erstellten, Beispiel-Workload simulieren. Untersuchen Sie dann den simulierten Angriff und stellen Sie den Proben-Workload wieder her. Diese Funktion hilft Ihnen dabei, sich im Falle eines echten Ransomware-Angriffs auf Sie vorzubereiten, indem Sie Warnmeldungs-, Reaktions- und Recovery-Prozesse testen. Sie können mehrmals eine Übung zur Vorbereitung auf Ransomware durchführen.
+
+Weitere Informationen finden Sie unter link:rp-start-simulate.html["Machen Sie sich eine Übung zur Vorbereitung auf einen Ransomware-Angriff"].
+
+
+
+== Konfiguration der Workload-Erkennung
+
+Sie können die Workload-Erkennung so konfigurieren, dass neue Workloads in Ihrer Umgebung automatisch erkannt werden.
+
+. Suchen Sie auf der Seite Einstellungen die Kachel *Workload Discovery*.
+. Wählen Sie in der Kachel *Workload-Erkennung* die Option *Workloads ermitteln* aus.
++
+Diese Seite zeigt BlueXP -Steckverbinder mit Arbeitsumgebungen, die nicht zuvor ausgewählt wurden, neu verfügbare BlueXP -Steckverbinder und neu verfügbare Arbeitsumgebungen. Auf dieser Seite werden die zuvor ausgewählten Arbeitsumgebungen nicht angezeigt.
+
+. Wählen Sie den Connector aus, an dem Sie Workloads erkennen möchten.
+. Überprüfen Sie die Liste der Arbeitsumgebungen.
+. Aktivieren Sie die Arbeitsumgebungen, in denen Sie Workloads ermitteln möchten, oder aktivieren Sie das Kontrollkästchen oben in der Tabelle, um Workloads in allen erkannten Workload-Umgebungen zu erkennen.
+. Führen Sie dies bei Bedarf für andere Arbeitsumgebungen durch.
+. Wählen Sie *Discover* aus, um den BlueXP  Ransomware-Schutz automatisch neue Workloads im ausgewählten Connector erkennen zu lassen.
+
+
+
+
+== Erkennen Sie verdächtiges ungewöhnliches Benutzerverhalten durch eine Verbindung zu Data Infrastructure Insights Workload-Sicherheit
 
 Bevor Sie Details zu vermutlich ungewöhnlichem Benutzerverhalten beim BlueXP -Ransomware-Schutz anzeigen können, müssen Sie die Verbindung mit dem Workload-Sicherheitssystem von Data Infrastructure Insights konfigurieren.
 
@@ -56,7 +84,7 @@ image:../media/screen-alerts-ci-api-access-token.png["API-Zugriffsseite in Data 
 
 === Einblicke in die Workload-Sicherheit der Dateninfrastruktur
 
-. Wählen Sie im Menü BlueXP  Ransomware Protection Settings *Workload Security Connection* aus.
+. Suchen Sie im Menü BlueXP  Ransomware Protection Settings die Kachel *Workload Security Connection*.
 . Wählen Sie *Verbinden*.
 . Geben Sie die URL für die Benutzeroberfläche für die Sicherheit von Dateninfrastruktur-Workloads ein.
 . Geben Sie das API-Zugriffstoken ein, das Zugriff auf die Workload-Sicherheit bietet.
