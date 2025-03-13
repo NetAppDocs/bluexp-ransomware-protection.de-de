@@ -51,16 +51,11 @@ Der Dienst findet Arbeitsumgebungen in Ihren BlueXP -Konnektoren.
 TIP: Dieser Vorgang kann einige Minuten dauern.
 
 +
-image:screen-discover-workloads.png["Screenshot zur Workload-Erkennung"]
+image:screen-discover-workloads1.png["Screenshot zur Workload-Erkennung"]
 
-. Führen Sie einen der folgenden Schritte aus:
-+
-** Um die Arbeitsumgebung für alle Steckverbinder auszuwählen, wählen Sie *Alle Arbeitsumgebungen auswählen*.
-** Um Workloads für einen bestimmten Connector zu ermitteln, wählen Sie *Neue Arbeitsumgebungen suchen* neben dem Connector, an dem Sie Workloads ermitteln möchten.
+. Um Workloads für einen bestimmten Connector zu ermitteln, wählen Sie *Neue Arbeitsumgebungen suchen* neben dem Connector, an dem Sie Workloads ermitteln möchten.
 +
 Eine Liste der Arbeitsumgebungen wird angezeigt.
-
-
 
 +
 image:screen-discover-workloads-select-no-autodiscovery.png["Screenshot zur Workload-Erkennung"]
@@ -99,7 +94,7 @@ Wenn Sie bereits Arbeitsumgebungen für die Erkennung ausgewählt haben, können
 .Schritte
 . Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
 . Um das Datum der letzten Erkennung zu identifizieren, schauen Sie im Dashboard auf den Datums- und Zeitstempel neben dem *Aktualisieren*-Symbol oben rechts.
-. Wählen Sie im Dashboard das Symbol *Aktualisieren* und wählen Sie in der angezeigten QuickInfo *Workloads ermitteln* aus.
+. Wählen Sie im Dashboard das Symbol * Aktualisieren* aus, das die Erkennung neuer Workloads initiiert.
 
 
 
@@ -110,10 +105,6 @@ Wenn Sie bereits Arbeitsumgebungen erkannt haben, können Sie alle neu erstellte
 
 .Schritte
 . Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
-. Führen Sie einen der folgenden Schritte aus:
-+
-** Wählen Sie im Dashboard *Add New* aus und wählen Sie im angezeigten Tooltip *Add New Working Environments* aus.
-** Wählen Sie aus dem BlueXP  Ransomware Protection Menü die vertikale image:button-actions-vertical.png["Vertikale Aktionen"]Option ... oben rechts. Wählen Sie im Dropdown-Menü *Einstellungen*. Wählen Sie auf der Karte Workload Discovery * Workloads ermitteln * aus.
-
-
+. Wählen Sie aus dem BlueXP  Ransomware Protection Menü die vertikale image:button-actions-vertical.png["Vertikale Aktionen"]Option ... oben rechts. Wählen Sie im Dropdown-Menü *Einstellungen*.
+. Wählen Sie auf der Karte Workload Discovery * Workloads ermitteln * aus.
 

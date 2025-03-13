@@ -35,7 +35,7 @@ image:screen-settings-alert-drill-configure.png["Konfigurieren Sie die Bereitsch
 
 . Wählen Sie den BlueXP -Anschluss aus, den Sie für den Bereitschaftsbohrer verwenden möchten.
 . Wählen Sie eine Testumgebung aus.
-. Wählen Sie einen neuen Test-Workload aus, der erstellt werden soll.
+. Geben Sie den Namen eines neuen Test-Workloads ein, der erstellt werden soll.
 . Wählen Sie *Speichern*.
 +
 Es wird eine Meldung angezeigt, dass die Bereitschaftsbohrumgebung konfiguriert ist. Wählen Sie in dieser Meldung *Bereitschaftsbohrer starten*, um den Bohrer zu starten.
@@ -54,8 +54,8 @@ Nach der Konfiguration des Bereitschaftsbohrers können Sie den Bohrer starten.
 .Schritte
 . Führen Sie einen der folgenden Schritte aus:
 +
-** Wählen Sie im Menü BlueXP  Ransomware Protection Settings die Option *Start Readiness Drill* aus.
-** ODER wählen Sie auf der Seite Einstellungen in der Bereitschaftsbohrkarte *Bereitschaftsbohrer starten*.
+** Wählen Sie im Menü „BlueXP  Ransomware Protection Settings“ die Option *Readiness Drill* aus und wählen Sie dann auf der Readiness-Seite *Start* aus.
+** ODER wählen Sie auf der Seite Einstellungen in der Bereitschaftsbohrkarte *Start*.
 
 
 . Führen Sie einen der folgenden Schritte aus:
@@ -69,41 +69,13 @@ image:screen-settings-alert-drill-needtoconfigure.png["Einstellungsseite, auf de
 *** Fahren Sie mit den Anweisungen im vorherigen Abschnitt fort, um die Drill-Testumgebung in der Option Einstellungen zu konfigurieren.
 
 
-** Wenn Sie den Bereitschaftsbohrer bereits konfiguriert haben, wird die Seite „Bereitschaft starten“ angezeigt:
-+
-image:screen-settings-alert-drill-start.png["Start der Bereitschaftsbohrseite"]
+** Wenn Sie bereits den Bereitschaftsbohrer konfiguriert haben, beginnt nach der Auswahl von *Start* der Bereitschaftsbohrer.
 
 
-
-. Wählen Sie *Start*.
 
 
 
 NOTE: Nachdem der Bohrer gestartet wurde, können Sie die Bereitschaftsbohrkonfiguration nicht bearbeiten. Sie können es stattdessen stoppen.
-
-
-
-== Eine Bereitschaftsübung bereinigen und stoppen
-
-Wenn Sie eine Bereitschaftsübung stoppen müssen, können Sie dies jederzeit tun. Wenn Sie die Übung anhalten, bereinigt der Ransomware-Schutz von BlueXP  den Test-Workload und entfernt die Testdateien.
-
-.Schritte
-. Führen Sie einen der folgenden Schritte aus:
-+
-** Bewegen Sie im Menü BlueXP  Ransomware Protection Settings den Mauszeiger über die Option Edit im Readiness-Drill und wählen Sie *Clean Up Readiness Drill*.
-** Wählen Sie aus dem BlueXP  Ransomware Protection Menü die vertikale image:button-actions-vertical.png["Vertikale Aktionen"]Option ... oben rechts und wählen Sie *Clean Up Readiness Drill*.
-+
-image:screen-settings-alert-drill-cleanup.png["Einstellungsseite mit der Option „Bereitschaftsbohrstopp“"]
-
-+
-
-NOTE: Sie können eine Bereitschaftsübung auch auf der Seite „Einstellungen“ mit der Bereitschaftsbohrkarte stoppen oder bereinigen.
-
-
-
-. Überprüfen Sie die Informationen zur Workload-Bereitschaft.
-. Wählen Sie *Clean-up*.
-
 
 
 
@@ -112,26 +84,19 @@ NOTE: Sie können eine Bereitschaftsübung auch auf der Seite „Einstellungen�
 Testen Sie Ihre Bereitschaft, indem Sie auf eine Bereitschaftsübung reagieren.
 
 .Schritte
-. Führen Sie einen der folgenden Schritte aus:
+. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Alerts* aus.
 +
-** Wählen Sie im Menü BlueXP Ransomware Protection die Option *Alerts* aus.
-** Oder wählen Sie aus dem Menü das Symbol *Benachrichtigungen*, und wählen Sie neben dem Bereitschaftsalarm *Warnung anzeigen*.
-+
-image:screen-notifications-alert-drill.png["Benachrichtigungsbereich, in dem die Bereitschaftsübung angezeigt wird"]
+Die Seite „Meldungen“ wird angezeigt. In der Spalte Alarm-ID wird neben der ID „Readiness Drill“ angezeigt.
 
-+
-Die Seite „Meldungen“ wird angezeigt. In der Spalte Warn-ID auf der Seite Warnungen wird neben der ID „Bereitschaftsübung“ angezeigt.
-
+. Wählen Sie die Warnmeldung mit der Angabe „Bereitschaftsübung“ aus. Es wird eine Liste mit Störungsmeldungen angezeigt.
 +
 image:screen-alerts-readiness.png["Warnseite, auf der die Bereitschaftsmeldung angezeigt wird"]
 
-
-
-. Wählen Sie den Vorfall mit der Angabe „Bereitschaftsbohrung“ aus.
+. Überprüfen Sie die Warnungsvorfälle.
+. Wählen Sie einen Warnungsvorfall aus.
 +
-image:screen-alerts-readiness-incidents.png["Incident-Seite mit der Bereitschaftsmeldung"]
+image:screen-alerts-readiness-incidents2.png["Incident-Seite mit der Bereitschaftsmeldung"]
 
-. Prüfen Sie die Warnmeldungsdetails.
 +
 Hier sind einige Dinge, auf die Sie achten sollten:
 
@@ -170,7 +135,7 @@ Nachdem Sie die Bereitschaftsübung geprüft haben, möchten Sie möglicherweise
 ** Überprüfen Sie die Bestätigung, und wählen Sie im Bestätigungsfeld *Wiederherstellung erforderlich markieren* aus.
 +
 *** Wählen Sie im Menü BlueXP Ransomware Protection die Option *Recovery* aus.
-*** Wählen Sie den Test-Workload aus, den Sie wiederherstellen möchten.
+*** Wählen Sie den mit „Readiness Drill“ markierten Test-Workload aus, den Sie wiederherstellen möchten.
 *** Wählen Sie *Wiederherstellen*.
 *** Geben Sie auf der Seite Wiederherstellen Informationen für die Wiederherstellung an:
 

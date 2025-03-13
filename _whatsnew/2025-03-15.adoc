@@ -18,7 +18,6 @@ Diese Version enthält Verbesserungen an den Prozessen zur selektiven Bestandsau
 
 * Mit diesem Release können Sie neu erstellte Workloads erkennen, die den zuvor ausgewählten Arbeitsumgebungen hinzugefügt wurden.
 * Sie können in dieser Version auch _New_ Arbeitsumgebungen auswählen. Diese Funktion unterstützt Sie beim Schutz neuer Workloads, die zu Ihrer Umgebung hinzugefügt werden.
-* Wenn Sie alle erkannten Workloads auswählen möchten, können Sie dies über die Option *alles auswählen* tun.
 * Sie können diese Erkennungsprozesse während des Erkennungsvorgangs zunächst oder über die Option Einstellungen durchführen.
 
 
