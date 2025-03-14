@@ -75,7 +75,7 @@ image:screen-settings-alert-drill-needtoconfigure.png["Einstellungsseite, auf de
 
 
 
-NOTE: Nachdem der Bohrer gestartet wurde, können Sie die Bereitschaftsbohrkonfiguration nicht bearbeiten. Sie können es stattdessen stoppen.
+NOTE: Nachdem der Bohrer gestartet wurde, können Sie die Bereitschaftsbohrkonfiguration nicht bearbeiten. Sie können sie zurücksetzen, um erneut zu starten.
 
 
 
@@ -177,18 +177,4 @@ IMPORTANT: Nachdem du einen Angriff abgetan hast, kannst du ihn nicht zurückcha
 ** Behoben: Der Vorfall wurde behoben.
 
 
-
-
-
-
-== Prüfen Sie die Berichte zur Bereitschaftsübung
-
-Nach Abschluss der Bereitschaftsübung möchten Sie möglicherweise einen Bericht über den Bohrer prüfen und speichern.
-
-.Schritte
-. Wählen Sie im Menü zum Ransomware-Schutz von BlueXP *Berichte* aus.
-+
-image:screen-reports.png["Berichtsseite, auf der der Bereitschaftsbericht angezeigt wird"]
-
-. Wählen Sie *Readiness Drill* und *Download*, um den Readiness Drill Report herunterzuladen.
 

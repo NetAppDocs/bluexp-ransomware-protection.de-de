@@ -1649,7 +1649,6 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="fbb94dad4d4b0b642b9e4bcfccb31a40" category="paragraph"><block ref="fbb94dad4d4b0b642b9e4bcfccb31a40" category="inline-image-macro-rx" type="image"></block></block>
   <block id="648815687f26cfff9af80401c05502e1" category="list-text">Wählen Sie *Configure Readiness Drill Test Environment*.</block>
   <block id="2e80fabefee51d121eee410fb4a3be19" category="list-text">Fahren Sie mit den Anweisungen im vorherigen Abschnitt fort, um die Drill-Testumgebung in der Option Einstellungen zu konfigurieren.</block>
-  <block id="8c5a9997ae160f52e3c8ede0e2590504" category="admonition">Nachdem der Bohrer gestartet wurde, können Sie die Bereitschaftsbohrkonfiguration nicht bearbeiten. Sie können es stattdessen stoppen.</block>
   <block id="1e4a43fb392ed69a6d5a047ba0d88826" category="section-title">Reagieren Sie auf eine Bereitschaftsübung</block>
   <block id="6128067a6b325891717a7cfc23e60bae" category="paragraph">Testen Sie Ihre Bereitschaft, indem Sie auf eine Bereitschaftsübung reagieren.</block>
   <block id="bfb2eabf2e2f3750c3b857a9c0072bfa" category="inline-image-macro">Warnseite, auf der die Bereitschaftsmeldung angezeigt wird</block>
@@ -1687,11 +1686,6 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="e0a30b860c06e610cadc21ebf64426da" category="list-text">Entlassen: Wenn Sie vermuten, dass die Aktivität kein Ransomware-Angriff ist, ändern Sie den Status in Abgewiesen.</block>
   <block id="ff8d215b189dca41bf900d6545392594" category="admonition">Nachdem du einen Angriff abgetan hast, kannst du ihn nicht zurückchanagen. Wenn Sie einen Workload entlassen, werden alle Snapshot Kopien, die automatisch als Reaktion auf einen potenziellen Ransomware-Angriff erstellt wurden, dauerhaft gelöscht. Wenn Sie den Alarm schließen, wird der Bereitschaftsbohrer als abgeschlossen betrachtet.</block>
   <block id="36b45588cbfa3653d0bdeb91883b49f4" category="list-text">Behoben: Der Vorfall wurde behoben.</block>
-  <block id="1be5568d0c3f299b7d0fa2b810d4b90d" category="section-title">Prüfen Sie die Berichte zur Bereitschaftsübung</block>
-  <block id="1618fcb06831249fd4142102d83577f5" category="paragraph">Nach Abschluss der Bereitschaftsübung möchten Sie möglicherweise einen Bericht über den Bohrer prüfen und speichern.</block>
-  <block id="50ca22b8d354f001a742f726d3cf2be9" category="inline-image-macro">Berichtsseite, auf der der Bereitschaftsbericht angezeigt wird</block>
-  <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">Wählen Sie *Readiness Drill* und *Download*, um den Readiness Drill Report herunterzuladen.</block>
   <block id="7491606097f73ec9ee4cd8649e24e37b" category="list-text">Wenn die Verschlüsselung hoch ist, ohne Dateierweiterung Änderungen</block>
   <block id="0152e4b08d769def55f114d835660cb2" category="list-text">Ausgelöst durch Data Infrastructure Insights Workload-Sicherheit. Dazu ist eine Lizenz für Einblicke in die Dateninfrastruktur erforderlich – und dass Sie sie in BlueXP  Ransomware-Schutz aktivieren. Diese Funktion erkennt ungewöhnliches Benutzerverhalten in Ihren Storage-Workloads und ermöglicht es Ihnen, den weiteren Zugriff des Benutzers zu blockieren.</block>
   <block id="900224a7eb4d4424692600ce3e4b5262" category="paragraph">Um die Workload-Sicherheit in BlueXP  Ransomware-Schutz zu aktivieren, gehen Sie auf die Seite *Einstellungen* und wählen Sie die Option *Workload Security Connection*.</block>
@@ -1739,4 +1733,5 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="8094150588327954ce01d91cf529ccfc" category="list-text">Wählen Sie einen Warnungsvorfall aus.</block>
   <block id="b0e402efbf054d8b9cab93c3c4e53922" category="paragraph"><block ref="b0e402efbf054d8b9cab93c3c4e53922" category="inline-image-macro-rx" type="image"></block></block>
   <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">Wählen Sie den mit „Readiness Drill“ markierten Test-Workload aus, den Sie wiederherstellen möchten.</block>
+  <block id="241197791593ba6fe12006bc7c44e045" category="admonition">Nachdem der Bohrer gestartet wurde, können Sie die Bereitschaftsbohrkonfiguration nicht bearbeiten. Sie können sie zurücksetzen, um erneut zu starten.</block>
 </blocks>
