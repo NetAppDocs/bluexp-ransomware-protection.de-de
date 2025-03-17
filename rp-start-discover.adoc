@@ -25,7 +25,6 @@ Sie haben folgende Möglichkeiten:
 
 * Wählen Sie in jedem Connector die Arbeitsumgebungen aus, in denen Sie Workloads erkennen möchten. Diese Funktion könnte für Sie von Vorteil sein, wenn Sie bestimmte Workloads in Ihrer Umgebung schützen möchten und keine anderen.
 * Ermittlung neu erstellter Workloads für zuvor ausgewählte Arbeitsumgebungen.
-* Wählen Sie _New_ Arbeitsumgebungen. Diese Funktion unterstützt Sie beim Schutz neuer Workloads, die zu Ihrer Umgebung hinzugefügt werden.
 
 
 
@@ -99,12 +98,16 @@ Wenn Sie bereits Arbeitsumgebungen für die Erkennung ausgewählt haben, können
 
 
 
-== Entdecken Sie neu geschaffene Arbeitsumgebungen
+== Entdecken Sie neue Arbeitsumgebungen
 
-Wenn Sie bereits Arbeitsumgebungen erkannt haben, können Sie alle neu erstellten Arbeitsumgebungen über das Dashboard ermitteln.
+Wenn Sie bereits Arbeitsumgebungen erkannt haben, können Sie alle neu erstellten Arbeitsumgebungen oder Arbeitsumgebungen ermitteln, die Sie zuvor bei früheren Erkennungsprozessen nicht ausgewählt haben.
 
 .Schritte
 . Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
 . Wählen Sie aus dem BlueXP  Ransomware Protection Menü die vertikale image:button-actions-vertical.png["Vertikale Aktionen"]Option ... oben rechts. Wählen Sie im Dropdown-Menü *Einstellungen*.
 . Wählen Sie auf der Karte Workload Discovery * Workloads ermitteln * aus.
++
+
+TIP: Dieser Vorgang kann einige Minuten dauern, wie durch ein Symbol für das Laden in Bearbeitung angezeigt wird.
+
 

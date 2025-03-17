@@ -37,9 +37,6 @@ image:screen-settings-alert-drill-configure.png["Konfigurieren Sie die Bereitsch
 . Wählen Sie eine Testumgebung aus.
 . Geben Sie den Namen eines neuen Test-Workloads ein, der erstellt werden soll.
 . Wählen Sie *Speichern*.
-+
-Es wird eine Meldung angezeigt, dass die Bereitschaftsbohrumgebung konfiguriert ist. Wählen Sie in dieser Meldung *Bereitschaftsbohrer starten*, um den Bohrer zu starten.
-
 
 
 
@@ -58,20 +55,7 @@ Nach der Konfiguration des Bereitschaftsbohrers können Sie den Bohrer starten.
 ** ODER wählen Sie auf der Seite Einstellungen in der Bereitschaftsbohrkarte *Start*.
 
 
-. Führen Sie einen der folgenden Schritte aus:
-+
-** Wenn Sie den Bereitschaftsbohrer noch nicht konfiguriert haben, wird eine Meldung angezeigt, dass Sie zuerst den Bereitschaftsbohrer konfigurieren müssen.
-+
-image:screen-settings-alert-drill-needtoconfigure.png["Einstellungsseite, auf der die Bereitschaftsbohrmeldung angezeigt wird, die Sie zum Konfigurieren des Bereitschaftsbohrers benötigen"]
-
-+
-*** Wählen Sie *Configure Readiness Drill Test Environment*.
-*** Fahren Sie mit den Anweisungen im vorherigen Abschnitt fort, um die Drill-Testumgebung in der Option Einstellungen zu konfigurieren.
-
-
-** Wenn Sie bereits den Bereitschaftsbohrer konfiguriert haben, beginnt nach der Auswahl von *Start* der Bereitschaftsbohrer.
-
-
+. Wenn Sie bereits den Bereitschaftsbohrer konfiguriert haben, beginnt nach der Auswahl von *Start* der Bereitschaftsbohrer.
 
 
 
@@ -103,7 +87,6 @@ Hier sind einige Dinge, auf die Sie achten sollten:
 +
 ** Sehen Sie sich den potenziellen Angriffstyp an. Wenn der Typ angibt, dass ein Benutzer verdächtig ist, bösartige Aktivitäten durchzuführen, überprüfen Sie den Benutzernamen.
 +
-*** Sie können den Benutzer blockieren, indem Sie *Benutzer blockieren* auswählen.
 *** Sie können den Benutzer auch in Data Infrastructure Insights Workload Security genauer untersuchen, indem Sie *Investigate in Workload Security* auswählen.
 
 
