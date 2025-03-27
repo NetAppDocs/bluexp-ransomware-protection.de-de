@@ -17,6 +17,8 @@ sidebar:
     entries:
     - title: Neuerungen beim BlueXP Ransomware-Schutz
       url: "/whats-new.html"
+    - title: Bekannte Einschränkungen
+      url: "/rp-reference-limitations.html"
   - title: Los geht's
     entries:
     - title: Mehr zu BlueXP Ransomware-Schutz
