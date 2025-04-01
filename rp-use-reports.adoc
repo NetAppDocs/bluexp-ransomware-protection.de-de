@@ -42,6 +42,6 @@ image:screen-dashboard.png["Dashboard-Seite"]
 
 . Wenn Sie die Option *Reports* ausgewählt haben, wählen Sie einen der vorkonfigurierten CSV-Dateinamen aus und wählen *Download (CSV)* oder *Download (JSON)*.
 +
-image:screen-reports.png["Berichtsseite"]
+image:screen-reports0.png["Berichtsseite"]
 
 

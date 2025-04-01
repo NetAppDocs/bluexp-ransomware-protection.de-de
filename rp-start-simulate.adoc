@@ -167,14 +167,3 @@ IMPORTANT: Nachdem du einen Angriff abgetan hast, kannst du ihn nicht zurückcha
 
 
 
-
-
-
-== Laden Sie den Bereitschaftsbericht herunter
-
-Nach Abschluss der Bereitschaftsübung möchten Sie möglicherweise einen CSV-Bericht auf dem Bohrer prüfen und speichern.
-
-.Schritte
-. Wählen Sie im Menü BlueXP Ransomware Protection die Option *Alerts* aus.
-. Wählen Sie den Alarm aus und wählen Sie den Pfeil *Download*, um eine CSV-Datei herunterzuladen.
-

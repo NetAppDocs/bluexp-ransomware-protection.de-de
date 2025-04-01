@@ -39,7 +39,7 @@ Diese Version enthält Verbesserungen an den Prozessen zur selektiven Bestandsau
 * Sie können diese Erkennungsprozesse während des Erkennungsvorgangs zunächst oder über die Option Einstellungen durchführen.
 
 
-Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Ermittlung neu erstellter Workloads für zuvor ausgewählte Arbeitsumgebungen"] und https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Konfigurieren Sie fetaures mit der Option Einstellungen"].
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Ermittlung neu erstellter Workloads für zuvor ausgewählte Arbeitsumgebungen"] und https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Konfigurieren Sie Funktionen mit der Option Einstellungen"].
 
 
 

@@ -26,7 +26,7 @@ Darüber hinaus können Sie über das Dashboard Sicherungsempfehlungen prüfen u
 Nach der Erkennung wird über das Dashboard der Systemzustand der Workload-Datensicherung angezeigt.
 
 +
-image:screen-dashboard.png["Dashboard-Seite"]
+image:screen-dashboard2.png["Dashboard-Seite"]
 
 . Im Dashboard können Sie in jedem der Teilfenster die folgenden Aktionen ausführen:
 +
@@ -164,7 +164,7 @@ CSV-Dateien enthalten Daten aller Workloads in allen BlueXP Arbeitsumgebungen.
 .Schritte
 . Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
 +
-image:screen-dashboard.png["Dashboard-Seite"]
+image:screen-dashboard2.png["Dashboard-Seite"]
 
 . Wählen Sie auf der Seite oben rechts die Option *Aktualisieren* aus image:button-refresh.png["Aktualisierungsoption"] , um die Daten zu aktualisieren, die in den Dateien angezeigt werden.
 . Führen Sie einen der folgenden Schritte aus:
