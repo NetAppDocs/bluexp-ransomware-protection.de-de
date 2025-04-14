@@ -524,9 +524,6 @@ Siehe <block ref="09d5258094b1e39cdb847e9d6bbdf0b2" category="inline-link-macro-
   <block id="bba950bac873be0f9671b852bd7790e8" category="paragraph">Jede Warnung kann mehrere Vorfälle auf verschiedenen Volumes mit unterschiedlichen Status haben, achten Sie also darauf, alle Vorfälle zu betrachten.</block>
   <block id="fae160f7262e5c6f08478e6435238dc7" category="paragraph">Der Dienst bietet Informationen, die als _Evidence_ bezeichnet werden, über den Grund, aus dem die Warnung ausgegeben wurde, wie z. B.:</block>
   <block id="271b5be554c7641bb10d05402276d05a" category="list-text">Dateierweiterungen wurden erstellt oder geändert</block>
-  <block id="9a975b6922b85841ec2444f1b7830d53" category="list-text">Die Dateierstellung ist erfolgt und wird um einen aufgelisteten Prozentsatz erhöht</block>
-  <block id="453d6e2b40107b42aea66ffd9bea45e6" category="list-text">Die Dateilöschung ist aufgetreten und wird um einen aufgelisteten Prozentsatz erhöht</block>
-  <block id="cf2bef290602502c019b41c4bd3d2321" category="paragraph">Eine Warnung basiert auf den folgenden Verhaltensarten:</block>
   <block id="c8e4786dc8495216a70ff4c4a2f04274" category="list-text">*Potenzieller Angriff*: Ein Alarm tritt auf, wenn Autonomous Ransomware Protection eine neue Erweiterung erkennt und das Auftreten in den letzten 24 Stunden mehr als 20 Mal wiederholt wird (Standardverhalten).</block>
   <block id="e881515eb95ff022b5c6fd323fe5a57a" category="list-text">*Warnung*: Eine Warnung erfolgt auf der Grundlage der folgenden Verhaltensweisen:</block>
   <block id="dfc56481bc0d4c0e37c0cc1e55fec278" category="list-text">Die Erkennung einer neuen Erweiterung wurde zuvor nicht identifiziert und dasselbe Verhalten wiederholt nicht genug Male, um sie als Angriff zu deklarieren.</block>
@@ -567,8 +564,6 @@ Siehe <block ref="09d5258094b1e39cdb847e9d6bbdf0b2" category="inline-link-macro-
   <block id="db9538daf4223bfc37b7351935f76d06" category="paragraph">*Wenn Sie eine Richtlinie mit BlueXP Ransomware-Schutz festlegen, müssen Sie nur an diesem Service zukünftige Änderungen vornehmen?*
 Wir empfehlen Ihnen, Richtlinienänderungen am BlueXP Ransomware-Schutzservice vorzunehmen.</block>
   <block id="f90af1ae1e0fb166621b4480576b55ac" category="list-text">Erkennt potenzielle Angriffe mit einem integrierten Machine-Learning-Modell (ML), das eine potenziell anomale Verschlüsselung und Aktivität erkennt.</block>
-  <block id="7114c26cbae366caf9400a8157631c87" category="list-text">Initiiert schnelle Snapshot Kopien mithilfe von NetApp Technologien und Produkten wie ONTAP, Autonomer Ransomware-Schutz und FPolicy.</block>
-  <block id="6256fa6f19d66d5dbcf39232799b384d" category="list-text">Ermittelt die besten Snapshots oder Backups und empfiehlt den besten tatsächlichen Recovery-Zeitpunkt (Recovery Point Actual, RPA) mithilfe von BlueXP Backup und Recovery, ONTAP, Autonomer Ransomware-Schutz sowie FPolicy-Technologien und -Services.</block>
   <block id="0d9cc4385f60a65b4ffd051eddbf122d" category="list-text">Eine Lizenz für den autonomen Schutz vor NetApp Ransomware, die durch BlueXP Ransomware-Schutz verwendet wird und je nach verwendeter ONTAP-Version auf der lokalen ONTAP-Instanz aktiviert wird. Siehe<block ref="9a25fd5e356132f930267232d70ad02b" category="inline-link-rx"></block>.</block>
   <block id="af63a2ecb3ca5627267870874e6c44a4" category="paragraph">Weitere Informationen zur Lizenzierung finden Sie unter <block ref="f86808e84e1b647abbc44adac84bc8a2" category="inline-link-macro-rx"></block>.</block>
   <block id="1ad5d2b1df5750779a9e10432b0d7a7b" category="list-text">*Kritisch*: Snapshot-Kopien wurden pro Stunde erstellt (sehr ambitionierter Schutzplan)</block>
@@ -585,22 +580,18 @@ Wir empfehlen Ihnen, Richtlinienänderungen am BlueXP Ransomware-Schutzservice v
   <block id="3560990ee46f2f17d59094ab9e308c5e" category="list-text">Datenbanken (MySQL und Oracle)</block>
   <block id="9854786e6453f63d9549281586b11092" category="list-text">*Workload*: Ein Workload in BlueXP Ransomware-Schutz kann MySQL- oder Oracle-Datenbanken, VMware-Datastores oder Dateifreigaben umfassen.</block>
   <block id="fb1df121fb2b3f59dd7275d439c2774c" category="paragraph">Der Ransomware-Schutz von BlueXP bewertet MySQL-Applikationen, Oracle-Applikationen, VMware-Datastores und File Shares.</block>
-  <block id="2959d474ff1650966063b3116dafc4bc" category="admonition">Workloads mit Volumes, die FlexGroup oder iSCSI verwenden, werden nicht erkannt.</block>
   <block id="f5d4cfd3f280702438726c83d3842f49" category="summary">Wenn Sie den Ransomware-Schutz von BlueXP nutzen, können Sie Berichte herunterladen, die Details zur Sicherung, zu Alarmen und zur Recovery aufführen und diese als speichern. CSV-Dateien.</block>
   <block id="df6e3c89245cdc5bf0a7191c642d6997" category="doc">Berichte herunterladen</block>
   <block id="3552519b559cc4327d8af9c95f1e3298" category="paragraph">Sie können CSV-Dateien von einer der Optionen des Hauptmenüs herunterladen:</block>
   <block id="9e3cf45f94aa890af53ce59cfb5a0bac" category="list-text">*Schutz*: Enthält den Status und Details aller Workloads, einschließlich der Gesamtzahl der geschützten und gefährdeten Arbeitslasten.</block>
   <block id="0457793eace04e6f92be18bf06e90138" category="list-text">*Alerts*: Enthält den Status und die Details aller Alerts, einschließlich der Gesamtzahl der Alerts und automatisierten Snapshots.</block>
   <block id="a7e404e1296fea04d0cd654b84867b5a" category="list-text">*Recovery*: Enthält den Status und Details aller Workloads, die wiederhergestellt werden müssen, einschließlich der Gesamtzahl der Workloads, die als „Restore needed“, „in progress“, „Restore failed“ und „successfully restored“ markiert sind.</block>
-  <block id="3397d38524b66dba16434b20124971ce" category="paragraph">Wenn Sie CSV-Dateien von der Seite Schutz, Warnungen oder Wiederherstellung herunterladen, werden in den Daten nur die Daten auf dieser Seite angezeigt.</block>
   <block id="a4eb31845eb9b571e493be8fbd61d3c6" category="paragraph">CSV-Dateien enthalten Daten aller Workloads in allen BlueXP Arbeitsumgebungen.</block>
   <block id="1541b6face8479b500e3accafb066eee" category="paragraph"><block ref="1541b6face8479b500e3accafb066eee" category="inline-image-macro-rx" type="image"></block></block>
   <block id="88720d11d44ed6c674eee114228c0d69" category="inline-image-macro">Aktualisierungsoption</block>
   <block id="9e0c2bff29b02cc0054b8ebf63b422d9" category="list-text">Wählen Sie im Dashboard oder auf einer anderen Seite die Option *Aktualisieren* aus <block ref="94d384894f036157c348eadc55c40952" category="inline-image-macro-rx" type="image"></block> Option oben rechts, um die Daten zu aktualisieren, die in den Berichten angezeigt werden.</block>
   <block id="c4b039b69c313acc38209c4b1d1da8ef" category="inline-image-macro">Download-Option</block>
   <block id="b77e52b2729a45733366be275a2b1834" category="list-text">Wählen Sie im Menü zum Ransomware-Schutz von BlueXP *Berichte* aus.</block>
-  <block id="2bb8f47d5dd5e5e9025658aa3c0fc126" category="list-text">Wenn Sie die Option *Reports* ausgewählt haben, wählen Sie einen der vorkonfigurierten CSV-Dateinamen aus und wählen *Download (CSV)* oder *Download (JSON)*.</block>
-  <block id="44f0d43cd92781ec793d9ba50c2d422e" category="inline-image-macro">Berichtsseite</block>
   <block id="fcb74668c58aed2ac30ddcdee292a0c5" category="inline-link-macro">Aktivieren Sie optional die Bedrohungserkennung</block>
   <block id="896465c47d1995c6e7b722de16fa80e5" category="list-text"><block ref="4e4968353ad45e1648e9b700ebce5a49" category="inline-link-macro-rx"></block>.</block>
   <block id="01d9db102d1bd61a6c3336ec537d1d6b" category="list-text">Zuweisung einer Datensicherungsstrategie nach Ransomware zu Workloads</block>
@@ -818,8 +809,6 @@ Die Datenpriorität wird durch die erstellten Snapshot-Kopien und geplanten Back
   <block id="b271e9c6be36aff67404f5d3ab5006f5" category="list-text">Erkennt Workloads und ihre bestehenden Snapshot- und Backup-Zeitpläne und ordnet deren relative Wichtigkeit ein.</block>
   <block id="f9139206de5b0d603d23f42e66a50c61" category="paragraph">NetApp berechnet Ihnen keine Kosten für die Nutzung der Testversion von BlueXP Ransomware-Schutz.</block>
   <block id="d0e4a743e8ed40dbf01bacaa0ec70fe1" category="list-text">Sie finden alle Kunden-On-Premises-NAS (NFS- und CIFS-Protokolle) und mit BlueXP verbundenen Cloud Volumes ONTAP-Daten.</block>
-  <block id="6ac0e32d07ae2f28e1f7e737144ba563" category="list-text">Ermittelt den aktuellen Sicherheitslevel eines jeden Volumes für NetApp Snapshots und Backup-Richtlinien sowie integrierte Erkennungsfunktionen. Der Service ordnet diesen Sicherungsstatus dann mithilfe von BlueXP Backup und Recovery, ONTAP Services und NetApp Technologien wie Autonomer Ransomware-Schutz, FPolicy, Backup-Richtlinien und Snapshot-Richtlinien den Workloads zu.
-Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-link-rx"></block> Und<block ref="eb41fa8ef2a588e65533beee945728a7" category="inline-link-rx"></block>, und<block ref="591ebe16737e602cc342b68e859c040e" category="inline-link-rx"></block>.</block>
   <block id="4ddd3abee434eb92eb13e6cac3e1ad1d" category="cell">*REGIEREN*</block>
   <block id="cc4378b1dc9af2e69cb13a88397e2aa7" category="list-text">Weist die Strategien zum Schutz vor Ransomware zu</block>
   <block id="90d096ff0013c9c2874a247b26e69950" category="list-text">Hilft Ihnen, die Ergebnisse zu überwachen.</block>
@@ -964,8 +953,6 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="3e40dd949eead76427aabc0a89a9d82d" category="inline-image-macro">Wählen Sie die Dateien manuell aus, um sie wiederherzustellen</block>
   <block id="8656333b0bf3d302f543a417f8ae1491" category="paragraph"><block ref="8656333b0bf3d302f543a417f8ae1491" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4418857d5483aee441de43ba5de903e2" category="admonition">Wenn Dateien mit dem ausgewählten Wiederherstellungspunkt nicht wiederhergestellt werden können, wird eine Meldung angezeigt, die die Anzahl der Dateien angibt, die nicht wiederhergestellt werden können, und Sie können die Liste dieser Dateien herunterladen, indem Sie *Liste der betroffenen Dateien herunterladen* auswählen.</block>
-  <block id="ef1c56b1eb5c67ecb14b04c651ca5722" category="paragraph">Sie können Schutzdaten exportieren und CSV- oder JSON-Dateien herunterladen, die Details zu Schutz, Warnungen und Recovery anzeigen.</block>
-  <block id="27e40708042cfbcf2a506b2900162479" category="paragraph">Bevor Sie die CSV- oder JSON-Dateien herunterladen, sollten Sie die Daten aktualisieren. Dadurch werden auch die in den Dateien angezeigten Daten aktualisiert.</block>
   <block id="df7d398faf1de90a0c101fbc7640a2fe" category="paragraph">Sie können Dateien aus einer der Optionen des Hauptmenüs herunterladen:</block>
   <block id="a36d9f25fe7ecafe45db2fd45823c6e7" category="list-text">*Berichte*: Sie können Daten von jeder Seite exportieren und die Dateien herunterladen.</block>
   <block id="16ec862fdbc31bf15f7d944ad60dd33f" category="section-title">1 Juli 2024</block>
@@ -979,7 +966,6 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="b439d3ca10048f7d11cd05477ca961a7" category="inline-link">Erfahren Sie mehr über die Reaktion auf einen Ransomware-Alarm</block>
   <block id="e7e38bb442294e991be246059534377b" category="paragraph"><block ref="b68da660865dc415a1fefb8516e82d73" category="inline-link-rx"></block>.</block>
   <block id="16ea8ec4227c8499ec40700bab8662a0" category="paragraph">Wenn Sie sowohl über BlueXP -Backup und -Recovery als auch über BlueXP -Ransomware-Schutz verfügen, werden alle gemeinsamen, durch beide Produkte geschützten Daten ausschließlich durch BlueXP  Ransomware-Schutz in Rechnung gestellt.</block>
-  <block id="ab7e350836ab3f3789bee6b5603f0b58" category="paragraph">Nach dem Kauf einer Lizenz oder eines PAYGO-Abonnements können alle Workloads mit aktivierter Richtlinie zur Erkennung von Ransomware (Autonomer Ransomware-Schutz) (erkannt oder eingerichtet durch BlueXP -Ransomware-Schutz), mindestens eine Snapshot- oder Backup-Richtlinie klassifiziert der BlueXP  in Ransomware-Schutz die Daten als „geschützt“. dies wird auf die erworbene Kapazität oder das PAYGO-Abonnement angerrechnet. Wird ein Workload ohne Erkennungsrichtlinie (ARP) erkannt, selbst wenn er über Backup- oder Snapshot-Richtlinien verfügt, wird er als „gefährdet“ klassifiziert und es wird nicht auf die erworbene Kapazität angerechnet.</block>
   <block id="fcf48eb5c1148885f8ad102e707baa07" category="paragraph">Geschützte Workloads werden mit der erworbenen Kapazität oder dem Abonnement verglichen, nachdem der 90-Tage-Testzeitraum endet. Der BlueXP  Ransomware-Schutz wird auf GB-Basis für die Daten in Verbindung mit geschützten Workloads berechnet, bevor die Effizienz gesteigert wird.</block>
   <block id="ee0be683b67076eb7125d9ca487f8d28" category="paragraph">Die BlueXP  Lizenz zum Schutz vor Ransomware enthält keine zusätzlichen NetApp Produkte. BlueXP  Ransomware-Schutz kann Backup und Recovery mit BlueXP  nutzen, auch wenn Sie keine Lizenz dafür haben.</block>
   <block id="79b74457c154f490e3b7fa5a0e9552e5" category="paragraph">Beim Ransomware-Schutz von BlueXP  kommen BlueXP  Backup und Recovery zum Einsatz, um Snapshot- und Backup-Richtlinien für File Share-Workloads zu erkennen und festzulegen. Außerdem eignen sich SnapCenter oder SnapCenter für VMware zur Erkennung und Festlegung von Snapshot- und Backup-Richtlinien für Applikations- und VM-Workloads. Darüber hinaus verwendet der BlueXP  Ransomware-Schutz BlueXP  Backup und Recovery und SnapCenter/SnapCenter für VMware, um eine Datei- und Workload-konsistente Recovery durchzuführen.</block>
@@ -1131,37 +1117,7 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="ae72665b43b17f1ecc3f55a8fbc20e5f" category="doc">BlueXP  Ransomware-Schutz, rollenbasierte Zugriffssteuerung – Privileges</block>
   <block id="4420e7353184ac575b539cdce1b991db" category="cell">Funktion und Aktion</block>
   <block id="78c7efbfa07116553a52f59800129dde" category="cell">Kostenlos testen</block>
-  <block id="57cec4137b614c87cb4e24a3d003a3e0" category="paragraph">Y</block>
-  <block id="8d9c307cb7f3c4a32822a51922d1ceaa" category="paragraph">N</block>
-  <block id="fea84990764109b117844dae6e7232a7" category="cell">Dashboard anzeigen</block>
-  <block id="9af966d519376a0830e26c073e16868d" category="cell">Registerkarte Schutz anzeigen</block>
-  <block id="1825056d1f510b68b66697f1ea4c9e8e" category="cell">Registerkarte Warnungen anzeigen</block>
-  <block id="f051b9ff15af7d41e77c1ce9815a1aa3" category="cell">Registerkarte Wiederherstellen anzeigen</block>
-  <block id="65a2a08bb1d5b7d2f17a92e79aed74ce" category="cell">Registerkarte Berichte anzeigen</block>
-  <block id="4eb38151ea591504c3babf5f24487ad3" category="cell">Registerkarte „View Settings“</block>
   <block id="42174d568723a8694dc7e6dfd143cb12" category="cell">Beginnen Sie mit der Erkennung von Workloads</block>
-  <block id="a57b679f949c0f76d6a58c2964edc929" category="cell">Schützen: Richtlinien ändern oder löschen</block>
-  <block id="a241eaa44f245a722e681f0214c86b16" category="cell">Schützen: Fügen Sie Richtlinien hinzu</block>
-  <block id="cd1e4a7c6e4b5f741161e45935d7e07d" category="cell">Sichern: Workloads schützen</block>
-  <block id="50c2595bcf0b828fc03fc0fcba2b73f9" category="cell">Sichern: Sensible Daten erkennen</block>
-  <block id="db15fdee97dec0021513df10540d5a21" category="cell">Schützen: Bearbeiten Sie den Workload-Schutz</block>
-  <block id="0493c8bb10e50ee760a9afd0a78d4dbc" category="cell">Schützen: Workload-Details ansehen</block>
-  <block id="c7d07fbbc1b23e74140b0a5113931de1" category="cell">Schützen: Daten herunterladen</block>
-  <block id="e8920d3efa08dd707bd6c02205d701f5" category="cell">Warnmeldungen: Zeigen Sie Warnungsdetails an</block>
-  <block id="b66a99533b0d54bcd439da0f36ab57da" category="cell">Warnmeldungen: Bearbeiten des Incident-Status</block>
-  <block id="dc7ea5bebd1d6d266f797fd7c8e9d5cc" category="cell">Warnmeldungen: Anzeigen von Vorfalldetails</block>
-  <block id="daf9533c436d140d38fb2a4cdc712b38" category="cell">Warnmeldungen: Vollständige Liste der betroffenen Dateien abrufen</block>
-  <block id="1fb6044a872eca0cd0d64fddd47fcd77" category="cell">Warnmeldungen: Herunterladen von Warnmeldungen</block>
-  <block id="895457bfc3fd6999a480ecf2e8ac6681" category="cell">Wiederherstellen: Betroffene Dateien herunterladen</block>
-  <block id="190db8317e9e9559e13c61ec0af89908" category="cell">Recovery: Wiederherstellen von Workloads</block>
-  <block id="90d527d79374e158a1ec91f1d22f556d" category="cell">Wiederherstellen: Wiederherstellungsdaten herunterladen</block>
-  <block id="1ebcd422cb1752ebade02a4f9e7e00c1" category="cell">Wiederherstellen: Berichte herunterladen</block>
-  <block id="d37f48f58671841c346859290f6793b0" category="cell">Einstellungen: Hinzufügen oder Ändern von Backup-Zielen</block>
-  <block id="60d9eb3da46a9772737d0df72ae28664" category="cell">Einstellungen: SIEM-Ziele hinzufügen oder ändern</block>
-  <block id="0c7b001701442eab5ff91d930d11d5b7" category="cell">Berichte: Berichte herunterladen</block>
-  <block id="b65becad74fec4e576878b8f0a4e07e2" category="cell">Dokumentation: Sehen Sie sich die Dokumentation zum Produkt an</block>
-  <block id="41a8bd55616fb16a0a29ebee65c5a64a" category="cell">Dokumentation: Sehen Sie sich die Dokumentation zu den neuen Produkten an</block>
-  <block id="1da4431dcfe03733174d196783bf1400" category="paragraph">Beim BlueXP  Ransomware-Schutz wird mittels rollenbasierter Zugriffssteuerung (Role Based Access Control, RBAC) der Zugriff jedes Benutzers auf bestimmte Aktionen festgelegt. Weitere Informationen zu den Aktionen, die jede Rolle ausführen kann, finden Sie unter <block ref="3e5b7947427710d14f1e51c60969d7b8" category="inline-link-macro-rx"></block>.</block>
   <block id="5b606676ac9fadeb9f9d3a0436a2dc92" category="cell">Verbesserung der Sicherheit der Arbeitsumgebung</block>
   <block id="ed1df3b69f10d586e5712ba9ce41d501" category="cell">NetApp Digital Advisor hat mindestens ein hohes oder kritisches Sicherheitsrisiko identifiziert.</block>
   <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link">Digital Advisor Dokumentation</block>
@@ -1343,7 +1299,6 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="8b77b7b1461ed2ee1005a76b8bde413d" category="inline-link"><block ref="8b77b7b1461ed2ee1005a76b8bde413d" category="inline-link-rx"></block></block>
   <block id="26907702c897b4840105eaeacdf31029" category="paragraph">*Wie sieht die BlueXP URL zum Ransomware-Schutz aus?* Geben Sie für die URL in einem Browser Folgendes ein:<block ref="af060db23189ba3a073087c2598bc50f" category="inline-link-rx"></block> , um auf die BlueXP  Konsole zuzugreifen.</block>
   <block id="97efbae4c31fd11ab78b098ad04da4de" category="paragraph">*Wie funktioniert BlueXP  Ransomware-Schutz mit BlueXP  Backup und Recovery und SnapCenter interagieren?*</block>
-  <block id="792517513a26d840feabadf955591d22" category="list-text">Beim Kauf eines PAYGO-Abonnements (Pay-as-you-go) über Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace oder Azure Marketplace (in Kürze verfügbar)</block>
   <block id="ed2dd81f2c51f4d72049803cf5ce6211" category="list-text">Löschen Sie alle Ressourcen, z. B. eine Richtlinie.</block>
   <block id="b22e0a0c145eff4bd34bc6c46894b2a1" category="section-title">Testen Sie es mit einer kostenlosen 30-Tage-Testversion</block>
   <block id="32189cd03c61f38449d8257d3878988b" category="paragraph">Sie können BlueXP Ransomware-Schutz durch eine kostenlose 30-Tage-Testversion ausprobieren. Sie müssen BlueXP -Unternehmensadministrator sein, um die kostenlose Testversion zu starten.</block>
@@ -1521,7 +1476,6 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="c6ac79f6ec82abd57b723ae67e39d12b" category="list-text">Ermittlung neu erstellter Workloads für zuvor ausgewählte Arbeitsumgebungen.</block>
   <block id="2260f3efb7f7ff8d7a4a295911d64e87" category="list-text">* Auffälligkeiten*, die Ransomware-Angriffe sein könnten.Fußnote:[Obwohl es möglich ist, dass ein Angriff unentdeckt bleiben könnte, zeigen unsere Untersuchungen, dass die NetApp-Technologie zu einem hohen Grad an Erkennung für bestimmte auf Dateiverschlüsselung basierende Ransomware-Angriffe geführt hat.]</block>
   <block id="1c2afeca94eb9c399bfa2c175f98ac90" category="paragraph">Zur Erkennung von ungewöhnlichem Benutzerverhalten verwendet der BlueXP  Ransomware-Schutz den NetApp Autonomous Ransomware Protection, ein ML-Modell (Machine Learning) in ONTAP, das schädliche Dateiaktivitäten erkennt. Dieses Modell ist in der BlueXP  Ransomware-Schutzlizenz enthalten. Außerdem können Sie Data Infrastructure Insights (ehemals Cloud Insights) Workload-Sicherheit (Lizenz erforderlich) verwenden, um das Benutzerverhalten zu untersuchen und bestimmte Benutzer von weiteren Aktivitäten zu blockieren.</block>
-  <block id="9c5ddfb123b6c64ea81793c4ce56b957" category="list-text">Ermitteln Sie mithilfe von ONTAP, der autonomen Ransomware-Sicherung, Einblicke in die Dateninfrastruktur (ehemals Cloud Insights) Workload-Sicherheit und FPolicy-Technologien die spezifischen verdächtigen Dateien und Zuordnungen für Angriffe auf die zugehörigen Workloads.</block>
   <block id="7c74958c48ce3d27f457ae44b83cfb4c" category="paragraph">Sie haben folgende Möglichkeiten:</block>
   <block id="1ad499ee6cba4f056f735fb9eae4b5ce" category="paragraph">Wählen Sie in jedem Connector die Arbeitsumgebungen aus, in denen Sie Workloads erkennen möchten.</block>
   <block id="98ab4e23cce41ca38b39c7baf6ef4567" category="admonition">Dieser Vorgang kann einige Minuten dauern.</block>
@@ -1569,7 +1523,6 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="a20ff2150b7b9f34f30c94111d0f2672" category="list-text">Wählen Sie den Vorfall aus.</block>
   <block id="4c8220d9b08f6a99b99ca2a31e910796" category="list-text">Wählen Sie über der Tabelle die Schaltfläche *Status bearbeiten*.</block>
   <block id="9f192bce5ca79fb324d9c1c93ee5ae51" category="paragraph">Kunden, die die BlueXP -Klassifizierung implementiert haben, können nach PII-Daten in BlueXP  zum Ransomware-Schutz scannen. Die BlueXP -Klassifizierung ist als Teil der BlueXP  Plattform ohne Zusatzkosten verfügbar und kann vor Ort oder in der Cloud des Kunden bereitgestellt werden.</block>
-  <block id="31456363bdf414a85c5209dd033db620" category="list-text">*Quarantäne-Speicherort*: Wählen Sie optional, wo Sie potenziell infizierte Daten speichern möchten, bevor Sie den Wiederherstellungsprozess für weitere Analysen nach der Wiederherstellung starten.</block>
   <block id="f621881167702633e1e4b49a1ad2e89d" category="summary">Es stehen verschiedene Optionen zur Verfügung, darunter ein Backup-Ziel, die Erkennung von Bedrohungen und die Verbindung zu Dateninfrastruktur Insights Workload-Sicherheit im BlueXP  Ransomware-Schutzservice.</block>
   <block id="718603566d80257fc4d2cf4a1edeb8f6" category="list-text">Konfigurieren Sie die Verbindung zu Data Infrastructure Insights Workload Security, um vermutete Benutzerinformationen in Ransomware-Warnmeldungen einzusehen.</block>
   <block id="940cc1828811d7a42ad55d156280d750" category="paragraph">Bevor Sie Details zu vermutlich ungewöhnlichem Benutzerverhalten beim BlueXP -Ransomware-Schutz anzeigen können, müssen Sie die Verbindung mit dem Workload-Sicherheitssystem von Data Infrastructure Insights konfigurieren.</block>
@@ -1605,12 +1558,6 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="ab27c5853140d6fe360c8b6756a8c2c6" category="summary">Beim BlueXP  Ransomware-Schutz wird mittels rollenbasierter Zugriffssteuerung (Role Based Access Control, RBAC) der Zugriff jedes Benutzers auf spezifische Funktionen und Aktionen festgelegt. Der Service verwendet spezifische Rollen für den BlueXP  Ransomware-Schutz (RPS).</block>
   <block id="51871ed75f741b0dab90d2d1612f6499" category="doc">BlueXP  Ransomware-Schutz, rollenbasierter Zugriff auf Funktionen</block>
   <block id="9f8dac12ddf6d062aacb043cac5a6b8d" category="paragraph">Der BlueXP  Ransomware-Schutz verwendet Rollen, um den Zugriff jedes Benutzers auf spezifische Funktionen und Aktionen zu regeln.</block>
-  <block id="a193437feab6ed3dc7fbc145485b64e1" category="paragraph">Der Schutz vor BlueXP  vor Ransomware verwendet folgende Rollen:</block>
-  <block id="72243fb5d86d2f4a3e7b0b0a3b25c24c" category="list-text">Organisationsadministrator</block>
-  <block id="40abbd4f17fecd4e2269c623d9ecc8f3" category="list-text">Viewer (nicht organisationsfremder Administrator)</block>
-  <block id="38af51c4aaeb25c0489791e4bbad2347" category="paragraph">Die folgende Tabelle zeigt, dass Aktionen ausgeführt werden können, die jede BlueXP  Ransomware-Schutzrolle ausführen kann.</block>
-  <block id="6a476d78ce3a8169d99c99c3285fa106" category="cell">Organisationsadministrator</block>
-  <block id="fb15c53f22336982a182b84aeb2f42eb" category="cell">Prüfer</block>
   <block id="06135c09643e0b875311a4989ef81443" category="paragraph">Der Service bewertet das vorhandene Schutzniveau, einschließlich des aktuellen Backup-Schutzes, der Snapshot-Kopien und der NetApp Optionen zum autonomen Ransomware-Schutz. Auf der Grundlage des Assessments empfiehlt der Service dann, wie Sie Ihren Ransomware-Schutz verbessern können.</block>
   <block id="ea84e987da35b78faef15d182ea98e25" category="paragraph">Der Dienst findet Arbeitsumgebungen in Ihren BlueXP -Konnektoren.</block>
   <block id="656ebea707f2c709a19d8f845b2477e7" category="list-text">Um Workloads für einen bestimmten Connector zu ermitteln, wählen Sie *Neue Arbeitsumgebungen suchen* neben dem Connector, an dem Sie Workloads ermitteln möchten.</block>
@@ -1738,5 +1685,98 @@ Weitere Informationen zu<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="
   <block id="b094aa2183c533f36783add64e674cad" category="paragraph">Weitere Informationen finden Sie unter<block ref="7d31e5b11cc548279f7c20a9569ec8fc" category="inline-link-rx"></block> und<block ref="852406c43f066a159f215dbd2c4abfc1" category="inline-link-rx"></block>.</block>
   <block id="7992a2f93dea39d7df576f4591a08a35" category="paragraph"><block ref="7992a2f93dea39d7df576f4591a08a35" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe4a10adefd95198c71721789b65ec39" category="paragraph"><block ref="fe4a10adefd95198c71721789b65ec39" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="fc75a3cf3d58a1a3fcbe221a5a34b910" category="paragraph"><block ref="fc75a3cf3d58a1a3fcbe221a5a34b910" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4fe331eaa4881ca37fd2ff947e6b8bec" category="doc">Bereitschaftsberichte</block>
+  <block id="e78c37e0abce1f032a2a34eda9e02a54" category="paragraph">Mit dieser Version können Sie sich detaillierte Berichte zur Bereitschaft von Ransomware-Angriffen ansehen. Mit einer Bereitschaftsübung können Sie einen Ransomware-Angriff auf einen neu erstellten Beispiel-Workload simulieren. Untersuchen Sie dann den simulierten Angriff und stellen Sie den Proben-Workload wieder her. Diese Funktion hilft Ihnen dabei, sich im Falle eines echten Ransomware-Angriffs auf Sie vorzubereiten, indem Sie Warnmeldungs-, Reaktions- und Recovery-Prozesse testen.</block>
+  <block id="cc61bd0d76dc349aa4d70e26ca03704d" category="section-title">Neue Rollen und Berechtigungen für die rollenbasierte Zugriffssteuerung</block>
+  <block id="a9e4a39d54899a1c668bdab8048e1dc5" category="paragraph">Bisher können Sie Benutzern Rollen und Berechtigungen basierend auf ihren Verantwortlichkeiten zuweisen, sodass Sie den Benutzerzugriff auf BlueXP  Ransomware-Schutz besser managen können. Mit dieser Version gibt es zwei neue Rollen speziell für den BlueXP  Ransomware-Schutz mit aktualisierten Berechtigungen. Die neuen Rollen sind:</block>
+  <block id="a95fe9e5a7b678fa4abc81ea69f1e257" category="list-text">Administrator für Ransomware-Schutz</block>
+  <block id="6a05decc7d63f19c1d5812a3c728ce8a" category="list-text">Viewer für Ransomware-Schutz</block>
+  <block id="b42fe8f702412cfa14541d3fab58efa6" category="paragraph">Weitere Informationen zu Berechtigungen finden Sie unter<block ref="01046b99aab91b10679a0fac299864df" category="inline-link-rx"></block>.</block>
+  <block id="25ccc48b022e2433d5b379cc51530139" category="section-title">Zahlungsverbesserungen</block>
+  <block id="a3d54846581a4bb8314f87602a4ba2c0" category="paragraph">Diese Version enthält mehrere Verbesserungen am Zahlungsprozess.</block>
+  <block id="7ffb0c59c068d14b0ee6581cde479463" category="inline-link">Einrichten von Lizenz- und Zahlungsoptionen</block>
+  <block id="52a7f2b6af87f28195cf6badbad6c667" category="paragraph">Weitere Informationen finden Sie unter<block ref="a8b1ada7f83ee5659f868a512032628f" category="inline-link-rx"></block>.</block>
+  <block id="901268a791d6bf413ed11eb46a953d8f" category="paragraph">Nach dem Kauf einer Lizenz oder eines PAYGO-Abonnements können alle Workloads mit aktivierter Richtlinie zur Erkennung von Ransomware (Autonomer Ransomware-Schutz) (erkannt oder eingerichtet durch BlueXP -Ransomware-Schutz), mindestens eine Snapshot- oder Backup-Richtlinie klassifiziert der BlueXP  in Ransomware-Schutz die Daten als „geschützt“. dies wird auf die erworbene Kapazität oder das PAYGO-Abonnement angerrechnet. Wird ein Workload ohne Erkennungsrichtlinie erkannt, selbst wenn er Backup- oder Snapshot-Richtlinien hat, wird er als „gefährdet“ klassifiziert und er wird nicht als auf die erworbene Kapazität angerechnet.</block>
+  <block id="636d1c856fff54a800c020bd9001e94d" category="list-text">Ermittelt den aktuellen Sicherheitslevel eines jeden Volumes für NetApp Snapshots und Backup-Richtlinien sowie integrierte Erkennungsfunktionen. Dieser Sicherheitsstatus wird dann mithilfe von BlueXP  Backup und Recovery, ONTAP-Services und NetApp Technologien wie Autonomer Ransomware-Schutz (ARP oder ARP/AI, je nach Ihrer ONTAP-Version), FPolicy, Backup-Richtlinien und Snapshot-Richtlinien mit den Workloads verknüpft. Erfahren Sie mehr über<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-link-rx"></block>,<block ref="eb41fa8ef2a588e65533beee945728a7" category="inline-link-rx"></block>und<block ref="591ebe16737e602cc342b68e859c040e" category="inline-link-rx"></block>.</block>
+  <block id="ac64db364514f2a7d2e2512b16ef8c10" category="list-text">Bestimmt die spezifischen verdächtigen Dateien und Zuordnungen zu den zugehörigen Workloads mithilfe von ONTAP, Autonomer Ransomware-Schutz (ARP oder ARP/AI, je nach Ihrer ONTAP-Version), Workload-Sicherheit von Dateninfrastruktur Insights (ehemals Cloud Insights) und FPolicy-Technologien.</block>
+  <block id="db104967f3e8019ba16d4bab76e8c3a4" category="list-text">Initiiert schnelle Snapshot Kopien mithilfe von NetApp Technologien und Produkten wie ONTAP, Autonomous Ransomware Protection (ARP oder ARP/AI, je nach Ihrer ONTAP Version) und FPolicy.</block>
+  <block id="a11161b96f6cb97b5bf2588fa19cd346" category="list-text">Ermittelt die besten Snapshots oder Backups und empfiehlt den besten tatsächlichen Recovery-Zeitpunkt (Recovery Point Actual, RPA) mithilfe von BlueXP  Backup und Recovery, ONTAP, Autonomous Ransomware Protection (ARP oder ARP/AI, je nach Ihrer ONTAP-Version) sowie FPolicy-Technologien und -Services.</block>
+  <block id="1ad9a57c1d01d273fe16565461711c2b" category="paragraph">Der Service verwendet die folgenden Rollen, die speziell auf den BlueXP  Ransomware-Schutz zugeschnitten sind.</block>
+  <block id="bdcfe1c3dfeb861ab87e4cc4b8edc1fc" category="list-text">*Ransomware-Schutz admin*: Verwalten Sie Aktionen auf den Registerkarten Schützen, Warnungen, Wiederherstellen, Einstellungen und Berichte.</block>
+  <block id="fd20661221eb12c617e1586eea038921" category="list-text">*Ransomware Protection Viewer*: Workload-Daten anzeigen, Warnungsdaten anzeigen, Wiederherstellungsdaten herunterladen und Berichte herunterladen.</block>
+  <block id="150ef0020312394b5d2aaedef375c98e" category="paragraph">Die BlueXP -Plattform für alle BlueXP -Services verwendet folgende Rollenarten:</block>
+  <block id="7e11a5ae1dc8d1f9fc96a3842452652f" category="list-text">*Plattform-Rollen* ermöglichen Ihnen, Benutzer zu verwalten, sie Ressourcen zuzuweisen und ihnen Rollen zusammen mit anderen plattformweiten Aktionen zu geben.</block>
+  <block id="5ccce88470f0518dc3caebb691d90be3" category="admonition">Für die Entdeckung in BlueXP  Ransomware-Schutz, müssen Sie über die * Organisation Admin * Rolle zusätzlich zu der * Ransomware-Schutz Admin * Rolle.</block>
+  <block id="bf834e60211b6d166d9c8e4f07288eef" category="list-text">*Data Services Rollen* sind auf einen bestimmten Datendienst beschränkt. Je nach Ihrer Aufgabe können Sie mehrere Datenservice-Rollen haben. BlueXP  Ransomware-Schutz ist einer der BlueXP  Datenservices.</block>
+  <block id="201c33f8708666e946fc8a93af563122" category="inline-link">Die BlueXP -Installations- und Administrationsdokumentation</block>
+  <block id="aebe6b424d6c37fb01e1174b3dd08161" category="paragraph">Weitere Informationen zu Plattformrollen finden Sie unter<block ref="6bffc5f2028d38b62e8412df031cefed" category="inline-link-rx"></block>.</block>
+  <block id="3f98c69b7a30e8738c9db0faf43b547a" category="paragraph">Die folgende Tabelle zeigt die Aktionen, die jede BlueXP  Ransomware-Schutzrolle durchführen kann.</block>
+  <block id="b60c44c6bbbb3793d0c08c34cd6e2382" category="cell">Dashboard und alle Registerkarten anzeigen</block>
+  <block id="93cba07454f06a4a960172bbd6e2a435" category="paragraph">Ja.</block>
+  <block id="2961ef9224153d664a9bde6ee6ef2570" category="cell">Aktualisieren Sie auf dem Dashboard den Empfehlungsstatus</block>
+  <block id="bafd7322c6e97d25b6299b5d6fe8920b" category="paragraph">Nein</block>
+  <block id="bb73fa2a07d0c544491039dc1ffed7b8" category="cell">Neuerkennung von Workloads einleiten</block>
+  <block id="26548eb85488e3cdc0f0b9b27802995f" category="cell">*Auf der Registerkarte Schutz*:</block>
+  <block id="8ae06231e3533fd967c3e2959a7f5325" category="cell">Schutzpläne hinzufügen, ändern oder löschen</block>
+  <block id="579066063b3104c9f6c74d2084e0e7e4" category="cell">Identifizierung des Risikos sensibler Daten</block>
+  <block id="e1b7f478f4648932399a0f8d6835740b" category="cell">Listen Sie Schutzpläne und Details auf</block>
+  <block id="8921dd8678af3de7359bee784af9a8e0" category="cell">Listen Sie Schutzgruppen auf</block>
+  <block id="97803e7af23cd9dd5e46bef4245a8480" category="cell">Details zu Schutzgruppen anzeigen</block>
+  <block id="70348d94ac22a6df8ff175b1e3a7535b" category="cell">Schutzgruppe erstellen, bearbeiten oder löschen</block>
+  <block id="4330b42a340140b836c42bbe9c7105be" category="cell">Download von Daten</block>
+  <block id="b1e60ac72e50f485ca0a5ea9c82143d2" category="cell">*Auf der Registerkarte Warnungen*:</block>
+  <block id="a0da34eb7fa7ce71299612d3548b6f6a" category="cell">Anzeigen von Warnmeldungen und Warnungsdetails</block>
+  <block id="f700fad2259a25a87fbe56ba2810e8ff" category="cell">Bearbeiten Sie den Ereignisstatus</block>
+  <block id="e975f9abac95a06f0645ce83ab0e4e37" category="cell">Alarm für Wiederherstellung markieren</block>
+  <block id="ef9988f85b068b8709daa3be2c31fca3" category="cell">Anzeigen von Vorfalldetails</block>
+  <block id="52d7595020614137b8fad8f4575e90d3" category="cell">Schließen oder Auflösen von Aufzungen</block>
+  <block id="f84e2dc493985bbd340b2cd14bf2daeb" category="cell">Benutzer blockieren</block>
+  <block id="38de1b212ca13fa4c230f4c20adbb48a" category="cell">Vollständige Liste der betroffenen Dateien abrufen</block>
+  <block id="4b1b2c63b979feafab4b35d6b2307876" category="cell">Warnmeldungen herunterladen</block>
+  <block id="b338bf8c8e0fbc61d8a0fad3b4a74e35" category="cell">*Auf der Registerkarte Wiederherstellen*:</block>
+  <block id="f5f949f53a00b2da6ffa7a9f7a0fd0f8" category="cell">Betroffene Dateien herunterladen</block>
+  <block id="65ca8041cc328ebb64db5f8368a9101a" category="cell">Restore-Workload</block>
+  <block id="4ebc1406711ca6754873e22a81f31c6f" category="cell">Wiederherstellungsdaten herunterladen</block>
+  <block id="a4f2411faacb07693dd051a3d2d9f97e" category="cell">*Auf der Registerkarte Einstellungen*:</block>
+  <block id="fc36f5b7ec87bb05d12fcec7b985fe79" category="cell">Backup-Ziele hinzufügen oder ändern</block>
+  <block id="765ffd3ea8472bde364d6d75c648c7e2" category="cell">Backup-Ziele auflisten</block>
+  <block id="be9d2f996415c0e9128f109806d13e74" category="cell">Verbundene SIEM-Ziele anzeigen</block>
+  <block id="08fec10c338548595a28b0310a1c0600" category="cell">SIEM-Ziele hinzufügen oder ändern</block>
+  <block id="39a6763102d641618da35a0d6583043f" category="cell">Verbinden Sie Workload-Sicherheitsziele</block>
+  <block id="08181115072bbb33365c19f99efea3d7" category="cell">Anzeigen des Verbindungsstatus für die Workload-Sicherheit</block>
+  <block id="613856eb65cebd5ee253760f764af42d" category="cell">Trennen Sie die Workload-Sicherheitsziele</block>
+  <block id="0e12704ac2cf7981683f2392843a3751" category="cell">Konfigurieren Sie den Bereitschaftsbohrer</block>
+  <block id="fbca60f39e39ac567548a02c9e536305" category="cell">Bereitschaftsbohrer starten</block>
+  <block id="9e914ba4c13fe3f6329717ca31b8bfca" category="cell">Bereitschaftsbohrer zurücksetzen</block>
+  <block id="45f15fba3339f71439f0c72c967fc0d3" category="cell">Bereitschaftsübung bearbeiten</block>
+  <block id="62bbacc7c65bd53641f4347319efbc1b" category="cell">Prüfen Sie den Status der Bereitschaftsübung</block>
+  <block id="0e6583bdbbf88acbfc57d3f868629d3c" category="cell">Aktualisieren Sie die Ermittlungskonfiguration</block>
+  <block id="5439d77b96ff7a9498be958a6755e89a" category="cell">Anzeigen der Ermittlungskonfiguration</block>
+  <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">*Auf der Registerkarte Berichte*:</block>
+  <block id="6863f1e2b172aa86375945f4be5c9f9e" category="admonition">Workloads mit Volumes, die FlexGroup oder iSCSI verwenden, werden nicht erkannt. Workloads auf Amazon FSX für NetApp ONTAP oder auf Azure NetApp Files werden nicht unterstützt. Nach der Erkennung meldet BlueXP  zum Schutz vor Ransomware auf nicht unterstützten Volumes im Dashboard.</block>
+  <block id="b5bf014c6bc530be1a7b68b5bcfb8ce0" category="list-text">Beim Kauf eines PAYGO-Abonnements (Pay-as-you-go) mit Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace oder Azure Marketplace</block>
+  <block id="8fe507392e8a4aeb2bd185146f2e7aa5" category="paragraph">Wenn Sie bereits über ein PAYGO-Abonnement verfügen, wird die Lizenz nach Ablauf der kostenlosen Testversion automatisch auf das Abonnement umgestellt.</block>
+  <block id="36fba8530ad94f3768ad1e658bd480e1" category="section-title">Beenden Sie das PAYGO-Abonnement</block>
+  <block id="f39bec57f7e078663ed85f086499d8b6" category="paragraph">Wenn Sie Ihr PAYGO-Abonnement beenden möchten, können Sie dies jederzeit tun.</block>
+  <block id="e4b98854509340429813a75bf316799c" category="list-text">Wählen Sie beim BlueXP  Ransomware-Schutz oben rechts die Lizenzoption aus.</block>
+  <block id="5d11d8b56951e0be3669ff56a77cba38" category="list-text">Wählen Sie *Zahlungsmethoden anzeigen*.</block>
+  <block id="9b9964e92fb87a9a92a427acd4072759" category="list-text">Deaktivieren Sie in den Dropdown-Details das Kontrollkästchen *nach Ablauf der aktuellen Zahlungsmethode verwenden*.</block>
+  <block id="eb29b1d972356f3f231aa210af5b28e0" category="inline-link">Erfahren Sie mehr über BlueXP  Rollen für alle Services</block>
+  <block id="1a4e43eea214a923f05cb8ca58e3afd3" category="paragraph">Beim BlueXP  Ransomware-Schutz wird mittels rollenbasierter Zugriffssteuerung (Role Based Access Control, RBAC) der Zugriff jedes Benutzers auf bestimmte Aktionen festgelegt.<block ref="57bc541a7aaa1280adcdf64a1924c313" category="inline-link-rx"></block>.</block>
+  <block id="f91641928baa1c93b037c1b9f9a4bbaa" category="paragraph">Weitere Informationen zu den Aktionen, die jede Rolle ausführen kann, finden Sie unter <block ref="3e5b7947427710d14f1e51c60969d7b8" category="inline-link-macro-rx"></block>.</block>
+  <block id="1be5568d0c3f299b7d0fa2b810d4b90d" category="section-title">Prüfen Sie die Berichte zur Bereitschaftsübung</block>
+  <block id="1618fcb06831249fd4142102d83577f5" category="paragraph">Nach Abschluss der Bereitschaftsübung möchten Sie möglicherweise einen Bericht über den Bohrer prüfen und speichern.</block>
+  <block id="50ca22b8d354f001a742f726d3cf2be9" category="inline-image-macro">Berichtsseite, auf der der Bereitschaftsbericht angezeigt wird</block>
+  <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">Wählen Sie *Readiness Drill* und *Download*, um den Readiness Drill Report herunterzuladen.</block>
+  <block id="ae12e4a2881496a3d2a890f09a21dbb7" category="list-text">Dateierstellung mit einem Vergleich der erkannten und erwarteten Raten</block>
+  <block id="00567bc010bd0fe366d33796dbc20cc4" category="list-text">Dateilöschung mit einem Vergleich der erkannten und erwarteten Raten</block>
+  <block id="c8922ede2258e352de90fce4498e586f" category="paragraph">Eine Meldung wird als eine der folgenden klassifiziert:</block>
+  <block id="6fb301adfaa83e3f2590a0454361757e" category="paragraph">Sie können Schutzdaten exportieren und CSV- oder JSON-Dateien herunterladen, die Details zu Übungen zur Angriffsbereitschaft, Schutz, Warnungen und Wiederherstellung anzeigen.</block>
+  <block id="d788bcb0d6bc2e0d54ec3c042333bf41" category="paragraph">Bevor Sie die Dateien herunterladen, sollten Sie die Daten aktualisieren, die auch die Daten aktualisieren, die in den Dateien angezeigt werden.</block>
+  <block id="cba5c013826db3e7efce5d0c19aee9c1" category="admonition">Sie können Bereitschaftsberichte nur von der Seite *Reports* herunterladen.</block>
+  <block id="5b21bc493cdab40a819ce8921c81c72d" category="paragraph">Wenn Sie CSV- oder JSON-Dateien von der Seite Schutz, Warnungen oder Wiederherstellung herunterladen, werden in den Daten nur die Daten auf dieser Seite angezeigt.</block>
+  <block id="ee96aeb8d69613ccbb67d9608b2ea56f" category="paragraph">Die CSV- oder JSON-Dateien enthalten Daten für alle Workloads in allen BlueXP  Arbeitsumgebungen.</block>
+  <block id="09121bb3cb936ab87dd837c1fd8da18a" category="list-text">Wenn Sie die Option *Reports* ausgewählt haben, wählen Sie einen der vorkonfigurierten Dateinamen aus und wählen *Download*.</block>
+  <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">Bis 14. April 2025</block>
 </blocks>

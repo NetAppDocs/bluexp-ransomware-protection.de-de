@@ -78,7 +78,6 @@ TIP: Durch den Ransomware-Schutz von BlueXP wird der beste Restore-Punkt als das
 
 
 . Wenn das ursprüngliche Ziel nicht über genügend Speicherplatz verfügt, um den Workload wiederherzustellen, wird eine Zeile „temporärer Speicher“ angezeigt. Sie können den temporären Speicher auswählen, um die Workload-Daten wiederherzustellen. Die wiederhergestellten Daten werden aus dem temporären Speicher in den ursprünglichen Speicherort kopiert. Klicken Sie in der Zeile Temporary Storage auf den Pfeil *Down* und legen Sie den Zielcluster, die Speicher-VM und den lokalen Tier fest.
-. *Quarantäne-Speicherort*: Wählen Sie optional, wo Sie potenziell infizierte Daten speichern möchten, bevor Sie den Wiederherstellungsprozess für weitere Analysen nach der Wiederherstellung starten.
 . Wählen Sie *Speichern*.
 . Wählen Sie *Weiter*.
 . Überprüfen Sie Ihre Auswahl.
@@ -153,7 +152,6 @@ TIP: Der neue Volume-Name wird als Präfix + ursprünglicher Volume-Name + Backu
 
 
 
-. *Quarantäne-Speicherort*: Wählen Sie optional, wo Sie potenziell infizierte Daten speichern möchten, bevor Sie den Wiederherstellungsprozess für weitere Analysen nach der Wiederherstellung starten.
 . Wählen Sie *Speichern*.
 . Wählen Sie *Weiter*.
 . Überprüfen Sie Ihre Auswahl.
@@ -194,7 +192,6 @@ TIP: Der neue Volume-Name wird als ursprünglicher Volume-Name + Backup-Name + B
 
 
 
-. *Quarantäne-Speicherort*: Wählen Sie optional, wo Sie potenziell infizierte Daten speichern möchten, bevor Sie den Wiederherstellungsprozess für weitere Analysen nach der Wiederherstellung starten.
 . Wählen Sie *Speichern*.
 . Wählen Sie *Weiter*.
 . Überprüfen Sie Ihre Auswahl.
@@ -272,7 +269,6 @@ TIP: Wenn Sie keinen Pfad für die Wiederherstellung angeben, werden die Dateien
 .. Wählen Sie aus, ob die Namen der wiederhergestellten Dateien oder des Verzeichnisses den Namen des aktuellen Speicherorts oder anderer Namen haben sollen.
 
 
-. *Quarantäne-Speicherort*: Wählen Sie optional, wo Sie potenziell infizierte Daten speichern möchten, bevor Sie den Wiederherstellungsprozess für weitere Analysen nach der Wiederherstellung starten.
 . Wählen Sie *Weiter*.
 . Überprüfen Sie Ihre Auswahl.
 . Wählen Sie *Wiederherstellen*.

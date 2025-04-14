@@ -77,7 +77,7 @@ NOTE: Mit der Veröffentlichung im Oktober 2024 haben neue Implementierungen von
 
 Wenn Sie sowohl über BlueXP -Backup und -Recovery als auch über BlueXP -Ransomware-Schutz verfügen, werden alle gemeinsamen, durch beide Produkte geschützten Daten ausschließlich durch BlueXP  Ransomware-Schutz in Rechnung gestellt.
 
-Nach dem Kauf einer Lizenz oder eines PAYGO-Abonnements können alle Workloads mit aktivierter Richtlinie zur Erkennung von Ransomware (Autonomer Ransomware-Schutz) (erkannt oder eingerichtet durch BlueXP -Ransomware-Schutz), mindestens eine Snapshot- oder Backup-Richtlinie klassifiziert der BlueXP  in Ransomware-Schutz die Daten als „geschützt“. dies wird auf die erworbene Kapazität oder das PAYGO-Abonnement angerrechnet. Wird ein Workload ohne Erkennungsrichtlinie (ARP) erkannt, selbst wenn er über Backup- oder Snapshot-Richtlinien verfügt, wird er als „gefährdet“ klassifiziert und es wird nicht auf die erworbene Kapazität angerechnet.
+Nach dem Kauf einer Lizenz oder eines PAYGO-Abonnements können alle Workloads mit aktivierter Richtlinie zur Erkennung von Ransomware (Autonomer Ransomware-Schutz) (erkannt oder eingerichtet durch BlueXP -Ransomware-Schutz), mindestens eine Snapshot- oder Backup-Richtlinie klassifiziert der BlueXP  in Ransomware-Schutz die Daten als „geschützt“. dies wird auf die erworbene Kapazität oder das PAYGO-Abonnement angerrechnet. Wird ein Workload ohne Erkennungsrichtlinie erkannt, selbst wenn er Backup- oder Snapshot-Richtlinien hat, wird er als „gefährdet“ klassifiziert und er wird nicht als auf die erworbene Kapazität angerechnet.
 
 Geschützte Workloads werden mit der erworbenen Kapazität oder dem Abonnement verglichen, nachdem der 90-Tage-Testzeitraum endet. Der BlueXP  Ransomware-Schutz wird auf GB-Basis für die Daten in Verbindung mit geschützten Workloads berechnet, bevor die Effizienz gesteigert wird.
 
@@ -113,8 +113,7 @@ image:diagram-rp-architecture-preview3.png["Diagramm einer BlueXP Architektur f�
 | * IDENTIFIZIEREN*  a| 
 * Sie finden alle Kunden-On-Premises-NAS (NFS- und CIFS-Protokolle) und mit BlueXP verbundenen Cloud Volumes ONTAP-Daten.
 * Identifiziert Kundendaten von ONTAP und SnapCenter Service-APIs und ordnet sie Workloads zu. Weitere Informationen zu https://docs.netapp.com/us-en/ontap-family/["ONTAP"^] Und https://docs.netapp.com/us-en/snapcenter/index.html["SnapCenter Software"^].
-* Ermittelt den aktuellen Sicherheitslevel eines jeden Volumes für NetApp Snapshots und Backup-Richtlinien sowie integrierte Erkennungsfunktionen. Der Service ordnet diesen Sicherungsstatus dann mithilfe von BlueXP Backup und Recovery, ONTAP Services und NetApp Technologien wie Autonomer Ransomware-Schutz, FPolicy, Backup-Richtlinien und Snapshot-Richtlinien den Workloads zu.
-Weitere Informationen zu https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Autonomer Schutz Durch Ransomware"^] Und https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["BlueXP Backup und Recovery"^], und https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^].
+* Ermittelt den aktuellen Sicherheitslevel eines jeden Volumes für NetApp Snapshots und Backup-Richtlinien sowie integrierte Erkennungsfunktionen. Dieser Sicherheitsstatus wird dann mithilfe von BlueXP  Backup und Recovery, ONTAP-Services und NetApp Technologien wie Autonomer Ransomware-Schutz (ARP oder ARP/AI, je nach Ihrer ONTAP-Version), FPolicy, Backup-Richtlinien und Snapshot-Richtlinien mit den Workloads verknüpft. Erfahren Sie mehr über https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Autonomer Schutz Durch Ransomware"^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["BlueXP Backup und Recovery"^]und https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^].
 * Weist jedem Workload eine geschäftliche Priorität zu, basierend auf automatisch ermittelten Schutzstufen, und empfiehlt Schutzrichtlinien für Workloads basierend auf ihrer Geschäftspriorität. Die Workload-Priorität basiert auf Snapshot-Frequenzen, die bereits auf jedes Volume angewendet wurden, das mit dem Workload verknüpft ist.
 
 
@@ -129,20 +128,20 @@ Weitere Informationen zu https://docs.netapp.com/us-en/ontap/anti-ransomware/ind
 | *ERKENNEN*  a| 
 * Erkennt potenzielle Angriffe mit einem integrierten Machine-Learning-Modell (ML), das eine potenziell anomale Verschlüsselung und Aktivität erkennt.
 * Bietet Dual-Layer-Erkennung, die mit der Erkennung potenzieller Ransomware-Angriffe im primären Storage beginnt und auf ungewöhnliche Aktivitäten reagiert, indem zusätzliche automatisierte Snapshot-Kopien erstellt werden, um die nächstgelegenen Daten-Restore-Punkte zu erstellen. Der Service bietet die Möglichkeit zur genaueren Identifizierung potenzieller Angriffe, ohne die Performance der primären Workloads zu beeinträchtigen.
-* Ermitteln Sie mithilfe von ONTAP, der autonomen Ransomware-Sicherung, Einblicke in die Dateninfrastruktur (ehemals Cloud Insights) Workload-Sicherheit und FPolicy-Technologien die spezifischen verdächtigen Dateien und Zuordnungen für Angriffe auf die zugehörigen Workloads.
+* Bestimmt die spezifischen verdächtigen Dateien und Zuordnungen zu den zugehörigen Workloads mithilfe von ONTAP, Autonomer Ransomware-Schutz (ARP oder ARP/AI, je nach Ihrer ONTAP-Version), Workload-Sicherheit von Dateninfrastruktur Insights (ehemals Cloud Insights) und FPolicy-Technologien.
 
 
 
 
 | *ANTWORT*  a| 
 * Zeigt relevante Daten, wie z. B. Dateiaktivität, Benutzeraktivität und Entropie, an, damit Sie forensische Überprüfungen über den Angriff durchführen können.
-* Initiiert schnelle Snapshot Kopien mithilfe von NetApp Technologien und Produkten wie ONTAP, Autonomer Ransomware-Schutz und FPolicy.
+* Initiiert schnelle Snapshot Kopien mithilfe von NetApp Technologien und Produkten wie ONTAP, Autonomous Ransomware Protection (ARP oder ARP/AI, je nach Ihrer ONTAP Version) und FPolicy.
 
 
 
 
 | * ERHOLUNG*  a| 
-* Ermittelt die besten Snapshots oder Backups und empfiehlt den besten tatsächlichen Recovery-Zeitpunkt (Recovery Point Actual, RPA) mithilfe von BlueXP Backup und Recovery, ONTAP, Autonomer Ransomware-Schutz sowie FPolicy-Technologien und -Services.
+* Ermittelt die besten Snapshots oder Backups und empfiehlt den besten tatsächlichen Recovery-Zeitpunkt (Recovery Point Actual, RPA) mithilfe von BlueXP  Backup und Recovery, ONTAP, Autonomous Ransomware Protection (ARP oder ARP/AI, je nach Ihrer ONTAP-Version) sowie FPolicy-Technologien und -Services.
 * Orchestriert die Recovery von Workloads, einschließlich VMs, File Shares und Datenbanken mit Applikationskonsistenz.
 
 

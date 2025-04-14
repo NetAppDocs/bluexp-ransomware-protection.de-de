@@ -26,12 +26,12 @@ Jede Warnung kann mehrere Vorfälle auf verschiedenen Volumes mit unterschiedlic
 Der Dienst bietet Informationen, die als _Evidence_ bezeichnet werden, über den Grund, aus dem die Warnung ausgegeben wurde, wie z. B.:
 
 * Dateierweiterungen wurden erstellt oder geändert
-* Die Dateierstellung ist erfolgt und wird um einen aufgelisteten Prozentsatz erhöht
-* Die Dateilöschung ist aufgetreten und wird um einen aufgelisteten Prozentsatz erhöht
+* Dateierstellung mit einem Vergleich der erkannten und erwarteten Raten
+* Dateilöschung mit einem Vergleich der erkannten und erwarteten Raten
 * Wenn die Verschlüsselung hoch ist, ohne Dateierweiterung Änderungen
 
 
-Eine Warnung basiert auf den folgenden Verhaltensarten:
+Eine Meldung wird als eine der folgenden klassifiziert:
 
 * *Potenzieller Angriff*: Ein Alarm tritt auf, wenn Autonomous Ransomware Protection eine neue Erweiterung erkennt und das Auftreten in den letzten 24 Stunden mehr als 20 Mal wiederholt wird (Standardverhalten).
 * *Warnung*: Eine Warnung erfolgt auf der Grundlage der folgenden Verhaltensweisen:

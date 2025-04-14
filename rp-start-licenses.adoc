@@ -17,7 +17,7 @@ Mit BlueXP vor Ransomware-Schutz können Sie unterschiedliche Lizenzierungsplän
 Sie können die folgenden Lizenztypen verwenden:
 
 * Melden Sie sich für eine kostenlose 30-Tage-Testversion an.
-* Beim Kauf eines PAYGO-Abonnements (Pay-as-you-go) über Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace oder Azure Marketplace (in Kürze verfügbar)
+* Beim Kauf eines PAYGO-Abonnements (Pay-as-you-go) mit Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace oder Azure Marketplace
 * Bring-Your-Own-License (BYOL) bei einer NetApp Lizenzdatei (NLF), die Sie von Ihrem NetApp Vertriebsmitarbeiter erhalten. Sie können die Seriennummer der Lizenz verwenden, um das BYOL in der Digital Wallet von BlueXP zu aktivieren.
 
 
@@ -80,6 +80,8 @@ Informationen zum Hinzufügen eines Connectors finden Sie unter https://docs.net
 *Nach Ablauf der Testversion erhalten Sie ein Abonnement oder eine Lizenz*
 
 Nach Ablauf der kostenlosen Testversion können Sie sich entweder über einen der Marktplätze anmelden oder eine Lizenz von NetApp erwerben.
+
+Wenn Sie bereits über ein PAYGO-Abonnement verfügen, wird die Lizenz nach Ablauf der kostenlosen Testversion automatisch auf das Abonnement umgestellt.
 
 <<Abonnieren Sie ihn über AWS Marketplace>> <<Abonnieren Sie ihn über Microsoft Azure Marketplace>> <<Abonnieren Sie ihn über Google Cloud Marketplace>> <<Bring-Your-Own-License (BYOL)>>
 
@@ -286,4 +288,17 @@ Nachdem Sie für die Lizenz bezahlt und sie auf der NetApp Support-Website regis
 .. Wählen Sie die Registerkarte *Data Services Licenses* aus, wählen Sie das Symbol *actions ...* für die Seriennummer des Dienstes, die Sie aktualisieren, und wählen Sie *Update License* aus.
 
 
+
+
+
+
+== Beenden Sie das PAYGO-Abonnement
+
+Wenn Sie Ihr PAYGO-Abonnement beenden möchten, können Sie dies jederzeit tun.
+
+.Schritte
+. Wählen Sie beim BlueXP  Ransomware-Schutz oben rechts die Lizenzoption aus.
+. Wählen Sie *Zahlungsmethoden anzeigen*.
+. Deaktivieren Sie in den Dropdown-Details das Kontrollkästchen *nach Ablauf der aktuellen Zahlungsmethode verwenden*.
+. Wählen Sie *Speichern*.
 

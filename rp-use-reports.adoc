@@ -12,9 +12,9 @@ summary: Wenn Sie den Ransomware-Schutz von BlueXP nutzen, können Sie Berichte 
 
 
 [role="lead"]
-Sie können Schutzdaten exportieren und CSV- oder JSON-Dateien herunterladen, die Details zu Schutz, Warnungen und Recovery anzeigen.
+Sie können Schutzdaten exportieren und CSV- oder JSON-Dateien herunterladen, die Details zu Übungen zur Angriffsbereitschaft, Schutz, Warnungen und Wiederherstellung anzeigen.
 
-Bevor Sie die CSV- oder JSON-Dateien herunterladen, sollten Sie die Daten aktualisieren. Dadurch werden auch die in den Dateien angezeigten Daten aktualisiert.
+Bevor Sie die Dateien herunterladen, sollten Sie die Daten aktualisieren, die auch die Daten aktualisieren, die in den Dateien angezeigt werden.
 
 Sie können Dateien aus einer der Optionen des Hauptmenüs herunterladen:
 
@@ -22,11 +22,15 @@ Sie können Dateien aus einer der Optionen des Hauptmenüs herunterladen:
 * *Alerts*: Enthält den Status und die Details aller Alerts, einschließlich der Gesamtzahl der Alerts und automatisierten Snapshots.
 * *Recovery*: Enthält den Status und Details aller Workloads, die wiederhergestellt werden müssen, einschließlich der Gesamtzahl der Workloads, die als „Restore needed“, „in progress“, „Restore failed“ und „successfully restored“ markiert sind.
 * *Berichte*: Sie können Daten von jeder Seite exportieren und die Dateien herunterladen.
++
+
+NOTE: Sie können Bereitschaftsberichte nur von der Seite *Reports* herunterladen.
 
 
-Wenn Sie CSV-Dateien von der Seite Schutz, Warnungen oder Wiederherstellung herunterladen, werden in den Daten nur die Daten auf dieser Seite angezeigt.
 
-CSV-Dateien enthalten Daten aller Workloads in allen BlueXP Arbeitsumgebungen.
+Wenn Sie CSV- oder JSON-Dateien von der Seite Schutz, Warnungen oder Wiederherstellung herunterladen, werden in den Daten nur die Daten auf dieser Seite angezeigt.
+
+Die CSV- oder JSON-Dateien enthalten Daten für alle Workloads in allen BlueXP  Arbeitsumgebungen.
 
 .Schritte
 . Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
@@ -40,8 +44,8 @@ image:screen-dashboard.png["Dashboard-Seite"]
 ** Wählen Sie im Menü zum Ransomware-Schutz von BlueXP *Berichte* aus.
 
 
-. Wenn Sie die Option *Reports* ausgewählt haben, wählen Sie einen der vorkonfigurierten CSV-Dateinamen aus und wählen *Download (CSV)* oder *Download (JSON)*.
+. Wenn Sie die Option *Reports* ausgewählt haben, wählen Sie einen der vorkonfigurierten Dateinamen aus und wählen *Download*.
 +
-image:screen-reports0.png["Berichtsseite"]
+image:screen-reports.png["Berichtsseite, auf der der Bereitschaftsbericht angezeigt wird"]
 
 

@@ -1,0 +1,31 @@
+= Bereitschaftsberichte
+:allow-uri-read: 
+
+
+
+
+=== Bereitschaftsberichte
+
+Mit dieser Version können Sie sich detaillierte Berichte zur Bereitschaft von Ransomware-Angriffen ansehen. Mit einer Bereitschaftsübung können Sie einen Ransomware-Angriff auf einen neu erstellten Beispiel-Workload simulieren. Untersuchen Sie dann den simulierten Angriff und stellen Sie den Proben-Workload wieder her. Diese Funktion hilft Ihnen dabei, sich im Falle eines echten Ransomware-Angriffs auf Sie vorzubereiten, indem Sie Warnmeldungs-, Reaktions- und Recovery-Prozesse testen.
+
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Machen Sie sich eine Übung zur Vorbereitung auf einen Ransomware-Angriff"].
+
+
+
+=== Neue Rollen und Berechtigungen für die rollenbasierte Zugriffssteuerung
+
+Bisher können Sie Benutzern Rollen und Berechtigungen basierend auf ihren Verantwortlichkeiten zuweisen, sodass Sie den Benutzerzugriff auf BlueXP  Ransomware-Schutz besser managen können. Mit dieser Version gibt es zwei neue Rollen speziell für den BlueXP  Ransomware-Schutz mit aktualisierten Berechtigungen. Die neuen Rollen sind:
+
+* Administrator für Ransomware-Schutz
+* Viewer für Ransomware-Schutz
+
+
+Weitere Informationen zu Berechtigungen finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["BlueXP  Ransomware-Schutz, rollenbasierter Zugriff auf Funktionen"].
+
+
+
+=== Zahlungsverbesserungen
+
+Diese Version enthält mehrere Verbesserungen am Zahlungsprozess.
+
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["Einrichten von Lizenz- und Zahlungsoptionen"].

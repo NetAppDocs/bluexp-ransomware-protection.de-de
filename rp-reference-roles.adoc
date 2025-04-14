@@ -14,218 +14,322 @@ summary: 'Beim BlueXP  Ransomware-Schutz wird mittels rollenbasierter Zugriffss
 [role="lead"]
 Der BlueXP  Ransomware-Schutz verwendet Rollen, um den Zugriff jedes Benutzers auf spezifische Funktionen und Aktionen zu regeln.
 
-Der Schutz vor BlueXP  vor Ransomware verwendet folgende Rollen:
+Der Service verwendet die folgenden Rollen, die speziell auf den BlueXP  Ransomware-Schutz zugeschnitten sind.
 
-* Organisationsadministrator
-* Viewer (nicht organisationsfremder Administrator)
+* *Ransomware-Schutz admin*: Verwalten Sie Aktionen auf den Registerkarten Schützen, Warnungen, Wiederherstellen, Einstellungen und Berichte.
+* *Ransomware Protection Viewer*: Workload-Daten anzeigen, Warnungsdaten anzeigen, Wiederherstellungsdaten herunterladen und Berichte herunterladen.
 
 
-Die folgende Tabelle zeigt, dass Aktionen ausgeführt werden können, die jede BlueXP  Ransomware-Schutzrolle ausführen kann.
+Die BlueXP -Plattform für alle BlueXP -Services verwendet folgende Rollenarten:
+
+* *Plattform-Rollen* ermöglichen Ihnen, Benutzer zu verwalten, sie Ressourcen zuzuweisen und ihnen Rollen zusammen mit anderen plattformweiten Aktionen zu geben.
++
+
+TIP: Für die Entdeckung in BlueXP  Ransomware-Schutz, müssen Sie über die * Organisation Admin * Rolle zusätzlich zu der * Ransomware-Schutz Admin * Rolle.
+
+* *Data Services Rollen* sind auf einen bestimmten Datendienst beschränkt. Je nach Ihrer Aufgabe können Sie mehrere Datenservice-Rollen haben. BlueXP  Ransomware-Schutz ist einer der BlueXP  Datenservices.
+
+
+Weitere Informationen zu Plattformrollen finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Die BlueXP -Installations- und Administrationsdokumentation"^].
+
+Die folgende Tabelle zeigt die Aktionen, die jede BlueXP  Ransomware-Schutzrolle durchführen kann.
 
 [cols="40,20a,20a"]
 |===
-| Funktion und Aktion | Organisationsadministrator | Prüfer 
+| Funktion und Aktion | Administrator für Ransomware-Schutz | Viewer für Ransomware-Schutz 
+
+
+| Dashboard und alle Registerkarten anzeigen  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Aktualisieren Sie auf dem Dashboard den Empfehlungsstatus  a| 
+Ja.
+ a| 
+Nein
+
 
 
 | Kostenlos testen  a| 
-Y
+Ja.
  a| 
-N
-
-
-
-| Dashboard anzeigen  a| 
-Y
- a| 
-Y
-
-
-
-| Registerkarte Schutz anzeigen  a| 
-Y
- a| 
-Y
-
-
-
-| Registerkarte Warnungen anzeigen  a| 
-Y
- a| 
-Y
-
-
-
-| Registerkarte Wiederherstellen anzeigen  a| 
-Y
- a| 
-Y
-
-
-
-| Registerkarte Berichte anzeigen  a| 
-Y
- a| 
-Y
-
-
-
-| Registerkarte „View Settings“  a| 
-Y
- a| 
-Y
+Nein
 
 
 
 | Beginnen Sie mit der Erkennung von Workloads  a| 
-Y
+Ja.
  a| 
-N
+Nein
 
 
 
-| Schützen: Richtlinien ändern oder löschen  a| 
-Y
+| Neuerkennung von Workloads einleiten  a| 
+Ja.
  a| 
-N
+Nein
 
 
 
-| Schützen: Fügen Sie Richtlinien hinzu  a| 
-Y
+3+| *Auf der Registerkarte Schutz*: 
+
+
+| Schutzpläne hinzufügen, ändern oder löschen  a| 
+Ja.
  a| 
-N
+Nein
 
 
 
-| Sichern: Workloads schützen  a| 
-Y
+| Schutz von Workloads  a| 
+Ja.
  a| 
-N
+Nein
 
 
 
-| Sichern: Sensible Daten erkennen  a| 
-Y
+| Identifizierung des Risikos sensibler Daten  a| 
+Ja.
  a| 
-N
+Nein
 
 
 
-| Schützen: Bearbeiten Sie den Workload-Schutz  a| 
-Y
+| Listen Sie Schutzpläne und Details auf  a| 
+Ja.
  a| 
-N
+Ja.
 
 
 
-| Schützen: Workload-Details ansehen  a| 
-Y
+| Listen Sie Schutzgruppen auf  a| 
+Ja.
  a| 
-Y
+Ja.
 
 
 
-| Schützen: Daten herunterladen  a| 
-Y
+| Details zu Schutzgruppen anzeigen  a| 
+Ja.
  a| 
-Y
+Ja.
 
 
 
-| Warnmeldungen: Zeigen Sie Warnungsdetails an  a| 
-Y
+| Schutzgruppe erstellen, bearbeiten oder löschen  a| 
+Ja.
  a| 
-Y
+Nein
 
 
 
-| Warnmeldungen: Bearbeiten des Incident-Status  a| 
-Y
+| Download von Daten  a| 
+Ja.
  a| 
-N
+Ja.
 
 
 
-| Warnmeldungen: Anzeigen von Vorfalldetails  a| 
-Y
+3+| *Auf der Registerkarte Warnungen*: 
+
+
+| Anzeigen von Warnmeldungen und Warnungsdetails  a| 
+Ja.
  a| 
-Y
+Ja.
 
 
 
-| Warnmeldungen: Vollständige Liste der betroffenen Dateien abrufen  a| 
-Y
+| Bearbeiten Sie den Ereignisstatus  a| 
+Ja.
  a| 
-N
+Nein
 
 
 
-| Warnmeldungen: Herunterladen von Warnmeldungen  a| 
-Y
+| Alarm für Wiederherstellung markieren  a| 
+Ja.
  a| 
-Y
+Nein
 
 
 
-| Wiederherstellen: Betroffene Dateien herunterladen  a| 
-Y
+| Anzeigen von Vorfalldetails  a| 
+Ja.
  a| 
-N
+Ja.
 
 
 
-| Recovery: Wiederherstellen von Workloads  a| 
-Y
+| Schließen oder Auflösen von Aufzungen  a| 
+Ja.
  a| 
-N
+Nein
 
 
 
-| Wiederherstellen: Wiederherstellungsdaten herunterladen  a| 
-Y
+| Benutzer blockieren  a| 
+Ja.
  a| 
-Y
+Nein
 
 
 
-| Wiederherstellen: Berichte herunterladen  a| 
-Y
+| Vollständige Liste der betroffenen Dateien abrufen  a| 
+Ja.
  a| 
-Y
+Nein
 
 
 
-| Einstellungen: Hinzufügen oder Ändern von Backup-Zielen  a| 
-Y
+| Warnmeldungen herunterladen  a| 
+Ja.
  a| 
-N
+Ja.
 
 
 
-| Einstellungen: SIEM-Ziele hinzufügen oder ändern  a| 
-Y
+3+| *Auf der Registerkarte Wiederherstellen*: 
+
+
+| Betroffene Dateien herunterladen  a| 
+Ja.
  a| 
-N
+Nein
 
 
 
-| Berichte: Berichte herunterladen  a| 
-Y
+| Restore-Workload  a| 
+Ja.
  a| 
-Y
+Nein
 
 
 
-| Dokumentation: Sehen Sie sich die Dokumentation zum Produkt an  a| 
-Y
+| Wiederherstellungsdaten herunterladen  a| 
+Ja.
  a| 
-Y
+Ja.
 
 
 
-| Dokumentation: Sehen Sie sich die Dokumentation zu den neuen Produkten an  a| 
-Y
+| Berichte herunterladen  a| 
+Ja.
  a| 
-Y
+Ja.
+
+
+
+3+| *Auf der Registerkarte Einstellungen*: 
+
+
+| Backup-Ziele hinzufügen oder ändern  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Backup-Ziele auflisten  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Verbundene SIEM-Ziele anzeigen  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| SIEM-Ziele hinzufügen oder ändern  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Verbinden Sie Workload-Sicherheitsziele  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Anzeigen des Verbindungsstatus für die Workload-Sicherheit  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Trennen Sie die Workload-Sicherheitsziele  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Konfigurieren Sie den Bereitschaftsbohrer  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Bereitschaftsbohrer starten  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Bereitschaftsbohrer zurücksetzen  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Bereitschaftsübung bearbeiten  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Prüfen Sie den Status der Bereitschaftsübung  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Aktualisieren Sie die Ermittlungskonfiguration  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Anzeigen der Ermittlungskonfiguration  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+3+| *Auf der Registerkarte Berichte*: 
+
+
+| Berichte herunterladen  a| 
+Ja.
+ a| 
+Ja.
 
 |===
