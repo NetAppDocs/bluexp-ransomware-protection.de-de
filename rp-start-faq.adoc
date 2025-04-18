@@ -54,8 +54,7 @@ Eine Erläuterung zu diesen Modi in allen BlueXP Services finden Sie unter https
 
 == Interaktion mit anderen Diensten
 
-*Kennt der BlueXP Ransomware-Schutz die in NetApp ONTAP vorgenommenen Schutzeinstellungen?*
-Ja, der Ransomware-Schutz von BlueXP erkennt Snapshot Zeitpläne, die in ONTAP festgelegt sind.
+*Kennt der BlueXP Ransomware-Schutz die in NetApp ONTAP vorgenommenen Schutzeinstellungen?* Ja, der BlueXP  Ransomware-Schutz erkennt Snapshot-Zeitpläne, die in ONTAP festgelegt sind.
 
 *Wenn Sie eine Richtlinie mit BlueXP Ransomware-Schutz festlegen, müssen Sie nur an diesem Service zukünftige Änderungen vornehmen?*
 Wir empfehlen Ihnen, Richtlinienänderungen am BlueXP Ransomware-Schutzservice vorzunehmen.
@@ -76,10 +75,9 @@ Darüber hinaus verwendet der BlueXP  Ransomware-Schutz BlueXP  Backup und Rec
 
 *Was macht eine Arbeitsbelastung aus?* Ein Workload ist eine Applikation, eine VM oder Dateifreigabe. Ein Workload umfasst alle Volumes, die von einer einzelnen Applikationsinstanz verwendet werden. Eine auf ora3.host.com bereitgestellte Oracle DB-Instanz kann beispielsweise vol1 und vol2 für ihre Daten und Protokolle verwenden. Diese Volumes bilden zusammen den Workload für diese spezifische Instanz der Oracle DB-Instanz.
 
-*Wie priorisiert der Ransomware-Schutz von BlueXP Workload-Daten?*
-Die Datenpriorität wird durch die erstellten Snapshot-Kopien und geplanten Backups bestimmt.
+*Wie priorisiert der Ransomware-Schutz von BlueXP Workload-Daten?* Die Datenpriorität wird durch die erstellten Snapshot-Kopien und geplanten Backups bestimmt.
 
-Die Workload-Priorität (kritisch, Standard, wichtig) wird durch Snapshot Frequenzen festgelegt, die bereits auf jedes Volume mit dem Workload angewendet werden.
+Die Workload-Priorität (kritisch, Standard, wichtig) wird durch Snapshot-Frequenzen festgelegt, die bereits auf jedes Volume im Zusammenhang mit dem Workload angewendet werden.
 
 link:rp-use-protect.html["Informieren Sie sich über Priorität oder Wichtigkeit von Workloads"].
 

@@ -57,10 +57,11 @@ Ein Warnungsvorfall wird in einen der folgenden Status kategorisiert:
 * *Abgewiesen*: Wenn Sie vermuten, dass die Aktivität kein Ransomware-Angriff ist, können Sie den Status in "Abgewiesen" ändern.
 +
 
-CAUTION: Nachdem du einen Angriff abgetan hast, kannst du ihn nicht mehr zurückändern. Wenn Sie einen Workload verwerfen, werden alle Snapshot Kopien, die automatisch als Reaktion auf einen potenziellen Ransomware-Angriff erstellt wurden, dauerhaft gelöscht.
+CAUTION: Nachdem du einen Angriff abgetan hast, kannst du ihn nicht mehr zurückändern. Wenn Sie einen Workload entlassen, werden alle Snapshot Kopien, die automatisch als Reaktion auf einen potenziellen Ransomware-Angriff erstellt wurden, dauerhaft gelöscht.
 
 * *Entlassung*: Der Vorfall ist im Prozess der Entlassung.
 * *Gelöst*: Der Vorfall wurde behoben.
+* *Auto Resolved*: Bei Warnungen mit niedriger Priorität wird der Vorfall automatisch behoben, wenn innerhalb von 5 Tagen keine Maßnahmen ergriffen wurden.
 
 
 
@@ -206,7 +207,7 @@ Nachdem Sie Vorfälle überprüft haben, müssen Sie feststellen, ob es sich bei
 
 Sie können false-positive Ergebnisse verwerfen oder beschließen, Ihre Daten sofort wiederherzustellen. Wenn Sie die Warnmeldung schließen möchten, lernt der Service dieses Verhalten und verknüpft sie mit dem normalen Betrieb und initiiert keine weitere Warnung zu einem solchen Verhalten.
 
-Wenn Sie einen Workload verwerfen, werden alle Snapshot Kopien, die automatisch als Reaktion auf einen potenziellen Ransomware-Angriff erstellt wurden, dauerhaft gelöscht.
+Wenn Sie einen Workload entlassen, werden alle Snapshot Kopien, die automatisch als Reaktion auf einen potenziellen Ransomware-Angriff erstellt wurden, dauerhaft gelöscht.
 
 
 CAUTION: Wenn Sie eine Warnmeldung schließen, können Sie diesen Status nicht wieder in einen anderen Status ändern, und Sie können diese Änderung nicht rückgängig machen.

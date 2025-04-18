@@ -30,7 +30,9 @@ TIP: Für die Entdeckung in BlueXP  Ransomware-Schutz, müssen Sie über die * 
 * *Data Services Rollen* sind auf einen bestimmten Datendienst beschränkt. Je nach Ihrer Aufgabe können Sie mehrere Datenservice-Rollen haben. BlueXP  Ransomware-Schutz ist einer der BlueXP  Datenservices.
 
 
-Weitere Informationen zu Plattformrollen finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Die BlueXP -Installations- und Administrationsdokumentation"^].
+Andere Rollen der BlueXP  Plattform werden als Zuschauer beim BlueXP  Ransomware-Schutz behandelt. Die Rolle *Organisations-Viewer* ermöglicht es Ihnen beispielsweise, die Schutzpläne anzuzeigen, erlaubt Ihnen aber keine Aktionen im BlueXP  Ransomware-Schutz.
+
+Weitere Informationen zu allen Rollen der BlueXP -Plattform finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Die BlueXP -Installations- und Administrationsdokumentation"^].
 
 Die folgende Tabelle zeigt die Aktionen, die jede BlueXP  Ransomware-Schutzrolle durchführen kann.
 

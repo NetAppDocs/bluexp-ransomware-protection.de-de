@@ -233,7 +233,7 @@ image:screen-alerts-incidents-impacted-files.png["Liste der betroffenen Dateien 
 . *Wiederherstellungspunkt*: Wählen Sie den Abwärtspfeil neben *Wiederherstellungspunkt*, um Details anzuzeigen. Wählen Sie den Wiederherstellungspunkt aus, den Sie zum Wiederherstellen der Daten verwenden möchten.
 +
 
-NOTE: In der Spalte „Grund“ im Teilfenster „Wiederherstellungspunkte“ wird der Grund für den Snapshot oder das Backup als „geplante“ oder „automatisierte Antwort auf Ransomware-Vorfälle“ angezeigt.
+NOTE: In der Spalte „Grund“ im Teilfenster „Wiederherstellungspunkte“ wird der Grund für den Snapshot oder das Backup entweder als „geplante“ oder „automatisierte Antwort auf Ransomware-Vorfälle“ angezeigt.
 
 . *Dateien*:
 +

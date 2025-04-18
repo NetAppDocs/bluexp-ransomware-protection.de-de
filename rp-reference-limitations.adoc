@@ -18,4 +18,4 @@ Bekannte Einschränkungen identifizieren Plattformen, Geräte oder Funktionen, d
 
 == Problem mit der Option zum Zurücksetzen der Bohrbereitschaft
 
-Wenn Sie ein ONTAP 9.11.1 Volume für die Bereitschaftsübung eines Ransomware-Angriffs auswählen, benachrichtigt Sie der BlueXP  Ransomware-Schutz mit einer Warnmeldung. Wenn Sie die Daten mithilfe der Option „Clone-to-Volume“ wiederherstellen und den Drill zurücksetzen, schlägt der Reset-Vorgang fehl.
+Wenn Sie ein ONTAP 9.11.1 Volume für die Bereitschaftsübung eines Ransomware-Angriffs auswählen, benachrichtigt Sie der BlueXP  Ransomware-Schutz mit einer Warnmeldung. Wenn Sie die Daten mit der Option „Clone-to-Volume“ wiederherstellen und den Drill zurücksetzen, schlägt der Reset-Vorgang fehl.

@@ -257,7 +257,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["
 
 === Sperren von Snapshot-Kopien auf dem primären Storage
 
-Aktivieren Sie diese Funktion, um Snapshot-Kopien im primären Storage zu sperren, damit sie für eine bestimmte Zeit nicht geändert oder gelöscht werden können, selbst wenn ein Ransomware-Angriff seinen Weg zum Backup-Storage-Ziel vorfindet.
+Aktivieren Sie diese Funktion, um die Snapshot-Kopien im primären Storage zu sperren, damit sie für eine bestimmte Zeit nicht geändert oder gelöscht werden können, selbst wenn ein Ransomware-Angriff seinen Weg zum Backup-Storage-Ziel findet.
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Erfahren Sie mehr über den Schutz von Workloads und die Aktivierung von Backup-Sperrung in einer Strategie für den Schutz vor Ransomware"].
 
