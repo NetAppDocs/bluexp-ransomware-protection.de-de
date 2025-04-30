@@ -105,6 +105,9 @@ Um diese Workloads zu schützen, müssen Sie ein Backup-Ziel hinzufügen. Sie k�
 * Microsoft Azure
 
 
+
+NOTE: Backup-Ziele sind für Workloads in Amazon FSX für NetApp ONTAP nicht verfügbar. Führen Sie Backup-Vorgänge mithilfe des FSX für ONTAP Backup-Service durch.
+
 Sie können ein Backup-Ziel basierend auf einer empfohlenen Aktion über das Dashboard oder über den Zugriff auf die Option Einstellungen im Menü hinzufügen.
 
 

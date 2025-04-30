@@ -4,7 +4,7 @@ permalink: rp-use-protect.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, protect, malware, attack 
 summary: Sie können Workloads gegen Ransomware-Angriffe schützen, indem Sie einem Workload in BlueXP Ransomware-Schutz Richtlinien zuweisen. 
 ---
-= Ransomware-Strategien schützen Workloads
+= Schützen Sie Workloads mit Strategien zum Schutz vor Ransomware
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -42,10 +42,13 @@ Sie können Sicherungsrichtlinien basierend auf Ihrem Workload-Schutz ändern:
 * *Workloads mit vorhandenem Schutz durch NetApp-Anwendungen*: Diese Workloads verfügen über Backup- oder Snapshot-Richtlinien, die von SnapCenter, SnapCenter für VMware vSphere oder BlueXP  Backup und Recovery gemanagt werden.
 +
 ** Wenn Snapshot- oder Backup-Richtlinien von SnapCenter, SnapCenter für VMware oder BlueXP  Backup und Recovery gemanagt werden, werden sie weiterhin von diesen Applikationen gemanagt. Mit dem BlueXP  Schutz vor Ransomware können Sie auf diese Workloads auch eine Richtlinie zur Erkennung von Ransomware anwenden.
-** Wenn eine Richtlinie zur Erkennung von Ransomware durch Autonomous Ransomware Protection (ARP) und FPolicy in ONTAP gemanagt wird, sind diese Workloads geschützt und werden weiterhin von ARP und FPolicy gemanagt.
+** Wenn eine Richtlinie zur Erkennung von Ransomware durch Autonomen Ransomware-Schutz (ARP oder ARP/AI, je nach ONTAP-Version) und FPolicy in ONTAP gemanagt wird, sind diese Workloads geschützt und werden weiterhin durch ARP und FPolicy gemanagt.
 
 
 
+
+
+NOTE: Backup-Ziele sind für Workloads in Amazon FSX für NetApp ONTAP nicht verfügbar. Führen Sie Backup-Vorgänge mithilfe des FSX für ONTAP Backup-Service durch. Sie legen Backup-Richtlinien für Workloads in FSX für ONTAP in AWS fest, nicht im BlueXP  Ransomware-Schutz. Die Backup-Richtlinien werden im Ransomware-Schutz von BlueXP  angezeigt und bleiben bei AWS unverändert.
 
 *Welche Richtlinien sind in einer Ransomware-Schutzstrategie erforderlich?*
 
@@ -83,7 +86,7 @@ image:screen-protection.png["Schutzseite"]
 
 
 
-NOTE: Bei Workloads, die bereits über eine Sicherungsrichtlinie mit SnapCenter oder BlueXP Backup- und Recovery-Service verfügen, können Sie die Sicherung nicht bearbeiten. Für diese Workloads ermöglicht BlueXP Ransomware den autonomen Ransomware-Schutz und/oder FPolicy-Schutz, sofern sie in anderen Services bereits aktiviert sind. Erfahren Sie mehr über https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Autonomer Schutz Durch Ransomware"^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["BlueXP Backup und Recovery"^]und https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^].
+NOTE: Bei Workloads, die bereits über eine Sicherungsrichtlinie mit SnapCenter oder BlueXP Backup- und Recovery-Service verfügen, können Sie die Sicherung nicht bearbeiten. Für diese Workloads ermöglicht BlueXP  Ransomware den autonomen Ransomware-Schutz und FPolicy-Schutz, wenn sie in anderen Services bereits aktiviert sind. Erfahren Sie mehr über https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Autonomer Schutz Durch Ransomware"^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["BlueXP Backup und Recovery"^]und https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^].
 
 
 
@@ -93,7 +96,7 @@ Auf der Seite Schutz werden die folgenden Informationen zum Workload-Schutz ange
 
 *Schutzstatus*: Ein Workload kann einen der folgenden Schutzstatus anzeigen, um anzugeben, ob eine Richtlinie angewendet wird oder nicht:
 
-* *Geschützt*: Es wird eine Richtlinie angewendet. ARP ist auf allen Volumen aktiviert, die mit dem Workload in Verbindung stehen.
+* *Geschützt*: Es wird eine Richtlinie angewendet. ARP (oder ARP/AI je nach ONTAP Version) ist auf allen Volumen im Zusammenhang mit dem Workload aktiviert.
 * *In Gefahr*: Es werden keine Richtlinien angewendet. Wenn für einen Workload keine primäre Erkennungsrichtlinie aktiviert ist, ist dies „gefährdet“, selbst wenn eine Snapshot- und Backup-Richtlinie aktiviert ist.
 * *In Bearbeitung*: Eine Richtlinie wird angewendet, aber noch nicht abgeschlossen.
 * *Failed*: Eine Richtlinie wird angewendet, funktioniert aber nicht.

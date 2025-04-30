@@ -57,7 +57,7 @@ image:screen-discover-workloads1.png["Screenshot zur Workload-Erkennung"]
 Eine Liste der Arbeitsumgebungen wird angezeigt.
 
 +
-image:screen-discover-workloads-select-no-autodiscovery.png["Screenshot zur Workload-Erkennung"]
+image:screen-discover-workloads-select.png["Screenshot zur Workload-Erkennung"]
 
 . Wählen Sie die Arbeitsumgebungen aus, in denen Sie Workloads ermitteln möchten, oder wählen Sie das Feld oben in der Tabelle aus, um Workloads in allen erkannten Workload-Umgebungen zu erkennen.
 . Wählen Sie * Entdecken*.

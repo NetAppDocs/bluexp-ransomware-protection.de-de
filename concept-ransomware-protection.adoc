@@ -85,7 +85,7 @@ Geschützte Workloads werden mit der erworbenen Kapazität oder dem Abonnement v
 
 == Lizenzierung
 
-Mit BlueXP Ransomware-Schutz haben Sie die Möglichkeit, verschiedene Lizenzierungsmodelle zu verwenden. Dazu gehören eine kostenlose Testversion, ein Pay-as-you-go-Abonnement oder eine eigene Lizenz.
+Mit BlueXP Ransomware-Schutz haben Sie die Möglichkeit, verschiedene Lizenzierungsmodelle zu verwenden, darunter eine kostenlose Testversion, ein Pay-as-you-go-Abonnement oder eine eigene Lizenz.
 
 Für den BlueXP  Ransomware-Schutz ist eine NetApp ONTAP One Lizenz erforderlich.
 
@@ -173,6 +173,11 @@ Mit BlueXP  Ransomware-Schutz erfahren Sie, wie stabil Ihre Daten bei einem Cyb
 * Cloud Volumes ONTAP 9.11.1 oder höher für AWS (mit NFS- und CIFS-Protokollen)
 * Cloud Volumes ONTAP 9.11.1 oder höher für die Google Cloud Platform (mit NFS- und CIFS-Protokollen)
 * Cloud Volumes ONTAP 9.12.1 oder höher für Microsoft Azure (mit NFS- und CIFS-Protokollen)
+* Amazon FSX for NetApp ONTAP, das autonomen Ransomware-Schutz (ARP und nicht ARP/AI) verwendet.
++
+
+NOTE: ARP/AI erfordert ONTAP 9.16 oder höher.
+
 
 
 
