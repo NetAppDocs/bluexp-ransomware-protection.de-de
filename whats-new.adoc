@@ -39,7 +39,7 @@ Sie können die nicht unterstützten Arbeitsumgebungen während der ersten Ermit
 
 Sie können die Ergebnisse des Erkennungsvorgangs nach der Erkennung herunterladen.
 
-Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discovery.html["Workloads in BlueXP Ransomware-Schutz entdecken"].
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Workloads in BlueXP Ransomware-Schutz entdecken"].
 
 
 
