@@ -17,7 +17,7 @@ Um BlueXP vor Ransomware zu schützen, muss der Service zunächst Daten erkennen
 Der Ransomware-Schutz von BlueXP bewertet MySQL-Applikationen, Oracle-Applikationen, VMware-Datastores und File Shares.
 
 
-NOTE: Workloads mit Volumes, die FlexGroup oder iSCSI verwenden, werden nicht erkannt. Workloads auf Amazon FSX für NetApp ONTAP oder auf Azure NetApp Files werden nicht unterstützt. Nach der Erkennung meldet BlueXP  zum Schutz vor Ransomware auf nicht unterstützten Volumes im Dashboard.
+NOTE: Workloads mit Volumes, die FlexGroup oder iSCSI verwenden, werden nicht erkannt. Workloads auf Azure NetApp Files werden nicht unterstützt. Der Service erkennt und zeigt sowohl unterstützte als auch nicht unterstützte Konfigurationen der Arbeitsumgebung an.
 
 Der Service bewertet das vorhandene Schutzniveau, einschließlich des aktuellen Backup-Schutzes, der Snapshot-Kopien und der NetApp Optionen zum autonomen Ransomware-Schutz. Auf der Grundlage des Assessments empfiehlt der Service dann, wie Sie Ihren Ransomware-Schutz verbessern können.
 
@@ -25,6 +25,7 @@ Sie haben folgende Möglichkeiten:
 
 * Wählen Sie in jedem Connector die Arbeitsumgebungen aus, in denen Sie Workloads erkennen möchten. Diese Funktion könnte für Sie von Vorteil sein, wenn Sie bestimmte Workloads in Ihrer Umgebung schützen möchten und keine anderen.
 * Ermittlung neu erstellter Workloads für zuvor ausgewählte Arbeitsumgebungen.
+* Entdecken Sie neue Arbeitsumgebungen.
 
 
 
@@ -43,35 +44,21 @@ image:screen-landing.png["Landing Page-Screenshot zu BlueXP Ransomware-Schutz"]
 
 . Wählen Sie auf der ersten Landing Page *Start by Discovering Workloads* aus.
 +
-Der Dienst findet Arbeitsumgebungen in Ihren BlueXP -Konnektoren.
+Der Dienst findet sowohl unterstützte als auch nicht unterstützte Arbeitsumgebungen. Dieser Vorgang kann einige Minuten dauern.
 
 +
+image:screen-discover-workloads-unsupported.png["Screenshot zur Workload-Erkennung"]
 
-TIP: Dieser Vorgang kann einige Minuten dauern.
-
-+
-image:screen-discover-workloads1.png["Screenshot zur Workload-Erkennung"]
-
-. Um Workloads für einen bestimmten Connector zu ermitteln, wählen Sie *Neue Arbeitsumgebungen suchen* neben dem Connector, an dem Sie Workloads ermitteln möchten.
-+
-Eine Liste der Arbeitsumgebungen wird angezeigt.
-
-+
-image:screen-discover-workloads-select.png["Screenshot zur Workload-Erkennung"]
-
-. Wählen Sie die Arbeitsumgebungen aus, in denen Sie Workloads ermitteln möchten, oder wählen Sie das Feld oben in der Tabelle aus, um Workloads in allen erkannten Workload-Umgebungen zu erkennen.
+. Um Workloads für einen bestimmten Connector zu ermitteln, wählen Sie *Arbeitsumgebung auswählen* neben dem Connector, an dem Sie Workloads ermitteln möchten.
+. Wählen Sie die Arbeitsumgebungen aus, in denen Sie Workloads erkennen möchten.
 . Wählen Sie * Entdecken*.
 +
-Der Service ermittelt Workload-Daten nur für diese Connectors mit ausgewählten Arbeitsumgebungen.
+Der Service ermittelt Workload-Daten nur für diese Connectors mit ausgewählten Arbeitsumgebungen. Dieser Vorgang kann einige Minuten dauern.
 
 +
+image:screen-discover-workloads-unsupported-collected.png["Screenshot aus Workloads entdeckt"]
 
-TIP: Dieser Vorgang kann einige Minuten dauern.
-
-+
-image:screen-discover-workloads-found2.png["Screenshot aus Workloads entdeckt"]
-
-. Um die Liste der erkannten Workloads herunterzuladen, wählen Sie *Ergebnisse herunterladen (CSV)*.
+. Um die Liste der erkannten Workloads herunterzuladen, wählen Sie *Ergebnisse herunterladen*.
 . Um das BlueXP  Ransomware Protection Dashboard anzuzeigen, wählen Sie *Gehe zu Dashboard*.
 +
 Im Dashboard wird der Systemzustand der Datensicherung angezeigt. Die Anzahl der gefährdeten oder geschützten Workloads steigt entsprechend den neu erkannten Workloads.
@@ -110,4 +97,6 @@ Wenn Sie bereits Arbeitsumgebungen erkannt haben, können Sie alle neu erstellte
 
 TIP: Dieser Vorgang kann einige Minuten dauern, wie durch ein Symbol für das Laden in Bearbeitung angezeigt wird.
 
+. Der Service erkennt sowohl unterstützte als auch nicht unterstützte Arbeitsumgebungen. Es gibt viele Gründe, warum der Dienst keine funktionierende Umgebung unterstützt. Beispielsweise könnte die ONTAP-Version in Ihrer Arbeitsumgebung unter der erforderlichen Version liegen. Wenn Sie den Mauszeiger über eine nicht unterstützte Arbeitsumgebung halten, wird in einer QuickInfo der Grund angezeigt. Wählen Sie die Arbeitsumgebungen aus, in denen Sie Workloads erkennen möchten.
+. Wählen Sie * Entdecken*.
 

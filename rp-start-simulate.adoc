@@ -33,9 +33,14 @@ Die Seite „Configure Readiness“ wird angezeigt.
 +
 image:screen-settings-alert-drill-configure.png["Konfigurieren Sie die Bereitschaftsbohrseite"]
 
-. Wählen Sie den BlueXP -Anschluss aus, den Sie für den Bereitschaftsbohrer verwenden möchten.
-. Wählen Sie eine Testumgebung aus.
-. Geben Sie den Namen eines neuen Test-Workloads ein, der erstellt werden soll.
+. Gehen Sie wie folgt vor:
++
+.. Wählen Sie den BlueXP -Anschluss aus, den Sie für den Bereitschaftsbohrer verwenden möchten.
+.. Wählen Sie eine Testumgebung aus.
+.. Wählen Sie eine Test-Storage-SVM aus.
+.. Geben Sie den Namen eines neuen Test-Workloads ein, der erstellt werden soll. Fügen Sie beim Namen keine Bindestriche ein.
+
+
 . Wählen Sie *Speichern*.
 
 
