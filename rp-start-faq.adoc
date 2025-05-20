@@ -23,7 +23,7 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 Sie können die folgenden Lizenztypen verwenden:
 
 * Melden Sie sich für eine kostenlose 30-Tage-Testversion an.
-* Der Kauf eines PAYGO-Abonnements (Pay-as-you-go) für Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace und Microsoft Azure Marketplace (in Kürze verfügbar)
+* Mit Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace und Microsoft Azure Marketplace erwerben Sie ein PAYGO-Abonnement für NetApp Intelligent Services und BlueXP  Ransomware-Schutz.
 * Bring-Your-Own-License (BYOL) bei einer NetApp Lizenzdatei (NLF), die Sie von Ihrem NetApp Vertriebsmitarbeiter erhalten. Sie können die Seriennummer der Lizenz verwenden, um das BYOL in der Digital Wallet von BlueXP zu aktivieren.
 
 
@@ -100,8 +100,6 @@ Beim Ransomware-Schutz von BlueXP  werden Daten auf folgende Weise mit einem Wo
 *Was ist ein „gefährdeter“ Workload?* Wenn bei einem Workload keine Richtlinie für die primäre Erkennung aktiviert ist, ist dies „gefährdet“, selbst wenn für einen Workload eine Backup- und Snapshot-Richtlinie aktiviert ist.
 
 *Neues Volume hinzugefügt, erscheint aber noch nicht* Wenn Sie ein neues Volume zu Ihrer Umgebung hinzugefügt haben, starten Sie die Erkennung erneut und wenden Sie Schutzrichtlinien an, um das neue Volume zu schützen.
-
-*Das Dashboard zeigt nicht alle meine Arbeitslasten an. Was könnte falsch sein?* Derzeit werden nur NFS- und CIFS-Volumes unterstützt. ISCSI-Volumes und andere nicht unterstützte Konfigurationen werden herausgefiltert und werden nicht im Dashboard angezeigt.
 
 
 
