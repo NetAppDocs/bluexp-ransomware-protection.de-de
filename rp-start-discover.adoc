@@ -14,14 +14,18 @@ summary: Während der Erkennung analysiert der Ransomware-Schutz von BlueXP alle
 [role="lead"]
 Um BlueXP vor Ransomware zu schützen, muss der Service zunächst Daten erkennen. Während der Erkennung analysiert der Ransomware-Schutz von BlueXP  alle Volumes und Dateien in Arbeitsumgebungen über alle BlueXP  Connectors und Projekte innerhalb eines Unternehmens hinweg.
 
-Der Ransomware-Schutz von BlueXP bewertet MySQL-Applikationen, Oracle-Applikationen, VMware-Datastores und File Shares.
+*Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator oder Ransomware-Schutzadministratorrolle.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
+
+*Was erkennt der Dienst?* Der Ransomware-Schutz von BlueXP bewertet MySQL-Applikationen, Oracle-Applikationen, VMware-Datastores und File Shares.
 
 
-NOTE: Workloads mit Volumes, die FlexGroup oder iSCSI verwenden, werden nicht erkannt. Workloads auf Azure NetApp Files werden nicht unterstützt. Der Service erkennt und zeigt sowohl unterstützte als auch nicht unterstützte Konfigurationen der Arbeitsumgebung an.
+NOTE: Der Dienst erkennt keine Workloads mit Volumes, die FlexGroup oder iSCSI verwenden.
 
-Der Service bewertet das vorhandene Schutzniveau, einschließlich des aktuellen Backup-Schutzes, der Snapshot-Kopien und der NetApp Optionen zum autonomen Ransomware-Schutz. Auf der Grundlage des Assessments empfiehlt der Service dann, wie Sie Ihren Ransomware-Schutz verbessern können.
+Der BlueXP-Ransomware-Schutz erkennt und zeigt sowohl unterstützte als auch nicht unterstützte Arbeitsumgebungskonfigurationen im Dashboard an.
 
-Sie haben folgende Möglichkeiten:
+Der Service prüft Ihren aktuellen Backup-Schutz, Ihre Snapshot-Kopien und die Optionen des autonomen NetApp Ransomware-Schutzes. Anschließend empfiehlt er Ihnen Möglichkeiten zur Verbesserung Ihres Ransomware-Schutzes.
+
+*Wie können Sie Arbeitslasten ermitteln?* Sie haben folgende Möglichkeiten:
 
 * Wählen Sie in jedem Connector die Arbeitsumgebungen aus, in denen Sie Workloads erkennen möchten. Diese Funktion könnte für Sie von Vorteil sein, wenn Sie bestimmte Workloads in Ihrer Umgebung schützen möchten und keine anderen.
 * Ermittlung neu erstellter Workloads für zuvor ausgewählte Arbeitsumgebungen.
@@ -37,10 +41,14 @@ Wählen Sie in jedem Connector die Arbeitsumgebungen aus, in denen Sie Workloads
 .Schritte
 . Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
 +
-Wenn Sie sich zum ersten Mal bei diesem Dienst anmelden, wird die Landing Page angezeigt.
+Wenn dies Ihre erste Anmeldung ist, wird die Zielseite angezeigt.
 
 +
 image:screen-landing.png["Landing Page-Screenshot zu BlueXP Ransomware-Schutz"]
+
++
+
+NOTE: Wenn Sie die kostenlose Testversion gestartet haben, ändert sich die Beschriftung der Schaltfläche *30-tägige kostenlose Testversion starten* in *Mit der Ermittlung von Workloads beginnen*.
 
 . Wählen Sie auf der ersten Landing Page *Start by Discovering Workloads* aus.
 +
@@ -61,10 +69,10 @@ image:screen-discover-workloads-unsupported-collected.png["Screenshot aus Worklo
 . Um die Liste der erkannten Workloads herunterzuladen, wählen Sie *Ergebnisse herunterladen*.
 . Um das BlueXP  Ransomware Protection Dashboard anzuzeigen, wählen Sie *Gehe zu Dashboard*.
 +
-Im Dashboard wird der Systemzustand der Datensicherung angezeigt. Die Anzahl der gefährdeten oder geschützten Workloads steigt entsprechend den neu erkannten Workloads.
+Das Dashboard zeigt den Datenschutzstatus an. Die Anzahl gefährdeter oder geschützter Workloads wird aktualisiert, sobald neue Workloads erkannt werden.
 
 +
-image:screen-dashboard.png["BlueXP Dashboard für Ransomware-Schutz"]
+image:screen-dashboard3.png["BlueXP Dashboard für Ransomware-Schutz"]
 
 +
 link:rp-use-dashboard.html["Erfahren Sie, was Ihnen das Dashboard zeigt."]
@@ -80,14 +88,14 @@ Wenn Sie bereits Arbeitsumgebungen für die Erkennung ausgewählt haben, können
 .Schritte
 . Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
 . Um das Datum der letzten Erkennung zu identifizieren, schauen Sie im Dashboard auf den Datums- und Zeitstempel neben dem *Aktualisieren*-Symbol oben rechts.
-. Wählen Sie im Dashboard das Symbol * Aktualisieren* aus, das die Erkennung neuer Workloads initiiert.
+. Wählen Sie im Dashboard das *Aktualisierungssymbol* aus, um neue Workloads zu finden.
 
 
 
 
 == Entdecken Sie neue Arbeitsumgebungen
 
-Wenn Sie bereits Arbeitsumgebungen erkannt haben, können Sie alle neu erstellten Arbeitsumgebungen oder Arbeitsumgebungen ermitteln, die Sie zuvor bei früheren Erkennungsprozessen nicht ausgewählt haben.
+Wenn Sie bereits Arbeitsumgebungen entdeckt haben, können Sie neue oder bisher nicht ausgewählte finden.
 
 .Schritte
 . Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
@@ -95,8 +103,8 @@ Wenn Sie bereits Arbeitsumgebungen erkannt haben, können Sie alle neu erstellte
 . Wählen Sie auf der Karte Workload Discovery * Workloads ermitteln * aus.
 +
 
-TIP: Dieser Vorgang kann einige Minuten dauern, wie durch ein Symbol für das Laden in Bearbeitung angezeigt wird.
+TIP: Dieser Vorgang kann einige Minuten dauern und ein Ladesymbol zeigt den Fortschritt an.
 
-. Der Service erkennt sowohl unterstützte als auch nicht unterstützte Arbeitsumgebungen. Es gibt viele Gründe, warum der Dienst keine funktionierende Umgebung unterstützt. Beispielsweise könnte die ONTAP-Version in Ihrer Arbeitsumgebung unter der erforderlichen Version liegen. Wenn Sie den Mauszeiger über eine nicht unterstützte Arbeitsumgebung halten, wird in einer QuickInfo der Grund angezeigt. Wählen Sie die Arbeitsumgebungen aus, in denen Sie Workloads erkennen möchten.
+. Der Service erkennt sowohl unterstützte als auch nicht unterstützte Arbeitsumgebungen. Der Dienst unterstützt keine Arbeitsumgebung, wenn deren ONTAP-Version unter der erforderlichen Version liegt. Wenn Sie den Mauszeiger über eine nicht unterstützte Arbeitsumgebung halten, wird in einer QuickInfo der Grund angezeigt. Wählen Sie die Arbeitsumgebungen aus, in denen Sie Workloads erkennen möchten.
 . Wählen Sie * Entdecken*.
 

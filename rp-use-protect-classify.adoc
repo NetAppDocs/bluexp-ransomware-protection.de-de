@@ -2,30 +2,33 @@
 sidebar: sidebar 
 permalink: rp-use-protect-classify.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification 
-summary: Im Rahmen des BlueXP  Ransomware-Schutzdienstes können Sie die BlueXP -Klassifizierung verwenden, eine Kernkomponente der BlueXP  Familie, um Ihre Daten auf einem Fileshare-Workload zu scannen und zu klassifizieren. Durch die Klassifizierung von Daten können Sie ermitteln, ob Ihre Daten personenbezogene oder private Informationen umfassen, was zu höheren Sicherheitsrisiken führen kann. 
+summary: Verbessern Sie die Sicherheit und Datenschutzkonformität Ihrer Daten mit der BlueXP-Klassifizierung, um festzustellen, ob Ihre Daten personenbezogene oder private Informationen enthalten. 
 ---
-= Suchen Sie mit der BlueXP -Klassifizierung nach personenbezogenen Daten
-:hardbreaks:
+= Scannen Sie mit der BlueXP-Klassifizierung im BlueXP-Ransomware-Schutz nach personenbezogenen Daten
 :allow-uri-read: 
-:icons: font
-:imagesdir: ./media/
 
 
 [role="lead"]
-Im Rahmen des BlueXP  Ransomware-Schutzdienstes können Sie die BlueXP -Klassifizierung verwenden, eine Kernkomponente der BlueXP  Familie, um Ihre Daten auf einem Fileshare-Workload zu scannen und zu klassifizieren. Durch die Klassifizierung von Daten können Sie ermitteln, ob Ihre Daten personenbezogene Daten enthalten, was zu erhöhten Sicherheitsrisiken führen kann.
+Innerhalb des BlueXP-Ransomware-Schutzdienstes können Sie die BlueXP-Klassifizierung nutzen, um die Daten in einem Dateifreigabe-Workload zu scannen und zu klassifizieren. Durch die Klassifizierung von Daten können Sie feststellen, ob der Datensatz personenbezogene Daten (PII) enthält, die das Sicherheitsrisiko erhöhen können. Die BlueXP-Klassifizierung ist eine Kernkomponente der BlueXP-Familie und kostenlos verfügbar.
+
+link:https://docs.netapp.com/us-en/bluexp-classification/["BlueXP Klassifizierung"^] nutzt KI-gesteuerte natürliche Sprachverarbeitung zur kontextbezogenen Datenanalyse und -kategorisierung und bietet umsetzbare Erkenntnisse über Ihre Daten, um Compliance-Anforderungen zu erfüllen, Sicherheitslücken zu erkennen, Kosten zu optimieren und die Migration zu beschleunigen.
 
 
-TIP: Dieser Prozess kann sich auf die Arbeitslast auswirken, um sicherzustellen, dass Sie über einen angemessenen Schutz verfügen.
+TIP: Dieser Prozess kann sich auf die Wichtigkeit der Arbeitslast auswirken, um sicherzustellen, dass Sie über den entsprechenden Schutz verfügen.
+
+*Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator oder Ransomware-Schutzadministratorrolle. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^].
 
 
 
-== Aktivieren Sie die BlueXP -Klassifizierung
+== Identifizieren Sie Datenschutzrisiken mit der BlueXP-Klassifizierung
 
-Bevor Sie die BlueXP -Klassifizierung im BlueXP  Ransomware-Schutzservice verwenden, müssen Sie für den Scan Ihrer Daten die BlueXP -Klassifizierung aktivieren.
+Bevor Sie die BlueXP-Klassifizierung innerhalb des BlueXP-Ransomware-Schutzdienstes verwenden, müssen Sie link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["um die BlueXP-Klassifizierung zum Scannen Ihrer Daten zu aktivieren"^] .
 
-Durch Verwendung der BlueXP -Klassifizierungs-UI als alternative Methode kann ein Administrator die BlueXP -Klassifizierung in der BlueXP -Ransomware-Sicherung aktivieren.
+Sie können die BlueXP-Klassifizierung auf der Seite „Schutz“ des BlueXP-Ransomware-Schutzdienstes aktivieren. Befolgen Sie die Anweisungen, um die Datenschutzgefährdung zu identifizieren. Wenn Sie „Gefährdung identifizieren“ auswählen und die BlueXP-Klassifizierung noch nicht aktiviert haben, können Sie sie in einem Dialogfeld aktivieren.
 
-Es ist unter Umständen hilfreich, diese BlueXP -Klassifizierungsressourcen vor der Nutzung des Service zu überprüfen:
+image:classification-deploy.png["Screenshot der Bereitstellungsklassifizierung"]
+
+Weitere Informationen zur BlueXP-Klassifizierung finden Sie unter:
 
 * https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Mehr zur BlueXP Klassifizierung"^]
 * https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Kategorien von privaten Daten"^]
@@ -33,7 +36,7 @@ Es ist unter Umständen hilfreich, diese BlueXP -Klassifizierungsressourcen vor
 
 
 .Bevor Sie beginnen
-Kunden, die die BlueXP -Klassifizierung implementiert haben, können nach PII-Daten in BlueXP  zum Ransomware-Schutz scannen. Die BlueXP -Klassifizierung ist als Teil der BlueXP  Plattform ohne Zusatzkosten verfügbar und kann vor Ort oder in der Cloud des Kunden bereitgestellt werden.
+Das Scannen nach PII-Daten im BlueXP-Ransomware-Schutz ist verfügbar, wenn Sie link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["eingesetzte BlueXP-Klassifizierung"^] . Die BlueXP -Klassifizierung ist als Teil der BlueXP  Plattform ohne Zusatzkosten verfügbar und kann vor Ort oder in der Cloud des Kunden bereitgestellt werden.
 
 .Schritte
 . Wählen Sie im Menü BlueXP Ransomware Protection die Option *Protection* aus.
@@ -41,25 +44,26 @@ Kunden, die die BlueXP -Klassifizierung implementiert haben, können nach PII-D
 +
 image:screen-protection-sensitive-preview-column.png["Schutzseite mit der Spalte „Datenschutz“"]
 
-. Um die BlueXP -Klassifizierung zu aktivieren, um Ihre Daten nach personenbezogenen Daten zu scannen, wählen Sie in der Spalte *Gefährdung durch Datenschutz* *Exposition identifizieren* aus.
+. Um die BlueXP-Klassifizierung zum Scannen Ihrer Daten auf PII zu aktivieren, wählen Sie in der Spalte *Datenschutzgefährdung* die Option *Gefährdung identifizieren* aus.
 
+
+
+NOTE: Wenn Sie die BlueXP-Klassifizierung noch nicht implementiert haben, öffnet sich durch Auswahl von *Risiko identifizieren* ein Dialogfenster zur Implementierung der BlueXP-Klassifizierung. Wählen Sie *Deploy*. Nach der Implementierung können Sie zur Seite „Schutz“ zurückkehren und dort *Risiko identifizieren* auswählen.
 
 .Ergebnis
-Der Scanvorgang kann je nach Datenmenge mehrere Minuten dauern. Die Seite Schutz zeigt an, dass die BlueXP -Klassifizierung Dateien identifiziert und gibt Ihnen einen Hinweis auf die Anzahl der Dateien, die gescannt werden.
-
-Wenn der Scanvorgang abgeschlossen ist, wird in der Spalte „Datenschutz“ die Belichtungsstufe als „Niedrig“, „Mittel“ oder „hoch“ angezeigt.
+Der Scanvorgang kann je nach Größe und Anzahl der Dateien mehrere Minuten dauern. Während des Scanvorgangs wird auf der Seite „Schutz“ die Identifizierung von Dateien angezeigt und die Anzahl der Dateien angezeigt. Nach Abschluss des Scanvorgangs wird in der Spalte „Datenschutzrisiko“ die Gefährdungsstufe als „Niedrig“, „Mittel“ oder „Hoch“ eingestuft.
 
 
 
 == Überprüfen Sie die Privatsphäre
 
-Nach dem Scannen der BlueXP -Klassifizierung nach personenbezogenen Daten (PII) können Sie sich das Risiko für personenbezogene Daten ansehen.
+Bewerten Sie das Risiko, nachdem BlueXP die Klassifizierung nach PII durchsucht hat.
 
-PII-Daten können einen der folgenden Risikostatus für den Datenschutz aufweisen.
+PII-Daten werden einer von drei Kategorien zugeordnet:
 
-* *Hoch*: Mehr als 70% der Dateien haben PII
-* *Mittel*: Mehr als 30% und weniger als 70% der Dateien haben PII
-* *Niedrig*: Mehr als 0 und weniger als 30% der Dateien haben PII
+* *Hoch*: Mehr als 70 % der Dateien enthalten PII
+* *Mittel*: Mehr als 30 % und weniger als 70 % der Dateien enthalten PII
+* *Niedrig*: Mehr als 0 % und weniger als 30 % der Dateien enthalten PII
 
 
 .Schritte
@@ -72,7 +76,7 @@ image:screen-protection-sensitive-preview-column-medium.png["Schutzseite mit der
 +
 image:screen-protection-workload-details-privacy-exposure.png["Workload-Details-Bildschirm mit der Kachel „Datenschutz“"]
 
-. Überprüfen Sie auf der Seite „Workload-Details“ die Informationen in der Kachel „Datenschutz“.
+. Sehen Sie sich auf der Seite „Workloaddetails“ die Details in der Kachel „Datenschutzgefährdung“ an.
 
 
 
@@ -109,7 +113,7 @@ Hoch
 
 == Finden Sie weitere Informationen
 
-Details zur Klassifizierung von BlueXP  finden Sie in den folgenden BlueXP -Themen:
+Einzelheiten zur BlueXP-Klassifizierung finden Sie in der BlueXP-Klassifizierungsdokumentation:
 
 * https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Mehr zur BlueXP Klassifizierung"^]
 * https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Kategorien von privaten Daten"^]

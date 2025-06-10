@@ -4,7 +4,7 @@ permalink: rp-use-recover.html
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
 summary: 'Nach einem Angriff überprüft der Ransomware-Schutz von BlueXP, ob die Backup-Daten auf dem sekundären Storage sauber sind. Außerdem wird ein tatsächlicher Recovery Point (RPA) empfohlen und der Workflow für eine ausfallsichere Recovery orchestriert.' 
 ---
-= Wiederherstellung nach einem Ransomware-Angriff (nach dem Neutralisieren von Vorfällen)
+= Erholen Sie sich von einem Ransomware-Angriff (nachdem die Vorfälle neutralisiert wurden) mit dem BlueXP-Ransomware-Schutz
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -59,6 +59,8 @@ Durch den Ransomware-Schutz von BlueXP kann der Storage-Administrator bestimmen,
 
 Der Anwendungsstatus ändert sich, wenn für die Wiederherstellung erforderlich. Die Anwendung wird in ihren vorherigen Zustand von Steuerdateien wiederhergestellt, wenn sie in das Backup eingeschlossen sind. Nach Abschluss der Wiederherstellung wird die Anwendung im LESE-/SCHREIBMODUS geöffnet.
 
+*Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator oder Ransomware-Schutzadministrator.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
+
 .Schritte
 . Wählen Sie im Menü BlueXP Ransomware Protection die Option *Recovery* aus.
 . Überprüfen Sie die Workload-Informationen auf der Seite *Recovery*.
@@ -90,6 +92,8 @@ TIP: Durch den Ransomware-Schutz von BlueXP wird der beste Restore-Punkt als das
 == Stellen Sie einen nicht von SnapCenter gemanagten Workload wieder her
 
 Durch den Ransomware-Schutz von BlueXP kann der Storage-Administrator bestimmen, wie Workloads am besten wiederhergestellt werden – entweder aus dem empfohlenen Restore-Punkt oder dem bevorzugten Restore-Punkt.
+
+*Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator oder Ransomware-Schutzadministrator.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
 
 Der Sicherheits-Storage-Administrator kann Daten auf verschiedenen Ebenen wiederherstellen:
 

@@ -4,7 +4,7 @@ permalink: rp-use-alert.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
 summary: Wenn der BlueXP  Ransomware-Schutz einen möglichen Angriff erkennt, wird im BlueXP  Dashboard für Ransomware-Schutz eine Warnmeldung angezeigt, die auf einen potenziellen Angriff hinweist. Der Service initiiert zudem unverzüglich die Erstellung einer Snapshot-Kopie. An dieser Stelle sollten Sie sich über die Registerkarte „BlueXP Ransomware Protection Alerts“ das potenzielle Risiko ansehen. 
 ---
-= Reagieren Sie auf einen erkannten Ransomware-Alarm
+= Behandeln Sie erkannte Ransomware-Warnmeldungen mit dem BlueXP-Ransomware-Schutz
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,16 +12,16 @@ summary: Wenn der BlueXP  Ransomware-Schutz einen möglichen Angriff erkennt, w
 
 
 [role="lead"]
-Wenn der Ransomware-Schutz von BlueXP einen möglichen Angriff erkennt, wird im BlueXP Ransomware Protection Dashboard und in den BlueXP Benachrichtigungen oben rechts eine Warnmeldung angezeigt, die auf einen potenziellen Ransomware-Angriff hinweist. Der Service initiiert zudem unverzüglich die Erstellung einer Snapshot-Kopie. An dieser Stelle sollten Sie sich das potenzielle Risiko im BlueXP Ransomware-Schutz anschauen *Alerts* Tab.
+Wenn der BlueXP-Ransomware-Schutz einen möglichen Angriff erkennt, wird eine Warnung im Dashboard und im Benachrichtigungsbereich angezeigt. Der Dienst erstellt sofort einen Schnappschuss. Überprüfen Sie das potenzielle Risiko im Tab „Warnungen“ des BlueXP-Ransomware-Schutzes.
 
 Sie können false-positive Ergebnisse verwerfen oder beschließen, Ihre Daten sofort wiederherzustellen.
 
 
-TIP: Wenn Sie die Warnmeldung schließen möchten, lernt der Service dieses Verhalten und verknüpft sie mit dem normalen Betrieb und initiiert keine weitere Warnung zu einem solchen Verhalten.
+TIP: Wenn Sie die Warnung verwerfen, lernt der Dienst dieses Verhalten, verknüpft es mit normalen Vorgängen und löst keine weitere Warnung aus.
 
 Um Ihre Daten wiederherzustellen, markieren Sie die Warnmeldung als bereit für die Recovery, damit Ihr Storage-Administrator mit dem Recovery-Prozess beginnen kann.
 
-Jede Warnung kann mehrere Vorfälle auf verschiedenen Volumes mit unterschiedlichen Status haben, achten Sie also darauf, alle Vorfälle zu betrachten.
+Jede Warnung kann mehrere Vorfälle mit unterschiedlichem Umfang und Status enthalten. Überprüfen Sie alle Vorfälle.
 
 Der Dienst bietet Informationen, die als _Evidence_ bezeichnet werden, über den Grund, aus dem die Warnung ausgegeben wurde, wie z. B.:
 
@@ -38,7 +38,7 @@ Eine Meldung wird als eine der folgenden klassifiziert:
 +
 ** Die Erkennung einer neuen Erweiterung wurde zuvor nicht identifiziert und dasselbe Verhalten wiederholt nicht genug Male, um sie als Angriff zu deklarieren.
 ** Es wird eine hohe Entropie beobachtet.
-** Bei Lese-/Schreib-/Umbenennungs-/Löschvorgängen in Dateien wurde eine Aktivität von 100 % über die Baseline hinaus angestiegt.
+** Die Aktivität beim Lesen, Schreiben, Umbenennen und Löschen von Dateien hat sich im Vergleich zum Normalwert verdoppelt.
 
 
 
@@ -51,7 +51,7 @@ Eine Meldung kann einen der folgenden Status aufweisen:
 * *Inaktiv*
 
 
-Ein Warnungsvorfall wird in einen der folgenden Status kategorisiert:
+Ein Alarmvorfall kann einen der folgenden Zustände haben:
 
 * *Neu*: Alle Vorfälle werden bei der ersten Identifizierung mit "neu" markiert.
 * *Abgewiesen*: Wenn Sie vermuten, dass die Aktivität kein Ransomware-Angriff ist, können Sie den Status in "Abgewiesen" ändern.
@@ -61,7 +61,7 @@ CAUTION: Nachdem du einen Angriff abgetan hast, kannst du ihn nicht mehr zurück
 
 * *Entlassung*: Der Vorfall ist im Prozess der Entlassung.
 * *Gelöst*: Der Vorfall wurde behoben.
-* *Auto Resolved*: Bei Warnungen mit niedriger Priorität wird der Vorfall automatisch behoben, wenn innerhalb von 5 Tagen keine Maßnahmen ergriffen wurden.
+* *Automatisch gelöst*: Bei Warnungen mit niedriger Priorität wird der Vorfall automatisch gelöst, wenn innerhalb von fünf Tagen keine Aktion ausgeführt wurde.
 
 
 
@@ -70,11 +70,13 @@ CAUTION: Nachdem du einen Angriff abgetan hast, kannst du ihn nicht mehr zurück
 
 Sie können über das BlueXP  Ransomware Protection Dashboard oder über die Registerkarte *Alerts* auf Warnungen zugreifen.
 
+*Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator, Ransomware-Schutzadministrator oder Ransomware-Viewer-Rolle.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
+
 .Schritte
 . Sehen Sie sich im BlueXP Dashboard für Ransomware-Schutz den Bereich „Alerts“ an.
 . Wählen Sie unter einem der Status *Alle anzeigen*.
-. Klicken Sie auf eine Warnmeldung, um alle Vorfälle auf jedem Volume für jede Warnmeldung zu überprüfen.
-. Um weitere Warnmeldungen anzuzeigen, klicken Sie in den Paniermehl oben links auf *Alert*.
+. Wählen Sie eine Warnung aus, um alle Vorfälle auf jedem Datenträger für jede Warnung zu überprüfen.
+. Um weitere Warnungen anzuzeigen, wählen Sie in der Brotkrümelnavigation oben links *Warnung* aus.
 . Überprüfen Sie die Warnmeldungen auf der Seite Warnungen.
 +
 image:screen-alerts.png["Warnmeldeseite"]
@@ -92,7 +94,11 @@ image:screen-alerts.png["Warnmeldeseite"]
 
 == Erkennen von böswilligen Aktivitäten und ungewöhnlichem Benutzerverhalten
 
-Auf der Registerkarte „Meldungen“ können Sie ermitteln, ob eine bösartige Aktivität besteht. Die angezeigten Details hängen davon ab, wie die Warnmeldung ausgelöst wurde:
+Auf der Registerkarte „Meldungen“ können Sie ermitteln, ob eine bösartige Aktivität besteht.
+
+*Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator oder Ransomware-Schutzadministrator.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
+
+*Welche Details werden angezeigt?* Die angezeigten Details hängen davon ab, wie die Warnmeldung ausgelöst wurde:
 
 * Ausgelöst durch die Funktion für den autonomen Ransomware-Schutz in ONTAP. Auf diese Weise werden schädliche Aktivitäten basierend auf dem Verhalten der Dateien im Volume erkannt.
 * Ausgelöst durch Data Infrastructure Insights Workload-Sicherheit. Dazu ist eine Lizenz für Einblicke in die Dateninfrastruktur erforderlich – und dass Sie sie in BlueXP  Ransomware-Schutz aktivieren. Diese Funktion erkennt ungewöhnliches Benutzerverhalten in Ihren Storage-Workloads und ermöglicht es Ihnen, den weiteren Zugriff des Benutzers zu blockieren.
@@ -179,7 +185,9 @@ image:screen-alerts-incidents-diiws-diiwspage.png["Untersuchung im Bereich Workl
 
 == Markieren Sie Ransomware-Vorfälle als bereit für die Wiederherstellung (nach der Neutralisierung von Vorfällen).
 
-Nachdem der Angriff gemildert und Workloads wiederhergestellt werden können, sollten Sie mit dem Storage-Admin-Team kommunizieren, dass die Daten bereit sind für die Recovery, damit der Recovery-Prozess gestartet werden kann.
+Benachrichtigen Sie nach dem Stoppen des Angriffs Ihren Speicheradministrator, dass die Daten bereit sind, damit er mit der Wiederherstellung beginnen kann.
+
+*Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator oder Ransomware-Schutzadministrator.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
 
 .Schritte
 . Wählen Sie im Menü BlueXP Ransomware Protection die Option *Alerts* aus.
@@ -203,14 +211,16 @@ Nachdem die Warnmeldung für die Wiederherstellung markiert wurde, wechselt die 
 
 == Schließen Sie Vorfälle ab, die keine potenziellen Angriffe sind
 
-Nachdem Sie Vorfälle überprüft haben, müssen Sie feststellen, ob es sich bei den Vorfällen um potenzielle Angriffe handelt. Wenn nicht, können sie entlassen werden.
+Nachdem Sie Vorfälle überprüft haben, müssen Sie feststellen, ob es sich bei den Vorfällen um potenzielle Angriffe handelt. Ist die vorgenannte Voraussetzung nicht erfüllt, kann eine Kündigung erfolgen.
 
-Sie können false-positive Ergebnisse verwerfen oder beschließen, Ihre Daten sofort wiederherzustellen. Wenn Sie die Warnmeldung schließen möchten, lernt der Service dieses Verhalten und verknüpft sie mit dem normalen Betrieb und initiiert keine weitere Warnung zu einem solchen Verhalten.
+Sie können false-positive Ergebnisse verwerfen oder beschließen, Ihre Daten sofort wiederherzustellen. Wenn Sie die Warnung verwerfen, lernt der Dienst dieses Verhalten und verknüpft es mit normalen Vorgängen. Er löst bei einem solchen Verhalten keine weitere Warnung aus.
 
-Wenn Sie einen Workload entlassen, werden alle Snapshot Kopien, die automatisch als Reaktion auf einen potenziellen Ransomware-Angriff erstellt wurden, dauerhaft gelöscht.
+Wenn Sie eine Arbeitslast verwerfen, werden alle Snapshot-Kopien, die automatisch als Reaktion auf einen potenziellen Ransomware-Angriff erstellt wurden, dauerhaft gelöscht.
 
 
 CAUTION: Wenn Sie eine Warnmeldung schließen, können Sie diesen Status nicht wieder in einen anderen Status ändern, und Sie können diese Änderung nicht rückgängig machen.
+
+*Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator oder Ransomware-Schutzadministrator.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
 
 .Schritte
 . Wählen Sie im Menü BlueXP Ransomware Protection die Option *Alerts* aus.
@@ -233,7 +243,7 @@ image:screen-alerts-status-edit.png["Warnungsbearbeitung Statusseite"]
 
 . Wählen Sie im Feld Status bearbeiten den Status * „Abgewiesen“* aus.
 +
-Weitere Informationen zum Workload und die zu löschenden Snapshot Kopien werden angezeigt.
+Es werden zusätzliche Informationen zur Arbeitslast und zum Löschen von Snapshot-Kopien angezeigt.
 
 . Wählen Sie *Speichern*.
 +
@@ -246,6 +256,8 @@ Der Status des Vorfalls oder der Vorfälle ändert sich in „Abgewiesen“.
 == Zeigen Sie eine Liste der betroffenen Dateien an
 
 Bevor Sie einen Anwendungs-Workload auf Dateiebene wiederherstellen, können Sie eine Liste der betroffenen Dateien anzeigen. Sie können auf die Seite Warnungen zugreifen, um eine Liste der betroffenen Dateien herunterzuladen. Verwenden Sie dann die Wiederherstellungsseite, um die Liste hochzuladen und auszuwählen, welche Dateien wiederhergestellt werden sollen.
+
+*Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator oder Ransomware-Schutzadministrator.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
 
 .Schritte
 Auf der Seite Warnungen können Sie die Liste der betroffenen Dateien abrufen.

@@ -4,7 +4,7 @@ permalink: rp-use-dashboard.html
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
 summary: Das BlueXP Dashboard für Ransomware-Schutz bietet Informationen zum Schutz der Integrität Ihrer Workloads. Sie können schnell ermitteln, welche Workloads gefährdet oder geschützt sind, welche Workloads von einem Vorfall oder einer Recovery betroffen sind, und den Umfang der Sicherung abschätzen, indem Sie ermitteln, wie viel Storage gesichert oder gefährdet ist. Darüber hinaus können Sie mithilfe des Dashboards Schutzempfehlungen prüfen und umsetzen. 
 ---
-= Über das Dashboard können Sie den Workload-Zustand auf einen Blick anzeigen
+= Überwachen Sie den Zustand Ihrer Workload mit dem BlueXP-Dashboard zum Schutz vor Ransomware
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -14,7 +14,9 @@ summary: Das BlueXP Dashboard für Ransomware-Schutz bietet Informationen zum Sc
 [role="lead"]
 Das BlueXP Dashboard zum Schutz vor Ransomware bietet auf einen Blick Informationen zum Schutz der Integrität Ihrer Workloads. Sie können schnell ermitteln, welche Workloads gefährdet oder geschützt sind, Workloads identifizieren, die von einem Vorfall oder einer Recovery betroffen sind, und den Umfang der Sicherung abschätzen, indem Sie die Menge des geschützten oder gefährdeten Storage ermitteln.
 
-Darüber hinaus können Sie über das Dashboard Sicherungsempfehlungen prüfen und umsetzen, auf globale Einstellungen zugreifen, Berichte herunterladen und auf diese technische Dokumentation zugreifen.
+Verwenden Sie das Dashboard, um Schutzvorschläge zu prüfen, Einstellungen zu ändern, Berichte herunterzuladen und Dokumentationen anzuzeigen.
+
+*Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator, Ransomware-Schutzadministrator oder Ransomware-Schutz-Viewer-Rolle.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
 
 
 
@@ -23,19 +25,19 @@ Darüber hinaus können Sie über das Dashboard Sicherungsempfehlungen prüfen u
 .Schritte
 . Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
 +
-Nach der Erkennung wird über das Dashboard der Systemzustand der Workload-Datensicherung angezeigt.
+Nachdem BlueXP Ihre Workloads erkannt hat, zeigt das Dashboard den Datenschutzstatus der Workloads an.
 
 +
 image:screen-dashboard2.png["Dashboard-Seite"]
 
 . Im Dashboard können Sie in jedem der Teilfenster die folgenden Aktionen ausführen:
 +
-** *Workload Data Protection*: Klicken Sie auf *View all*, um alle Workloads anzuzeigen, die gefährdet oder geschützt sind. Workloads sind gefährdet, wenn Sicherungsstufen mit einer Sicherungsrichtlinie nicht übereinstimmen. Siehe link:rp-use-protect.html["Schutz von Workloads"].
+** *Schutz von Workload-Daten*: Wählen Sie *Alle anzeigen* aus, um auf der Seite „Schutz“ alle gefährdeten oder geschützten Workloads anzuzeigen. Workloads sind gefährdet, wenn Sicherungsstufen mit einer Sicherungsrichtlinie nicht übereinstimmen. Siehe link:rp-use-protect.html["Schutz von Workloads"].
 +
 
-TIP: Klicken Sie auf den Hinweis „i“, um Tipps zu diesen Daten zu erhalten. Um das Workload-Limit zu erhöhen, klicken Sie in diesem Hinweis auf *Workload-Limit erhöhen*. Wenn Sie auf diese Schaltfläche klicken, gelangen Sie zur Seite „BlueXP -Support“, auf der Sie ein Ticket erstellen können.
+TIP: Wählen Sie die i-Notiz aus, um Tipps zu diesen Daten anzuzeigen. Um das Arbeitslimit zu erhöhen, wählen Sie in dieser i-Notiz *Arbeitslimit erhöhen*. Wenn Sie auf diese Schaltfläche klicken, gelangen Sie zur Seite „BlueXP -Support“, auf der Sie ein Ticket erstellen können.
 
-** *Warnungen und Workload-Daten-Recovery*: Klicken Sie auf *Alle anzeigen*, um aktive Vorfälle zu sehen, die sich auf Ihre Arbeitslast ausgewirkt haben, nach Neutralisierung der Vorfälle zur Wiederherstellung bereit sind oder sich in der Wiederherstellung befinden. Siehe link:rp-use-alert.html["Reagieren Sie auf eine erkannte Warnung"].
+** *Warnungen und Wiederherstellung von Workload-Daten*: Wählen Sie *Alle anzeigen* aus, um aktive Vorfälle anzuzeigen, die sich auf Ihren Workload ausgewirkt haben, nach der Neutralisierung der Vorfälle zur Wiederherstellung bereit sind oder sich in der Wiederherstellung befinden. Siehe link:rp-use-alert.html["Reagieren Sie auf eine erkannte Warnung"].
 +
 *** Ein Vorfall wird in einen der folgenden Status kategorisiert:
 +
@@ -61,15 +63,15 @@ TIP: Klicken Sie auf den Hinweis „i“, um Tipps zu diesen Daten zu erhalten. 
 
 
 
-** *Empfohlene Maßnahmen*: Um den Schutz zu erhöhen, überprüfen Sie jede Empfehlung und klicken Sie auf *Überprüfen und beheben*.
+** *Empfohlene Maßnahmen*: Um den Schutz zu erhöhen, überprüfen Sie jede Empfehlung und wählen Sie *Überprüfen und beheben*.
 +
-Siehe link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Prüfen Sie die Schutzempfehlungen auf dem Dashboard"] Oder link:rp-use-protect.html["Schutz von Workloads"].
+Sehen link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Überprüfen Sie die Schutzvorschläge auf dem Dashboard"] oder link:rp-use-protect.html["Schutz von Workloads"] .
 
 +
-Alle Empfehlungen, die seit dem letzten Besuch des Dashboards hinzugefügt wurden, werden mindestens 24 Stunden lang mit „Neu“ gekennzeichnet. Die Aktionen werden in der Reihenfolge der Priorität aufgelistet, wobei die wichtigsten oben stehen. Sie können jede einzelne Person überprüfen und bearbeiten oder sie ablehnen.
+BlueXP kennzeichnet neue Empfehlungen seit Ihrem letzten Besuch im Dashboard 24 Stunden lang mit „Neu“. Aktionen werden nach Priorität angezeigt, wobei die wichtigsten ganz oben stehen. Überprüfen Sie jede Empfehlung, setzen Sie sie um oder verwerfen Sie sie.
 
 +
-Die Gesamtzahl der Aktionen umfasst keine abgewiesen Aktionen.
+In der Gesamtzahl der Aktionen sind die Aktionen, die Sie abgelehnt haben, nicht enthalten.
 
 ** *Workload-Daten*: Überwachen Sie Änderungen der Schutzabdeckung in den letzten 7 Tagen.
 ** *Workload Backups*: Überwachen Sie Änderungen in Workload Backups, die vom Service erstellt wurden und die in den letzten 7 Tagen erfolgreich abgeschlossen wurden.
@@ -152,12 +154,12 @@ Sie können Daten exportieren und CSV-Dateien herunterladen, die Details zu Schu
 
 Sie können CSV-Dateien von einer der Optionen des Hauptmenüs herunterladen:
 
-* *Schutz*: Enthält den Status und Details aller Workloads, einschließlich der Gesamtzahl der geschützten und gefährdeten Arbeitslasten.
+* *Schutz*: Enthält den Status und die Details aller Workloads, einschließlich der Gesamtzahl der Workloads, die BlueXP als geschützt oder gefährdet kennzeichnet.
 * *Alerts*: Enthält den Status und die Details aller Alerts, einschließlich der Gesamtzahl der Alerts und automatisierten Snapshots.
-* *Recovery*: Enthält den Status und Details aller Workloads, die wiederhergestellt werden müssen, einschließlich der Gesamtzahl der Workloads, die als „Restore needed“, „in progress“, „Restore failed“ und „successfully restored“ markiert sind.
+* *Wiederherstellung*: Enthält den Status und die Details aller Workloads, die wiederhergestellt werden müssen, einschließlich der Gesamtzahl der Workloads, die BlueXP als „Wiederherstellung erforderlich“, „In Bearbeitung“, „Wiederherstellung fehlgeschlagen“ und „Erfolgreich wiederhergestellt“ kennzeichnet.
 
 
-Wenn Sie CSV-Dateien von der Seite Schutz, Warnungen oder Wiederherstellung herunterladen, werden nur die Daten auf dieser Seite in die CSV-Datei aufgenommen.
+Das Herunterladen einer CSV-Datei von einer Seite umfasst nur die Daten dieser Seite.
 
 CSV-Dateien enthalten Daten aller Workloads in allen BlueXP Arbeitsumgebungen.
 

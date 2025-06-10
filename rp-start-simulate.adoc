@@ -4,7 +4,7 @@ permalink: rp-start-simulate.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill 
 summary: Führen Sie ein Drill-On zur Vorbereitung auf einen Ransomware-Angriff durch, indem Sie einen Ransomware-Angriff auf einen neu erstellten, Beispiel-Workload simulieren. Untersuchen Sie dann den simulierten Angriff und stellen Sie den Proben-Workload wieder her. Sie können mehrmals eine Übung zur Vorbereitung auf Ransomware durchführen. 
 ---
-= Simulieren Sie einen Ransomware-Angriff durch Bereitschaftsübung
+= Führen Sie eine Übung zur Vorbereitung auf Ransomware-Angriffe im BlueXP-Ransomware-Schutz durch
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,23 +12,36 @@ summary: Führen Sie ein Drill-On zur Vorbereitung auf einen Ransomware-Angriff 
 
 
 [role="lead"]
-Führen Sie ein Drill-On zur Vorbereitung auf einen Ransomware-Angriff durch, indem Sie einen Ransomware-Angriff auf einen neu erstellten, Beispiel-Workload simulieren. Untersuchen Sie dann den simulierten Angriff und stellen Sie den Proben-Workload wieder her. Diese Funktion hilft Ihnen dabei, sich im Falle eines echten Ransomware-Angriffs auf Sie vorzubereiten, indem Sie Warnmeldungs-, Reaktions- und Recovery-Prozesse testen. Sie können mehrmals eine Übung zur Vorbereitung auf Ransomware durchführen.
+Führen Sie eine Übung zur Vorbereitung auf Ransomware-Angriffe durch, indem Sie einen Angriff auf eine neue Beispiel-Workload simulieren. Untersuchen Sie den simulierten Angriff und stellen Sie die Workload wieder her. Nutzen Sie diese Funktion, um Warnmeldungen, Reaktionen und Wiederherstellung zu testen. Führen Sie die Übung so oft wie nötig durch.
 
 
-TIP: Ihre realen Workload-Daten werden nicht beeinträchtigt.
+TIP: Ihre tatsächlichen Arbeitslastdaten sind davon nicht betroffen.
+
+Sie können Bereitschaftsübungen für NFS- und CIFS-Workloads (SMB) durchführen.
 
 
 
 == Konfigurieren Sie eine Übung zur Vorbereitung eines Ransomware-Angriffs
 
-Bevor Sie eine Simulation durchführen, müssen Sie eine Übung über die Seite Einstellungen konfigurieren. Über die Option Aktionen im oberen Menü können Sie ganz einfach auf die Seite Einstellungen zugreifen.
+Bevor Sie eine Simulation ausführen, richten Sie auf der Seite „Einstellungen“ eine Übung ein. Sie erreichen die Seite „Einstellungen“ über die Option „Aktionen“ im oberen Menü.
+
+In den folgenden Situationen müssen Sie einen Benutzernamen und ein Kennwort eingeben:
+
+* Wenn sich der Benutzername oder das Passwort für die zuvor ausgewählte Storage-VM geändert haben
+* Wenn Sie eine andere CIFS (SMB)-Speicher-VM auswählen
+* Wenn Sie einen anderen Test-Workload-Namen eingeben
+
+
+*Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator oder Ransomware-Schutzadministrator.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
 
 .Schritte
-. Wählen Sie im Menü BlueXP Ransomware-Schutz die vertikalen Märkte aus image:button-actions-vertical.png["Vertikale Aktionen"]... Option oben rechts.
-. Wählen Sie im Dropdown-Menü *Readiness Drill* oder *Settings*.
+. Wählen Sie im BlueXP-Ransomware-Schutzmenü oben rechts die Schaltfläche *Bereitschaftsübung ausführen*.
++
+image:screen-dashboard3.png["Dashboardseite mit der Schaltfläche „Bereitschaftsübung ausführen“"]
+
 . Wählen Sie auf der Seite Einstellungen auf der Bereitschaftsbohrkarte *Konfigurieren* aus.
 +
-Die Seite „Configure Readiness“ wird angezeigt.
+BlueXP zeigt die Seite „Bereitschaftsübung konfigurieren“ an.
 
 +
 image:screen-settings-alert-drill-configure.png["Konfigurieren Sie die Bereitschaftsbohrseite"]
@@ -38,6 +51,7 @@ image:screen-settings-alert-drill-configure.png["Konfigurieren Sie die Bereitsch
 .. Wählen Sie den BlueXP -Anschluss aus, den Sie für den Bereitschaftsbohrer verwenden möchten.
 .. Wählen Sie eine Testumgebung aus.
 .. Wählen Sie eine Test-Storage-SVM aus.
+.. Wenn Sie eine CIFS (SMB)-Speicher-VM ausgewählt haben, werden die Felder „Benutzername“ und „Passwort“ angezeigt. Geben Sie den Benutzernamen und das Passwort für die Speicher-VM ein.
 .. Geben Sie den Namen eines neuen Test-Workloads ein, der erstellt werden soll. Fügen Sie beim Namen keine Bindestriche ein.
 
 
@@ -53,15 +67,20 @@ TIP: Sie können die Konfiguration der Bereitschaftsübung später über die Sei
 
 Nach der Konfiguration des Bereitschaftsbohrers können Sie den Bohrer starten.
 
+*Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator oder Ransomware-Schutzadministrator.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
+
 Wenn Sie mit dem Readiness Drill beginnen, überspringt der BlueXP  Ransomware-Schutz den Learning-Modus und startet das Drill im aktiven Modus. Der Erkennungsstatus des Workloads lautet „aktiv“.
 
 
-TIP: Ein Workload kann einen Ransomware-Erkennungsmodus haben *Lernmodus*, der angibt, dass dem Workload vor kurzem eine Richtlinie zur Ransomware-Erkennung zugewiesen wurde und der Service Workloads scannt. Ein Erkennungsstatus von *Active* zeigt an, dass eine Schutzrichtlinie für die Ransomware-Erkennung zugewiesen ist.
+TIP: Eine Arbeitslast kann den Status „Lernmodus“ zur Ransomware-Erkennung haben, wenn vor Kurzem eine Erkennungsrichtlinie zugewiesen wurde und der Dienst Arbeitslasten scannt.
 
 .Schritte
 . Führen Sie einen der folgenden Schritte aus:
 +
-** Wählen Sie im Menü „BlueXP  Ransomware Protection Settings“ die Option *Readiness Drill* aus und wählen Sie dann auf der Readiness-Seite *Start* aus.
+** Wählen Sie im BlueXP-Ransomware-Schutzmenü oben rechts die Schaltfläche *Bereitschaftsübung ausführen*.
++
+image:screen-dashboard3.png["Dashboardseite mit der Schaltfläche „Bereitschaftsübung ausführen“"]
+
 ** ODER wählen Sie auf der Seite Einstellungen in der Bereitschaftsbohrkarte *Start*.
 
 
@@ -77,10 +96,12 @@ NOTE: Nachdem der Bohrer gestartet wurde, können Sie die Bereitschaftsbohrkonfi
 
 Testen Sie Ihre Bereitschaft, indem Sie auf eine Bereitschaftsübung reagieren.
 
+*Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator oder Ransomware-Schutzadministrator.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
+
 .Schritte
 . Wählen Sie im Menü BlueXP Ransomware Protection die Option *Alerts* aus.
 +
-Die Seite „Meldungen“ wird angezeigt. In der Spalte Alarm-ID wird neben der ID „Readiness Drill“ angezeigt.
+BlueXP zeigt die Seite „Warnmeldungen“ an. In der Spalte „Warnmeldungs-ID“ sehen Sie neben der ID „Bereitschaftsübung“.
 
 +
 image:screen-alerts-readiness.png["Warnseite, auf der die Bereitschaftsmeldung angezeigt wird"]
@@ -120,7 +141,9 @@ Wenn der Typ angibt, dass ein Benutzer verdächtig ist, bösartige Aktivitäten 
 
 == Test-Workload wiederherstellen
 
-Nachdem Sie die Bereitschaftsübung geprüft haben, möchten Sie möglicherweise den Test-Workload wiederherstellen.
+Stellen Sie nach der Überprüfung der Warnung zur Bereitschaftsübung bei Bedarf die Testarbeitslast wieder her.
+
+*Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator oder Ransomware-Schutzadministrator.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
 
 .Schritte
 . Kehren Sie zur Seite mit den Warnungsdetails zurück.
@@ -141,10 +164,10 @@ Nachdem Sie die Bereitschaftsübung geprüft haben, möchten Sie möglicherweise
 
 . Wählen Sie auf der Seite „Überprüfung wiederherstellen“ die Option *Wiederherstellen*.
 +
-Auf der Seite „Wiederherstellung“ wird der Status der Wiederherstellung des Bereitschaftsbohrers als „in Bearbeitung“ angezeigt.
+BlueXP zeigt den Status der Wiederherstellung der Bereitschaftsübung auf der Wiederherstellungsseite als „In Bearbeitung“ an.
 
 +
-Nach Abschluss der Wiederherstellung ändert sich der Status des Workloads in *restore*.
+Nachdem die Wiederherstellung abgeschlossen ist, ändert BlueXP den Status der Arbeitslast in *Wiederhergestellt*.
 
 . Überprüfen Sie den wiederhergestellten Workload.
 
@@ -156,7 +179,9 @@ TIP: Weitere Informationen zum Wiederherstellungsvorgang finden Sie unter link:r
 
 == Ändern Sie den Warnungsstatus nach der Bereitschaftsübung
 
-Nachdem Sie die Bereitschaftsanzeige überprüft und die Arbeitslast wiederhergestellt haben, möchten Sie möglicherweise den Status der Warnmeldung ändern.
+Nachdem Sie die Warnung zur Bereitschaftsübung überprüft und die Arbeitslast wiederhergestellt haben, ändern Sie bei Bedarf den Warnungsstatus.
+
+*Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator oder Ransomware-Schutzadministrator.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
 
 .Schritte
 . Kehren Sie zur Seite mit den Warnungsdetails zurück.
@@ -178,6 +203,8 @@ IMPORTANT: Nachdem du einen Angriff abgetan hast, kannst du ihn nicht zurückcha
 == Prüfen Sie die Berichte zur Bereitschaftsübung
 
 Nach Abschluss der Bereitschaftsübung möchten Sie möglicherweise einen Bericht über den Bohrer prüfen und speichern.
+
+*Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator, Ransomware-Schutzadministrator oder Ransomware-Viewer-Rolle.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
 
 .Schritte
 . Wählen Sie im Menü zum Ransomware-Schutz von BlueXP *Berichte* aus.

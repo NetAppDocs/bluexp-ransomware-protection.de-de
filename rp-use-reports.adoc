@@ -4,7 +4,7 @@ permalink: rp-use-reports.html
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
 summary: Wenn Sie den Ransomware-Schutz von BlueXP nutzen, können Sie Berichte herunterladen, die Details zur Sicherung, zu Alarmen und zur Recovery aufführen und diese als speichern. CSV-Dateien. 
 ---
-= Berichte herunterladen
+= Laden Sie Berichte im BlueXP-Ransomware-Schutz herunter
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -14,9 +14,12 @@ summary: Wenn Sie den Ransomware-Schutz von BlueXP nutzen, können Sie Berichte 
 [role="lead"]
 Sie können Schutzdaten exportieren und CSV- oder JSON-Dateien herunterladen, die Details zu Übungen zur Angriffsbereitschaft, Schutz, Warnungen und Wiederherstellung anzeigen.
 
-Bevor Sie die Dateien herunterladen, sollten Sie die Daten aktualisieren, die auch die Daten aktualisieren, die in den Dateien angezeigt werden.
 
-Sie können Dateien aus einer der Optionen des Hauptmenüs herunterladen:
+TIP: Bevor Sie die Dateien herunterladen, sollten Sie die Daten aktualisieren, die auch die Daten aktualisieren, die in den Dateien angezeigt werden.
+
+*Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator, Ransomware-Schutzadministrator oder Ransomware-Schutz-Viewer-Rolle.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
+
+*Welche Daten können Sie herunterladen?* Sie können Dateien aus einer der Optionen des Hauptmenüs herunterladen:
 
 * *Schutz*: Enthält den Status und Details aller Workloads, einschließlich der Gesamtzahl der geschützten und gefährdeten Arbeitslasten.
 * *Alerts*: Enthält den Status und die Details aller Alerts, einschließlich der Gesamtzahl der Alerts und automatisierten Snapshots.
@@ -35,7 +38,7 @@ Die CSV- oder JSON-Dateien enthalten Daten für alle Workloads in allen BlueXP 
 .Schritte
 . Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
 +
-image:screen-dashboard.png["Dashboard-Seite"]
+image:screen-dashboard3.png["Dashboard-Seite"]
 
 . Wählen Sie im Dashboard oder auf einer anderen Seite die Option *Aktualisieren* aus image:button-refresh.png["Aktualisierungsoption"] Option oben rechts, um die Daten zu aktualisieren, die in den Berichten angezeigt werden.
 . Führen Sie einen der folgenden Schritte aus:
