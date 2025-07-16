@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-alert.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
-summary: Wenn der BlueXP  Ransomware-Schutz einen möglichen Angriff erkennt, wird im BlueXP  Dashboard für Ransomware-Schutz eine Warnmeldung angezeigt, die auf einen potenziellen Angriff hinweist. Der Service initiiert zudem unverzüglich die Erstellung einer Snapshot-Kopie. An dieser Stelle sollten Sie sich über die Registerkarte „BlueXP Ransomware Protection Alerts“ das potenzielle Risiko ansehen. 
+summary: Wenn der BlueXP  Ransomware-Schutz einen möglichen Angriff erkennt, wird im BlueXP  Dashboard für Ransomware-Schutz eine Warnmeldung angezeigt, die auf einen potenziellen Angriff hinweist. An dieser Stelle sollten Sie sich über die Registerkarte „BlueXP Ransomware Protection Alerts“ das potenzielle Risiko ansehen. 
 ---
 = Behandeln Sie erkannte Ransomware-Warnmeldungen mit dem BlueXP-Ransomware-Schutz
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Wenn der BlueXP  Ransomware-Schutz einen möglichen Angriff erkennt, w
 [role="lead"]
 Wenn der BlueXP-Ransomware-Schutz einen möglichen Angriff erkennt, wird eine Warnung im Dashboard und im Benachrichtigungsbereich angezeigt. Der Dienst erstellt sofort einen Schnappschuss. Überprüfen Sie das potenzielle Risiko im Tab „Warnungen“ des BlueXP-Ransomware-Schutzes.
 
-Wenn der BlueXP ransomware protection einen möglichen Angriff erkennt, wird eine Benachrichtigung in den BlueXP Benachrichtigungen angezeigt und eine E-Mail an die von Ihnen konfigurierte E-Mail-Adresse gesendet, die auf einen möglichen Ransomware-Angriff hinweist. Der Dienst erstellt außerdem sofort einen Snapshot. An dieser Stelle sollten Sie sich das potenzielle Risiko im BlueXP Ransomware-Schutz anschauen *Alerts* Tab.
+Wenn der BlueXP ransomware protection einen möglichen Angriff erkennt, wird eine Benachrichtigung in den BlueXP Benachrichtigungen angezeigt und eine E-Mail an die konfigurierte Adresse gesendet. Die E-Mail enthält Informationen zum Schweregrad, zur betroffenen Arbeitslast und einen Link zur Warnung im Reiter „Warnungen“ des BlueXP ransomware protection .
 
 Sie können false-positive Ergebnisse verwerfen oder beschließen, Ihre Daten sofort wiederherzustellen.
 
@@ -152,12 +152,12 @@ Auf der Registerkarte „Meldungen“ können Sie ermitteln, ob eine bösartige 
 Um die Workload-Sicherheit in BlueXP  Ransomware-Schutz zu aktivieren, gehen Sie auf die Seite *Einstellungen* und wählen Sie die Option *Workload Security Connection*.
 
 +
-Einen Überblick über die Sicherheit von Data Infrastucture Insights Workloads finden Sie im https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Workload-Sicherheit"^]Artikel .
+Einen Überblick über die Data Infrastructure Insights Workload-Sicherheit finden Sie unter  https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Workload-Sicherheit"^] .
 
 
 
 
-TIP: Wenn Sie keine Lizenz für die Sicherheit von Dateninfrastrukturen-Workloads haben und diese nicht im BlueXP  Ransomware-Schutz aktivieren, werden Sie die anomalen Informationen zum Benutzerverhalten nicht sehen.
+TIP: Wenn Sie keine Lizenz für Data Infrastructure Workload Security besitzen und diese im BlueXP ransomware protection nicht aktivieren, werden Ihnen die Informationen zum anomalen Benutzerverhalten nicht angezeigt.
 
 Wenn schädigene Aktivitäten auftreten, wird eine Warnmeldung generiert und ein automatisierter Snapshot erstellt.
 
@@ -262,7 +262,7 @@ Nachdem die Warnmeldung für die Wiederherstellung markiert wurde, wechselt die 
 
 Nachdem Sie Vorfälle überprüft haben, müssen Sie feststellen, ob es sich bei den Vorfällen um potenzielle Angriffe handelt. Ist die vorgenannte Voraussetzung nicht erfüllt, kann eine Kündigung erfolgen.
 
-Sie können false-positive Ergebnisse verwerfen oder beschließen, Ihre Daten sofort wiederherzustellen. Wenn Sie die Warnung verwerfen, lernt der Dienst dieses Verhalten und verknüpft es mit normalen Vorgängen. Er löst bei einem solchen Verhalten keine weitere Warnung aus.
+Sie können false-positive Ergebnisse verwerfen oder beschließen, Ihre Daten sofort wiederherzustellen. Wenn Sie die Warnung verwerfen, lernt der Dienst dieses Verhalten, verknüpft es mit normalen Vorgängen und löst bei einem solchen Verhalten keine weitere Warnung aus.
 
 Wenn Sie eine Arbeitslast verwerfen, werden alle Snapshot-Kopien, die automatisch als Reaktion auf einen potenziellen Ransomware-Angriff erstellt wurden, dauerhaft gelöscht.
 
