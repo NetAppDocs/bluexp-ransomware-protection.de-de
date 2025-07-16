@@ -12,7 +12,7 @@ summary: Es stehen verschiedene Optionen zur Verfügung, darunter ein Backup-Zie
 
 
 [role="lead"]
-Sie können Sicherungsziele konfigurieren, die Bedrohungserkennung aktivieren, eine Übung zur Angriffsbereitschaft durchführen, die Workload-Erkennung konfigurieren oder die Verbindung zu Data Infrastructure Insights Workload Security konfigurieren, indem Sie auf die Option *Einstellungen* zugreifen.
+Sie können Sicherungsziele konfigurieren, Daten an ein externes Sicherheits- und Ereignismanagementsystem (SIEM) senden, eine Übung zur Angriffsbereitschaft durchführen, die Workload-Erkennung konfigurieren oder die Verbindung zur Data Infrastructure Insights -Workload-Sicherheit konfigurieren, indem Sie auf die Option *Einstellungen* zugreifen.
 
 *Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator oder Ransomware-Schutzadministratorrolle.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
 
@@ -22,7 +22,7 @@ Sie können Sicherungsziele konfigurieren, die Bedrohungserkennung aktivieren, e
 * Konfiguration der Workload-Erkennung
 * Konfigurieren Sie die Verbindung zu Data Infrastructure Insights Workload Security, um vermutete Benutzerinformationen in Ransomware-Warnmeldungen einzusehen.
 * Hinzufügen eines Sicherungsziels.
-* Aktivieren Sie die Bedrohungserkennung und verbinden Sie Ihr Sicherheits- und Ereignismanagementsystem (SIEM) für die Bedrohungsanalyse und -Erkennung. Durch die Aktivierung der Bedrohungserkennung werden automatisch Daten zur Bedrohungsanalyse an Ihr SIEM gesendet.
+* Schließen Sie Ihr Sicherheits- und Ereignismanagementsystem (SIEM) zur Bedrohungsanalyse und -Erkennung an. Durch die Aktivierung der Bedrohungserkennung werden automatisch Daten zur Bedrohungsanalyse an Ihr SIEM gesendet.
 
 
 
@@ -315,7 +315,7 @@ image:screen-settings-backup-destinations-list2.png["Seite „Backup-Ziele“ di
 
 
 
-== Bedrohungserkennung aktivieren
+== Stellen Sie eine Verbindung zu einem Sicherheits- und Ereignismanagementsystem (SIEM) zur Bedrohungsanalyse und -erkennung her
 
 Sie können automatisch Daten an Ihr Sicherheits- und Event-Management-System (SIEM) senden, um Bedrohungen zu analysieren und zu erkennen. AWS Security Hub, Microsoft Sentinel oder Splunk Cloud können als SIEM ausgewählt werden.
 

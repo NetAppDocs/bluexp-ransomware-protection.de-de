@@ -63,7 +63,7 @@ TIP: Wählen Sie die i-Notiz aus, um Tipps zu diesen Daten anzuzeigen. Um das Ar
 
 
 
-** *Empfohlene Maßnahmen*: Um den Schutz zu erhöhen, überprüfen Sie jede Empfehlung und wählen Sie *Überprüfen und beheben*.
+** *Empfohlene Maßnahmen*: Um den Schutz zu erhöhen, überprüfen Sie jede Empfehlung und wählen Sie dann *Überprüfen und beheben*.
 +
 Sehen link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Überprüfen Sie die Schutzvorschläge auf dem Dashboard"] oder link:rp-use-protect.html["Schutz von Workloads"] .
 
@@ -98,7 +98,7 @@ Hier eine Auswahl der Empfehlungen, die der Service anbietet.
 Siehe link:rp-use-protect.html["Schutz von Workloads vor Ransomware-Angriffen"]. 
 
 
-| Mit SEIM verbinden, um Bedrohungsberichte zu erstellen. | Senden von Daten an ein Sicherheits- und Event-Management-System (SIEM) zur Bedrohungsanalyse und -Erkennung. | Geben Sie SIEM/XDR-Serverdetails ein, um die Bedrohungserkennung zu aktivieren. Siehe link:rp-use-settings.html["Konfigurieren Sie die Schutzeinstellungen"]. 
+| Mit SIEM verbinden, um Bedrohungsberichte zu erstellen. | Senden von Daten an ein Sicherheits- und Event-Management-System (SIEM) zur Bedrohungsanalyse und -Erkennung. | Geben Sie SIEM/XDR-Serverdetails ein, um die Bedrohungserkennung zu aktivieren. Siehe link:rp-use-settings.html["Konfigurieren Sie die Schutzeinstellungen"]. 
 
 
 | Workload-konsistenter Schutz für Applikationen oder VMware | Diese Workloads werden nicht von SnapCenter Software oder dem SnapCenter Plug-in für VMware vSphere gemanagt. | Das Management durch SnapCenter ermöglicht Workload-konsistenten Schutz.
@@ -134,7 +134,7 @@ Siehe link:rp-use-alert.html["Reagieren Sie auf einen erkannten Ransomware-Alarm
 |===
 .Schritte
 . Wählen Sie in der linken Navigationsleiste von BlueXP *Schutz* > *Ransomware-Schutz*.
-. Wählen Sie im Bereich Empfohlene Maßnahmen eine Empfehlung aus und wählen Sie *Überprüfen und beheben*.
+. Wählen Sie im Bereich „Empfohlene Aktionen“ eine Empfehlung aus und wählen Sie dann *Überprüfen und beheben*.
 . Um die Aktion bis zu einem späteren Zeitpunkt zu beenden, wählen Sie *Verwerfen*.
 +
 Die Empfehlung wird aus der To-Do-Liste gelöscht und in der Ablehnte-Liste angezeigt.
@@ -175,7 +175,7 @@ image:screen-dashboard2.png["Dashboard-Seite"]
 ** Wählen Sie im Menü zum Ransomware-Schutz von BlueXP *Berichte* aus.
 
 
-. Wenn Sie die Option *Reports* ausgewählt haben, wählen Sie eine der vorkonfigurierten benannten Dateien aus und wählen *Download (CSV)* oder *Download (JSON)*.
+. Wenn Sie die Option *Berichte* ausgewählt haben, wählen Sie eine der vorkonfigurierten benannten Dateien aus und wählen Sie dann *Herunterladen (CSV)* oder *Herunterladen (JSON)*.
 
 
 

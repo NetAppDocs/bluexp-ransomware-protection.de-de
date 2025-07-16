@@ -103,7 +103,7 @@ Der Sicherheits-Storage-Administrator kann Daten auf verschiedenen Ebenen wieder
 * Wiederherstellung von einem Datenspeicher auf VM-Ebene
 
 
-Der Prozess unterscheidet sich je nach Workload-Typ geringfügig.
+Der Prozess unterscheidet sich je nach Workload-Typ.
 
 .Schritte
 . Wählen Sie im Menü BlueXP Ransomware Protection die Option *Recovery* aus.
@@ -115,6 +115,10 @@ Der Prozess unterscheidet sich je nach Workload-Typ geringfügig.
 ** Alle Volumes
 ** Nach Volumen
 ** Nach Datei: Sie können einen Ordner oder einzelne Dateien zur Wiederherstellung angeben.
++
+
+IMPORTANT: Bei SAN-Workloads können Sie nur nach Workload wiederherstellen.
+
 +
 
 TIP: Sie können bis zu 100 Dateien oder einen einzelnen Ordner auswählen.

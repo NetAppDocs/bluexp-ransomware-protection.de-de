@@ -16,10 +16,10 @@ Um BlueXP vor Ransomware zu schützen, muss der Service zunächst Daten erkennen
 
 *Erforderliche BlueXP-Rolle* Organisationsadministrator, Ordner- oder Projektadministrator oder Ransomware-Schutzadministratorrolle.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über BlueXP-Zugriffsrollen für alle Dienste"^] .
 
-*Was erkennt der Dienst?* Der Ransomware-Schutz von BlueXP bewertet MySQL-Applikationen, Oracle-Applikationen, VMware-Datastores und File Shares.
+*Was erkennt der Dienst?* Der BlueXP ransomware protection bewertet MySQL-Anwendungen, Oracle-Anwendungen, VMware-Datenspeicher, Dateifreigaben und Blockspeicher.
 
 
-NOTE: Der Dienst erkennt keine Workloads mit Volumes, die FlexGroup oder iSCSI verwenden.
+NOTE: Der Dienst erkennt keine Workloads mit Volumes, die FlexGroup verwenden.
 
 Der BlueXP-Ransomware-Schutz erkennt und zeigt sowohl unterstützte als auch nicht unterstützte Arbeitsumgebungskonfigurationen im Dashboard an.
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-reference-roles.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account 
-summary: 'Beim BlueXP  Ransomware-Schutz wird mittels rollenbasierter Zugriffssteuerung (Role Based Access Control, RBAC) der Zugriff jedes Benutzers auf spezifische Funktionen und Aktionen festgelegt. Der Service verwendet spezifische Rollen für den BlueXP  Ransomware-Schutz (RPS).' 
+summary: Der BlueXP  Ransomware-Schutz verwendet Rollen, um den Zugriff jedes Benutzers auf spezifische Funktionen und Aktionen zu regeln. 
 ---
 = BlueXP  Ransomware-Schutz, rollenbasierter Zugriff auf Funktionen
 :hardbreaks:
@@ -20,15 +20,7 @@ Der Service verwendet die folgenden Rollen, die speziell auf den BlueXP  Ransom
 * *Ransomware Protection Viewer*: Workload-Daten anzeigen, Warnungsdaten anzeigen, Wiederherstellungsdaten herunterladen und Berichte herunterladen.
 
 
-Die BlueXP -Plattform für alle BlueXP -Services verwendet folgende Rollenarten:
-
-* *Plattform-Rollen* ermöglichen Ihnen, Benutzer zu verwalten, sie Ressourcen zuzuweisen und ihnen Rollen zusammen mit anderen plattformweiten Aktionen zu geben.
-* *Data Services Rollen* sind auf einen bestimmten Datendienst beschränkt. Je nach Ihrer Aufgabe können Sie mehrere Datenservice-Rollen haben. BlueXP  Ransomware-Schutz ist einer der BlueXP  Datenservices.
-
-
-Andere Rollen der BlueXP  Plattform werden als Zuschauer beim BlueXP  Ransomware-Schutz behandelt. Mit der Rolle *Ransomware-Schutz-Viewer* können Sie beispielsweise die Schutzpläne anzeigen, jedoch keine Aktionen im BlueXP-Ransomware-Schutz ausführen.
-
-Weitere Informationen zu allen Rollen der BlueXP -Plattform finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Die BlueXP -Installations- und Administrationsdokumentation"^].
+Diese Rollen ergänzen die BlueXP -Plattformrollen, die den Zugriff auf den BlueXP -Dienst und andere Dienste wie Datenschutz, Workload-Management usw. regeln. Weitere Informationen zu allen Rollen der BlueXP -Plattform finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Die BlueXP -Installations- und Administrationsdokumentation"^].
 
 Die folgende Tabelle zeigt die Aktionen, die jede BlueXP  Ransomware-Schutzrolle durchführen kann.
 
