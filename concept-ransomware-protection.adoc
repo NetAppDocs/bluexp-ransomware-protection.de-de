@@ -157,9 +157,7 @@ image:diagram-rp-architecture-preview3.png["Diagramm einer BlueXP Architektur f�
 
 == Unterst체tzte Backup-Ziele, Arbeitsumgebungen und Workload-Datenquellen
 
-Verwenden Sie den BlueXP ransomware protection , um zu sehen, wie widerstandsf채hig Ihre Daten gegen체ber einem Cyberangriff auf die folgenden Arten von Sicherungszielen, Arbeitsumgebungen und Workload-Datenquellen sind:
-
-Die BlueXP -Ransomware unterst체tzt die folgenden Arbeitsumgebungen und Sicherungsziele:
+Die BlueXP -Ransomware unterst체tzt die folgenden Sicherungsziele, Arbeitsumgebungen und Datenquellen:
 
 *Backup-Ziele unterst체tzt*
 
