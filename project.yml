@@ -39,8 +39,6 @@ sidebar:
     - title: Konfigurieren Sie Backups, Bedrohungserkennung und Angriffssimulationen
         in den Einstellungen
       url: "/rp-use-settings.html"
-    - title: Häufig gestellte Fragen
-      url: "/rp-start-faq.html"
   - title: Nutzen Sie BlueXP Ransomware-Schutz
     entries:
     - title: Nutzen Sie die Übersicht zum BlueXP Ransomware-Schutz
@@ -60,6 +58,8 @@ sidebar:
     - title: Berichte herunterladen
       url: "/rp-use-reports.html"
   - section: support
+  - title: Häufig gestellte Fragen
+    url: "/rp-start-faq.html"
   - title: Rechtliche Hinweise
     url: "/legal-notices.html"
 product-family:
